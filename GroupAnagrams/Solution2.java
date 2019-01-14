@@ -1,30 +1,35 @@
 package GroupAnagrams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-
+/**
+ * Time Complexity: O(strs.length * max length of words in strs * log(max length of words in strs))
+ * Space Complexity: O(strs.length * max length of words in strs)
+ * Runtime: 16ms
+ * Rank: 99.74%
+ */
 public class Solution2 {
 	public List<List<String>> groupAnagrams(String[] strs) {
-		HashMap<String, List<String>> map = new HashMap<>();
+		HashMap<String, Integer> map = new HashMap<>();
+		List<List<String>> result = new ArrayList<>();
+		int index = 0;
 		for (String s : strs) {
-			int[] tempfeature = new int[26];
-			for (int i = 0; i < s.length(); i++) {
-				tempfeature[s.charAt(i) - 97] += 1;
+			char[] temp = s.toCharArray();
+			Arrays.sort(temp);
+			String feature = String.valueOf(temp);
+			if (map.containsKey(feature)) {
+				result.get(map.get(feature)).add(s);
+			} else {
+				map.put(feature, index);
+				index++;
+				List<String> tempx = new ArrayList<>();
+				tempx.add(s);
+				result.add(tempx);
 			}
-			StringBuilder sb = new StringBuilder();
-			for (int i = 0; i < tempfeature.length; i++) {
-				sb.append(String.valueOf(tempfeature[i]));
-				sb.append('#');
-			}
-			String feature = sb.toString();
-			if (!map.containsKey(feature)) {
-				map.put(feature, new LinkedList<>());
-			}
-			map.get(feature).add(s);
 		}
-		return new ArrayList<>(map.values());
+		return result;
 	}
 
 	public static void main(String[] args) {
