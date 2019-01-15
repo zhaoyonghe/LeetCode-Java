@@ -2,8 +2,8 @@ package LongestSubstringWithoutRepeatingCharacter;
 /**
  * Time Complexity: O(n) not sure
  * Space Complexity: O(n) not sure
- * Runtime: 26ms
- * Rank: 79.26%
+ * Runtime: 37ms
+ * Rank: 85.96%
  */
 import java.util.HashMap;
 import java.lang.Math;
