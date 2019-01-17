@@ -1,5 +1,6 @@
 package TwoSum;
 /**
+ * Assume n is the length of nums.
  * Time Complexity: O(n^2)
  * Space Complexity: O(1)
  * Runtime: 33ms

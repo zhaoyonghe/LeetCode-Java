@@ -1,6 +1,7 @@
 package TwoSum;
 import java.util.HashMap;
 /**
+ * Assume n is the length of nums.
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  * Runtime: 4ms

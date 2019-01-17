@@ -1,5 +1,6 @@
 package TwoSum;
 /**
+ * Assume n is the length of nums.
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  * Runtime: 7ms
@@ -21,9 +22,12 @@ public class Solution2 {
 		// construct the map
 		for (int i = 0; i < nums.length; i++) {
 			if (map.containsKey(nums[i])) {
+				map.get(nums[i]).add(i);
+				/*
 				indexes = map.get(nums[i]);
 				indexes.add(i);
 				map.put(nums[i], indexes);
+				*/
 			} else {
 				indexes = new ArrayList<Integer>();
 				indexes.add(i);
