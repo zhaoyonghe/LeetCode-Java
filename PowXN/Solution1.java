@@ -1,11 +1,15 @@
 package PowXN;
 
 import java.util.HashMap;
-
+/**
+ * Time Complexity: O(logn)
+ * Space Complexity: O(logn)
+ * Runtime: 23ms
+ * Rank: 21.25%
+ */
 public class Solution1 {
-	public HashMap<Integer, Double> plusmap = new HashMap<>();
-	public HashMap<Integer, Double> minusmap = new HashMap<>();
-	public double[] minus = new double[31];
+	public HashMap<Integer, Double> map = new HashMap<>();
+
 	public double myPow(double x, int n) {
 		if (n < 0) {
 			return myMinusPow(x, n);
@@ -23,19 +27,17 @@ public class Solution1 {
 		case 2:
 			return x * x;
 		}
-		double result = x * x;
-		// we have this equation: result = x ^ power
-		int power = 2;
-		while (n >= power << 1 || power << 1 == Integer.MIN_VALUE) {
-			power = power << 1;
-			if(plusmap.containsKey(power)) {
-				result = plusmap.get(power);
+		if (map.containsKey(n)) {
+			return map.get(n);
+		} else {
+			double temp = myPlusPow(x, n >> 1);
+			map.put(n >> 1, temp);
+			if (n % 2 == 0) {
+				return temp * temp;
 			} else {
-				result = result * result;
-				plusmap.put(power, result);
+				return temp * temp * x;
 			}
 		}
-		return result * myPlusPow(x, n - power);
 	}
 
 	public double myMinusPow(double x, int n) {
@@ -47,14 +49,17 @@ public class Solution1 {
 		case -2:
 			return 1 / (x * x);
 		}
-		double result = 1 / (x * x);
-		// we have this equation: next result = x ^ power
-		int power = -4;
-		while (n <= power) {
-			result = result * result;
-			power = power << 1;
+		if (map.containsKey(n)) {
+			return map.get(n);
+		} else {
+			double temp = myMinusPow(x, n >> 1);
+			map.put(n >> 1, temp);
+			if (n % 2 == 0) {
+				return temp * temp;
+			} else {
+				return temp * temp * x;
+			}
 		}
-		return result * myMinusPow(x, n - (power >> 1));
 	}
 
 	public static void main(String[] args) {
