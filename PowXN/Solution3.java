@@ -1,5 +1,10 @@
 package PowXN;
-
+/**
+ * Time Complexity: O(logn)
+ * Space Complexity: O(1)
+ * Runtime: 21ms
+ * Rank: 67.33%
+ */
 public class Solution3 {
 	public double myPow(double x, int n) {
 		if (n == 0) {
