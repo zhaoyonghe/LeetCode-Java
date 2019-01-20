@@ -1,5 +1,5 @@
 package BasicCalculator;
-
+//
 public class Solution2 {
 	public String getNextElement(String s, int i) {
 		if (Character.isDigit(s.charAt(i))) {
