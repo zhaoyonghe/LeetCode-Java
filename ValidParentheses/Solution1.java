@@ -23,6 +23,9 @@ public class Solution1 {
 		if (s.length() == 1) {
 			return false;
 		}
+		// Push the character into stack one by one, 
+		// if meet the '()','[]','{}' pairs, 
+		// pop the pair all, and then continue pushing.
 		Stack<Character> stack = new Stack<Character>();
 		for (int i = 0; i < s.length(); i++) {
 			if (stack.isEmpty()) {

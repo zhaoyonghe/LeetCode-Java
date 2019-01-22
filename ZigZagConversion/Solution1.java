@@ -2,8 +2,8 @@ package ZigZagConversion;
 
 import java.util.Arrays;
 /**
- * Time Complexity: O(max(numRows, len))
- * Space Complexity: O(len)
+ * Time Complexity: O(max(numRows, s.length()))
+ * Space Complexity: O(s.length())
  * Runtime: 62ms
  * Rank: 19.77%
  */

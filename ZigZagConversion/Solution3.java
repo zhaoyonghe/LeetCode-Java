@@ -1,12 +1,16 @@
 package ZigZagConversion;
 /**
- * Time Complexity: O(len)
+ * Time Complexity: O(s.length())
  * Space Complexity: O(1)
  * Runtime: 40ms
  * Rank: 85.36%
  */
 public class Solution3 {
 	public String convert(String s, int numRows) {
+		// This method uses a subtle law to convert
+		// the indices of characters in original string to
+		// the indices of characters in zigzag-string, 
+		// which is very hard to come up with. 
 		int len = s.length();
 		if (numRows < 2 || len <= numRows) {
 			return s;

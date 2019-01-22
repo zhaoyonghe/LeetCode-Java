@@ -16,12 +16,16 @@ public class Solution1 {
 			sign = -1;
 			x = x * sign;
 		}
+		
+		// Convert x to reverse string version.
+		// For example, 12345 -> "54321"
 		StringBuffer sb = new StringBuffer();
 		int temp = x;
 		while (temp > 0) {
 			sb.append((char) (temp % 10 + 48));
 			temp /= 10;
 		}
+		
 		String rev = sb.toString();
 		int result = 0;
 		int len = rev.length();

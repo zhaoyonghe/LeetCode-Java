@@ -1,7 +1,8 @@
 package LongestSubstringWithoutRepeatingCharacter;
 /**
- * Time Complexity: O(n) not sure
- * Space Complexity: O(n) not sure
+ * Assume n is the length of s.
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  * Runtime: 37ms
  * Rank: 85.96%
  */
@@ -17,11 +18,14 @@ public class Solution1 {
 		int start = 0;
 		int end = 1;
 		int length = 1;
+		// This map contains characters between start and end.
+		// key: character value: index of this character
 		HashMap<Character, Integer> map = new HashMap<>();
 		map.put(s.charAt(0), 0);
 		for (; end < s.length(); end++) {
 			if (map.containsKey(s.charAt(end))) {
 				int tempstart = map.get(s.charAt(end));
+				// We actually do not need to remove these character in the map.
 				for (; start <= tempstart; start++) {
 					map.remove(s.charAt(start));
 				}

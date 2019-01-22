@@ -1,7 +1,8 @@
 package AddTwoNumbers;
 /**
+ * Assume n is the length of longest linked list.
  * Time Complexity: O(n)
- * Space Complexity: O(n) not sure
+ * Space Complexity: O(n)
  * Runtime: 24ms
  * Rank: 71.57%
  */

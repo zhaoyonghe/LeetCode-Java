@@ -1,5 +1,6 @@
 package LongestPalindromicSubstring;
 /**
+ * Assume n is the length of s.
  * Time Complexity: O(n^2)
  * Space Complexity: O(n^2)
  * Runtime: 72ms
@@ -10,7 +11,15 @@ public class Solution2 {
 		if (s.length() == 0) {
 			return "";
 		}
+		// Dynamic programming.
+		// The matrix's cell is useful only when matrix[i][j](i <= j),
+		// indicating whether or not substring between i and j is palindrome.
 		int[][] matrix = new int[s.length()][s.length()];
+		// It is obivious that matrix[i][i] = 1(true),
+		// and the value of matrix[i][i + 1] is also easy to judge.
+		// So based on these decided values, we know that:
+		// matrix[i][j] = true(when matrix[i + 1][j - 1] == true, and s.charAt(i) == s.charAt(j))
+		// matrix[i][j] = false(when matrix[i + 1][j - 1] == false)
 		int finalstart = 0;
 		int finalend = 0;
 		for (int i = 0; i < s.length(); i++) {

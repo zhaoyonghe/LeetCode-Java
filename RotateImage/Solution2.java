@@ -1,5 +1,6 @@
 package RotateImage;
 /**
+ * Assume n is the length of matrix.
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(1)
  * Runtime: 2ms
@@ -8,6 +9,9 @@ package RotateImage;
 public class Solution2 {
 	public void rotate(int[][] matrix) {
 		int n = matrix.length;
+		// We can divide the matrix into four parts, 
+		// each cell matrix[i][j] in the part will 
+		// be rotated to the place matrix[j][n - i - 1].
 		for(int x = 0; x < (n + 1) / 2; x++) {
 			for(int y = 0; y < n / 2; y++) {
 				int temp1 = matrix[x][y];

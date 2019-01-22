@@ -2,12 +2,19 @@ package BasicCalculator;
 
 import java.util.Stack;
 /**
- * Time Complexity: O(s.length())
- * Space Complexity: O(1)
+ * Assume n is s.length().
+ * Time Complexity: O(n)
+ * Best Space Complexity: O(1)
+ * Worse Space Complexity: O(n) when all numbers are surrounded by parentheses.
  * Runtime: 86ms
  * Rank: 40.78%
  */
 public class Solution1 {
+
+	/**
+	 * This function is designed mainly for the numbers that have more than one digit. 
+	 * It can combine the continue digit-characters in the string to one number.
+	 */
 	public String getNextElement(String s, int i) {
 		if (Character.isDigit(s.charAt(i))) {
 			StringBuffer sb = new StringBuffer();
@@ -25,7 +32,11 @@ public class Solution1 {
 			return "" + s.charAt(i);
 		}
 	}
-
+	
+	/**
+	 * @param s
+	 * @return Does this string indicate a number?
+	 */
 	public boolean isNum(String s) {
 		if (s.length() > 1 || Character.isDigit(s.charAt(0))) {
 			return true;

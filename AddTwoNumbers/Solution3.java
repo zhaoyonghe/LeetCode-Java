@@ -1,7 +1,8 @@
 package AddTwoNumbers;
 /**
+ * Assume n is the length of longest linked list.
  * Time Complexity: O(n)
- * Space Complexity: O(n) not sure
+ * Space Complexity: O(n)
  * Runtime: 20ms
  * Rank: 92.25%
  */
@@ -13,8 +14,13 @@ public class Solution3 {
 		ListNode curresult = resulthead;
 		int carry = 0;
 		while (curL1 != null || curL2 != null) {
+			// These two lines of code must be at top of this while block but not at the end.
+			// Because if at the end, we will generate a redundant list node which cannot be deleted and cause error.
+			// Write these two lines of code here will make the first node redundant,
+			// but the first node can be easily overlooked by returning the result from the second node. 
 			curresult.next = new ListNode(0);
 			curresult = curresult.next;
+			
 			int add1 = 0;
 			int add2 = 0;
 			if (curL1 != null) {
@@ -37,6 +43,7 @@ public class Solution3 {
 		if (carry == 1) {
 			curresult.next = new ListNode(1);
 		}
+		// Returning the result from the second node.
 		return resulthead.next;
 	}
 

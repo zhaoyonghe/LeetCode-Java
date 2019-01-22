@@ -1,7 +1,6 @@
 package RotateImage;
-
-import java.util.Arrays;
 /**
+ * Assume n is the length of matrix.
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(1)
  * Runtime: 2ms

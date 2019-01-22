@@ -1,5 +1,6 @@
 package LongestPalindromicSubstring;
 /**
+ * Assume n is the length of s.
  * Worse Time Complexity: O(n^2) (in a string that all the character are same)
  * Best Time Complexity: O(n)
  * Space Complexity: O(n)

@@ -1,5 +1,6 @@
 package LongestSubstringWithoutRepeatingCharacter;
 /**
+ * Assume n is the length of s.
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  * Runtime: 27ms
