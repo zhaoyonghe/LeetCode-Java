@@ -1,6 +1,6 @@
 package ValidParentheses;
 
-import java.util.Stack;;
+import java.util.Stack;
 /**
  * Time Complexity: O(s.length())
  * Space Complexity: O(s.length())

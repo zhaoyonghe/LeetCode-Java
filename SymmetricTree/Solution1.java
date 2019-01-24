@@ -2,32 +2,48 @@ package SymmetricTree;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Assume n is the number of nodes in the tree root.
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Runtime: 10ms
+ * Rank: 83.52%
+ */
 public class Solution1 {
 	public boolean isSymmetric(TreeNode root) {
 		if (root == null) {
 			return true;
 		}
-		List<Integer> list = new ArrayList<>();
-		inOrderTravelsal(root, list);
-		System.out.println(list);
-		int size = list.size();
-		for (int i = 0; i < size / 2; i++) {
-			if (list.get(i) != list.get(size - 1 - i)) {
-				return false;
+		List<List<Integer>> list = levelOrder(root);
+		for (int level = 1; level < list.size(); level++) {
+			List<Integer> levelNodes = list.get(level);
+			for (int i = 0; i < levelNodes.size() / 2; i++) {
+				if (levelNodes.get(i) != levelNodes.get(levelNodes.size() - 1 - i)) {
+					return false;
+				}
 			}
 		}
 		return true;
 	}
 
-	public void inOrderTravelsal(TreeNode root, List<Integer> list) {
-		if (root == null) {
-			//list.add(null);
-			return;
+	public List<List<Integer>> levelOrder(TreeNode root) {
+		List<List<Integer>> result = new ArrayList<>();
+		addList(result, root, 0);
+		return result;
+	}
+
+	public void addList(List<List<Integer>> list, TreeNode root, int level) {
+		// If the max index of list smaller than level.
+		if (list.size() - 1 < level) {
+			list.add(new ArrayList<>());
 		}
-		inOrderTravelsal(root.left, list);
-		list.add(root.val);
-		inOrderTravelsal(root.right, list);
+		if (root == null) {
+			list.get(level).add(null);
+		} else {
+			list.get(level).add(root.val);
+			addList(list, root.left, level + 1);
+			addList(list, root.right, level + 1);
+		}
 	}
 
 	public static void main(String[] args) {
