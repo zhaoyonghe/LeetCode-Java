@@ -1,4 +1,6 @@
 package HouseRobberII;
+
+
 /**
  * Time Complexity: O(nums.length)
  * Space Complexity: O(nums.length)
@@ -34,7 +36,6 @@ public class Solution1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
 
 }
