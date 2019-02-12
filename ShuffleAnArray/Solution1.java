@@ -9,12 +9,12 @@ import java.util.Random;
  * Runtime: 219ms
  * Rank: 79.10%
  */
-public class Solution {
+public class Solution1 {
 	private int[] origin;
 	private int[] forshuffle;
 	private Random random;
 
-	public Solution(int[] nums) {
+	public Solution1(int[] nums) {
 		origin = nums;
 		forshuffle = nums.clone();
 		random = new Random();

@@ -1,5 +1,11 @@
 package BestTimeToBuyAndSellStockII;
-
+/**
+ * Assume n is prices.length.
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * Runtime: 2ms
+ * Rank: 71.63%
+ */
 public class Solution2 {
 	public int maxProfit(int[] prices) {
 		if (prices.length < 2) {
