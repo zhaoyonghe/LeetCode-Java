@@ -1,59 +1,79 @@
 package MedianOfTwoSortedArrays;
-
-import java.util.Arrays;
-
+/**
+ * Time Complexity: O(log(min(nums1.length, nums2.length)))
+ * Space Complexity: O(1)
+ * Runtime: 71ms
+ * Rank: 59.87%
+ */
 public class Solution1 {
-	public double findNoKBiggestNum(int[] nums, int start, int end, int K)throws Exception {
-		int len = end - start + 1;
-		if(len < 1) {
-			throw new Exception("Illegal input: no number in array!");
+	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+		int[] A, B;
+		if (nums1.length < nums2.length) {
+			A = nums1;
+			B = nums2;
+		} else {
+			A = nums2;
+			B = nums1;
 		}
-		if(len < K) {
-			throw new Exception("K is bigger than the length of array!");
-		}
-		int pivot = end;
-		int i = start;
-		int j = start;
-		int temp;
-		for(; j < pivot; j++) {
-			if(nums[j] > nums[pivot]) {
-				temp = nums[i];
-				nums[i] = nums[j];
-				nums[j] = temp;
-				i++;
+		int alen = A.length, blen = B.length;
+		if (alen == 0) {
+			if (blen == 0) {
+				return 0;
+			} else {
+				if ((blen & 1) == 0) {
+					return (double) (B[(blen >> 1) - 1] + B[blen >> 1]) / 2;
+				} else {
+					return B[blen >> 1];
+				}
+			}
+		} else {
+			int s = (alen + blen + 1) >> 1;
+			int minaleft = 0;
+			int maxaleft = alen;
+			while (true) {
+				int aleft = (minaleft + maxaleft) >> 1;
+				int bleft = s - aleft;
+				int aleftmax = leftMax(A, aleft);
+				int arightmin = rightMin(A, aleft);
+				int bleftmax = leftMax(B, bleft);
+				int brightmin = rightMin(B, bleft);
+				if (aleftmax <= brightmin && bleftmax <= arightmin) {
+					if (((alen + blen) & 1) == 0) {
+						return (double) (Math.max(aleftmax, bleftmax) + Math.min(arightmin, brightmin)) / 2;
+					} else {
+						return Math.max(aleftmax, bleftmax);
+					}
+				} else if (aleftmax > brightmin) {
+					maxaleft = aleft - 1;
+				} else {
+					// if bleftmax > arightmin
+					minaleft = aleft + 1;
+				}
+
 			}
 		}
-		temp = nums[i];
-		nums[i] = nums[pivot];
-		nums[pivot] = temp;
-		pivot = i;
-		// nums[pivot] is the No.k biggest number in nums[start to end]
-		int k = pivot - start + 1;
-		System.out.println("=======================");
-		System.out.println(Arrays.toString(nums));
-		System.out.println(K);
-		System.out.println(k);
-		System.out.println("=======================");
-		if(k > K) {
-			// pivot - 1 - start + 1 = k - 1 >= K
-			return findNoKBiggestNum(nums, start, pivot - 1, K);
-		}else if(k < K) {
-			// end - pivot - 1 + 1 >= K - k
-			return findNoKBiggestNum(nums, pivot + 1, end, K - k);
+	}
+
+	public int leftMax(int[] nums, int left) {
+		assert left <= nums.length;
+		if (left == 0) {
+			return Integer.MIN_VALUE;
 		} else {
-			return nums[pivot];
+			return nums[left - 1];
 		}
 	}
 
-	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-		return 9;
+	public int rightMin(int[] nums, int left) {
+		assert left <= nums.length;
+		if (left == nums.length) {
+			return Integer.MAX_VALUE;
+		} else {
+			return nums[left];
+		}
 	}
 
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		Solution1 s = new Solution1();
-		int[] a = {1,2,3,3,4,4,5,6,7,9,9,9,8,9};
-		System.out.println(s.findNoKBiggestNum(a, 0, 13, 5));
+	public static void main(String[] args) {
+		System.out.println((double) (2 + 7) / 2);
 	}
 
 }
