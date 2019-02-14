@@ -1,6 +1,7 @@
 package ContainerWithMostWater;
 /**
- * Time Complexity: O(height.length)
+ * Assume n is height.length.
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  * Runtime: 5ms
  * Rank: 99.43%
@@ -15,6 +16,8 @@ public class Solution4 {
 			if (maxArea < nowArea) {
 				maxArea = nowArea;
 			}
+			// If we want to find a bigger container with relatively shorter width,
+			// we need to improve the lower height.
 			if (height[left] < height[right]) {
 				left++;
 			} else {
@@ -23,10 +26,4 @@ public class Solution4 {
 		}
 		return maxArea;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

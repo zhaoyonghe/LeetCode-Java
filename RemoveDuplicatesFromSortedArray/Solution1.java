@@ -2,7 +2,8 @@ package RemoveDuplicatesFromSortedArray;
 
 import java.util.Arrays;
 /**
- * Time Complexity: O(nums.length)
+ * Assume n is nums.length.
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  * Runtime: 8ms
  * Rank: 98.90%

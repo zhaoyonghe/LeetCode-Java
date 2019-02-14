@@ -2,13 +2,17 @@ package ContainerWithMostWater;
 
 import java.util.Arrays;
 /**
- * Time Complexity: O(height.length ^ 2) with multiplication O(height.length)
- * Space Complexity: O(height.length)
+ * Assume n is height.length.
+ * Time Complexity: O(n ^ 2), need to do O(n) multiplications.
+ * Space Complexity: O(n)
  * Runtime: 390ms
  * Rank: 23.04%
  */
 public class Solution2 {
 	public int maxArea(int[] height) {
+		// candidate[i](1 <= i <= height.length) indicates the max height of container with width i.
+		// Finally we need to find the max candidate[i] * i.
+		// It is actually also a brute force algorithm, but needs to do fewer times of multiplication than solution1.
 		int[] candidate = new int[height.length];
 		Arrays.fill(candidate, 0);
 		for (int left = 0; left < height.length - 1; left++) {
@@ -28,11 +32,6 @@ public class Solution2 {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

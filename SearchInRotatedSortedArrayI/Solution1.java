@@ -1,4 +1,4 @@
-package SearchInRotatedSortedArray;
+package SearchInRotatedSortedArrayI;
 /**
  * Time Complexity: O(nums.length)
  * Space Complexity: O(1)

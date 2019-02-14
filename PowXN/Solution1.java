@@ -66,6 +66,9 @@ public class Solution1 {
 		// TODO Auto-generated method stub
 		double i = 5;
 		System.out.println(1 << 31 >> 1);
+		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE));
+		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE - 1));
+		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE + 1));
 	}
 
 }

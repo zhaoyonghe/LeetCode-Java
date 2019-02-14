@@ -1,12 +1,14 @@
 package ContainerWithMostWater;
 /**
- * Time Complexity: O(height.length ^ 2) with multiplication O(height.length)
+ * Assume n is height.length.
+ * Time Complexity: O(n ^ 2), need to do O(n) multiplications.
  * Space Complexity: O(1)
  * Runtime: 298ms
  * Rank: 38.14%
  */
 public class Solution3 {
 	public int maxArea(int[] height) {
+		// It is actually also a brute force algorithm, but compared with solution2, it needs no extra space.
 		int result = 0;
 		for (int width = 1; width < height.length; width++) {
 			int maxHeight = 0;
@@ -22,11 +24,6 @@ public class Solution3 {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

@@ -2,13 +2,15 @@ package ContainerWithMostWater;
 
 import java.lang.Math;
 /**
- * Time Complexity: O(height.length ^ 2) with multiplication O(height.length ^ 2)
+ * Assume n is height.length.
+ * Time Complexity: O(n ^ 2), need to do O(n ^ 2) multiplications
  * Space Complexity: O(1)
  * Runtime: 390ms
  * Rank: 23.04%
  */
 public class Solution1 {
 	public int maxArea(int[] height) {
+		// brute force
 		int left = 0;
 		int result = 0;
 		for (; left < height.length - 1; left++) {
@@ -21,10 +23,4 @@ public class Solution1 {
 		}
 		return result;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

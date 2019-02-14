@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 /**
  * Time Complexity: O(strs.length * max length of words in strs * log(max length of words in strs))
- * Space Complexity: O(strs.length * max length of words in strs)
+ * Space Complexity: O(strs.length * average length of words in strs) or O(number of characters in strs)
  * Runtime: 16ms
  * Rank: 99.74%
  */
@@ -30,11 +30,6 @@ public class Solution2 {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

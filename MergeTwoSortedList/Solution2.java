@@ -1,6 +1,7 @@
 package MergeTwoSortedList;
 /**
- * Time Complexity: O(the sum of length of l1 and l2)
+ * Assume the length of l1 is m, that of l2 is n.
+ * Time Complexity: O(m + n)
  * Space Complexity: O(1)
  * Runtime: 9ms
  * Rank: 92.90%
@@ -27,9 +28,4 @@ public class Solution2 {
 		}
 		return dummy.next;
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

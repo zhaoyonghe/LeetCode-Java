@@ -10,6 +10,7 @@ import java.util.BitSet;
 public class Solution1 {
 	public boolean isValidSudoku(char[][] board) {
 		BitSet bs = new BitSet(9);
+		// Check rows.
 		for (int i = 0; i < 9; i++) {
 			int count = 0;
 			for (int j = 0; j < 9; j++) {
@@ -24,6 +25,7 @@ public class Solution1 {
 				bs.clear();
 			}
 		}
+		// Check columns.
 		for (int j = 0; j < 9; j++) {
 			int count = 0;
 			for (int i = 0; i < 9; i++) {
@@ -38,7 +40,7 @@ public class Solution1 {
 				bs.clear();
 			}
 		}
-
+		// Check 3 * # squares.
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				int count = 0;
