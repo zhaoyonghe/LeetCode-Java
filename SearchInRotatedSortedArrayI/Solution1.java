@@ -1,6 +1,7 @@
 package SearchInRotatedSortedArrayI;
 /**
- * Time Complexity: O(nums.length)
+ * Assume n is nums.length
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  * Runtime: 15ms
  * Rank: 57.61%
@@ -36,10 +37,16 @@ public class Solution1 {
 		if (nums.length == 1) {
 			return target == nums[0] ? 0 : -1;
 		}
+		// From start1 to end1 and from start2 to end2, there are two ascending sub-array.
+		// start1 must be 0, end2 must be nums.length - 1 and end1 + 1 = start2
 		int start1 = 0;
 		int end1 = nums.length - 1;
 		int start2 = nums.length - 1;
 		int end2 = nums.length - 1;
+		// A pure ascending array is also a rotated array and can be "binary searched".
+		// If change is false after the loop, this array is a pure ascending array.
+		// If change is true after the loop, this array is not a pure ascending array.
+		// The "break point" will be found after this loop.
 		boolean change = false;
 		for (int i = 0; i < nums.length - 1; i++) {
 			if (nums[i] > nums[i + 1]) {
@@ -53,8 +60,10 @@ public class Solution1 {
 			if (target < nums[start2] || target > nums[end1]) {
 				return -1;
 			} else if (target >= nums[start2] && target <= nums[end2]) {
+				// target is in the second half.
 				return binarySearch(nums, start2, end2, target);
 			} else {
+				// target is in the first half.
 				return binarySearch(nums, start1, end1, target);
 			}
 		} else {
