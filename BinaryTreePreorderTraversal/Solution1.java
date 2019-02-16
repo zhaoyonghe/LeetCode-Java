@@ -24,10 +24,4 @@ public class Solution1 {
 		preorderTraversalWithoutReturn(root.left, list);
 		preorderTraversalWithoutReturn(root.right, list);
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

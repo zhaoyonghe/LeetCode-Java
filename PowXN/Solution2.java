@@ -10,6 +10,7 @@ import java.util.HashMap;
 public class Solution2 {
 	public HashMap<Integer, Double> map = new HashMap<>();
 
+	// Streamline the code length.
 	public double myPow(double x, int n) {
 		if (n < 0) {
 			switch (n) {

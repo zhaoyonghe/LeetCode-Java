@@ -1,6 +1,7 @@
 package LinkedListCycle;
 /**
- * Time Complexity: O(the length of the linked list)
+ * Assume n is the length of the linked list.
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  * Runtime: 0ms
  * Rank: 100.00%
@@ -17,11 +18,6 @@ public class Solution1 {
 			}
 		}
 		return false;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

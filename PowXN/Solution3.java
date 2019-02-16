@@ -19,6 +19,9 @@ public class Solution3 {
 			len = -len;
 		}
 		// an excellent idea
+		// Because we calculate these numbers from bottom to top,
+		// we actually do not need to store the "bottom number".
+		// If n = 110101(binary), x ^ n = x ^ 1 * x ^ 8 * x ^ 16 * x ^ 32
 		while (len != 0) {
 			if ((len & 1) == 1) {
 				result *= x;

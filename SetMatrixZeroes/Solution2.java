@@ -1,12 +1,14 @@
 package SetMatrixZeroes;
 /**
- * Time Complexity: O(mn)
+ * Assume m is number of rows, n is number of columns.
+ * Time Complexity: O(m * n)
  * Space Complexity: O(1)
  * Runtime: 2ms
  * Rank: 83.35%
  */
 public class Solution2 {
 	public void setZeroes(int[][] matrix) {
+		// Use first row and first column to mark.
 		boolean rowflag = false;
 		boolean colflag = false;
 		// matrix mn
@@ -58,11 +60,6 @@ public class Solution2 {
 				matrix[i][0] = 0;
 			}
 		}
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

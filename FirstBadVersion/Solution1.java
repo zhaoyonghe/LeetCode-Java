@@ -7,6 +7,7 @@ package FirstBadVersion;
  */
 public class Solution1 {
 	public class Solution extends VersionControl {
+		// Binary search.
 		public int firstBadVersion(int n) {
 			int start = 1;
 			int end = n;
@@ -24,11 +25,6 @@ public class Solution1 {
 			}
 			return n;
 		}
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

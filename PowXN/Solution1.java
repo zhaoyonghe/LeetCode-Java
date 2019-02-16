@@ -8,6 +8,8 @@ import java.util.HashMap;
  * Rank: 21.25%
  */
 public class Solution1 {
+	// key: i
+	// value: x ^ i
 	public HashMap<Integer, Double> map = new HashMap<>();
 
 	public double myPow(double x, int n) {
@@ -18,6 +20,12 @@ public class Solution1 {
 		}
 	}
 
+	// Calculate x ^ n by x ^ (n / 2) * x ^ (n / 2)
+	// Calculate x ^ n / 2 by x ^ (n / 4) * x ^ (n / 4)
+	// ...
+	// To sum up, we need to calculate x ^ n, x ^ (n / 2), x ^ (n / 4) ... x ^ 1
+	// To calculate each one(from bottom to top), we need O(1) time,
+	// and by saving in map, we do not need to recalculate them.
 	public double myPlusPow(double x, int n) {
 		switch (n) {
 		case 0:

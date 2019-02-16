@@ -25,9 +25,4 @@ public class Solution1 {
 		list.add(root.val);
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

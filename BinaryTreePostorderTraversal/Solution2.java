@@ -58,9 +58,4 @@ public class Solution2 {
 		return list;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

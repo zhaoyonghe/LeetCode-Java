@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 /**
- * Time Complexity: O(mn)
+ * Assume m is number of rows, n is number of columns.
+ * Time Complexity: O(m * n)
  * Space Complexity: O(m + n)
  * Runtime: 4ms
  * Rank: 37.80%
