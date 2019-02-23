@@ -1,55 +1,46 @@
 package ConstructBinaryTreeFromInorderAndPostorderTraversal;
 /**
  * Assume n is the number of nodes in root.
- * Time Complexity: O(n) not sure
- * Space Complexity: O(n) not sure
- * Runtime: 19ms
- * Rank: 73.39%
+ * Best Time Complexity: O(n) when all trees have only left subtree
+ * Average Time Complexity: O(nlogn) when tree is "normal"
+ * Worse Time Complexity: O(n ^ 2) when all trees have only right subtree
+ * Space Complexity: O(1)
+ * Runtime: 13ms
+ * Rank: 86.83%
  */
 public class Solution1 {
-	public TreeNode buildTree(int[] preorder, int[] inorder) {
-		if (preorder.length == 0) {
-			return null;
-		}
-		if (preorder.length == 1) {
-			return new TreeNode(preorder[0]);
-		}
-		TreeNode root = new TreeNode(0);
-		construct(root, preorder, inorder, 0, preorder.length - 1, 0, inorder.length - 1, true);
-		return root.left;
-	}
-
-	public void construct(TreeNode root, int[] preorder, int[] inorder, int pstart, int pend, int istart, int iend,
-			boolean isLeft) {
-		if (pstart > pend || istart > iend) {
-			return;
-		}
-		int index = find(inorder, istart, iend, preorder[pstart]);
-		assert index >= istart && index <= iend;
-		int leftlen = index - istart;
-		// int rightlen = iend - istart - index - 1;
-		TreeNode node = new TreeNode(preorder[pstart]);
-		if (isLeft) {
-			root.left = node;
-		} else {
-			root.right = node;
-		}
-		construct(node, preorder, inorder, pstart + 1, pstart + leftlen, istart, index - 1, true);
-		construct(node, preorder, inorder, pstart + leftlen + 1, pend, index + 1, iend, false);
-	}
-
-	public int find(int[] inorder, int istart, int iend, int target) {
-		for (int i = istart; i <= iend; i++) {
-			if (inorder[i] == target) {
-				return i;
+	class Solution {
+		int rindex;
+		// Find preorder[end] in inorder, the index is i,
+		// then inorder[0 : i - 1] is left subtree, inorder[i + 1 : end] is right subtree.
+		public TreeNode buildTree(int[] inorder, int[] postorder) {
+			if (inorder.length == 0) {
+				return null;
 			}
+			rindex = postorder.length - 1;
+			return build(inorder, postorder, 0, postorder.length - 1);
 		}
-		return -1;
-	}
 
-	public static void main(String[] args) {
-		final Integer i = new Integer(2);
-		Integer j = i;
-	}
+		public TreeNode build(int[] inorder, int[] postorder, int istart, int iend) {
+			if (istart > iend || rindex < 0) {
+				return null;
+			}
+			TreeNode node = new TreeNode(postorder[rindex]);
+			int index = find(inorder, istart, iend, postorder[rindex]);
 
+			rindex -= 1;
+			node.right = build(inorder, postorder, index + 1, iend);
+			node.left = build(inorder, postorder, istart, index - 1);
+			return node;
+		}
+
+		public int find(int[] inorder, int istart, int iend, int target) {
+			for (int i = istart; i <= iend; i++) {
+				if (inorder[i] == target) {
+					return i;
+				}
+			}
+			return -1;
+		}
+	}
 }

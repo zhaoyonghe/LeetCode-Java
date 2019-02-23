@@ -1,8 +1,11 @@
-package ConstructBinaryTreeFromInorderAndPostorderTraversal;
+package ConstructBinaryTreeFromPreorderAndInorderTraversal;
+
 /**
  * Assume n is the number of nodes in root.
- * Time Complexity: O(n) not sure
- * Space Complexity: O(n) not sure
+ * Best Time Complexity: O(n) when all trees have only right subtree
+ * Average Time Complexity: O(nlogn) when tree is "normal"
+ * Worse Time Complexity: O(n ^ 2) when all trees have only left subtree
+ * Space Complexity: O(1)
  * Runtime: 13ms
  * Rank: 86.83%
  */
