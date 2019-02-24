@@ -13,9 +13,4 @@ public class Solution1 {
 		}
 		return Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

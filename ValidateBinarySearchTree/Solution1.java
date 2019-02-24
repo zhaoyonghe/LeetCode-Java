@@ -7,6 +7,7 @@ package ValidateBinarySearchTree;
  * Rank: 85.86%
  */
 public class Solution1 {
+	// Be careful of the case that [5, 2, null, 1, 100]
 	public boolean isValidBST(TreeNode root) {
 		if (root == null) {
 			return true;
