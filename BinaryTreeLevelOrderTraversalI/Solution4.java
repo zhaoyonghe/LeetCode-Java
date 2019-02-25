@@ -29,9 +29,4 @@ public class Solution4 {
 		addList(list, root.right, level + 1);
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

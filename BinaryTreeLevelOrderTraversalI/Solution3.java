@@ -40,9 +40,4 @@ public class Solution3 {
 		return result;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

@@ -13,6 +13,7 @@ public class Solution1 {
 	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<>();
 		addList(result, root, 0);
+		// reverse after normal traversal
 		for (int i = 1; i < result.size(); i += 2) {
 			result.set(i, reverseList(result.get(i)));
 		}
@@ -39,10 +40,6 @@ public class Solution1 {
 		}
 		return rev;
 	}
-    
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 
 }

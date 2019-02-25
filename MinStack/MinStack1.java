@@ -71,9 +71,5 @@ public class MinStack1 {
     public int getMin() {
         return min;
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-	}
-
+    
 }

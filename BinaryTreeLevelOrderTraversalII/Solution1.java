@@ -15,6 +15,7 @@ public class Solution1 {
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
 		List<List<Integer>> list = new ArrayList<>();
 		addList(list, root, 0);
+		// reverse after normal traversal
 		Collections.reverse(list);
 		return list;
 	}

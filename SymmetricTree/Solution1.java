@@ -10,6 +10,7 @@ import java.util.List;
  * Rank: 83.52%
  */
 public class Solution1 {
+	// Level order traversal this tree, and check if each level is palindromic.
 	public boolean isSymmetric(TreeNode root) {
 		if (root == null) {
 			return true;
