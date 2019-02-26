@@ -6,6 +6,8 @@ package HammingDistance;
  * Rank: 92.88%
  */
 public class Solution1 {
+	// The Hamming distance between two integers is 
+	// the number of positions at which the corresponding bits are different.
 	public int hammingDistance(int x, int y) {
 		int temp = x ^ y;
 		int result = 0;

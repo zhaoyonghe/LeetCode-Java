@@ -7,6 +7,9 @@ package ReverseLinkedList;
  */
 public class Solution1 {
 	public ListNode reverseList(ListNode head) {
+		// use a to take apart the head node
+		// use b to mark the next node to take apart
+		// all nodes will be linked on stub
 		if (head == null) {
 			return null;
 		}
@@ -24,10 +27,4 @@ public class Solution1 {
 		newhead = a;
 		return newhead;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

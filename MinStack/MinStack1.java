@@ -6,6 +6,9 @@ package MinStack;
  * Rank: 99.68%
  */
 public class MinStack1 {
+	// Maintain two stacks.
+	// One is the normal stack, 
+	// the other records the indices of min numbers in the history. 
 	int stacktop = -1;
 	int fullsize = 8;
 	int[] stack = null;

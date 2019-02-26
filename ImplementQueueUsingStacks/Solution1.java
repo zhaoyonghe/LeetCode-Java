@@ -10,6 +10,7 @@ package ImplementQueueUsingStacks;
  */
 public class Solution1 {
 	class MyQueue {
+		// When popping, use an auxiliary stack to reverse the stack.
 		public int capacity = 16;
 		public int[] stack = null;
 		public int[] aux = null;
