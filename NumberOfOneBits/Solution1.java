@@ -17,7 +17,6 @@ public class Solution1 {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(Integer.toBinaryString(0));
 		System.out.println(Integer.toBinaryString(1 << 30));
 		System.out.println(Integer.toBinaryString(1 << 31));
@@ -25,7 +24,6 @@ public class Solution1 {
 		System.out.println(1 << 30);
 		System.out.println(1 << 31);
 		System.out.println(1 << 32);
-
 	}
 
 }

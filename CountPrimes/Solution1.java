@@ -1,6 +1,6 @@
 package CountPrimes;
 /**
- * Time Complexity: O() not sure
+ * Time Complexity: O((n * n ^ 1 / 2) / logn) nearly O(n)
  * Space Complexity: O(n)
  * Runtime: 14ms
  * Rank: 95.56%
@@ -10,6 +10,7 @@ public class Solution1 {
 		if (n == 0) {
 			return 0;
 		}
+		// records[i] is true when it is not a prime
 		boolean[] records = new boolean[n];
 		int stop = (int) Math.floor(Math.sqrt(n));
 		for (int i = 2; i <= stop; i++) {
@@ -19,6 +20,7 @@ public class Solution1 {
 				}
 			}
 		}
+		// collect result
 		int count = 0;
 		for (int i = 2; i < n; i++) {
 			if (!records[i]) {
@@ -27,5 +29,4 @@ public class Solution1 {
 		}
 		return count;
 	}
-
 }
