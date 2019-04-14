@@ -1,9 +1,10 @@
 package ImplementstrStr;
 /**
- * Time Complexity: O(the length of the linked list) not sure
+ * Assume the length of haystack is n, the length of needle is m.
+ * Time Complexity: O(m * n)
  * Space Complexity: O(1)
- * Runtime: 6ms
- * Rank: 81.15%
+ * Runtime: 8ms
+ * Rank: 40.69%
  */
 public class Solution1 {
 	public int strStr(String haystack, String needle) {
@@ -41,11 +42,6 @@ public class Solution1 {
 			}
 		}
 		return true;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
