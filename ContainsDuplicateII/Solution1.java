@@ -16,6 +16,8 @@ public class Solution1 {
 		for (int i = 0; i < nums.length; i++) {
 			if (map.containsKey(nums[i])) {
 				if (map.get(nums[i]) + k >= i) {
+					// [hidden condition][0 <=] i - map.get(nums[i]) <= k
+					// distance is smaller than k
 					return true;
 				} else {
 					map.put(nums[i], i);

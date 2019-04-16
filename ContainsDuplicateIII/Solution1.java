@@ -20,9 +20,12 @@ public class Solution1 {
 			if (k >= nums.length) {
 				k = nums.length - 1;
 			}
+			// search range: [0, k]
 			// kn
 			for (int i = 0; i <= k; i++) {
 				for (int j = i + 1; j <= k; j++) {
+					// -2147483648 - 2147483646 = 2
+					// must cast to long
 					if (Math.abs((long)nums[i] - (long)nums[j]) <= t) {
 						return true;
 					}
@@ -41,6 +44,7 @@ public class Solution1 {
 			}
 			return false;
 		} else {
+			// search range: [-t, t]
 			// tn
 			HashMap<Integer, Integer> map = new HashMap<>();
 			for (int i = 0; i < nums.length; i++) {
@@ -56,5 +60,10 @@ public class Solution1 {
 			return false;
 		}
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(Integer.MIN_VALUE - 2147483646);
+	}
+
 
 }
