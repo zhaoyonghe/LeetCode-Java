@@ -11,6 +11,7 @@ public class Solution1 {
 		if (prices.length < 2) {
 			return 0;
 		}
+		// money I have after:
 		int firstBuy = Integer.MIN_VALUE;
 		int firstSell = 0;
 		int secondBuy = Integer.MIN_VALUE;
@@ -22,6 +23,7 @@ public class Solution1 {
 			secondSell = Math.max(secondSell, secondBuy + p);
 		}
 		return secondSell;
+		// This algorithm can be extend to n times buy-sell combinations.
 	}
 
 }

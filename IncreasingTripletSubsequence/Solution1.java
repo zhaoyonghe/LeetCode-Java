@@ -8,7 +8,9 @@ package IncreasingTripletSubsequence;
  */
 public class Solution1 {
 	public boolean increasingTriplet(int[] nums) {
+		// min value until now 
 		int num1 = Integer.MAX_VALUE;
+		// the second big number in one subsequence
 		int num2 = Integer.MAX_VALUE;
 		for (int num : nums) {
 			if (num <= num1) {

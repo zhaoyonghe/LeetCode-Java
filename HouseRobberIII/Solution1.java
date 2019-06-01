@@ -22,6 +22,9 @@ public class Solution1 {
 		if (map.containsKey(root)) {
 			return map.get(root);
 		}
+		// rob this node
+		// in this case we cannot rob the children of this node
+		// rob children's children
 		int rob = root.val;
 		if (root.left == null && root.right == null) {
 
@@ -33,6 +36,7 @@ public class Solution1 {
 			rob = rob + maxRob(root.left.left) + maxRob(root.left.right) + maxRob(root.right.left)
 					+ maxRob(root.right.right);
 		}
+		// do not rob this node
 		int norob = maxRob(root.left) + maxRob(root.right);
 		int max = Math.max(rob, norob);
 		map.put(root, max);

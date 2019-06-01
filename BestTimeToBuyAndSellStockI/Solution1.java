@@ -13,9 +13,11 @@ public class Solution1 {
 		int max = 0;
 		while (sell < prices.length) {
 			if (prices[sell] <= prices[buy]) {
+				// loss money
 				buy = sell;
 				sell += 1;
 			} else {
+				// earn money
 				max = Math.max(max, prices[sell] - prices[buy]);
 				sell += 1;
 			}

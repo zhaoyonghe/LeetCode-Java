@@ -15,6 +15,9 @@ public class Solution2 {
 		int valley = prices[0];
 		int peak = prices[0];
 		int result = 0;
+		// find every pair of valleys and peaks
+		// valley: next price greater than it
+		// peak: next price lower than it
 		while (i < prices.length) {
 			while (i + 1 < prices.length && prices[i] >= prices[i + 1]) {
 				i += 1;

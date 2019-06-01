@@ -11,6 +11,7 @@ package DesignCircularQueue;
  * Rank: 66.47%
  */
 public class Solution1 {
+	// The implement of circular queue wastes a place in the array, but can avoid data movement.
 	class MyCircularQueue {
 		private final int qlen;
 		private int[] queue;
@@ -66,6 +67,8 @@ public class Solution1 {
 			if (isEmpty()) {
 				return -1;
 			} else {
+				// The element BEFORE queue[end] !!!
+				// Not queue[end - 1] !!!
 				return queue[(end - 1 + qlen) % qlen];
 			}
 		}

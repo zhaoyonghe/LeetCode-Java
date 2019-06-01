@@ -11,15 +11,20 @@ public class Solution1 {
 			if (head == null) {
 				return true;
 			}
+			
+			// step 1: get the length of the linked list 
 			ListNode worker = head;
 			int n = 1;
 			while (worker.next != null) {
 				worker = worker.next;
 				n += 1;
 			}
+			
 			if (n == 1) {
 				return true;
 			}
+			
+			// step 2: reverse the first half of the linked list
 			ListNode headA = null;
 			ListNode worker1 = head;
 			ListNode worker2 = head.next;
@@ -29,6 +34,8 @@ public class Solution1 {
 				worker1 = worker2;
 				worker2 = worker2.next;
 			}
+			
+			// step 3: check if it is a palindrome linked list
 			ListNode headB = (n & 1) == 0 ? worker1 : worker2;
 			while (headA != null) {
 				if (headA.val != headB.val) {
