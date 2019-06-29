@@ -2,7 +2,13 @@ package PermutationsII;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Assume n is nums.length.
+ * Time Complexity: O(n * n!)
+ * Space Complexity: O(n ^ 2)
+ * Runtime: 6ms
+ * Rank: 72.42%
+ */
 public class Solution2 {
 	public List<List<Integer>> permuteUnique(int[] nums) {
 		List<List<Integer>> list = new ArrayList<>();
@@ -19,7 +25,7 @@ public class Solution2 {
 			list.add(tempList);
 		} else {
 			// start < nums.length
-			List<Integer> usedInt = new ArrayList<>();
+			List<Integer> usedInt = new ArrayList<>(); // maintain a list cost too much
 			for (int i = start; i < nums.length; i++) {
 				// do not do useless swap
 				/**

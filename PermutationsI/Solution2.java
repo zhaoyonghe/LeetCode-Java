@@ -24,7 +24,8 @@ public class Solution2 {
             }
             list.add(tempList);
         } else {
-            // start < nums.length
+        	// This loop let each element in nums be the first element.
+            // start < nums.length - 1
             for(int i = start; i < nums.length; i++){
                 swap(nums, start, i);
                 permute(nums, start + 1, list);
