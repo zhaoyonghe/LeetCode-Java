@@ -1,7 +1,13 @@
 package CoinChangeI;
 
 import java.util.Arrays;
-
+/**
+ * Best Time Complexity: O(amount * coins.length)
+ * Worse Time Complexity: O(amount * coins.length * coins.length)
+ * Space Complexity: O(amount * coins.length)
+ * Runtime: 79ms
+ * Rank: 6.56%
+ */
 public class Solution1 {
 	public int coinChange(int[] coins, int amount) {
 		if (amount == 0) {
