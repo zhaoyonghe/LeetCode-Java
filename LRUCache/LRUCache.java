@@ -1,5 +1,15 @@
 package LRUCache;
-
+/**
+ * Assume the size of the cache is n. 
+ * Constructor Time Complexity: O(1) 
+ * find() Time Complexity: O(n)
+ * get() Time Complexity: O(n)
+ * put() Time Complexity: O(n)
+ * heapify() Time Complexity: O(logn)
+ * Space Complexity: O(n) 
+ * Runtime: 428ms 
+ * Rank: 8.84%
+ */
 public class LRUCache {
 
 	private class DataChunk {
