@@ -15,6 +15,7 @@ public class Solution1 {
 		int m = matrix.length;
 		int n = matrix[0].length;
 
+		// maybe in which row
 		int row = -1;
 		int low = 0;
 		int high = m - 1;
@@ -42,6 +43,7 @@ public class Solution1 {
 			}
 		}
 
+		// maybe in which column
 		low = 0;
 		high = n - 1;
 		while (low <= high) {

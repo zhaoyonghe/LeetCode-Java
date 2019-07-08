@@ -1,5 +1,10 @@
 package SearchA2DMatrixII;
-
+/**
+ * Time Complexity: O(m + n)
+ * Space Complexity: O(1)
+ * Runtime: 13ms
+ * Rank: 90.15%
+ */
 public class Solution2 {
 	public boolean searchMatrix(int[][] matrix, int target) {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
