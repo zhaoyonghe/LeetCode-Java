@@ -31,6 +31,8 @@ public class Solution3 {
                 boolean isContinue = false;
                 for(int j = start; j < i; j++){
                     if(nums[j] == nums[i]){
+                    	// nums[i] used to be the first one
+                    	// do not swap
                         isContinue = true;
                         break;
                     }
