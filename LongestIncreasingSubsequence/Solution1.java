@@ -17,6 +17,7 @@ public class Solution1 {
 
 		int[] dp = new int[n];
 
+		// dp[i] means the length of the longest subsequence that ends with nums[i]
 		for (int i = 0; i < n; i++) {
 			dp[i] = 1;
 		}
