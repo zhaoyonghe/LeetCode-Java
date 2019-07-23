@@ -1,7 +1,13 @@
 package JumpGameII;
 
 import java.util.Arrays;
-
+/**
+ * Assume nums.length is n.
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Runtime: 7ms
+ * Rank: 24.05%
+ */
 public class Solution1 {
 	public int jump(int[] nums) {
 		int[] jumpTimes = new int[nums.length];
@@ -17,7 +23,7 @@ public class Solution1 {
 			if (nums[i] > nums.length - i - 1) {
 				nums[i] = nums.length - i - 1;
 			}
-			for (int j = 1; j <= nums[i]; j++) {
+			for (int j = frontier - i; j <= nums[i]; j++) {
 				jumpTimes[i + j] = Math.min(jumpTimes[i + j], jumpTimes[i] + 1);
 			}
 			frontier = i + nums[i];

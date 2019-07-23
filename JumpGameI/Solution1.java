@@ -13,6 +13,9 @@ public class Solution1 {
 
 		for (int i = 1; i < nums.length; i++) {
 			for (int j = i - 1; j >= 0; j--) {
+				// can reach j 
+				// &&
+				// from j can jump to i
 				canReach[i] = canReach[j] && ((i - j) <= nums[j]);
 				if (canReach[i]) {
 					break;
