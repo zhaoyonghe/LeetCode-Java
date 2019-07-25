@@ -1,5 +1,11 @@
 package WordSearchI;
-
+/**
+ * Assume board.length is m, board[0].length is n and word.length is len.
+ * Time Complexity: O(m * n * len)
+ * Space Complexity: O(m * n)
+ * Runtime: 10ms
+ * Rank: 86.65%
+ */
 public class Solution1 {
 	int m = 0;
 	int n = 0;

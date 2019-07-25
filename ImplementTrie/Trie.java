@@ -65,6 +65,7 @@ public class Trie {
 			}
 			curNode = curNode.nodes[prefix.charAt(i) - 'a'];
 		}
+		///// can be replaced by "return curNode != null;".
 		if (curNode == null) {
 			return false;
 		}
@@ -77,5 +78,6 @@ public class Trie {
 			}
 		}
 		return false;
+		///// 
 	}
 }
