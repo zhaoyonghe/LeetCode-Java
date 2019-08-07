@@ -1,0 +1,62 @@
+package MinimumHeightTrees;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+/**
+ * Best Time Complexity: O(max(|V|, |E|))
+ * Worst Time Complexity: O(max(|V| ^ 2, |E| ^ 2))
+ * Space Complexity: O(|E|)
+ * Runtime: 429ms
+ * Rank: 19.10%
+ */
+public class Solution1 {
+	public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+		List<int[]> graph = new ArrayList<>();
+		for (int[] edge : edges) {
+			graph.add(edge);
+		}
+
+		int[] degrees = new int[n];
+		for (int[] edge : graph) {
+			degrees[edge[0]] += 1;
+			degrees[edge[1]] += 1;
+		}
+
+		Set<Integer> nodeSet = new HashSet<>();
+		for (int i = 0; i < n; i++) {
+			nodeSet.add(i);
+		}
+
+		while (nodeSet.size() > 2) {
+			List<int[]> newGraph = new ArrayList<>();
+
+			int[] minusDegree = new int[n];
+
+			for (int[] edge : graph) {
+				if (degrees[edge[0]] == 1 || degrees[edge[1]] == 1) {
+					minusDegree[edge[0]] += 1;
+					minusDegree[edge[1]] += 1;
+					if (degrees[edge[0]] == 1) {
+						nodeSet.remove(edge[0]);
+					} else {
+						nodeSet.remove(edge[1]);
+					}
+				} else {
+					newGraph.add(edge);
+				}
+			}
+
+			graph = newGraph;
+
+			for (int i = 0; i < n; i++) {
+				degrees[i] -= minusDegree[i];
+			}
+		}
+
+		List<Integer> result = new ArrayList<>(nodeSet);
+
+		return result;
+	}
+}
