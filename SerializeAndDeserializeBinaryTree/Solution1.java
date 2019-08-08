@@ -1,5 +1,6 @@
 package SerializeAndDeserializeBinaryTree;
 /**
+ * Assume the number of nodes is n.
  * Serialize Time Complexity: O(n)
  * Deserialize Time Complexity: O(n)
  * Serialize Space Complexity: O(n)
