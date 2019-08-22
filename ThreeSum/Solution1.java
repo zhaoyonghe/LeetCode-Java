@@ -19,6 +19,8 @@ public class Solution1 {
 			if (i > 0 && nums[i - 1] == nums[i]) {
 				continue;
 			}
+			
+			// two sum problem in an sorted array, O(n)
 			int start = i + 1;
 			int end = n - 1;
 			int target = -nums[i];
