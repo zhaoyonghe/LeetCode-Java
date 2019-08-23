@@ -1,7 +1,8 @@
 package SearchInRotatedSortedArrayII;
 /**
  * Assume n is nums.length
- * Time Complexity: O(logn)
+ * Best Time Complexity: O(logn)
+ * Worse Time Complexity: O(n), when almost every number in nums has same value.
  * Space Complexity: O(1)
  * Runtime: 0ms
  * Rank: 100.00%
@@ -34,6 +35,7 @@ public class Solution1 {
 					end = mid - 1;
 				}
 			} else {
+				// Performance of this algorithm is degraded when this situation happens.
 				start = start + 1;
 			}
 		}

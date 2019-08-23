@@ -1,9 +1,11 @@
 package LongestIncreasingSubsequence;
 
 import java.util.ArrayList;
+
 /**
- * Time Complexity: O(nums.length)
- * Space Complexity: O(nums.length)
+ * Assume n is nums.length.
+ * Time Complexity: O(nlogn)
+ * Space Complexity: O(n)
  * Runtime: 3ms
  * Rank: 80.68%
  */

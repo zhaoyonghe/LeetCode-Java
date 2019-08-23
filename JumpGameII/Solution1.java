@@ -20,9 +20,11 @@ public class Solution1 {
 			if (i + nums[i] <= frontier) {
 				continue;
 			}
+			// normalize the step 
 			if (nums[i] > nums.length - i - 1) {
 				nums[i] = nums.length - i - 1;
 			}
+			// extend the frontier
 			for (int j = frontier - i; j <= nums[i]; j++) {
 				jumpTimes[i + j] = Math.min(jumpTimes[i + j], jumpTimes[i] + 1);
 			}

@@ -22,19 +22,26 @@ public class Solution4 {
 				return mid;
 			}
 			if (nums[start] < nums[mid]) {
+				// the first half is ascending(sorted)
 				if (nums[start] <= target && target < nums[mid]) {
+					// target may in the first half 
 					end = mid - 1;
 				} else {
+					// target may in the second half
 					start = mid + 1;
 				}
 			} else if (nums[start] > nums[mid]) {
+				// the second half is ascending(sorted)
 				if (nums[mid] < target && target <= nums[end]) {
+					// target may in the second half
 					start = mid + 1;
 				} else {
+					// target may in the first half
 					end = mid - 1;
 				}
 			} else {
-				// start == mid
+				// nums[start] == nums[mid],
+				// which means start == mid and nums[start] != target,
 				// end - start = 0 or 1
 				start = start + 1;
 			}

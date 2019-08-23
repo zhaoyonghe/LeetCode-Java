@@ -7,6 +7,7 @@ package OddEvenLinkedList;
  */
 public class Solution2 {
 	public ListNode oddEvenList(ListNode head) {
+		// divide the list into two lists and then merge them
 		if (head == null) {
 			return null;
 		}

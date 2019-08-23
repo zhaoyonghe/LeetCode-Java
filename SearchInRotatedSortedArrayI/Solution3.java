@@ -22,6 +22,7 @@ public class Solution3 {
 				if (nums[mid] <= nums[0]) {
 					end = mid - 1;
 				} else {
+					// nums[mid] > nums[0]
 					if (nums[mid] > target) {
 						end = mid - 1;
 					} else if (nums[mid] < target) {

@@ -3,7 +3,7 @@ package IntersectionOfTwoArraysII;
 import java.util.Arrays;
 /**
  * Assume the length of nums1 is m, that of nums2 is n, m < n;
- * Time Complexity: O((m + n)logm)
+ * Time Complexity: O(mlogm + nlogm)
  * Space Complexity: O(m)
  * Runtime: 4ms
  * Rank: 87.01%
@@ -24,6 +24,7 @@ public class Solution1 {
 		int[] result = new int[small.length];
 		int index = 0;
 		for (int i = 0; i < big.length; i++) {
+			// find unvisited big[i] in small
 			int low = 0;
 			int high = small.length - 1;
 			while (low <= high) {
