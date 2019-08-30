@@ -16,6 +16,7 @@ public class Solution1 {
 			graph.add(edge);
 		}
 
+		// courses that is not available last time (will stay in the graph)
 		boolean[] coursesLastTime = new boolean[numCourses];
 		for (int i = 0; i < numCourses; i++) {
 			coursesLastTime[i] = true;
@@ -27,12 +28,14 @@ public class Solution1 {
 		int j = 0;
 
 		while (j < numCourses) {
+			// courses that is not available this time (will stay in the graph)
 			boolean[] coursesThisTime = new boolean[numCourses];
 
 			int count = 0;
 
 			for (int[] edge : graph) {
 				if (!coursesThisTime[edge[0]]) {
+					// if course edge[0] has indegree
 					count += 1;
 					coursesThisTime[edge[0]] = true;
 				}
@@ -45,6 +48,7 @@ public class Solution1 {
 			remainCourses = count;
 
 			for (int i = 0; i < numCourses; i++) {
+				// add to schedule only when this course is available (need to be removed from this graph) 
 				if (coursesLastTime[i] ^ coursesThisTime[i]) {
 					result[j] = i;
 					j += 1;

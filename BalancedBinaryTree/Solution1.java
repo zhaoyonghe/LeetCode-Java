@@ -23,6 +23,8 @@ public class Solution1 {
 			return -1;
 		}
 
+		// calculate the height of current tree from the height of left subtree and right subtree
+		// if the current tree is imbalance, return a special value
 		if (Math.abs(leftHeight - rightHeight) <= 1) {
 			return Math.max(leftHeight, rightHeight) + 1;
 		} else {

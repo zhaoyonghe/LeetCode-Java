@@ -3,6 +3,7 @@ package WordBreakI;
 import java.util.HashSet;
 import java.util.List;
 /**
+ * Assume s.length() is n.
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(n)
  * Runtime: 15ms

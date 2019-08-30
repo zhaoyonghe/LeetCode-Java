@@ -6,18 +6,22 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 /**
- * Time Complexity: O(|E|) + O(|V|)
- * Space Complexity: O(|E|) + O(|V|)
+ * Time Complexity: O(|E| + |V|)
+ * Space Complexity: O(|E| + |V|)
  * Runtime: 7ms
  * Rank: 9.70%
  */
 public class Solution1 {
 	public Node cloneGraph(Node node) {
+		// key: node
+		// value: the index of this node in the unfolded array 
 		HashMap<Node, Integer> map = new HashMap<>();
+		
 		int i = 0;
+		
 		Queue<Node> queue = new LinkedList<>();
 		queue.offer(node);
-		// O(|E|)
+		// unfold the graph to an array, O(|E|)
 		while (!queue.isEmpty()) {
 			Node tempNode = queue.poll();
 			if (!map.containsKey(tempNode)) {

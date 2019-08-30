@@ -1,5 +1,12 @@
 package NumberOfIslands;
 
+/**
+ * Time Complexity: O(m * n)
+ * Space Complexity: O(m * n)
+ * Runtime: 6ms
+ * Rank: 32.63%
+ */
+
 public class Solution1 {
 	public int numIslands(char[][] grid) {
 		if (grid == null || grid.length == 0 || grid[0].length == 0) {

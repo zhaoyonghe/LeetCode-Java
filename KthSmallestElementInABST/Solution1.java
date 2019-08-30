@@ -16,24 +16,29 @@ public class Solution1 {
 	}
 
 	public void levelOrder(TreeNode node, int k) {
+		// travel the left subtree
 		if (node.left != null) {
 			levelOrder(node.left, k);
 		}
 
+		// if meet the situation, stop every traversal
 		if (i == k) {
 			return;
 		}
 
+		// node.left == null && i != k
 		i += 1;
 		if (i == k) {
 			result = node.val;
 			return;
 		}
 
+		// travel the right subtree
 		if (node.right != null) {
 			levelOrder(node.right, k);
 		}
 
+		// if meet the situation, stop every traversal
 		if (i == k) {
 			return;
 		}

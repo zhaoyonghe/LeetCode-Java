@@ -29,6 +29,7 @@ public class MedianFinder {
 	}
 
 	public void addNum(int num) {
+		// abs(maxSz - minSz) will always be less or equals than 1
 		int maxSz = maxHeap.size();
 		int minSz = minHeap.size();
 
@@ -38,6 +39,7 @@ public class MedianFinder {
 		}
 
 		if (num <= maxHeap.peek()) {
+			// num should in the smaller half
 			if (maxSz > minSz) {
 				int temp = maxHeap.poll();
 				minHeap.add(temp);
@@ -52,6 +54,7 @@ public class MedianFinder {
 		}
 
 		if (num >= minHeap.peek()) {
+			// num should in the bigger half
 			if (minSz > maxSz) {
 				int temp = minHeap.poll();
 				maxHeap.add(temp);

@@ -1,6 +1,7 @@
 package MergeKSortedLists;
 /**
- * Time Complexity: O(m + nmlogm)
+ * Assume m is lists.length and n is the average length of the linked lists.
+ * Time Complexity: O(nmlogm)
  * Space Complexity: O(1)
  * Runtime: 9ms
  * Rank: 95.92%

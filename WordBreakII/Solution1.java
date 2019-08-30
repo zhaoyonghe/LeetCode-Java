@@ -2,7 +2,13 @@ package WordBreakII;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Assume s.length() is n.
+ * Time Complexity: O(n ^ 2)
+ * Space Complexity: O(n)
+ * Runtime: 5ms
+ * Rank: 99.10%
+ */
 public class Solution1 {
 	public List<String> wordBreak(String s, List<String> wordDict) {
 		List<String> result = new ArrayList<>();

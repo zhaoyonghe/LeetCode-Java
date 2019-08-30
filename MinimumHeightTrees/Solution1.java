@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 /**
- * Best Time Complexity: O(max(|V|, |E|))
- * Worst Time Complexity: O(max(|V| ^ 2, |E| ^ 2))
+ * Best Time Complexity: O(|E|)
+ * Worst Time Complexity: O(|E| ^ 2)
  * Space Complexity: O(|E|)
  * Runtime: 429ms
  * Rank: 19.10%
@@ -29,6 +29,7 @@ public class Solution1 {
 			nodeSet.add(i);
 		}
 
+		// remove the vertices that have only one degree, until less or equal than two vertices remains
 		while (nodeSet.size() > 2) {
 			List<int[]> newGraph = new ArrayList<>();
 

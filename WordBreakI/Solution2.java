@@ -3,6 +3,7 @@ package WordBreakI;
 import java.util.List;
 
 /**
+ * Assume s.length() is n.
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(n)
  * Runtime: 1ms
@@ -17,6 +18,8 @@ public class Solution2 {
 		if (start == dp.length) {
 			return true;
 		}
+		
+		// equals null means this part has not been calculated
 		if (dp[start] != null) {
 			return dp[start];
 		}

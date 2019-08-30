@@ -4,13 +4,14 @@ import java.util.List;
 import java.util.ArrayList;
 /**
  * Best Time Complexity: O(|E|)
- * Worst Time Complexity: O(|E| ^ 2)
+ * Worst Time Complexity: O(|E| ^ 2), when this graph is actually a linked list.
  * Space Complexity: O(|E|)
  * Runtime: 150ms
  * Rank: 14.42%
  */
 public class Solution1 {
 	public boolean canFinish(int numCourses, int[][] prerequisites) {
+		// edge: [a, b] a <- b
 		List<int[]> graph = new ArrayList<>();
 		for (int[] edge : prerequisites) {
 			graph.add(edge);
