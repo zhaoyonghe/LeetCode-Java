@@ -1,5 +1,46 @@
 package TopKFrequentElements;
 
-public class Solution3 {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+/**
+ * Assume n is nums.length.
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Runtime: 32ms
+ * Rank: 75.37%
+ */
+
+class Solution3 {
+	public List<Integer> topKFrequent(int[] nums, int k) {
+		Map<Integer, Integer> map = new HashMap<>();
+
+		for (int num : nums) {
+			if (map.containsKey(num)) {
+				map.put(num, map.get(num) + 1);
+			} else {
+				map.put(num, 1);
+			}
+		}
+
+		List<Integer>[] list = new List[nums.length];
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			if (list[entry.getValue() - 1] == null) {
+				list[entry.getValue() - 1] = new ArrayList<>();
+			}
+			list[entry.getValue() - 1].add(entry.getKey());
+		}
+
+		List<Integer> result = new ArrayList<>();
+
+		for (int i = nums.length - 1; i >= 0 && result.size() < k; i--) {
+			if (list[i] != null) {
+				result.addAll(list[i]);
+			}
+		}
+
+		return result;
+	}
 }

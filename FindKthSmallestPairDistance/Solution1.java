@@ -1,7 +1,7 @@
 package FindKthSmallestPairDistance;
 /**
  * Assume range is max(nums) - min(nums)
- * Time Complexity: O(range * log(range))
+ * Time Complexity: O(nums.length + range * log(range))
  * Space Complexity: O(range)
  * Runtime: 267ms
  * Rank: 24.39%
@@ -13,6 +13,7 @@ public class Solution1 {
 		int max = Integer.MIN_VALUE;
 		int min = Integer.MAX_VALUE;
 
+		// O(nums.length)
 		for (int i = 0; i < nums.length; i++) {
 			max = Math.max(max, nums[i]);
 			min = Math.min(min, nums[i]);
@@ -28,8 +29,10 @@ public class Solution1 {
 			return range;
 		}
 
+		// 0 <= distance <= range
 		int[] line = new int[range + 1];
 
+		// normalize the numbers and put them onto the line
 		for (int num : nums) {
 			line[num - min] += 1;
 		}
