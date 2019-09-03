@@ -31,6 +31,8 @@ public class Solution1 {
 			}
 			for (int i = sum - 1; i >= num; i--) {
 				// System.out.println(i - num);
+				// duplicate will be removed in this way
+				// because it is only based on the work done before
 				if (dp[i - num] == 1) {
 					dp[i] = 1;
 				}

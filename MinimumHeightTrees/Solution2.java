@@ -22,8 +22,12 @@ class Solution {
 			};
 		}
 
+		// n is |V|
+		
 		int[] connect = new int[n];
 		int[] degrees = new int[n];
+		
+		// O(|E|)
 		for (int[] edge : edges) {
 			degrees[edge[0]] += 1;
 			degrees[edge[1]] += 1;
@@ -33,6 +37,7 @@ class Solution {
 		}
 
 		Queue<Integer> queue = new LinkedList<>();
+		// O(|V|)
 		for (int i = 0; i < n; i++) {
 			if (degrees[i] == 1) {
 				queue.offer(i);
@@ -40,7 +45,10 @@ class Solution {
 		}
 
 		while (n > 2) {
+			// when nodes remain is greater than 2
 			int size = queue.size();
+			// this loop will delete all nodes which degree are 1
+			// and add all nodes which degree are 1 after this round of delete into queue
 			for (int i = 0; i < size; i++) {
 				int v1 = queue.poll();
 				n -= 1;

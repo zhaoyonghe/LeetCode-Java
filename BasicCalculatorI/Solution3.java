@@ -49,6 +49,7 @@ class Solution3 {
 				num = stack.pop() * num + stack.pop();
 				i += 1;
 			} else {
+				// s.charAt(i) == ' '
 				i += 1;
 			}
 		}

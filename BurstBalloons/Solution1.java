@@ -18,6 +18,7 @@ class Solution1 {
             return nums[0];
         }
         
+        // dp[i][j] means the result of nums[i: j]
         int[][] dp = new int[n][n];
         
         for(int i = 0; i < n; i++){
@@ -29,7 +30,11 @@ class Solution1 {
                 int start = i;
                 int end = i + len;
                 int max = -1;
+                
+                // get the result of nums[start: end]
                 for(int j = start; j <= end; j++){
+                	// temp consists of dp[start][j - 1], dp[j + 1][end] 
+                	// and get(nums, start - 1) * get(nums, end + 1) * get(nums, j)
                     int temp = 0;
                     if(j > start){
                         temp += dp[start][j - 1];

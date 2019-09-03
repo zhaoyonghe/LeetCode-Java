@@ -35,6 +35,10 @@ class Solution2 {
 			} else {
 				// count >= k
 				high = mid;
+				// mid may be the result
+				// we need to check whether or not count >= k when distance is mid - 1
+				// if count < k, mid is the answer
+				// if count >= k, distance smaller than mid - 1 should be the answer
 			}
 		}
 

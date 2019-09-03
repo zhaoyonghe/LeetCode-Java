@@ -10,7 +10,7 @@ import java.util.Map;
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  * Runtime: 32ms
- * Rank: 75.37%
+ * Rank: 78.36%
  */
 
 class Solution3 {
@@ -25,6 +25,7 @@ class Solution3 {
 			}
 		}
 
+		// list[i] stores the list of numbers that has frequency of i
 		List<Integer>[] list = new List[nums.length];
 		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 			if (list[entry.getValue() - 1] == null) {
@@ -35,6 +36,8 @@ class Solution3 {
 
 		List<Integer> result = new ArrayList<>();
 
+		// k is always valid
+		// do not need to truncate the result
 		for (int i = nums.length - 1; i >= 0 && result.size() < k; i--) {
 			if (list[i] != null) {
 				result.addAll(list[i]);

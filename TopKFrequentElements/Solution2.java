@@ -55,6 +55,8 @@ class Solution2 {
 			}
 		}
 
+		// maintain two heaps
+		// these two heaps should be modified at the same way
 		for (int i = k / 2; i > 0; i--) {
 			heapify(nums, counts, i, k);
 		}

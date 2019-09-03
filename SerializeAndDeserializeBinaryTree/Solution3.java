@@ -24,6 +24,7 @@ public class Solution3 {
 	}
 
 	public void serialize(TreeNode root, StringBuilder sb) {
+		// collect nodes in pre-order traversal
 		if (root == null) {
 			sb.append("N,");
 		} else {
@@ -41,6 +42,7 @@ public class Solution3 {
 	}
 
 	public TreeNode deserialize(Queue<String> queue) {
+		// retrieve nodes in pre-order traversal
 		String s = queue.poll();
 		if (s.equals("N")) {
 			return null;

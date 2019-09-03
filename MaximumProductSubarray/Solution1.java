@@ -9,6 +9,8 @@ package MaximumProductSubarray;
 
 public class Solution1 {
 	public int maxProduct(int[] nums) {
+		// if all numbers in nums are not zero
+		// then the max product array must consists the first or the last element in nums
 		if (nums.length == 1) {
 			return nums[0];
 		}
