@@ -1,4 +1,4 @@
-package PathSum;
+package PathSumI;
 /**
  * Assume the number of nodes in root is n.
  * Time Complexity: O(n)
