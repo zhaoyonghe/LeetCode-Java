@@ -2,8 +2,8 @@ package CoinChangeII;
 /**
  * Time Complexity: O(coins.length * amount)
  * Space Complexity: O(amount)
- * Runtime: 6ms
- * Rank: 73.87%
+ * Runtime: 2ms
+ * Rank: 99.85%
  */
 public class Solution1 {
 	public int change(int amount, int[] coins) {
