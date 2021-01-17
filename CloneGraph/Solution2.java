@@ -13,30 +13,30 @@ import java.util.Map;
 
 class Solution2 {
     public Node cloneGraph(Node node) {
-        if(node == null){
+        if (node == null) {
             return null;
         }
         Map<Node, Node> map = new HashMap<>();
-        
+
         return dfs(node, map);
-        
+
     }
-    
-    public Node dfs(Node node, Map<Node, Node> map){
+
+    public Node dfs(Node node, Map<Node, Node> map) {
         Node cNode = null;
-        if(map.containsKey(node)){
+        if (map.containsKey(node)) {
             cNode = map.get(node);
             return cNode;
-        } else{
+        } else {
             cNode = new Node(node.val, new ArrayList<Node>());
             map.put(node, cNode);
         }
-        
+
         // explore the adjacent vertices
-        for(Node neighbor: node.neighbors){
+        for (Node neighbor : node.neighbors) {
             cNode.neighbors.add(dfs(neighbor, map));
         }
-        
+
         return cNode;
     }
 }

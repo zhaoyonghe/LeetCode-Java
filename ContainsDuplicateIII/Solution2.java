@@ -11,29 +11,29 @@ import java.util.TreeSet;
  */
 
 class Solution2 {
-	public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-		if (t < 0) {
-			return false;
-		}
-		TreeSet<Integer> set = new TreeSet<>();
+    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+        if (t < 0) {
+            return false;
+        }
+        TreeSet<Integer> set = new TreeSet<>();
 
-		for (int i = 0; i < nums.length; i++) {
-			Integer lower = set.floor(nums[i]);
-			if (lower != null && Math.abs((long) lower - (long) nums[i]) <= (long) t) {
-				return true;
-			}
+        for (int i = 0; i < nums.length; i++) {
+            Integer lower = set.floor(nums[i]);
+            if (lower != null && Math.abs((long) lower - (long) nums[i]) <= (long) t) {
+                return true;
+            }
 
-			Integer higher = set.ceiling(nums[i]);
-			if (higher != null && Math.abs((long) higher - (long) nums[i]) <= (long) t) {
-				return true;
-			}
-			set.add(nums[i]);
+            Integer higher = set.ceiling(nums[i]);
+            if (higher != null && Math.abs((long) higher - (long) nums[i]) <= (long) t) {
+                return true;
+            }
+            set.add(nums[i]);
 
-			if (i >= k) {
-				set.remove(nums[i - k]);
-			}
+            if (i >= k) {
+                set.remove(nums[i - k]);
+            }
 
-		}
-		return false;
-	}
+        }
+        return false;
+    }
 }

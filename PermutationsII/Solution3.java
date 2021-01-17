@@ -2,6 +2,7 @@ package PermutationsII;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Assume n is nums.length.
  * Time Complexity: O(n * n!)
@@ -16,28 +17,28 @@ public class Solution3 {
         permuteUnique(nums, 0, list);
         return list;
     }
-    
-    public void permuteUnique(int[] nums, int start, List<List<Integer>> list){
-        if(start == nums.length - 1){
+
+    public void permuteUnique(int[] nums, int start, List<List<Integer>> list) {
+        if (start == nums.length - 1) {
             List<Integer> tempList = new ArrayList<>(nums.length);
-            for(int num: nums){
+            for (int num : nums) {
                 tempList.add(num);
             }
             list.add(tempList);
         } else {
             // start < nums.length
-            for(int i = start; i < nums.length; i++){
+            for (int i = start; i < nums.length; i++) {
                 // do not do useless swap
                 boolean isContinue = false;
-                for(int j = start; j < i; j++){
-                    if(nums[j] == nums[i]){
-                    	// nums[i] used to be the first one
-                    	// do not swap
+                for (int j = start; j < i; j++) {
+                    if (nums[j] == nums[i]) {
+                        // nums[i] used to be the first one
+                        // do not swap
                         isContinue = true;
                         break;
                     }
                 }
-                if(isContinue){
+                if (isContinue) {
                     continue;
                 }
                 swap(nums, start, i);
@@ -45,10 +46,10 @@ public class Solution3 {
                 swap(nums, start, i);
             }
         }
-        
+
     }
-    
-    public void swap(int a[], int i, int j){
+
+    public void swap(int a[], int i, int j) {
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;

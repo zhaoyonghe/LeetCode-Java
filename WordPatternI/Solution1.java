@@ -10,38 +10,38 @@ import java.util.Set;
  * Rank: 100.00%
  */
 public class Solution1 {
-	public boolean wordPattern(String pattern, String str) {
-		String[] strs = str.split(" ");
+    public boolean wordPattern(String pattern, String str) {
+        String[] strs = str.split(" ");
 
-		if (pattern.length() != strs.length) {
-			return false;
-		}
+        if (pattern.length() != strs.length) {
+            return false;
+        }
 
-		String[] map = new String[26];
+        String[] map = new String[26];
 
-		for (int i = 0; i < pattern.length(); i++) {
-			char c = pattern.charAt(i);
-			if (map[c - 'a'] != null) {
-				if (!map[c - 'a'].equals(strs[i])) {
-					return false;
-				}
-			} else {
-				map[c - 'a'] = strs[i];
-			}
-		}
+        for (int i = 0; i < pattern.length(); i++) {
+            char c = pattern.charAt(i);
+            if (map[c - 'a'] != null) {
+                if (!map[c - 'a'].equals(strs[i])) {
+                    return false;
+                }
+            } else {
+                map[c - 'a'] = strs[i];
+            }
+        }
 
-		Set<String> set = new HashSet<>();
+        Set<String> set = new HashSet<>();
 
-		for (String s : map) {
-			if (s != null) {
-				if (set.contains(s)) {
-					return false;
-				} else {
-					set.add(s);
-				}
-			}
-		}
+        for (String s : map) {
+            if (s != null) {
+                if (set.contains(s)) {
+                    return false;
+                } else {
+                    set.add(s);
+                }
+            }
+        }
 
-		return true;
-	}
+        return true;
+    }
 }

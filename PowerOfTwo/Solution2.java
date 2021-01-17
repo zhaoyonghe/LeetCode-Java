@@ -1,4 +1,5 @@
 package PowerOfTwo;
+
 /**
  * Time Complexity: O(1)
  * Space Complexity: O(1)
@@ -6,12 +7,12 @@ package PowerOfTwo;
  * Rank: 100.00%
  */
 public class Solution2 {
-	class Solution {
-		public boolean isPowerOfTwo(int n) {
-			if (n <= 0) {
-				return false;
-			}
-			return (n & (n - 1)) == 0;
-		}
-	}
+    class Solution {
+        public boolean isPowerOfTwo(int n) {
+            if (n <= 0) {
+                return false;
+            }
+            return (n & (n - 1)) == 0;
+        }
+    }
 }

@@ -12,62 +12,62 @@ import java.util.LinkedList;
 
 
 class Solution3 {
-	public int calculate(String s) {
-		if (s == null || s.length() == 0) {
-			return 0;
-		}
+    public int calculate(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
 
-		int len = s.length();
+        int len = s.length();
 
-		LinkedList<Integer> stack = new LinkedList<>();
+        LinkedList<Integer> stack = new LinkedList<>();
 
-		int num = 0;
-		char sign = '+';
+        int num = 0;
+        char sign = '+';
 
-		int i = 0;
+        int i = 0;
 
-		while (i <= len) {
-			if (i < len && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
-				while (i < len && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
-					num *= 10;
-					num += (s.charAt(i) - '0');
+        while (i <= len) {
+            if (i < len && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+                while (i < len && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+                    num *= 10;
+                    num += (s.charAt(i) - '0');
 
-					i += 1;
-				}
-				continue;
-			}
+                    i += 1;
+                }
+                continue;
+            }
 
-			if (i == len || s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '*' || s.charAt(i) == '/') {
-				// sign is the operator just before s.charAt(i)
-				// num is the number just before s.charAt(i)
-				switch (sign) {
-				case '+':
-					stack.push(num);
-					break;
-				case '-':
-					stack.push(-num);
-					break;
-				case '*':
-					stack.push(stack.pop() * num);
-					break;
-				case '/':
-					stack.push(stack.pop() / num);
-					break;
-				}
-				sign = (i == len ? '+' : s.charAt(i));
-				num = 0;
-			}
+            if (i == len || s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '*' || s.charAt(i) == '/') {
+                // sign is the operator just before s.charAt(i)
+                // num is the number just before s.charAt(i)
+                switch (sign) {
+                    case '+':
+                        stack.push(num);
+                        break;
+                    case '-':
+                        stack.push(-num);
+                        break;
+                    case '*':
+                        stack.push(stack.pop() * num);
+                        break;
+                    case '/':
+                        stack.push(stack.pop() / num);
+                        break;
+                }
+                sign = (i == len ? '+' : s.charAt(i));
+                num = 0;
+            }
 
-			i += 1;
-		}
+            i += 1;
+        }
 
-		stack.push(num);
+        stack.push(num);
 
-		int result = 0;
-		for (int j : stack) {
-			result += j;
-		}
+        int result = 0;
+        for (int j : stack) {
+            result += j;
+        }
 
-		return result;
-	}
+        return result;
+    }
 }

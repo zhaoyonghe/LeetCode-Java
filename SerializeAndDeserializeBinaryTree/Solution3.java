@@ -16,42 +16,42 @@ import java.util.Queue;
 
 public class Solution3 {
 
-	// Encodes a tree to a single string.
-	public String serialize(TreeNode root) {
-		StringBuilder sb = new StringBuilder();
-		serialize(root, sb);
-		return sb.toString();
-	}
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        StringBuilder sb = new StringBuilder();
+        serialize(root, sb);
+        return sb.toString();
+    }
 
-	public void serialize(TreeNode root, StringBuilder sb) {
-		// collect nodes in pre-order traversal
-		if (root == null) {
-			sb.append("N,");
-		} else {
-			sb.append(String.valueOf(root.val)).append(",");
-			serialize(root.left, sb);
-			serialize(root.right, sb);
-		}
-	}
+    public void serialize(TreeNode root, StringBuilder sb) {
+        // collect nodes in pre-order traversal
+        if (root == null) {
+            sb.append("N,");
+        } else {
+            sb.append(String.valueOf(root.val)).append(",");
+            serialize(root.left, sb);
+            serialize(root.right, sb);
+        }
+    }
 
-	// Decodes your encoded data to tree.
-	public TreeNode deserialize(String data) {
-		Queue<String> queue = new LinkedList<>();
-		queue.addAll(Arrays.asList(data.split(",")));
-		return deserialize(queue);
-	}
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        Queue<String> queue = new LinkedList<>();
+        queue.addAll(Arrays.asList(data.split(",")));
+        return deserialize(queue);
+    }
 
-	public TreeNode deserialize(Queue<String> queue) {
-		// retrieve nodes in pre-order traversal
-		String s = queue.poll();
-		if (s.equals("N")) {
-			return null;
-		} else {
-			int val = Integer.valueOf(s);
-			TreeNode node = new TreeNode(val);
-			node.left = deserialize(queue);
-			node.right = deserialize(queue);
-			return node;
-		}
-	}
+    public TreeNode deserialize(Queue<String> queue) {
+        // retrieve nodes in pre-order traversal
+        String s = queue.poll();
+        if (s.equals("N")) {
+            return null;
+        } else {
+            int val = Integer.valueOf(s);
+            TreeNode node = new TreeNode(val);
+            node.left = deserialize(queue);
+            node.right = deserialize(queue);
+            return node;
+        }
+    }
 }

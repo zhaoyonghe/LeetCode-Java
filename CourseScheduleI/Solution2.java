@@ -13,49 +13,49 @@ import java.util.Set;
  */
 
 class Solution2 {
-	public boolean canFinish(int numCourses, int[][] prerequisites) {
-		// initialize the adjacent list, O(|V|)
-		ArrayList<Integer>[] graph = (ArrayList<Integer>[]) new ArrayList[numCourses];
-		for (int i = 0; i < numCourses; i++) {
-			graph[i] = new ArrayList<Integer>();
-		}
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        // initialize the adjacent list, O(|V|)
+        ArrayList<Integer>[] graph = (ArrayList<Integer>[]) new ArrayList[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            graph[i] = new ArrayList<Integer>();
+        }
 
-		// construct the adjacent list, O(|E|)
-		for (int[] edge : prerequisites) {
-			graph[edge[1]].add(edge[0]);
-		}
+        // construct the adjacent list, O(|E|)
+        for (int[] edge : prerequisites) {
+            graph[edge[1]].add(edge[0]);
+        }
 
-		boolean[] visited = new boolean[numCourses];
+        boolean[] visited = new boolean[numCourses];
 
-		Set<Integer> visiting = new HashSet<Integer>();
+        Set<Integer> visiting = new HashSet<Integer>();
 
-		// O(|E| + |V|)
-		for (int i = 0; i < numCourses; i++) {
-			if (!visited[i] && !dfs(graph, visited, visiting, i)) {
-				return false;
-			}
-		}
+        // O(|E| + |V|)
+        for (int i = 0; i < numCourses; i++) {
+            if (!visited[i] && !dfs(graph, visited, visiting, i)) {
+                return false;
+            }
+        }
 
-		return true;
-	}
+        return true;
+    }
 
-	public boolean dfs(List<Integer>[] graph, boolean[] visited, Set<Integer> visiting, int i) {
-		if (visiting.contains(i)) {
-			// this graph contains cycle
-			return false;
-		}
+    public boolean dfs(List<Integer>[] graph, boolean[] visited, Set<Integer> visiting, int i) {
+        if (visiting.contains(i)) {
+            // this graph contains cycle
+            return false;
+        }
 
-		visiting.add(i);
+        visiting.add(i);
 
-		for (int j = 0; j < graph[i].size(); j++) {
-			if (!visited[graph[i].get(j)] && !dfs(graph, visited, visiting, graph[i].get(j))) {
-				return false;
-			}
-		}
+        for (int j = 0; j < graph[i].size(); j++) {
+            if (!visited[graph[i].get(j)] && !dfs(graph, visited, visiting, graph[i].get(j))) {
+                return false;
+            }
+        }
 
-		visited[i] = true;
-		visiting.remove(i);
+        visited[i] = true;
+        visiting.remove(i);
 
-		return true;
-	}
+        return true;
+    }
 }

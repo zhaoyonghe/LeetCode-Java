@@ -1,4 +1,5 @@
 package BestTimeToBuyAndSellStockWithTransactionFee;
+
 /**
  * Assume n is prices.length.
  * Time Complexity: O(n * k)
@@ -8,12 +9,12 @@ package BestTimeToBuyAndSellStockWithTransactionFee;
  */
 class Solution1 {
     public int maxProfit(int[] prices, int fee) {
-        if(prices.length < 2){
+        if (prices.length < 2) {
             return 0;
         }
-        
+
         int k = prices.length / 2;
-        
+
         int trans = k + 1;
         int days = prices.length;
 

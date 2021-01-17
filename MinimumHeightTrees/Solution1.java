@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 /**
  * Best Time Complexity: O(|E|)
  * Worst Time Complexity: O(|E| ^ 2)
@@ -12,52 +13,52 @@ import java.util.Set;
  * Rank: 19.10%
  */
 public class Solution1 {
-	public List<Integer> findMinHeightTrees(int n, int[][] edges) {
-		List<int[]> graph = new ArrayList<>();
-		for (int[] edge : edges) {
-			graph.add(edge);
-		}
+    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+        List<int[]> graph = new ArrayList<>();
+        for (int[] edge : edges) {
+            graph.add(edge);
+        }
 
-		int[] degrees = new int[n];
-		for (int[] edge : graph) {
-			degrees[edge[0]] += 1;
-			degrees[edge[1]] += 1;
-		}
+        int[] degrees = new int[n];
+        for (int[] edge : graph) {
+            degrees[edge[0]] += 1;
+            degrees[edge[1]] += 1;
+        }
 
-		Set<Integer> nodeSet = new HashSet<>();
-		for (int i = 0; i < n; i++) {
-			nodeSet.add(i);
-		}
+        Set<Integer> nodeSet = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            nodeSet.add(i);
+        }
 
-		// remove the vertices that have only one degree, until less or equal than two vertices remains
-		while (nodeSet.size() > 2) {
-			List<int[]> newGraph = new ArrayList<>();
+        // remove the vertices that have only one degree, until less or equal than two vertices remains
+        while (nodeSet.size() > 2) {
+            List<int[]> newGraph = new ArrayList<>();
 
-			int[] minusDegree = new int[n];
+            int[] minusDegree = new int[n];
 
-			for (int[] edge : graph) {
-				if (degrees[edge[0]] == 1 || degrees[edge[1]] == 1) {
-					minusDegree[edge[0]] += 1;
-					minusDegree[edge[1]] += 1;
-					if (degrees[edge[0]] == 1) {
-						nodeSet.remove(edge[0]);
-					} else {
-						nodeSet.remove(edge[1]);
-					}
-				} else {
-					newGraph.add(edge);
-				}
-			}
+            for (int[] edge : graph) {
+                if (degrees[edge[0]] == 1 || degrees[edge[1]] == 1) {
+                    minusDegree[edge[0]] += 1;
+                    minusDegree[edge[1]] += 1;
+                    if (degrees[edge[0]] == 1) {
+                        nodeSet.remove(edge[0]);
+                    } else {
+                        nodeSet.remove(edge[1]);
+                    }
+                } else {
+                    newGraph.add(edge);
+                }
+            }
 
-			graph = newGraph;
+            graph = newGraph;
 
-			for (int i = 0; i < n; i++) {
-				degrees[i] -= minusDegree[i];
-			}
-		}
+            for (int i = 0; i < n; i++) {
+                degrees[i] -= minusDegree[i];
+            }
+        }
 
-		List<Integer> result = new ArrayList<>(nodeSet);
+        List<Integer> result = new ArrayList<>(nodeSet);
 
-		return result;
-	}
+        return result;
+    }
 }

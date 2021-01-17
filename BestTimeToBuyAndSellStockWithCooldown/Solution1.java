@@ -1,4 +1,5 @@
 package BestTimeToBuyAndSellStockWithCooldown;
+
 /**
  * Assume n is prices.length.
  * Time Complexity: O(n * k)
@@ -7,37 +8,37 @@ package BestTimeToBuyAndSellStockWithCooldown;
  * Rank: 93.52%
  */
 class Solution1 {
-	public int maxProfit(int[] prices) {
-		if (prices.length < 2) {
-			return 0;
-		}
+    public int maxProfit(int[] prices) {
+        if (prices.length < 2) {
+            return 0;
+        }
 
-		int k = prices.length / 2;
+        int k = prices.length / 2;
 
-		int trans = k + 1;
-		int days = prices.length;
+        int trans = k + 1;
+        int days = prices.length;
 
-		int[] hold = new int[days];
+        int[] hold = new int[days];
 
-		int[] unhold = new int[days];
+        int[] unhold = new int[days];
 
-		hold[0] = -prices[0];
-		for (int day = 1; day < days; day++) {
-			hold[day] = Math.max(hold[day - 1], -prices[day]);
-		}
+        hold[0] = -prices[0];
+        for (int day = 1; day < days; day++) {
+            hold[day] = Math.max(hold[day - 1], -prices[day]);
+        }
 
-		for (int tran = 1; tran < trans; tran++) {
-			int lastResult = unhold[days - 1];
-			for (int day = 1; day < days; day++) {
-				unhold[day] = Math.max(unhold[day - 1], hold[day - 1] + prices[day]);
-				hold[day] = Math.max(hold[day - 1], unhold[day >= 2 ? day - 2 : day - 1] - prices[day]);
-			}
+        for (int tran = 1; tran < trans; tran++) {
+            int lastResult = unhold[days - 1];
+            for (int day = 1; day < days; day++) {
+                unhold[day] = Math.max(unhold[day - 1], hold[day - 1] + prices[day]);
+                hold[day] = Math.max(hold[day - 1], unhold[day >= 2 ? day - 2 : day - 1] - prices[day]);
+            }
 
-			if (unhold[days - 1] == lastResult) {
-				return lastResult;
-			}
-		}
+            if (unhold[days - 1] == lastResult) {
+                return lastResult;
+            }
+        }
 
-		return unhold[days - 1];
-	}
+        return unhold[days - 1];
+    }
 }

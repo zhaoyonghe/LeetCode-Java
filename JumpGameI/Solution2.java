@@ -1,4 +1,5 @@
 package JumpGameI;
+
 /**
  * Assume nums.length is n.
  * Time Complexity: O(n)
@@ -7,33 +8,33 @@ package JumpGameI;
  * Rank: 100.00%
  */
 public class Solution2 {
-	public boolean canJump(int[] nums) {
-		if (nums.length == 1) {
-			return true;
-		}
+    public boolean canJump(int[] nums) {
+        if (nums.length == 1) {
+            return true;
+        }
 
-		int n = nums.length;
+        int n = nums.length;
 
-		int i = 0;
+        int i = 0;
 
-		// the farthest frontier until now
-		int j = 0;
+        // the farthest frontier until now
+        int j = 0;
 
-		while (i <= j) {
+        while (i <= j) {
 
-			if (j < i + nums[i]) {
-				// update the farthest frontier
-				j = i + nums[i];
-				// judge
-				if (j >= n - 1) {
-					return true;
-				}
-			}
+            if (j < i + nums[i]) {
+                // update the farthest frontier
+                j = i + nums[i];
+                // judge
+                if (j >= n - 1) {
+                    return true;
+                }
+            }
 
-			i++;
-		}
+            i++;
+        }
 
-		return false;
+        return false;
 
-	}
+    }
 }
