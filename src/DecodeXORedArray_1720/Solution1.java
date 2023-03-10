@@ -1,0 +1,20 @@
+package DecodeXORedArray_1720;
+
+/**
+ * Assume encoded.length is n.
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Runtime: 1ms
+ * Rank: 100.00%
+ */
+
+public class Solution1 {
+    public int[] decode(int[] encoded, int first) {
+        int[] res = new int[encoded.length + 1];
+        res[0] = first;
+        for (int i = 0; i < encoded.length; i++) {
+            res[i + 1] = res[i] ^ encoded[i];
+        }
+        return res;
+    }
+}
