@@ -1,8 +1,5 @@
-# How to get [LeetCodeProblemSet.json](LeetCodeProblemSet.json)
-```shell
-curl -s https://leetcode.com/api/problems/all/
-```
-# Convert
-```shell
-cat LeetCodeProblemSet.json | jq '.stat_status_pairs[].stat | {id:.frontend_question_id,title:.question__title, url:("https://leetcode.com/problems/"+.question__title_slug)}' | jq --slurp '. | sort_by(.id)' > LeetCodeProblemSet_simplified.json
-```
+Get full problem set data by [fetch.sh](fetch.sh).
+
+Simplify the full problem set data by [simplify.sh](simplify.sh).
+
+Check if `arr[i]` stores problem object with id `i` by [validate.sh](validate.sh).
