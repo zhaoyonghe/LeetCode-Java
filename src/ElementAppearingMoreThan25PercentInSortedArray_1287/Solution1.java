@@ -1,4 +1,4 @@
-package ElementAppearingMoreThan_25Percent_InSortedArray_1287;
+package ElementAppearingMoreThan25PercentInSortedArray_1287;
 
 /**
  * Assume n is arr.length.
