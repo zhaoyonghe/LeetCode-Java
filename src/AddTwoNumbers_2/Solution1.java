@@ -1,10 +1,8 @@
 package AddTwoNumbers_2;
 /**
- * Assume n is the length of longest linked list.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Assume n is the length of the longest linked list.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {

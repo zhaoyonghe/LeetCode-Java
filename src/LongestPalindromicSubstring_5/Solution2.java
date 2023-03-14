@@ -1,10 +1,9 @@
 package LongestPalindromicSubstring_5;
 
 /**
- * Time Complexity: O(n^2)
- * Space Complexity: O(1)
- * Runtime: 23ms
- * Rank: 91.61%
+ * $$ Assume n is the length of s.
+ * $$ Time Complexity: O(n^2)
+ * $$ Space Complexity: O(1)
  */
 public class Solution2 {
     public String longestPalindrome(String s) {
