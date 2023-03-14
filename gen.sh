@@ -7,11 +7,11 @@ cat <<EOF > README.md
 | --- | --- | --- |
 EOF
 
-for dir in $(ls src | grep '_'); do
+for dir in src/*_*; do
   id=$(echo $dir | cut -d '_' -f2)
   solstr=""
   i=0
-  for sol in src/$dir/*; do
+  for sol in $dir/*; do
     ((i = i + 1))
     solstr+="[Solution$i]($sol), "
   done
