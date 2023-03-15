@@ -1,6 +1,6 @@
 | ID | Name | Solutions |
 | --- | --- | --- |
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [Solution1](src/AddTwoNumbers_2/Solution1.java) <br>Assume n is the length of the longest linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [Solution1](src/AddTwoNumbers_2/Solution1.java) <br>Assume n is the length of the longest linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br> |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution1](src/AllNodesDistanceKInBinaryTree_863/Solution1.java) <br> |
 | 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution1](src/AsteroidCollision_735/Solution1.java) <br> |
@@ -45,11 +45,11 @@
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | [Solution1](src/ConvertSortedArrayToBinarySearchTree_108/Solution1.java) <br> |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [Solution1](src/CopyListWithRandomPointer_138/Solution1.java) <br> |
 | 696 | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings) | [Solution1](src/CountBinarySubstrings_696/Solution1.java) <br> |
-| 1148 | [Article Views I](https://leetcode.com/problems/article-views-i) | [Solution1](src/CountGoodNodesInBinaryTree_1148/Solution1.java) <br> |
+| 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree) | [Solution1](src/CountGoodNodesInBinaryTree_1448/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [Solution1](src/CountOfRangeSum_327/Solution1.java) <br> |
 | 315 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | [Solution1](src/CountOfSmallerNumbersAfterSelf_315/Solution1.java) <br> |
-| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | [Solution1](src/CourseScheduleII_210/Solution1.java) <br> |
-| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution1](src/CourseScheduleI_207/Solution1.java) <br> |
+| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | [Solution1](src/CourseScheduleII_210/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution1](src/CourseScheduleI_207/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | [Solution1](src/DailyTemperatures_739/Solution1.java) <br> |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | [Solution1](src/DecodeString_394/Solution1.java) <br> |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution1](src/DecodeWays_91/Solution1.java) <br>[Solution2](src/DecodeWays_91/Solution2.java) <br> |

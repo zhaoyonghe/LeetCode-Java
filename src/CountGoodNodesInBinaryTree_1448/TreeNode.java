@@ -1,4 +1,4 @@
-package CountGoodNodesInBinaryTree_1148;
+package CountGoodNodesInBinaryTree_1448;
 
 public class TreeNode {
     int val;
