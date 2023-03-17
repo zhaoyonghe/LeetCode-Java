@@ -1,8 +1,8 @@
 | ID | Name | Solutions |
 | --- | --- | --- |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [Solution1](src/AddTwoNumbers_2/Solution1.java) <br>Assume n is the length of the longest linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
-| 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br> |
-| 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution1](src/AllNodesDistanceKInBinaryTree_863/Solution1.java) <br> |
+| 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br>Assume n is the number of characters in words.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution1](src/AllNodesDistanceKInBinaryTree_863/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br>[Solution2](src/AllNodesDistanceKInBinaryTree_863/Solution2.java) <br>Assume the nodes count of root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution1](src/AsteroidCollision_735/Solution1.java) <br> |
 | 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/BeautifulArrangement_526/Solution1.java) <br> |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | [Solution1](src/BestTimeToBuyAndSellStockIII_123/Solution1.java) <br>[Solution2](src/BestTimeToBuyAndSellStockIII_123/Solution2.java) <br>[Solution3](src/BestTimeToBuyAndSellStockIII_123/Solution3.java) <br>[Solution4](src/BestTimeToBuyAndSellStockIII_123/Solution4.java) <br> |
