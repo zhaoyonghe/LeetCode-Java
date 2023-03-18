@@ -3,11 +3,9 @@ package BinaryTreePreorderTraversal_144;
 import java.util.*;
 
 /**
- * Assume n is the number of nodes in the tree root.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume the nodes count of root is n, height is h.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(h)
  */
 public class Solution2 {
     public List<Integer> preorderTraversal(TreeNode root) {

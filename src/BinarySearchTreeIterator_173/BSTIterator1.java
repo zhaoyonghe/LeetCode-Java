@@ -4,41 +4,36 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Assume the number of the nodes in root is n and the tree height is h.
- * next() Amortized Time Complexity: O(1)
- * hasNext() Amortized Time Complexity: O(1)
- * Space Complexity: O(h)
- * Runtime: 14ms
- * Rank: 99.33%
+ * $$ Assume the nodes count of root is n, height is h.
+ * $$ next() Amortized Time Complexity: O(1)
+ * $$ hasNext() Amortized Time Complexity: O(1)
+ * $$ Space Complexity: O(h)
  */
 
 class BSTIterator1 {
-    private Deque<TreeNode> stack = new ArrayDeque<>();
-    private TreeNode cur;
+    private Deque<TreeNode> st = new ArrayDeque<>();
 
     public BSTIterator1(TreeNode root) {
-        cur = root;
-    }
-
-    public int next() {
-        int res;
-        while(true) {
-            if (cur != null) {
-                stack.push(cur);
-                cur = cur.left;
-            } else if (!this.stack.isEmpty()) {
-                cur = stack.pop();
-                res = cur.val;
-                cur = cur.right;
-                return res;
-            } else {
-                return -1;
-            }
+        TreeNode cur = root;
+        while (cur != null) {
+            this.st.push(cur);
+            cur = cur.left;
         }
     }
 
+    public int next() {
+        TreeNode node = this.st.pop();
+        int val = node.val;
+        TreeNode cur = node.right;
+        while (cur != null) {
+            this.st.push(cur);
+            cur = cur.left;
+        }
+        return val;
+    }
+
     public boolean hasNext() {
-        return cur != null || !this.stack.isEmpty();
+        return !st.isEmpty();
     }
 }
 
