@@ -1,33 +1,35 @@
 package GroupAnagrams_49;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
- * Time Complexity: O(strs.length * max length of words in strs * log(max length of words in strs))
- * Space Complexity: O(strs.length * average length of words in strs) or O(number of characters in strs)
- * Runtime: 5ms
- * Rank: 99.23%
+ * $$ Assume the count of characters in strs is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public List<List<String>> groupAnagrams(String[] strs) {
-        HashMap<String, Integer> map = new HashMap<>();
-        List<List<String>> res = new ArrayList<>();
-        for (String s : strs) {
-            char[] temp = s.toCharArray();
-            Arrays.sort(temp);
-            String feature = new String(temp);
-            if (map.containsKey(feature)) {
-                res.get(map.get(feature)).add(s);
-            } else {
-                map.put(feature, res.size());
-                res.add(new ArrayList<String>() {{
-                    add(s);
-                }});
-            }
+        Map<String, List<String>> map = new HashMap<>();
+        for (String str : strs) {
+            String sig = signature(str);
+            map.putIfAbsent(sig, new ArrayList<>());
+            map.get(sig).add(str);
         }
-        return res;
+        return new ArrayList<>(map.values());
+    }
+
+    private String signature(String s) {
+        int[] map = new int[26];
+        for (char c : s.toCharArray()) {
+            map[c-'a']++;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 26; i++) {
+            if (map[i] == 0) {
+                continue;
+            }
+            sb.append((char)i).append(Integer.toString(map[i]));
+        }
+        return sb.toString();
     }
 }

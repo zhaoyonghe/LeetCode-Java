@@ -68,6 +68,7 @@
 | 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array) | [Solution1](src/ElementAppearingMoreThan25PercentInSortedArray_1287/Solution1.java) <br> |
 | 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time) | [Solution1](src/EmployeeFreeTime_759/Solution1.java) <br> |
 | 690 | [Employee Importance](https://leetcode.com/problems/employee-importance) | [Solution1](src/EmployeeImportance_690/Solution1.java) <br> |
+| 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution1](src/EncodeAndDecodeStrings_271/Codec1.java) <br>Assume the count of characters in strs is n.<br>encode() Time Complexity: O(n)<br>decode() Time Complexity: O(n)<br> |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | [Solution1](src/EvaluateDivision_399/Solution1.java) <br> |
 | 809 | [Expressive Words](https://leetcode.com/problems/expressive-words) | [Solution1](src/ExpressiveWords_809/Solution1.java) <br> |
 | 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies) | [Solution1](src/FindAllPossibleRecipesFromGivenSupplies_2115/Solution1.java) <br> |
@@ -83,7 +84,7 @@
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life) | [Solution1](src/GameOfLife_289/Solution1.java) <br> |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station) | [Solution1](src/GasStation_134/Solution1.java) <br> |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution1](src/GenerateParentheses_22/Solution1.java) <br> |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br> |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | [Solution1](src/IncreasingTripletSubsequence_334/Solution1.java) <br> |
 | 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/*[1-4].java) <br> |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Solution1](src/InsertionSortList_147/Solution1.java) <br> |
@@ -102,6 +103,7 @@
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br> |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br> |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | [Solution1](src/LongestConsecutiveSequence_128/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [Solution1](src/LongestIncreasingPathInAMatrix_329/Solution1.java) <br> |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | [Solution1](src/LongestPalindromicSubstring_5/Solution1.java) <br>Assume n is the length of s.<br>Time Complexity: O(n^2)<br>Space Complexity: O(n^2)<br>[Solution2](src/LongestPalindromicSubstring_5/Solution2.java) <br>Assume n is the length of s.<br>Time Complexity: O(n^2)<br>Space Complexity: O(1)<br> |
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Solution1](src/LongestSubstringWithoutRepeatingCharacter_3/Solution1.java) <br>[Solution2](src/LongestSubstringWithoutRepeatingCharacter_3/Solution2.java) <br> |
@@ -218,6 +220,7 @@
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | [Solution1](src/UniqueBinarySearchTreesI_96/Solution1.java) <br> |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | [Solution1](src/ValidPalindromeII_680/Solution1.java) <br> |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution1](src/ValidParentheses_20/Solution1.java) <br> |
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution1](src/ValidSudoku_36/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 408 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | [Solution1](src/ValidWordAbbreviation_408/Solution1.java) <br> |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution1](src/ValidateBinarySearchTree_98/Solution1.java) <br> |
 | 987 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree) | [Solution1](src/VerticalOrderTraversalOfABinaryTree_987/Solution1.java) <br> |
