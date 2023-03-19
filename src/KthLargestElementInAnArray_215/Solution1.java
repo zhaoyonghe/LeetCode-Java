@@ -3,48 +3,42 @@ package KthLargestElementInAnArray_215;
 import java.util.Random;
 
 /**
- * Time Complexity: O(n)
- * Auxiliary Space Complexity: O(logn)
- * Runtime: 1ms
- * Rank: 98.67%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(logn)
  */
-class Solution {
-    Random rand = new Random();
+class Solution1 {
     public int findKthLargest(int[] nums, int k) {
-        return partition(nums,0,nums.length-1,k);
+        return select(nums, 0, nums.length - 1, nums.length - k + 1);
     }
 
-    private int partition(int[] nums, int s, int e, int k) {
-        if (e>s) {
-            swap(nums, e, rand.nextInt(e-s)+s);
-        }
-
-        int p = nums[e];
-        int i = s;
-        int j = e - 1;
+    private int select(int[] nums, int start, int end, int k) {
+        int i = start, j = end - 1;
         while (i <= j) {
-            if (nums[i] >= p) {
+            if (nums[i] <= nums[end]) {
                 i++;
-            } else {
-                swap(nums,i,j);
-                j--;
+                continue;
             }
+            // nums[i] > nums[end]
+            swap(nums, i, j);
+            j--;
         }
-
-        swap(nums,i,e);
-        if (i-s+1>k) {
-            return partition(nums, s, i-1,k);
-        } else if (i-s+1<k) {
-            return partition(nums, i+1,e,k-i+s-1);
+        swap(nums, i, end);
+        // se: nums[start~i] g: nums[i+1~end]
+        // does nums[i] rank at k-th in nums[start~end]?
+        if (i - start + 1 < k) {
+            return select(nums, i+1, end, k - (i - start + 1));
+        } else if (i - start + 1 > k) {
+            return select(nums, start, i - 1, k);
         } else {
+            // i - start + 1 == k
             return nums[i];
         }
-
     }
 
-    private void swap(int[] a, int i, int j) {
-        int tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 }

@@ -1,31 +1,51 @@
 package KClosestPointsToOrigin_973;
 
-import java.util.PriorityQueue;
 /**
- * Assume n is points.length.
- * Time Complexity: O(n * logk)
- * Space Complexity: O(n)
- * Runtime: 28ms
- * Rank: 54.04%
+ * $$ Assume n is points.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(logn)
  */
 public class Solution1 {
     public int[][] kClosest(int[][] points, int k) {
-        // Important constraints:
-        // 1 <= k <= points.length <= 10^4 (answer always exists)
-        // -10^4 < xi, yi < 10^4 (distance calculate will not overflow)
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->{
-            return b[0]*b[0]+b[1]*b[1]-a[0]*a[0]-a[1]*a[1];
-        });
+        partition(points, 0, points.length - 1, k);
         int[][] res = new int[k][2];
-        for (int[] p: points) {
-            pq.offer(p);
-            if (pq.size() > k) {
-                pq.poll();
-            }
-        }
-        for (int i = 0; i < k; i++) {
-            res[i] = pq.poll();
-        }
+        System.arraycopy(points, 0, res, 0, k);
         return res;
+    }
+
+    private void partition(int[][] points, int s, int e, int k) {
+        int i = s;
+        int j = e - 1;
+        int dise = dis(points[e]);
+        while (i <= j) {
+            if (dis(points[i]) <= dise) {
+                i++;
+                continue;
+            }
+            swap(points, i, j);
+            j--;
+        }
+
+        swap(points, i, e);
+        if (i - s + 1 < k) {
+            partition(points, i + 1, e, k - i + s - 1);
+            return;
+        }
+        if (i - s + 1 > k) {
+            partition(points, s, i - 1, k);
+            return;
+        }
+        // i - s + 1 == k
+        return;
+    }
+
+    private int dis(int[] point) {
+        return point[0] * point[0] + point[1] * point[1];
+    }
+
+    private void swap(int[][] a, int i, int j) {
+        int[] tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
     }
 }

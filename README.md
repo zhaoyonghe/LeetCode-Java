@@ -94,9 +94,9 @@
 | 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter) | [Solution1](src/IslandPerimeter_463/Solution1.java) <br> |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | [Solution1](src/JumpGameII_45/Solution1.java) <br> |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/JumpGame_55/Solution1.java) <br> |
-| 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | [Solution1](src/KClosestPointsToOrigin_973/Solution1.java) <br>[Solution2](src/KClosestPointsToOrigin_973/Solution2.java) <br> |
+| 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | [Solution1](src/KClosestPointsToOrigin_973/Solution1.java) <br>Assume n is points.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream) | [Solution1](src/KthLargestElementInAStream_703/KthLargest1.java) <br> |
-| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution1](src/KthLargestElementInAnArray_215/Solution1.java) <br> |
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution1](src/KthLargestElementInAnArray_215/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
 | 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [Solution1](src/KthSmallestElementInASorteMatrix_378/Solution1.java) <br> |
 | 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/*[1-4].java) <br> |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
@@ -157,7 +157,7 @@
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br> |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | [Solution1](src/PermutationsI_46/Solution1.java) <br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/PredictTheWinner_486/Solution3.java) <br> |
-| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | [Solution1](src/ProductOfArrayExceptSelf_238/Solution1.java) <br> |
+| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | [Solution1](src/ProductOfArrayExceptSelf_238/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
 | 938 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) | [Solution1](src/RangeSumOfBST_938/Solution1.java) <br> |
 | 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | [Solution1](src/RangeSumQueryMutable_307/*[1-4].java) <br> |
