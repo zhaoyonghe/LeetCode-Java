@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("271. Encode and Decode Strings");
+        createSkeleton("1905. Count Sub Islands");
     }
 }

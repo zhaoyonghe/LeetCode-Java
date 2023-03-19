@@ -1,10 +1,9 @@
 package MaxAreaOfIsland_695;
 
 /**
- * Time Complexity: O(m * n)
- * Auxiliary Space Complexity: O(m * n)
- * Runtime: 2ms
- * Rank: 99.35%
+ * $$ Assume grid is m * n matrix.
+ * $$ Time Complexity: O(m * n)
+ * $$ Space Complexity: O(m * n)
  */
 
 public class Solution1 {

@@ -48,6 +48,7 @@
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree) | [Solution1](src/CountGoodNodesInBinaryTree_1448/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [Solution1](src/CountOfRangeSum_327/Solution1.java) <br> |
 | 315 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | [Solution1](src/CountOfSmallerNumbersAfterSelf_315/Solution1.java) <br> |
+| 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands) | [Solution1](src/CountSubIslands_1905/Solution1.java) <br>Assume grid is m * n matrix.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | [Solution1](src/CourseScheduleII_210/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution1](src/CourseScheduleI_207/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | [Solution1](src/DailyTemperatures_739/Solution1.java) <br> |
@@ -59,6 +60,7 @@
 | 631 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | [Solution1](src/DesignExcelSumFormula_631/Excel1.java) <br> |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | [Solution1](src/DesignHitCounter_362/HitCounter1.java) <br> |
 | 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/*[1-4].java) <br> |
+| 355 | [Design Twitter](https://leetcode.com/problems/design-twitter) | [Solution1](src/DesignTwitter_355/Twitter1.java) <br>Assume n is the number of users that a user follows.<br>Constructor Time Complexity: O(1)<br>postTweet() Time Complexity: O(1)<br>getNewsFeed() Time Complexity: O(n)<br>follow() Time Complexity: O(1)<br>unfollow() Time Complexity: O(1)<br> |
 | 1396 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | [Solution1](src/DesignUndergroundSystem_1396/UndergroundSystem1.java) <br> |
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution1](src/DiameterOfBinaryTree_543/Solution1.java) <br>[Solution2](src/DiameterOfBinaryTree_543/Solution2.java) <br> |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution1](src/DivideTwoIntegers_29/Solution1.java) <br> |
@@ -113,7 +115,7 @@
 | 1676 | [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv) | [Solution1](src/LowestCommonAncestorOfABinaryTreeIV_1676/Solution1.java) <br> |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution1](src/LowestCommonAncestorOfABinaryTree_236/Solution1.java) <br> |
 | 1787 | [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero) | [Solution1](src/MakeTheXOROfAllSegmentsEqualToZero_1787/Solution1.java) <br> |
-| 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | [Solution1](src/MaxAreaOfIsland_695/Solution1.java) <br> |
+| 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | [Solution1](src/MaxAreaOfIsland_695/Solution1.java) <br>Assume grid is m * n matrix.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 164 | [Maximum Gap](https://leetcode.com/problems/maximum-gap) | [Solution1](src/MaximumGap_164/Solution1.java) <br> |
 | 718 | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray) | [Solution1](src/MaximumLengthOfRepeatedSubarray_718/Solution1.java) <br> |
 | 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph) | [Solution1](src/MaximumPathQualityOfAGraph_2065/Solution1.java) <br> |
@@ -211,7 +213,7 @@
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller) | [Solution1](src/ThreeSumSmaller_259/Solution1.java) <br> |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | [Solution1](src/ThreeSum_15/Solution1.java) <br> |
 | 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | [Solution1](src/TimeBasedKeyValueStore_981/*[1-4].java) <br> |
-| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution1](src/TopKFrequentElements_347/Solution1.java) <br>[Solution2](src/TopKFrequentElements_347/Solution2.java) <br>[Solution3](src/TopKFrequentElements_347/Solution3.java) <br> |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution1](src/TopKFrequentElements_347/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(nlogk)<br>Space Complexity: O(n)<br>[Solution2](src/TopKFrequentElements_347/Solution2.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 692 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | [Solution1](src/TopKFrequentWords_692/Solution1.java) <br> |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution1](src/TrappingRainWater_42/Solution1.java) <br>[Solution2](src/TrappingRainWater_42/Solution2.java) <br> |
 | 1029 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling) | [Solution1](src/TwoCityScheduling_1029/Solution1.java) <br>[Solution2](src/TwoCityScheduling_1029/Solution2.java) <br> |
