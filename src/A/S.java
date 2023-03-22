@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1905. Count Sub Islands");
+        createSkeleton("1466. Reorder Routes to Make All Paths Lead to the City Zero");
     }
 }
