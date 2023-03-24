@@ -3,11 +3,9 @@ package MergeIntervals_56;
 import java.util.*;
 
 /**
- * Assume n is intervals.length.
- * Time Complexity: O(n * logn)
- * Space Complexity: O(1)
- * Runtime: 5ms
- * Rank: 95.23%
+ * $$ Assume intervals.length is n.
+ * $$ Time Complexity: O(nlogn)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     // Important constraints:

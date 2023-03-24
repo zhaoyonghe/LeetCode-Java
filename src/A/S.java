@@ -14,7 +14,7 @@ public class S {
     private static void createSkeleton(String problemTitle, String problemID) throws IOException {
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
-        String[] ss = problemTitle.split(" ");
+        String[] ss = problemTitle.split("[\s\\-]");
         for (String sub : ss) {
             char[] chars = sub.toCharArray();
             chars[0] = Character.toUpperCase(chars[0]);
@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1466. Reorder Routes to Make All Paths Lead to the City Zero");
+        createSkeleton("435. Non-overlapping Intervals");
     }
 }

@@ -89,6 +89,7 @@
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | [Solution1](src/IncreasingTripletSubsequence_334/Solution1.java) <br> |
 | 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/*[1-4].java) <br> |
+| 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution1](src/InsertInterval_57/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Solution1](src/InsertionSortList_147/Solution1.java) <br> |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution1](src/IntersectionOfTwoLinkedLists_160/Solution1.java) <br>[Solution2](src/IntersectionOfTwoLinkedLists_160/Solution2.java) <br> |
 | 986 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) | [Solution1](src/IntervalListIntersections_986/Solution1.java) <br> |
@@ -124,10 +125,10 @@
 | 1710 | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck) | [Solution1](src/MaximumUnitsOnATruck_1710/Solution1.java) <br> |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree) | [Solution1](src/MaximumWidthOfBinaryTree_662/Solution1.java) <br> |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [Solution1](src/MedianOfTwoSortedArrays_4/Solution1.java) <br> |
-| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | [Solution1](src/MeetingRoomsII_253/Solution1.java) <br> |
-| 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms) | [Solution1](src/MeetingRooms_252/Solution1.java) <br> |
+| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | [Solution1](src/MeetingRoomsII_253/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
+| 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms) | [Solution1](src/MeetingRooms_252/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Auxiliary Space Complexity: O(n)<br> |
 | 1932 | [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst) | [Solution1](src/MergeBSTsToCreateSingleBST_1932/Solution1.java) <br> |
-| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br> |
+| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br> |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution1](src/MergeSortedArray_88/Solution1.java) <br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
@@ -149,6 +150,7 @@
 | 1019 | [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list) | [Solution1](src/NextGreaterNodeInLinkedList_1019/Solution1.java) <br> |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | [Solution1](src/NextPermutation_31/Solution1.java) <br> |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | [Solution1](src/NimGame_292/Solution1.java) <br> |
+| 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | [Solution1](src/NonOverlappingIntervals_435/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 1254 | [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands) | [Solution1](src/NumberOfClosedIslands_1254/Solution1.java) <br> |
 | 694 | [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands) | [Solution1](src/NumberOfDistinctIslands_694/Solution1.java) <br> |
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | [Solution1](src/NumberOfIslandsII_305/Solution1.java) <br> |

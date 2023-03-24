@@ -2,29 +2,27 @@ package MeetingRoomsII_253;
 
 import java.util.*;
 /**
- * Assume n is intervals.length.
- * Time Complexity: O(n * logn)
- * Auxiliary Space Complexity: O(n)
- * Runtime: 6ms
- * Rank: 80.45%
+ * $$ Assume intervals.length is n.
+ * $$ Time Complexity: O(nlogn)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public int minMeetingRooms(int[][] intervals) {
-        // Important constraints:
-        // 1 <= intervals.length <= 10^4 (at least one input element)
-        Arrays.sort(intervals, (a, b)->Integer.compare(a[0],b[0]));
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b)->Integer.compare(a[1],b[1]));
-        pq.offer(intervals[0]);
-        for (int i  = 1; i < intervals.length; i++){
-            int[] now = intervals[i];
-            int[] before = pq.poll();
-            if (before[1] <= now[0]) {
-                before[1] = now[1];
-            } else {
-                pq.offer(now);
+        Arrays.sort(intervals, (a,b)->Integer.compare(a[0],b[0]));
+
+        PriorityQueue<Integer> pq= new PriorityQueue<>();
+        pq.offer(intervals[0][1]);
+        for (int i = 1; i < intervals.length; i++) {
+            int earliestEnd = pq.poll();
+            if (intervals[i][0] < earliestEnd) {
+                // cannot arrange this meeting to even the most available meeting room
+                pq.offer(earliestEnd);
+                pq.offer(intervals[i][1]);
+                continue;
             }
-            pq.offer(before);
+            pq.offer(intervals[i][1]);
         }
+
         return pq.size();
     }
 }
