@@ -4,18 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(4^n/n^(1/2))
+ * $$ Space Complexity: O(n)
  */
 
 class Solution1 {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
-        if (n == 0) {
-            return res;
-        }
         helper(new char[n*2], 0, n, n, res);
         return res;
     }

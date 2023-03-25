@@ -85,7 +85,7 @@
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | [Solution1](src/FourSum_18/Solution1.java) <br> |
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life) | [Solution1](src/GameOfLife_289/Solution1.java) <br> |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station) | [Solution1](src/GasStation_134/Solution1.java) <br> |
-| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution1](src/GenerateParentheses_22/Solution1.java) <br> |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution1](src/GenerateParentheses_22/Solution1.java) <br>Time Complexity: O(4^n/n^(1/2))<br>Space Complexity: O(n)<br>[Solution2](src/GenerateParentheses_22/Solution2.java) <br>Time Complexity: O(4^n/n^(1/2))<br>Space Complexity: O(n)<br> |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | [Solution1](src/IncreasingTripletSubsequence_334/Solution1.java) <br> |
 | 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/*[1-4].java) <br> |
@@ -145,6 +145,7 @@
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/NQueensII_52/Solution1.java) <br> |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br> |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) | [Solution1](src/NestedListWeightSum_339/Solution1.java) <br> |
+| 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | [Solution1](src/NetworkDelayTime_743/Solution1.java) <br>Assume times.length is E, n is V.<br>Time Complexity: O(V + ElogE)<br>Space Complexity: O(V + E)<br> |
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/NextGreaterElementII_503/Solution1.java) <br> |
 | 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution1](src/NextGreaterElementI_496/Solution1.java) <br> |
 | 1019 | [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list) | [Solution1](src/NextGreaterNodeInLinkedList_1019/Solution1.java) <br> |
@@ -168,6 +169,7 @@
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [Solution1](src/ReconstructItinerary_332/Solution1.java) <br> |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) | [Solution1](src/RecoverBinarySearchTree_99/Solution1.java) <br>[Solution2](src/RecoverBinarySearchTree_99/Solution2.java) <br> |
+| 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals) | [Solution1](src/RemoveCoveredIntervals_1288/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
 | 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/RemoveDuplicateLetters_316/Solution1.java) <br> |
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution1](src/RemoveKDigits_402/Solution1.java) <br> |
 | 937 | [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files) | [Solution1](src/ReorderDataInLogFiles_937/Solution1.java) <br> |
@@ -212,6 +214,7 @@
 | 907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums) | [Solution1](src/SumOfSubarrayMinimums_907/Solution1.java) <br> |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [Solution1](src/SurroundedRegions_130/Solution1.java) <br>Assume the board size is m * n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | [Solution1](src/SymmetricTree_101/Solution1.java) <br>[Solution2](src/SymmetricTree_101/Solution2.java) <br> |
+| 621 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution1](src/TaskScheduler_621/Solution1.java) <br>Assume tasks.length is k.<br>Time Complexity: O(n + klogk)<br>Space Complexity: O(k)<br> |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification) | [Solution1](src/TextJustification_68/Solution1.java) <br> |
 | 490 | [The Maze](https://leetcode.com/problems/the-maze) | [Solution1](src/TheMaze_490/Solution1.java) <br> |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution1](src/ThreeSumClosest_16/Solution1.java) <br> |
