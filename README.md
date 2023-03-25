@@ -79,6 +79,7 @@
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution1](src/FindPeakElement_162/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | [Solution1](src/FindTheDuplicateNumber_287/Solution1.java) <br> |
+| 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array) | [Solution1](src/FindTheKthLargestIntegerInTheArray_1985/Solution1.java) <br>Assume nums.length is n, max(nums[i].length) is m.<br>Time Complexity: O(nm)<br>Space Complexity: O(logn)<br> |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | [Solution1](src/FirstMissingPositive_41/Solution1.java) <br> |
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | [Solution1](src/FlattenNestedListIterator_341/NestedIterator1.java) <br>[Solution2](src/FlattenNestedListIterator_341/NestedIterator2.java) <br>[Solution3](src/FlattenNestedListIterator_341/NestedIterator3.java) <br> |
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing) | [Solution1](src/FlipStringToMonotoneIncreasing_926/Solution1.java) <br> |
@@ -131,6 +132,7 @@
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br> |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution1](src/MergeSortedArray_88/Solution1.java) <br> |
+| 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [Solution1](src/MinCostToConnectAllPoints_1584/Solution1.java) <br>Assume points.length is n.<br>Time Complexity: O(n^2logn)<br>Space Complexity: O(n)<br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution1](src/MinimumAddToMakeParenthesesValid_921/Solution1.java) <br> |
 | 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph) | [Solution1](src/MinimumDegreeOfAConnectedTrioInAGraph_1761/Solution1.java) <br> |
@@ -194,7 +196,7 @@
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br> |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [Solution1](src/SingleNumberIII_260/Solution1.java) <br> |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii) | [Solution1](src/SingleNumberII_137/Solution1.java) <br> |
-| 136 | [Single Number](https://leetcode.com/problems/single-number) | [Solution1](src/SingleNumberI_136/Solution1.java) <br> |
+| 136 | [Single Number](https://leetcode.com/problems/single-number) | [Solution1](src/SingleNumberI_136/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution1](src/SlidingWindowMaximum_239/Solution1.java) <br>[Solution2](src/SlidingWindowMaximum_239/Solution2.java) <br> |
 | 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency) | [Solution1](src/SortCharactersByFrequency_451/Solution1.java) <br>[Solution2](src/SortCharactersByFrequency_451/Solution2.java) <br> |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | [Solution1](src/SortList_148/Solution1.java) <br> |
