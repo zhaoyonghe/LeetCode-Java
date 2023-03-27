@@ -4,6 +4,7 @@
 | 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br>Assume n is the number of characters in words.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution1](src/AllNodesDistanceKInBinaryTree_863/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br>[Solution2](src/AllNodesDistanceKInBinaryTree_863/Solution2.java) <br>Assume the nodes count of root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision) | [Solution1](src/AsteroidCollision_735/Solution1.java) <br>Assume n is asteroids.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | [Solution1](src/BalancedBinaryTree_110/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/BeautifulArrangement_526/Solution1.java) <br> |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | [Solution1](src/BestTimeToBuyAndSellStockIII_123/Solution1.java) <br>[Solution2](src/BestTimeToBuyAndSellStockIII_123/Solution2.java) <br>[Solution3](src/BestTimeToBuyAndSellStockIII_123/Solution3.java) <br>[Solution4](src/BestTimeToBuyAndSellStockIII_123/Solution4.java) <br> |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | [Solution1](src/BestTimeToBuyAndSellStockII_122/Solution1.java) <br> |
@@ -57,6 +58,7 @@
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/DecodeXORedArray_1720/Solution1.java) <br> |
 | 740 | [Delete and Earn](https://leetcode.com/problems/delete-and-earn) | [Solution1](src/DeleteAndEarn_740/Solution1.java) <br> |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst) | [Solution1](src/DeleteNodeInABST_450/Solution1.java) <br> |
+| 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [Solution1](src/DesignBrowserHistory_1472/BrowserHistory1.java) <br>Constructor Time Complexity: O(1)<br>visit() Time Complexity: O(1)<br>back() Time Complexity: O(1)<br>forward() Time Complexity: O(1)<br> |
 | 631 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | [Solution1](src/DesignExcelSumFormula_631/Excel1.java) <br> |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | [Solution1](src/DesignHitCounter_362/HitCounter1.java) <br> |
 | 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/*[1-4].java) <br> |
@@ -238,4 +240,5 @@
 | 408 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | [Solution1](src/ValidWordAbbreviation_408/Solution1.java) <br> |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution1](src/ValidateBinarySearchTree_98/Solution1.java) <br> |
 | 987 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree) | [Solution1](src/VerticalOrderTraversalOfABinaryTree_987/Solution1.java) <br> |
+| 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates) | [Solution1](src/WallsAndGates_286/Solution1.java) <br>Assume rooms is an m * n matrix.<br>Time Complexity: O(mn)<br>Space Complexity: O(mn)<br> |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | [Solution1](src/WordLadderI_127/Solution1.java) <br>[Solution2](src/WordLadderI_127/Solution2.java) <br> |

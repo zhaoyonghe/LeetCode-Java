@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("358. Rearrange String k Distance Apart");
+        createSkeleton("1472. Design Browser History");
     }
 }
