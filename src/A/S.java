@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1985. Find the Kth Largest Integer in the Array");
+        createSkeleton("358. Rearrange String k Distance Apart");
     }
 }

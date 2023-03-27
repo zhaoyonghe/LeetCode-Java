@@ -161,6 +161,7 @@
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | [Solution1](src/NumberOfOneBits_191/Solution1.java) <br> |
 | 1010 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution1](src/PairsOfSongsWithTotalDurationsDivisibleBy60_1010/Solution1.java) <br> |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br> |
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br> |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | [Solution1](src/PermutationsI_46/Solution1.java) <br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/PredictTheWinner_486/Solution3.java) <br> |
@@ -169,6 +170,7 @@
 | 938 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) | [Solution1](src/RangeSumOfBST_938/Solution1.java) <br> |
 | 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | [Solution1](src/RangeSumQueryMutable_307/*[1-4].java) <br> |
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
+| 358 | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart) | [Solution1](src/RearrangeStringKDistanceApart_358/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [Solution1](src/ReconstructItinerary_332/Solution1.java) <br> |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) | [Solution1](src/RecoverBinarySearchTree_99/Solution1.java) <br>[Solution2](src/RecoverBinarySearchTree_99/Solution2.java) <br> |
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals) | [Solution1](src/RemoveCoveredIntervals_1288/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
