@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1472. Design Browser History");
+        createSkeleton("153. Find Minimum in Rotated Sorted Array");
     }
 }

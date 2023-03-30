@@ -78,6 +78,7 @@
 | 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies) | [Solution1](src/FindAllPossibleRecipesFromGivenSupplies_2115/Solution1.java) <br> |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | [Solution1](src/FindLeavesOfBinaryTree_366/Solution1.java) <br> |
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [Solution1](src/FindMedianFromDataStream_295/*[1-4].java) <br> |
+| 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution1](src/FindMinimumInRotatedSortedArray_153/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution1](src/FindPeakElement_162/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | [Solution1](src/FindTheDuplicateNumber_287/Solution1.java) <br> |
@@ -185,8 +186,8 @@
 | 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br> |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution1](src/RottingOranges_994/Solution1.java) <br>Assume the grid size is m * n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
-| 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution1](src/SearchInRotatedSortedArrayII_81/Solution1.java) <br> |
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution1](src/SearchInRotatedSortedArray_33/Solution1.java) <br> |
+| 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution1](src/SearchInRotatedSortedArrayII_81/Solution1.java) <br>Assume nums.length is n.<br>Best Time Complexity: O(logn)<br>Worse Time Complexity: O(n), when almost every number in nums has same value.<br>Space Complexity: O(1)<br> |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution1](src/SearchInRotatedSortedArray_33/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst) | [Solution1](src/SerializeAndDeserializeBST_449/Solution1.java) <br> |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution1](src/SerializeAndDeserializeBinaryTree_297/Solution1.java) <br>[Solution2](src/SerializeAndDeserializeBinaryTree_297/Solution2.java) <br> |
 | 428 | [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree) | [Solution1](src/SerializeAndDeserializeNaryTree_428/Solution1.java) <br>[Solution2](src/SerializeAndDeserializeNaryTree_428/Solution2.java) <br> |
