@@ -1,11 +1,9 @@
 package SortList_148;
 
 /**
- * Assume n is the length of the linked list.
- * Time Complexity: O(nlogn)
- * Space Complexity: O(1)
- * Runtime: 5ms
- * Rank: 99.00%
+ * $$ Assume n is the length of the linked list.
+ * $$ Time Complexity: O(nlogn)
+ * $$ Space Complexity: O(logn)
  */
 
 public class Solution1 {

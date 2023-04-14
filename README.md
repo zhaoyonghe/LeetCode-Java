@@ -186,11 +186,12 @@
 | 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero) | [Solution1](src/ReorderRoutesToMakeAllPathsLeadToTheCityZero_1466/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | [Solution1](src/ReorganizeString_767/Solution1.java) <br> |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution1](src/ReverseInteger_7/Solution1.java) <br> |
-| 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br> |
+| 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br>Time Complexity: O(instructions.length)<br>Space Complexity: O(1)<br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br> |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution1](src/RottingOranges_994/Solution1.java) <br>Assume the grid size is m * n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution1](src/SearchInRotatedSortedArrayII_81/Solution1.java) <br>Assume nums.length is n.<br>Best Time Complexity: O(logn)<br>Worse Time Complexity: O(n), when almost every number in nums has same value.<br>Space Complexity: O(1)<br> |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution1](src/SearchInRotatedSortedArray_33/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
+| 1268 | [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system) | [Solution1](src/SearchSuggestionsSystem_1268/Solution1.java) <br>Time Complexity: O(m + n)<br>Space Complexity: O(m + n)<br> |
 | 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst) | [Solution1](src/SerializeAndDeserializeBST_449/Solution1.java) <br> |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | [Solution1](src/SerializeAndDeserializeBinaryTree_297/Solution1.java) <br>[Solution2](src/SerializeAndDeserializeBinaryTree_297/Solution2.java) <br> |
 | 428 | [Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree) | [Solution1](src/SerializeAndDeserializeNaryTree_428/Solution1.java) <br>[Solution2](src/SerializeAndDeserializeNaryTree_428/Solution2.java) <br> |
@@ -207,7 +208,7 @@
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | [Solution1](src/SingleNumberI_136/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | [Solution1](src/SlidingWindowMaximum_239/Solution1.java) <br>[Solution2](src/SlidingWindowMaximum_239/Solution2.java) <br> |
 | 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency) | [Solution1](src/SortCharactersByFrequency_451/Solution1.java) <br>[Solution2](src/SortCharactersByFrequency_451/Solution2.java) <br> |
-| 148 | [Sort List](https://leetcode.com/problems/sort-list) | [Solution1](src/SortList_148/Solution1.java) <br> |
+| 148 | [Sort List](https://leetcode.com/problems/sort-list) | [Solution1](src/SortList_148/Solution1.java) <br>Assume n is the length of the linked list.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution1](src/SpiralMatrix_54/Solution1.java) <br> |
 | 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another) | [Solution1](src/StepByStepDirectionsFromABinaryTreeNodeToAnother_2096/Solution1.java) <br> |
 | 1406 | [Stone Game III](https://leetcode.com/problems/stone-game-iii) | [Solution1](src/StoneGameIII_1406/Solution1.java) <br> |

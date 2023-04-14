@@ -1,9 +1,7 @@
 package RobotBoundedInCircle_1041;
 /**
- * Time Complexity: O(instructions.length)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(instructions.length)
+ * $$ Space Complexity: O(1)
  */
 
 public class Solution1 {
