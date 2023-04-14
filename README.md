@@ -162,6 +162,9 @@
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | [Solution1](src/NumberOfIslandsII_305/Solution1.java) <br> |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [Solution1](src/NumberOfIslands_200/Solution1.java) <br>[Solution2](src/NumberOfIslands_200/Solution2.java) <br> |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | [Solution1](src/NumberOfOneBits_191/Solution1.java) <br> |
+| 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes) | [Solution1](src/OnesAndZeroes_474/Solution1.java) <br>Time Complexity: O(m * n * strs.length)<br>Space Complexity: O(m * n)<br> |
+| 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span) | [Solution1](src/OnlineStockSpan_901/StockSpanner1.java) <br>Constructor Time Complexity: O(1)<br>next() Amortized Time Complexity: O(1)<br> |
+| 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree) | [Solution1](src/OperationsOnTree_1993/LockingTree1.java) <br>Assume the node count of the tree is n.<br>Constructor Time Complexity: O(n)<br>lock() Time Complexity: O(1)<br>unlock() Time Complexity: O(1)<br>upgrade() Time Complexity: O(n)<br> |
 | 1010 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution1](src/PairsOfSongsWithTotalDurationsDivisibleBy60_1010/Solution1.java) <br> |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br> |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |

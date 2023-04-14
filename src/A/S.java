@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("153. Find Minimum in Rotated Sorted Array");
+        createSkeleton("901. Online Stock Span");
     }
 }
