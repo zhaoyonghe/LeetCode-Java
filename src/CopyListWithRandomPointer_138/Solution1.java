@@ -4,11 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Assume the length of the linked list is n.
- * Time Complexity: O(n)
- * Auxiliary Space Complexity: O(n)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume the length of the linked list is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public Node copyRandomList(Node head) {

@@ -35,6 +35,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1094. Car Pooling");
+        createSkeleton("39. Combination Sum");
     }
 }

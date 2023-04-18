@@ -1,11 +1,9 @@
 package ConvertSortedArrayToBinarySearchTree_108;
 
 /**
- * Assume n is the number of tree nodes and h is tree height.
- * Time Complexity: O(n)
- * Space Complexity: O(h)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is the number of tree nodes and h is tree height.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(h)
  */
 public class Solution1 {
     public TreeNode sortedArrayToBST(int[] nums) {

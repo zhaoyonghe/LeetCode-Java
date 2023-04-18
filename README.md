@@ -27,6 +27,7 @@
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | [Solution1](src/BurstBalloons_312/Solution1.java) <br> |
 | 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [Solution1](src/BusRoutes_815/Solution1.java) <br> |
 | 723 | [Candy Crush](https://leetcode.com/problems/candy-crush) | [Solution1](src/CandyCrush_723/Solution1.java) <br> |
+| 853 | [Car Fleet](https://leetcode.com/problems/car-fleet) | [Solution1](src/CarFleet_853/Solution1.java) <br>Assume n is position.length.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(h)<br> |
 | 1094 | [Car Pooling](https://leetcode.com/problems/car-pooling) | [Solution1](src/CarPooling_1094/Solution1.java) <br>Assume trips.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower) | [Solution1](src/ChampagneTower_799/Solution1.java) <br> |
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution1](src/CheapestFlightsWithinKStops_787/Solution1.java) <br>[Solution2](src/CheapestFlightsWithinKStops_787/Solution2.java) <br> |
@@ -36,6 +37,7 @@
 | 270 | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value) | [Solution1](src/ClosestBinarySearchTreeValue_270/Solution1.java) <br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution1](src/CoinChange_322/Solution1.java) <br>Time Complexity: O(amount * coins.length)<br>Space Complexity: O(amount)<br> |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution1](src/CombinationSum_39/Solution1.java) <br>Assume candidates.length is n, target is t.<br>Time Complexity: O(n ^ t)<br>Space Complexity: O(n ^ t)<br> |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | [Solution1](src/Combinations_77/Solution1.java) <br> |
 | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum) | [Solution1](src/ConsecutiveNumbersSum_829/Solution1.java) <br> |
 | 1008 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal) | [Solution1](src/ConstructBinarySearchTreeFromPreorderTraversal_1008/Solution1.java) <br> |
@@ -45,8 +47,8 @@
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | [Solution1](src/ContainerWithMostWater_11/Solution1.java) <br> |
 | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/ContiguousArray_525/Solution1.java) <br> |
 | 426 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | [Solution1](src/ConvertBinarySearchTreeToSortedDoublyLinkedList_426/Solution1.java) <br> |
-| 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | [Solution1](src/ConvertSortedArrayToBinarySearchTree_108/Solution1.java) <br> |
-| 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [Solution1](src/CopyListWithRandomPointer_138/Solution1.java) <br> |
+| 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | [Solution1](src/ConvertSortedArrayToBinarySearchTree_108/Solution1.java) <br>Assume n is the number of tree nodes and h is tree height.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
+| 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [Solution1](src/CopyListWithRandomPointer_138/Solution1.java) <br>Assume the length of the linked list is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 696 | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings) | [Solution1](src/CountBinarySubstrings_696/Solution1.java) <br> |
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree) | [Solution1](src/CountGoodNodesInBinaryTree_1448/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [Solution1](src/CountOfRangeSum_327/Solution1.java) <br> |
