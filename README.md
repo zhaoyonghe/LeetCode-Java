@@ -178,17 +178,20 @@
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | [Solution1](src/ProductOfArrayExceptSelf_238/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
 | 938 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) | [Solution1](src/RangeSumOfBST_938/Solution1.java) <br> |
+| 304 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable) | [Solution1](src/RangeSumQuery2DImmutable_304/NumMatrix1.java) <br>Assume the matrix size is m * n.<br>Constructor Time Complexity: O(m * n)<br>sumRegion() Complexity: O(1)<br> |
 | 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | [Solution1](src/RangeSumQueryMutable_307/*[1-4].java) <br> |
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
 | 358 | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart) | [Solution1](src/RearrangeStringKDistanceApart_358/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [Solution1](src/ReconstructItinerary_332/Solution1.java) <br> |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) | [Solution1](src/RecoverBinarySearchTree_99/Solution1.java) <br>[Solution2](src/RecoverBinarySearchTree_99/Solution2.java) <br> |
+| 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | [Solution1](src/RegularExpressionMatching_10/Solution1.java) <br>Assume s.length() is slen and p.length() is plen.<br>Time Complexity: O(slen * plen)<br>Space Complexity: O(slen * plen)<br> |
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals) | [Solution1](src/RemoveCoveredIntervals_1288/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
 | 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/RemoveDuplicateLetters_316/Solution1.java) <br> |
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution1](src/RemoveKDigits_402/Solution1.java) <br> |
 | 937 | [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files) | [Solution1](src/ReorderDataInLogFiles_937/Solution1.java) <br> |
 | 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero) | [Solution1](src/ReorderRoutesToMakeAllPathsLeadToTheCityZero_1466/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | [Solution1](src/ReorganizeString_767/Solution1.java) <br> |
+| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | [Solution1](src/RestoreIPAddresses_93/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution1](src/ReverseInteger_7/Solution1.java) <br> |
 | 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br>Time Complexity: O(instructions.length)<br>Space Complexity: O(1)<br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br> |

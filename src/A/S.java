@@ -16,6 +16,9 @@ public class S {
         StringBuilder sb2 = new StringBuilder();
         String[] ss = problemTitle.split("[\s\\-]");
         for (String sub : ss) {
+            if (sub.length() == 0) {
+                continue;
+            }
             char[] chars = sub.toCharArray();
             chars[0] = Character.toUpperCase(chars[0]);
             sb.append(chars);
@@ -35,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("39. Combination Sum");
+        createSkeleton("304. Range Sum Query 2D - Immutable");
     }
 }
