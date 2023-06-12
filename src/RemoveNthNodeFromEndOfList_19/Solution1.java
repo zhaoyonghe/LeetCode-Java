@@ -1,4 +1,4 @@
-package RemoveNthNodeFromEndOfList;
+package RemoveNthNodeFromEndOfList_19;
 
 /**
  * $$ Assume n is the length of linked list.
@@ -7,23 +7,20 @@ package RemoveNthNodeFromEndOfList;
  */
 public class Solution1 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode dummy = new ListNode(0, head);
-        ListNode slow = dummy;
+        ListNode dummy = new ListNode();
+        dummy.next = head;
         ListNode fast = dummy;
-
-        while (n > 0) {
-            // n <= list size, so fast will never be null
+        ListNode slow = dummy;
+        for (int i = 0; i <= n; i++) {
             fast = fast.next;
-            n--;
         }
 
-        while (fast.next != null) {
+        while (fast != null) {
             fast = fast.next;
             slow = slow.next;
         }
-
-        // n > 0, so slow.nex will never be null
         slow.next = slow.next.next;
+
         return dummy.next;
     }
 }

@@ -57,7 +57,7 @@
 | 1905 | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands) | [Solution1](src/CountSubIslands_1905/Solution1.java) <br>Assume grid is m * n matrix.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | [Solution1](src/CourseScheduleII_210/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution1](src/CourseScheduleI_207/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
-| 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | [Solution1](src/DailyTemperatures_739/Solution1.java) <br> |
+| 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | [Solution1](src/DailyTemperatures_739/Solution1.java) <br>Assume the length of temperatures is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | [Solution1](src/DecodeString_394/Solution1.java) <br> |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | [Solution1](src/DecodeWays_91/Solution1.java) <br>[Solution2](src/DecodeWays_91/Solution2.java) <br> |
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/DecodeXORedArray_1720/Solution1.java) <br> |
@@ -115,7 +115,7 @@
 | 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [Solution1](src/KthSmallestElementInASorteMatrix_378/Solution1.java) <br> |
 | 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/*[1-4].java) <br> |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
-| 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br> |
+| 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br>Assume heights.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br> |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | [Solution1](src/LongestConsecutiveSequence_128/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -143,6 +143,7 @@
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br> |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution1](src/MergeSortedArray_88/Solution1.java) <br> |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Solution1](src/MergeTwoSortedList_21/Solution1.java) <br>Assume the length of l1 is m, that of l2 is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
 | 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [Solution1](src/MinCostToConnectAllPoints_1584/Solution1.java) <br>Assume points.length is n.<br>Time Complexity: O(n^2logn)<br>Space Complexity: O(n)<br> |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution1](src/MinStack_155/MinStack1.java) <br>push() Time Complexity: O(1)<br>pop() Time Complexity: O(1)<br>top() Time Complexity: O(1)<br>getMin() Time Complexity: O(1)<br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
@@ -194,6 +195,7 @@
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals) | [Solution1](src/RemoveCoveredIntervals_1288/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
 | 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/RemoveDuplicateLetters_316/Solution1.java) <br> |
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution1](src/RemoveKDigits_402/Solution1.java) <br> |
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution1](src/RemoveNthNodeFromEndOfList_19/Solution1.java) <br>Assume n is the length of linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 937 | [Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files) | [Solution1](src/ReorderDataInLogFiles_937/Solution1.java) <br> |
 | 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero) | [Solution1](src/ReorderRoutesToMakeAllPathsLeadToTheCityZero_1466/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | [Solution1](src/ReorganizeString_767/Solution1.java) <br> |

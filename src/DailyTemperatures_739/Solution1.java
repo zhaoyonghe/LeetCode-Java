@@ -3,23 +3,22 @@ package DailyTemperatures_739;
 import java.util.*;
 
 /**
- * Assume the length of T is n.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 12ms
- * Rank: 90.71%
+ * $$ Assume the length of temperatures is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {
-    public int[] dailyTemperatures(int[] T) {
-        int[] res = new int[T.length];
-        Deque<Integer> stack = new ArrayDeque<>();
-        for (int i = T.length - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && T[stack.peek()] <= T[i]) {
-                stack.pop();
+    public int[] dailyTemperatures(int[] temperatures) {
+        Deque<Integer> st = new ArrayDeque<>();
+        int[] res = new int[temperatures.length];
+
+        for (int i = 0; i < temperatures.length; i++) {
+            while (!st.isEmpty() && temperatures[st.peek()] < temperatures[i]) {
+                res[st.peek()] = i - st.peek();
+                st.pop();
             }
-            res[i] = stack.isEmpty() ? 0 : (stack.peek() - i);
-            stack.push(i);
+            st.push(i);
         }
         return res;
     }
