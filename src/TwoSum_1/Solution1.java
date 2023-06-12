@@ -4,11 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Assume n is the length of nums.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 1ms
- * Rank: 63.61%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public int[] twoSum(int[] nums, int target) {

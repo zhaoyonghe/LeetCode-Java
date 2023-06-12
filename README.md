@@ -45,6 +45,7 @@
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | [Solution1](src/ConstructBinaryTreeFromPreorderAndInorderTraversal_105/Solution1.java) <br> |
 | 427 | [Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree) | [Solution1](src/ConstructQuadTree_427/Solution1.java) <br> |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | [Solution1](src/ContainerWithMostWater_11/Solution1.java) <br> |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | [Solution1](src/ContainsDuplicateI_217/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/ContiguousArray_525/Solution1.java) <br> |
 | 426 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | [Solution1](src/ConvertBinarySearchTreeToSortedDoublyLinkedList_426/Solution1.java) <br> |
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | [Solution1](src/ConvertSortedArrayToBinarySearchTree_108/Solution1.java) <br>Assume n is the number of tree nodes and h is tree height.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
@@ -68,6 +69,7 @@
 | 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/*[1-4].java) <br> |
 | 355 | [Design Twitter](https://leetcode.com/problems/design-twitter) | [Solution1](src/DesignTwitter_355/Twitter1.java) <br>Assume n is the number of users that a user follows.<br>Constructor Time Complexity: O(1)<br>postTweet() Time Complexity: O(1)<br>getNewsFeed() Time Complexity: O(n)<br>follow() Time Complexity: O(1)<br>unfollow() Time Complexity: O(1)<br> |
 | 1396 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | [Solution1](src/DesignUndergroundSystem_1396/UndergroundSystem1.java) <br> |
+| 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares) | [Solution1](src/DetectSquares_2013/DetectSquares1.java) <br>Assume points.size() is n.<br>Constructor Time Complexity: O(1)<br>add() Time Complexity: O(1)<br>count() Time Complexity: O(1)<br>Space Complexity: O(n)<br> |
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution1](src/DiameterOfBinaryTree_543/Solution1.java) <br>[Solution2](src/DiameterOfBinaryTree_543/Solution2.java) <br> |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution1](src/DivideTwoIntegers_29/Solution1.java) <br> |
 | 1025 | [Divisor Game](https://leetcode.com/problems/divisor-game) | [Solution1](src/DivisorGame_1025/Solution1.java) <br>[Solution2](src/DivisorGame_1025/Solution2.java) <br> |
@@ -78,6 +80,7 @@
 | 690 | [Employee Importance](https://leetcode.com/problems/employee-importance) | [Solution1](src/EmployeeImportance_690/Solution1.java) <br> |
 | 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution1](src/EncodeAndDecodeStrings_271/Codec1.java) <br>Assume the count of characters in strs is n.<br>encode() Time Complexity: O(n)<br>decode() Time Complexity: O(n)<br> |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | [Solution1](src/EvaluateDivision_399/Solution1.java) <br> |
+| 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | [Solution1](src/EvaluateReversePolishNotation_150/Solution1.java) <br>Assume tokens.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 809 | [Expressive Words](https://leetcode.com/problems/expressive-words) | [Solution1](src/ExpressiveWords_809/Solution1.java) <br> |
 | 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies) | [Solution1](src/FindAllPossibleRecipesFromGivenSupplies_2115/Solution1.java) <br> |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | [Solution1](src/FindLeavesOfBinaryTree_366/Solution1.java) <br> |
@@ -87,6 +90,7 @@
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | [Solution1](src/FindTheDuplicateNumber_287/Solution1.java) <br> |
 | 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array) | [Solution1](src/FindTheKthLargestIntegerInTheArray_1985/Solution1.java) <br>Assume nums.length is n, max(nums[i].length) is m.<br>Time Complexity: O(nm)<br>Space Complexity: O(logn)<br> |
+| 1980 | [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string) | [Solution1](src/FindUniqueBinaryString_1980/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n ^ 2)<br>Space Complexity: O(n)<br> |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | [Solution1](src/FirstMissingPositive_41/Solution1.java) <br> |
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | [Solution1](src/FlattenNestedListIterator_341/NestedIterator1.java) <br>[Solution2](src/FlattenNestedListIterator_341/NestedIterator2.java) <br>[Solution3](src/FlattenNestedListIterator_341/NestedIterator3.java) <br> |
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing) | [Solution1](src/FlipStringToMonotoneIncreasing_926/Solution1.java) <br> |
@@ -140,6 +144,7 @@
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br> |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution1](src/MergeSortedArray_88/Solution1.java) <br> |
 | 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [Solution1](src/MinCostToConnectAllPoints_1584/Solution1.java) <br>Assume points.length is n.<br>Time Complexity: O(n^2logn)<br>Space Complexity: O(n)<br> |
+| 155 | [Min Stack](https://leetcode.com/problems/min-stack) | [Solution1](src/MinStack_155/MinStack1.java) <br>push() Time Complexity: O(1)<br>pop() Time Complexity: O(1)<br>top() Time Complexity: O(1)<br>getMin() Time Complexity: O(1)<br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution1](src/MinimumAddToMakeParenthesesValid_921/Solution1.java) <br> |
 | 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph) | [Solution1](src/MinimumDegreeOfAConnectedTrioInAGraph_1761/Solution1.java) <br> |
@@ -166,6 +171,7 @@
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | [Solution1](src/NumberOfIslandsII_305/Solution1.java) <br> |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [Solution1](src/NumberOfIslands_200/Solution1.java) <br>[Solution2](src/NumberOfIslands_200/Solution2.java) <br> |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | [Solution1](src/NumberOfOneBits_191/Solution1.java) <br> |
+| 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible) | [Solution1](src/NumberOfWaysToRearrangeSticksWithKSticksVisible_1866/Solution1.java) <br>Time Complexity: O(n * k)<br>Space Complexity: O(n * k)<br> |
 | 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes) | [Solution1](src/OnesAndZeroes_474/Solution1.java) <br>Time Complexity: O(m * n * strs.length)<br>Space Complexity: O(m * n)<br> |
 | 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span) | [Solution1](src/OnlineStockSpan_901/StockSpanner1.java) <br>Constructor Time Complexity: O(1)<br>next() Amortized Time Complexity: O(1)<br> |
 | 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree) | [Solution1](src/OperationsOnTree_1993/LockingTree1.java) <br>Assume the node count of the tree is n.<br>Constructor Time Complexity: O(n)<br>lock() Time Complexity: O(1)<br>unlock() Time Complexity: O(1)<br>upgrade() Time Complexity: O(n)<br> |
@@ -243,7 +249,7 @@
 | 692 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | [Solution1](src/TopKFrequentWords_692/Solution1.java) <br> |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution1](src/TrappingRainWater_42/Solution1.java) <br>[Solution2](src/TrappingRainWater_42/Solution2.java) <br> |
 | 1029 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling) | [Solution1](src/TwoCityScheduling_1029/Solution1.java) <br>[Solution2](src/TwoCityScheduling_1029/Solution2.java) <br> |
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution1](src/TwoSum_1/Solution1.java) <br> |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution1](src/TwoSum_1/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | [Solution1](src/UniqueBinarySearchTreesII_95/Solution1.java) <br> |
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | [Solution1](src/UniqueBinarySearchTreesI_96/Solution1.java) <br> |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | [Solution1](src/ValidPalindromeII_680/Solution1.java) <br> |
