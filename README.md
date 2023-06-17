@@ -24,7 +24,7 @@
 | 1762 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view) | [Solution1](src/BuildingsWithAnOceanView_1762/Solution1.java) <br>[Solution2](src/BuildingsWithAnOceanView_1762/Solution2.java) <br> |
 | 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii) | [Solution1](src/BulbSwitcherII_672/Solution1.java) <br> |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher) | [Solution1](src/BulbSwitcher_319/Solution1.java) <br> |
-| 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | [Solution1](src/BurstBalloons_312/Solution1.java) <br> |
+| 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | [Solution1](src/BurstBalloons_312/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br> |
 | 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [Solution1](src/BusRoutes_815/Solution1.java) <br> |
 | 723 | [Candy Crush](https://leetcode.com/problems/candy-crush) | [Solution1](src/CandyCrush_723/Solution1.java) <br> |
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet) | [Solution1](src/CarFleet_853/Solution1.java) <br>Assume n is position.length.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(h)<br> |
@@ -181,6 +181,7 @@
 | 1010 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution1](src/PairsOfSongsWithTotalDurationsDivisibleBy60_1010/Solution1.java) <br> |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br> |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |
+| 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | [Solution1](src/PermutationInString_567/Solution1.java) <br>Assume s1.length() is n; s2.length() is m.<br>Time Complexity: O(n + m)<br>Space Complexity: O(1)<br> |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br> |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | [Solution1](src/PermutationsI_46/Solution1.java) <br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/PredictTheWinner_486/Solution3.java) <br> |
@@ -203,6 +204,7 @@
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | [Solution1](src/ReorganizeString_767/Solution1.java) <br> |
 | 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | [Solution1](src/RestoreIPAddresses_93/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution1](src/ReverseInteger_7/Solution1.java) <br> |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution1](src/ReverseLinkedList_206/Solution1.java) <br>Time Complexity: O(the length of the list)<br>Space Complexity: O(1)<br> |
 | 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br>Time Complexity: O(instructions.length)<br>Space Complexity: O(1)<br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br> |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution1](src/RottingOranges_994/Solution1.java) <br>Assume the grid size is m * n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |

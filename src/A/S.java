@@ -38,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("1851. Minimum Interval to Include Each Query");
+        createSkeleton("567. Permutation in String");
     }
 }
