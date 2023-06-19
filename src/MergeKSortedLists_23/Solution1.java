@@ -3,40 +3,32 @@ package MergeKSortedLists_23;
 import java.util.PriorityQueue;
 
 /**
- * Assume k is lists.length and n is node count for all linked lists.
- * Time Complexity: O(n * logk)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 4ms
- * Rank: 83.18%
+ * $$ Assume k is lists.length and n is node count for all linked lists.
+ * $$ Time Complexity: O(nlogk)
+ * $$ Space Complexity: O(k)
  */
 public class Solution1 {
-    public ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 0) {
-            return null;
-        }
-        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b)->Integer.compare(a.val,b.val));
-        for (ListNode list : lists) {
-            if (list == null) {
-                continue;
+    class Solution {
+        public ListNode mergeKLists(ListNode[] lists) {
+            PriorityQueue<ListNode> pq = new PriorityQueue<>((a,b)->Integer.compare(a.val, b.val));
+            for (ListNode list : lists) {
+                if (list == null) {
+                    continue;
+                }
+                pq.offer(list);
             }
-            pq.offer(list);
-        }
+            ListNode dummy = new ListNode(0);
+            ListNode cur = dummy;
 
-        ListNode dummy = new ListNode();
-        ListNode cur = dummy;
-
-        while (pq.size() != 0) {
-            ListNode node = pq.poll();
-            // Add node to the result list.
-            cur.next = node;
-            cur = cur.next;
-
-            if (node.next == null) {
-                continue;
+            while (!pq.isEmpty()) {
+                ListNode list = pq.poll();
+                cur.next = list;
+                cur = cur.next;
+                if (list.next != null) {
+                    pq.offer(list.next);
+                }
             }
-            pq.offer(node.next);
+            return dummy.next;
         }
-
-        return dummy.next;
     }
 }

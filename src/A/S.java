@@ -38,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("567. Permutation in String");
+        createSkeleton("875. Koko Eating Bananas");
     }
 }

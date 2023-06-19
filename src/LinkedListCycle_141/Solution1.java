@@ -1,11 +1,9 @@
-package LinkedListCycle;
+package LinkedListCycle_141;
 
 /**
- * Assume n is the length of the linked list.
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is the length of the linked list.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public boolean hasCycle(ListNode head) {

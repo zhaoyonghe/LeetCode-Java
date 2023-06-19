@@ -110,6 +110,7 @@
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | [Solution1](src/JumpGameII_45/Solution1.java) <br> |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/JumpGame_55/Solution1.java) <br> |
 | 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | [Solution1](src/KClosestPointsToOrigin_973/Solution1.java) <br>Assume n is points.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
+| 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) | [Solution1](src/KokoEatingBananas_875/Solution1.java) <br>Assume piles.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream) | [Solution1](src/KthLargestElementInAStream_703/KthLargest1.java) <br> |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution1](src/KthLargestElementInAnArray_215/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
 | 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [Solution1](src/KthSmallestElementInASorteMatrix_378/Solution1.java) <br> |
@@ -117,6 +118,7 @@
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br>Assume heights.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br> |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Solution1](src/LinkedListCycle_141/Solution1.java) <br>Assume n is the length of the linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br> |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | [Solution1](src/LongestConsecutiveSequence_128/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [Solution1](src/LongestIncreasingPathInAMatrix_329/Solution1.java) <br> |
@@ -142,7 +144,7 @@
 | 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms) | [Solution1](src/MeetingRooms_252/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Auxiliary Space Complexity: O(n)<br> |
 | 1932 | [Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst) | [Solution1](src/MergeBSTsToCreateSingleBST_1932/Solution1.java) <br> |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
-| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br> |
+| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [Solution1](src/MergeKSortedLists_23/Solution1.java) <br>Assume k is lists.length and n is node count for all linked lists.<br>Time Complexity: O(nlogk)<br>Space Complexity: O(k)<br> |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | [Solution1](src/MergeSortedArray_88/Solution1.java) <br> |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Solution1](src/MergeTwoSortedList_21/Solution1.java) <br>Assume the length of l1 is m, that of l2 is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
 | 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points) | [Solution1](src/MinCostToConnectAllPoints_1584/Solution1.java) <br>Assume points.length is n.<br>Time Complexity: O(n^2logn)<br>Space Complexity: O(n)<br> |
@@ -205,9 +207,11 @@
 | 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | [Solution1](src/RestoreIPAddresses_93/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [Solution1](src/ReverseInteger_7/Solution1.java) <br> |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution1](src/ReverseLinkedList_206/Solution1.java) <br>Time Complexity: O(the length of the list)<br>Space Complexity: O(1)<br> |
+| 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | [Solution1](src/ReverseNodesInKGroup_25/Solution1.java) <br>Assume n is the length of head.<br>Time Complexity: O(n)<br>Space Complexity: O(k)<br> |
 | 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br>Time Complexity: O(instructions.length)<br>Space Complexity: O(1)<br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br> |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges) | [Solution1](src/RottingOranges_994/Solution1.java) <br>Assume the grid size is m * n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
+| 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | [Solution1](src/SearchA2DMatrixI_74/Solution1.java) <br>Assume matrix.length is m and matrix[0].length is n.<br>Time Complexity: O(logm + logn)<br>Space Complexity: O(1)<br> |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | [Solution1](src/SearchInRotatedSortedArrayII_81/Solution1.java) <br>Assume nums.length is n.<br>Best Time Complexity: O(logn)<br>Worse Time Complexity: O(n), when almost every number in nums has same value.<br>Space Complexity: O(1)<br> |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution1](src/SearchInRotatedSortedArray_33/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 1268 | [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system) | [Solution1](src/SearchSuggestionsSystem_1268/Solution1.java) <br>Time Complexity: O(m + n)<br>Space Complexity: O(m + n)<br> |

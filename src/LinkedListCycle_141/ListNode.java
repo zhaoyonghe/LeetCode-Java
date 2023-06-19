@@ -1,4 +1,4 @@
-package LinkedListCycle;
+package LinkedListCycle_141;
 
 public class ListNode {
     int val;
