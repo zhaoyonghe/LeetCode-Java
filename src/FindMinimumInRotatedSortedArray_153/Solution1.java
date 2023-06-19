@@ -8,21 +8,25 @@ package FindMinimumInRotatedSortedArray_153;
 
 public class Solution1 {
     public int findMin(int[] nums) {
-        int res = nums[0];
+        if (nums.length == 1 || nums[0] < nums[nums.length - 1]) {
+            return nums[0];
+        }
+
         int s = 0;
         int e = nums.length - 1;
         while (s <= e) {
-            int mid = (s+e)/2;
-            res = Math.min(res, nums[s]);
-            res = Math.min(res, nums[mid]);
-            if (nums[s] < nums[mid]) {
-                s = mid+1;
-            } else if (nums[s] > nums[mid]) {
-                e=mid-1;
+            int m = (s+e)/2;
+            if (nums[m] < nums[0]) {
+                if (nums[m-1]<nums[m]) {
+                    e = m - 1;
+                    continue;
+                }
+                return nums[m];
             } else {
-                s++;
+                // nums[m] >= nums[0]
+                s = m + 1;
             }
         }
-        return res;
+        return -1;
     }
 }

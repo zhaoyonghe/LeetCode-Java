@@ -105,6 +105,7 @@
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Solution1](src/InsertionSortList_147/Solution1.java) <br> |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution1](src/IntersectionOfTwoLinkedLists_160/Solution1.java) <br>[Solution2](src/IntersectionOfTwoLinkedLists_160/Solution2.java) <br> |
 | 986 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections) | [Solution1](src/IntervalListIntersections_986/Solution1.java) <br> |
+| 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution1](src/InvertBinaryTree_226/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | [Solution1](src/IsGraphBipartite_785/Solution1.java) <br> |
 | 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter) | [Solution1](src/IslandPerimeter_463/Solution1.java) <br> |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | [Solution1](src/JumpGameII_45/Solution1.java) <br> |
@@ -132,6 +133,7 @@
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution1](src/LowestCommonAncestorOfABinaryTree_236/Solution1.java) <br> |
 | 1787 | [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero) | [Solution1](src/MakeTheXOROfAllSegmentsEqualToZero_1787/Solution1.java) <br> |
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island) | [Solution1](src/MaxAreaOfIsland_695/Solution1.java) <br>Assume grid is m * n matrix.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Solution1](src/MaximumDepthOfBinaryTree_104/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 164 | [Maximum Gap](https://leetcode.com/problems/maximum-gap) | [Solution1](src/MaximumGap_164/Solution1.java) <br> |
 | 718 | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray) | [Solution1](src/MaximumLengthOfRepeatedSubarray_718/Solution1.java) <br> |
 | 2065 | [Maximum Path Quality of a Graph](https://leetcode.com/problems/maximum-path-quality-of-a-graph) | [Solution1](src/MaximumPathQualityOfAGraph_2065/Solution1.java) <br> |
@@ -160,7 +162,7 @@
 | 1249 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses) | [Solution1](src/MinimumRemoveToMakeValidParentheses_1249/Solution1.java) <br> |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) | [Solution1](src/MinimumSizeSubarraySum_209/Solution1.java) <br> |
 | 1443 | [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree) | [Solution1](src/MinimumTimeToCollectAllApplesInATree_1443/Solution1.java) <br> |
-| 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution1](src/MinimumWindowSubstring_76/Solution1.java) <br> |
+| 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution1](src/MinimumWindowSubstring_76/Solution1.java) <br>Assume the length of s is m and t is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/NQueensII_52/Solution1.java) <br> |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br> |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) | [Solution1](src/NestedListWeightSum_339/Solution1.java) <br> |

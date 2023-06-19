@@ -38,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("875. Koko Eating Bananas");
+        createSkeleton("226. Invert Binary Tree");
     }
 }

@@ -1,4 +1,4 @@
-package MaximumDepthOfBinaryTree;
+package MaximumDepthOfBinaryTree_104;
 
 public class TreeNode {
     int val;
