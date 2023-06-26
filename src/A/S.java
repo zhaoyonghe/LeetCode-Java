@@ -38,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("226. Invert Binary Tree");
+        createSkeleton("572. Subtree of Another Tree");
     }
 }

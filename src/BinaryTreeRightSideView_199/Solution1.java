@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume n is the number of nodes in tree root.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 1ms
- * Rank: 91.99%
+ * $$ Assume the nodes count of root is n, height is h.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(h)
  */
 
 public class Solution1 {

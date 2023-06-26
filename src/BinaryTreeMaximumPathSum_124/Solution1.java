@@ -1,38 +1,32 @@
 package BinaryTreeMaximumPathSum_124;
 
 /**
- * Assume the number of the nodes in root is n.
- * Assume the height of the tree is h.
- * Time Complexity: O(n)
- * Space Complexity: O(h)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume the number of nodes in root is n; the height of root is h.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(h)
  */
 
 public class Solution1 {
     public int maxPathSum(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        res = root.val;
-        f(root);
+        helper(root);
         return res;
     }
 
-    private int res = 0;
-
-    private int f(TreeNode root) {
-        if (root == null) {
+    private int res = Integer.MIN_VALUE;
+    private int helper(TreeNode node) {
+        if (node == null) {
             return 0;
         }
-        int le = f(root.left);
-        int ri = f(root.right);
-        int ret = max(le,ri,0)+root.val;
-        res = max(res, ret, le+ri+root.val);
+        int le = helper(node.left);
+        int ri = helper(node.right);
+        // Max sum of paths that include node and go straight down
+        int ret = max3(le, ri, 0) + node.val;
+        // Max sum of paths that pivot at node
+        res = max3(res, ret, le+ri+node.val);
         return ret;
     }
 
-    private int max(int a, int b, int c) {
-        return Math.max(a, Math.max(b, c));
+    private int max3(int a, int b, int c) {
+        return Math.max(Math.max(a,b), c);
     }
 }
