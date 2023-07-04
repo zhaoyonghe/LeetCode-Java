@@ -1,4 +1,4 @@
-package KthSmallestElementInABST;
+package KthSmallestElementInABST_230;
 
 public class TreeNode {
     int val;

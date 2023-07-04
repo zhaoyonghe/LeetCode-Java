@@ -1,7 +1,7 @@
 package CountGoodNodesInBinaryTree_1448;
 
 /**
- * $$ Assume the nodes count of root is n, height is h.
+ * $$ Assume the number of nodes in root is n, root height is h.
  * $$ Time Complexity: O(n)
  * $$ Space Complexity: O(h)
  */

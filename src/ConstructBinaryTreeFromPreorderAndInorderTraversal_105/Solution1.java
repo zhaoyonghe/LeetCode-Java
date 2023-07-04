@@ -3,11 +3,9 @@ package ConstructBinaryTreeFromPreorderAndInorderTraversal_105;
 import java.util.*;
 
 /**
- * Assume n is the number of nodes in root.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 1ms
- * Rank: 98.34%
+ * $$ Assume n is the number of nodes in root.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 
