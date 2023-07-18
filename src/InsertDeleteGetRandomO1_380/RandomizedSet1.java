@@ -12,13 +12,13 @@ import java.util.*;
  * Rank: 97.17%
  */
 
-class RandomizedSet {
+class RandomizedSet1 {
     List<Integer> nums = new ArrayList<>();
     Map<Integer, Integer> locs = new HashMap<>();
     Random rand = new Random();
 
     /** Initialize your data structure here. */
-    public RandomizedSet() {
+    public RandomizedSet1() {
 
     }
 

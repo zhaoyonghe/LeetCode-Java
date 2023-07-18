@@ -66,7 +66,7 @@
 | 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [Solution1](src/DesignBrowserHistory_1472/BrowserHistory1.java) <br>Constructor Time Complexity: O(1)<br>visit() Time Complexity: O(1)<br>back() Time Complexity: O(1)<br>forward() Time Complexity: O(1)<br> |
 | 631 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | [Solution1](src/DesignExcelSumFormula_631/Excel1.java) <br> |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | [Solution1](src/DesignHitCounter_362/HitCounter1.java) <br> |
-| 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/*[1-4].java) <br> |
+| 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/FileSystem1.java) <br> |
 | 355 | [Design Twitter](https://leetcode.com/problems/design-twitter) | [Solution1](src/DesignTwitter_355/Twitter1.java) <br>Assume n is the number of users that a user follows.<br>Constructor Time Complexity: O(1)<br>postTweet() Time Complexity: O(1)<br>getNewsFeed() Time Complexity: O(n)<br>follow() Time Complexity: O(1)<br>unfollow() Time Complexity: O(1)<br> |
 | 1396 | [Design Underground System](https://leetcode.com/problems/design-underground-system) | [Solution1](src/DesignUndergroundSystem_1396/UndergroundSystem1.java) <br> |
 | 2013 | [Detect Squares](https://leetcode.com/problems/detect-squares) | [Solution1](src/DetectSquares_2013/DetectSquares1.java) <br>Assume points.size() is n.<br>Constructor Time Complexity: O(1)<br>add() Time Complexity: O(1)<br>count() Time Complexity: O(1)<br>Space Complexity: O(n)<br> |
@@ -84,7 +84,7 @@
 | 809 | [Expressive Words](https://leetcode.com/problems/expressive-words) | [Solution1](src/ExpressiveWords_809/Solution1.java) <br> |
 | 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies) | [Solution1](src/FindAllPossibleRecipesFromGivenSupplies_2115/Solution1.java) <br> |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | [Solution1](src/FindLeavesOfBinaryTree_366/Solution1.java) <br> |
-| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [Solution1](src/FindMedianFromDataStream_295/*[1-4].java) <br> |
+| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | [Solution1](src/FindMedianFromDataStream_295/MedianFinder1.java) <br> |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [Solution1](src/FindMinimumInRotatedSortedArray_153/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution1](src/FindPeakElement_162/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
@@ -99,9 +99,9 @@
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station) | [Solution1](src/GasStation_134/Solution1.java) <br> |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [Solution1](src/GenerateParentheses_22/Solution1.java) <br>Time Complexity: O(4^n/n^(1/2))<br>Space Complexity: O(n)<br>[Solution2](src/GenerateParentheses_22/Solution2.java) <br>Time Complexity: O(4^n/n^(1/2))<br>Space Complexity: O(n)<br> |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
-| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution1](src/ImplementTrie_208/*[1-4].java) <br> |
+| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution1](src/ImplementTrie_208/Trie1.java) <br>Assume the length of the input word is n.<br>insert Time Complexity: O(n)<br>search Time Complexity: O(n)<br>startsWith Time Complexity: O(n)<br> |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | [Solution1](src/IncreasingTripletSubsequence_334/Solution1.java) <br> |
-| 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/*[1-4].java) <br> |
+| 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/RandomizedSet1.java) <br> |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution1](src/InsertInterval_57/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Solution1](src/InsertionSortList_147/Solution1.java) <br> |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution1](src/IntersectionOfTwoLinkedLists_160/Solution1.java) <br>[Solution2](src/IntersectionOfTwoLinkedLists_160/Solution2.java) <br> |
@@ -117,7 +117,7 @@
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution1](src/KthLargestElementInAnArray_215/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution1](src/KthSmallestElementInABST_230/Solution1.java) <br>Assume the number of nodes in root is n, root height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [Solution1](src/KthSmallestElementInASorteMatrix_378/Solution1.java) <br> |
-| 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/*[1-4].java) <br> |
+| 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/LFUCache1.java) <br> |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br>Assume heights.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br> |
@@ -195,7 +195,7 @@
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
 | 938 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst) | [Solution1](src/RangeSumOfBST_938/Solution1.java) <br> |
 | 304 | [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable) | [Solution1](src/RangeSumQuery2DImmutable_304/NumMatrix1.java) <br>Assume the matrix size is m * n.<br>Constructor Time Complexity: O(m * n)<br>sumRegion() Complexity: O(1)<br> |
-| 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | [Solution1](src/RangeSumQueryMutable_307/*[1-4].java) <br> |
+| 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable) | [Solution1](src/RangeSumQueryMutable_307/NumArray1.java) <br> |
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
 | 358 | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart) | [Solution1](src/RearrangeStringKDistanceApart_358/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [Solution1](src/ReconstructItinerary_332/Solution1.java) <br> |
@@ -229,7 +229,7 @@
 | 847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | [Solution1](src/ShortestPathVisitingAllNodes_847/Solution1.java) <br> |
 | 1129 | [Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors) | [Solution1](src/ShortestPathWithAlternatingColors_1129/Solution1.java) <br> |
 | 245 | [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii) | [Solution1](src/ShortestWordDistanceIII_245/Solution1.java) <br> |
-| 244 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) | [Solution1](src/ShortestWordDistanceII_244/*[1-4].java) <br> |
+| 244 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) | [Solution1](src/ShortestWordDistanceII_244/WordDistance1.java) <br> |
 | 243 | [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance) | [Solution1](src/ShortestWordDistance_243/Solution1.java) <br> |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br> |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [Solution1](src/SingleNumberIII_260/Solution1.java) <br> |
@@ -261,7 +261,7 @@
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution1](src/ThreeSumClosest_16/Solution1.java) <br> |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller) | [Solution1](src/ThreeSumSmaller_259/Solution1.java) <br> |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | [Solution1](src/ThreeSum_15/Solution1.java) <br> |
-| 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | [Solution1](src/TimeBasedKeyValueStore_981/*[1-4].java) <br> |
+| 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | [Solution1](src/TimeBasedKeyValueStore_981/TimeMap1.java) <br> |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution1](src/TopKFrequentElements_347/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(nlogk)<br>Space Complexity: O(n)<br>[Solution2](src/TopKFrequentElements_347/Solution2.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 692 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | [Solution1](src/TopKFrequentWords_692/Solution1.java) <br> |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | [Solution1](src/TrappingRainWater_42/Solution1.java) <br>[Solution2](src/TrappingRainWater_42/Solution2.java) <br> |

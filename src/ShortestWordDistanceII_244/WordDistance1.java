@@ -11,12 +11,12 @@ import java.util.*;
  */
 
 
-class WordDistance {
+class WordDistance1 {
     // Important constraints:
     // 1. word1 and word2 are in wordsDict (always have answer).
 
     Map<String, List<Integer>> m = new HashMap<>();
-    public WordDistance(String[] wordsDict) {
+    public WordDistance1(String[] wordsDict) {
         for (int i = 0; i < wordsDict.length; i++) {
             List<Integer> li = m.getOrDefault(wordsDict[i], new ArrayList<>());
             li.add(i);

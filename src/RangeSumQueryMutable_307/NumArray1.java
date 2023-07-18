@@ -9,12 +9,12 @@ package RangeSumQueryMutable_307;
  * Rank: 97.66%
  */
 
-public class NumArray {
+public class NumArray1 {
     private final int[] bitree;
     private final int[] nums;
     private int n;
 
-    public NumArray(int[] nums) {
+    public NumArray1(int[] nums) {
         n = nums.length;
         this.bitree = new int[n + 1];
         this.nums = new int[n + 1];

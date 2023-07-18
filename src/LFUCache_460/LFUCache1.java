@@ -10,7 +10,7 @@ package LFUCache_460;
  */
 import java.util.*;
 
-public class LFUCache {
+public class LFUCache1 {
     private class Node {
         int key;
         int value;
@@ -32,7 +32,7 @@ public class LFUCache {
     private HashMap<Integer, Node> freq = new HashMap<>();
     private int capacity;
 
-    public LFUCache(int capacity) {
+    public LFUCache1(int capacity) {
         this.capacity = capacity;
     }
 

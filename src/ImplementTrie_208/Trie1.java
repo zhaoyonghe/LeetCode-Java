@@ -6,7 +6,7 @@ package ImplementTrie_208;
  * $$ search Time Complexity: O(n)
  * $$ startsWith Time Complexity: O(n)
  */
-public class Trie {
+public class Trie1 {
     private class Node {
         boolean fullWord;
         Node[] next = new Node[26];
@@ -14,7 +14,7 @@ public class Trie {
 
     Node root = new Node();
 
-    public Trie() {
+    public Trie1() {
 
     }
 

@@ -12,14 +12,14 @@ import java.util.PriorityQueue;
  * Rank: 84.55%
  */
 
-public class MedianFinder {
+public class MedianFinder1 {
     // Important constraints:
     // -10^5 <= num <= 10^5 (two-numbers-minus will not overflow)
     // There will be at least one element in the data structure before calling findMedian. (calls are always valid)
     private final PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b)->-Integer.compare(a,b));
     private final PriorityQueue<Integer> minHeap = new PriorityQueue<>((a, b)->Integer.compare(a,b));
 
-    public MedianFinder() {
+    public MedianFinder1() {
         maxHeap.offer(Integer.MIN_VALUE);
         minHeap.offer(Integer.MAX_VALUE);
     }

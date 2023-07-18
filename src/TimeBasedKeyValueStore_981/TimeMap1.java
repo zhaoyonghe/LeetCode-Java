@@ -9,10 +9,10 @@ import java.util.*;
  * Runtime: 133ms
  * Rank: 64.60%
  */
-class TimeMap {
+class TimeMap1 {
 
     private Map<String, TreeMap<Integer, String>> m = new HashMap<>();
-    public TimeMap() {
+    public TimeMap1() {
 
     }
 

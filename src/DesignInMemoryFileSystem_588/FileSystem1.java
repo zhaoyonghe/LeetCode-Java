@@ -11,7 +11,7 @@ import java.util.*;
  * Rank: 88.03%
  */
 
-public class FileSystem {
+public class FileSystem1 {
     // Important constraints:
     // path and filePath are absolute paths which begin with '/' and do not end with '/' except that the path is just "/".
     // You can assume that all directory names and file names only contain lowercase letters, and the same names will not exist in the same directory.
@@ -32,7 +32,7 @@ public class FileSystem {
 
     private final File root = new File("/", true);
 
-    public FileSystem() {
+    public FileSystem1() {
 
     }
 
