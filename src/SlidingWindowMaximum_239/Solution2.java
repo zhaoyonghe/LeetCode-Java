@@ -1,10 +1,9 @@
 package SlidingWindowMaximum_239;
 
 /**
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 9ms
- * Rank: 99.18%
+ * $$ Assume nums.length is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution2 {

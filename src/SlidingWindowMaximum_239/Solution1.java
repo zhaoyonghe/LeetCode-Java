@@ -1,35 +1,43 @@
 package SlidingWindowMaximum_239;
 
-import java.util.TreeSet;
+import java.util.*;
 
 /**
- * Time Complexity: O(n * logk)
- * Space Complexity: O(k)
- * Runtime: 348ms
- * Rank: 7.48%
+ * $$ Assume nums.length is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(k)
  */
 public class Solution1 {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        int n = nums.length;
-
-        if (n == 0 || k == 1) {
-            return nums;
-        }
-        TreeSet<Integer> set = new TreeSet<>(
-                (a, b) -> (nums[a] == nums[b] ? a - b : Integer.compare(nums[b], nums[a])));
-        for (int i = 0; i < k; i++) {
-            set.add(i);
+        int[] res = new int[nums.length-k+1];
+        // element: [index, value]
+        Deque<int[]> mq = new ArrayDeque<>();
+        for (int i = 0; i < k - 1; i++) {
+            offerMonotonicQueue(mq, new int[]{i,nums[i]});
         }
 
-        int[] res = new int[n - k + 1];
+        for (int i = 0; i + k <= nums.length; i++) {
+            // window: i ~ i + k -1
 
-        res[0] = nums[set.first()];
-        for (int i = 1, j = k; j < n; i++, j++) {
-            set.remove(i - 1);
-            set.add(j);
-            res[i] = nums[set.first()];
+            // Clear the number outside the window.
+            // At most one number will be cleared.
+            if (!mq.isEmpty() && mq.peekFirst()[0] < i) {
+                mq.pollFirst();
+            }
+
+            offerMonotonicQueue(mq, new int[]{i+k-1, nums[i+k-1]});
+            // q is not empty here
+            res[i] = mq.peekFirst()[1];
         }
+
 
         return res;
+    }
+
+    private void offerMonotonicQueue(Deque<int[]> mq, int[] element) {
+        while (!mq.isEmpty() && mq.peekLast()[1] <= element[1]) {
+            mq.pollLast();
+        }
+        mq.offerLast(element);
     }
 }

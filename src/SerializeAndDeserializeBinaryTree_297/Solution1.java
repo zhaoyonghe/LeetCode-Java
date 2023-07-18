@@ -3,13 +3,11 @@ package SerializeAndDeserializeBinaryTree_297;
 import java.util.*;
 
 /**
- * Assume the number of nodes is n.
- * Serialize Time Complexity: O(n)
- * Deserialize Time Complexity: O(n)
- * Serialize Space Complexity: O(n)
- * Deserialize Space Complexity: O(n)
- * Runtime: 10ms
- * Rank: 66.25%
+ * $$ Assume the number of nodes is n.
+ * $$ Serialize Time Complexity: O(n)
+ * $$ Deserialize Time Complexity: O(n)
+ * $$ Serialize Space Complexity: O(n)
+ * $$ Deserialize Space Complexity: O(n)
  */
 
 public class Solution1 {
