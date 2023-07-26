@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume n is digits.length().
- * Time Complexity: O(3 ^ n)
- * Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is digits.length().
+ * $$ Time Complexity: O(3 ^ n)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     private final char[][] buttons = new char[][]{

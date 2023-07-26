@@ -1,10 +1,9 @@
 package NumberOfIslands_200;
 
 /**
- * Time Complexity: O(m * n)
- * Auxiliary Space Complexity: O(m * n)
- * Runtime: 1ms
- * Rank: 99.94%
+ * $$ Assume grid is m by n.
+ * $$ Time Complexity: O(m * n)
+ * $$ Space Complexity: O(m * n)
  */
 class Solution1 {
     public int numIslands(char[][] grid) {

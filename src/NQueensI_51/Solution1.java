@@ -5,47 +5,48 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Time Complexity: O(n!)
- * Auxiliary Space Complexity: O(n)
- * Runtime: 2ms
- * Rank: 92.60%
+ * $$ Time Complexity: O(n!)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> res = new ArrayList<>();
-        int[] cur = new int[n];
-        solve(0, cur, res);
+        helper(new int[n], 0, n, res);
         return res;
     }
 
-    private List<String> drawBoard(int[] cur) {
-        List<String> board = new ArrayList<>();
-        int n = cur.length;
-        char[] line = new char[n];
-        for (int i : cur) {
-            Arrays.fill(line, '.');
-            line[i] = 'Q';
-            board.add(new String(line));
-        }
-        return board;
-    }
-
-    private void solve(int row, int[] cur, List<List<String>> res) {
-        if (row == cur.length) {
-            res.add(drawBoard(cur));
+    private void helper(int[] posByRank, int iRank, int n, List<List<String>> res) {
+        if (iRank == n) {
+            res.add(drawBoard(posByRank));
             return;
         }
-        test:
-        for (int col = 0; col < cur.length; col++) {
-            // Check queens before.
-            for (int rowBefore = 0; rowBefore < row; rowBefore++) {
-                int colBefore = cur[rowBefore];
-                if (col == colBefore || Math.abs(row-rowBefore) == Math.abs(col-colBefore)) {
-                    continue test;
+
+        for (int iFile = 0; iFile < n; iFile++) {
+            // put queen on [iRank, iFile]
+            posByRank[iRank] = iFile;
+
+            boolean attacked = false;
+            for (int j = 0; j < iRank; j++) {
+                // another queen is on [j, posByRank[j]]
+                if (posByRank[j] == iFile || Math.abs(j - iRank) == Math.abs(posByRank[j] - iFile)) {
+                    attacked = true;
+                    break;
                 }
             }
-            cur[row] = col;
-            solve(row+1, cur, res);
+            if (!attacked) {
+                helper(posByRank, iRank+1, n, res);
+            }
         }
+    }
+
+    private List<String> drawBoard(int[] posByRank) {
+        List<String> res = new ArrayList<>();
+        char[] rank = new char[posByRank.length];
+        for (int file : posByRank) {
+            Arrays.fill(rank, '.');
+            rank[file] = 'Q';
+            res.add(new String(rank));
+        }
+        return res;
     }
 }

@@ -121,7 +121,7 @@
 | 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/LFUCache1.java) <br> |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [Solution1](src/LargestRectangleInHistogram_84/Solution1.java) <br>Assume heights.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
-| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br> |
+| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br>Assume n is digits.length().<br>Time Complexity: O(3 ^ n)<br>Space Complexity: O(1)<br> |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Solution1](src/LinkedListCycle_141/Solution1.java) <br>Assume n is the length of the linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br> |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | [Solution1](src/LongestConsecutiveSequence_128/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -167,7 +167,7 @@
 | 1443 | [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree) | [Solution1](src/MinimumTimeToCollectAllApplesInATree_1443/Solution1.java) <br> |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution1](src/MinimumWindowSubstring_76/Solution1.java) <br>Assume the length of s is m and t is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/NQueensII_52/Solution1.java) <br> |
-| 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br> |
+| 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) | [Solution1](src/NestedListWeightSum_339/Solution1.java) <br> |
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | [Solution1](src/NetworkDelayTime_743/Solution1.java) <br>Assume times.length is E, n is V.<br>Time Complexity: O(V + ElogE)<br>Space Complexity: O(V + E)<br> |
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/NextGreaterElementII_503/Solution1.java) <br> |
@@ -179,7 +179,7 @@
 | 1254 | [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands) | [Solution1](src/NumberOfClosedIslands_1254/Solution1.java) <br> |
 | 694 | [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands) | [Solution1](src/NumberOfDistinctIslands_694/Solution1.java) <br> |
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) | [Solution1](src/NumberOfIslandsII_305/Solution1.java) <br> |
-| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [Solution1](src/NumberOfIslands_200/Solution1.java) <br>[Solution2](src/NumberOfIslands_200/Solution2.java) <br> |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [Solution1](src/NumberOfIslands_200/Solution1.java) <br>Assume grid is m by n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br>[Solution2](src/NumberOfIslands_200/Solution2.java) <br>Assume grid is m by n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | [Solution1](src/NumberOfOneBits_191/Solution1.java) <br> |
 | 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible) | [Solution1](src/NumberOfWaysToRearrangeSticksWithKSticksVisible_1866/Solution1.java) <br>Time Complexity: O(n * k)<br>Space Complexity: O(n * k)<br> |
 | 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes) | [Solution1](src/OnesAndZeroes_474/Solution1.java) <br>Time Complexity: O(m * n * strs.length)<br>Space Complexity: O(m * n)<br> |

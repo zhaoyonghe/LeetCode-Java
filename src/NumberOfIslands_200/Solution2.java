@@ -3,10 +3,9 @@ package NumberOfIslands_200;
 import java.util.Arrays;
 
 /**
- * Time Complexity: O(m * n)
- * Auxiliary Space Complexity: O(m * n)
- * Runtime: 6ms
- * Rank: 7.69%
+ * $$ Assume grid is m by n.
+ * $$ Time Complexity: O(m * n)
+ * $$ Space Complexity: O(m * n)
  */
 
 class Solution2 {
