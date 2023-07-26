@@ -37,7 +37,8 @@
 | 270 | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value) | [Solution1](src/ClosestBinarySearchTreeValue_270/Solution1.java) <br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution1](src/CoinChange_322/Solution1.java) <br>Time Complexity: O(amount * coins.length)<br>Space Complexity: O(amount)<br> |
-| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution1](src/CombinationSum_39/Solution1.java) <br>Assume candidates.length is n, target is t.<br>Time Complexity: O(n ^ t)<br>Space Complexity: O(n ^ t)<br> |
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | [Solution1](src/CombinationSumII_40/Solution1.java) <br>Assume candidates.length is n, target is t.<br>Time Complexity: O(n ^ t)<br>Space Complexity: O(n ^ t)<br> |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | [Solution1](src/CombinationSum_39/Solution1.java) <br>Assume candidates.length is n, target is t.<br>Time Complexity: O(n ^ t)<br>Space Complexity: O(n ^ t)<br>[Solution2](src/CombinationSum_39/Solution2.java) <br>Assume candidates.length is n, target is t.<br>Time Complexity: O(n ^ t)<br>Space Complexity: O(n ^ t)<br> |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | [Solution1](src/Combinations_77/Solution1.java) <br> |
 | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum) | [Solution1](src/ConsecutiveNumbersSum_829/Solution1.java) <br> |
 | 1008 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal) | [Solution1](src/ConstructBinarySearchTreeFromPreorderTraversal_1008/Solution1.java) <br> |
@@ -188,8 +189,8 @@
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br> |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | [Solution1](src/PermutationInString_567/Solution1.java) <br>Assume s1.length() is n; s2.length() is m.<br>Time Complexity: O(n + m)<br>Space Complexity: O(1)<br> |
-| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br> |
-| 46 | [Permutations](https://leetcode.com/problems/permutations) | [Solution1](src/PermutationsI_46/Solution1.java) <br> |
+| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n * n!)<br>Space Complexity: O(n * n!)<br> |
+| 46 | [Permutations](https://leetcode.com/problems/permutations) | [Solution1](src/PermutationsI_46/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n * n!)<br>Space Complexity: O(n * n!)<br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/PredictTheWinner_486/Solution3.java) <br> |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | [Solution1](src/ProductOfArrayExceptSelf_238/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
@@ -248,8 +249,8 @@
 | 443 | [String Compression](https://leetcode.com/problems/string-compression) | [Solution1](src/StringCompression_443/Solution1.java) <br> |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution1](src/SubarraySumEqualsK_560/Solution1.java) <br> |
 | 811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | [Solution1](src/SubdomainVisitCount_811/Solution1.java) <br> |
-| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | [Solution1](src/SubsetsII_90/Solution1.java) <br> |
-| 78 | [Subsets](https://leetcode.com/problems/subsets) | [Solution1](src/SubsetsI_78/Solution1.java) <br>[Solution2](src/SubsetsI_78/Solution2.java) <br> |
+| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | [Solution1](src/SubsetsII_90/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(2 ^ n * n)<br>Space Complexity: O(2 ^ n * n)<br> |
+| 78 | [Subsets](https://leetcode.com/problems/subsets) | [Solution1](src/SubsetsI_78/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(2 ^ n * n)<br>Space Complexity: O(2 ^ n * n)<br>[Solution2](src/SubsetsI_78/Solution2.java) <br>Assume n is nums.length.<br>Time Complexity: O(2 ^ n * n)<br>Space Complexity: O(2 ^ n * n)<br> |
 | 572 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree) | [Solution1](src/SubtreeOfAnotherTree_572/Solution1.java) <br>Assume n is the number of nodes in root; m is the number of nodes in subRoot; h is the height of subRoot.<br>Time Complexity: O(n * m)<br>Space Complexity: O(h)<br> |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) | [Solution1](src/SudokuSolver_37/Solution1.java) <br> |
 | 907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums) | [Solution1](src/SumOfSubarrayMinimums_907/Solution1.java) <br> |

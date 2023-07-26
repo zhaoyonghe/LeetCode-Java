@@ -1,41 +1,49 @@
 package SubsetsII_90;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(2 ^ n * n)
- * Space Complexity: O(2 ^ n * n)
- * Runtime: 1ms
- * Rank: 99.49%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(2 ^ n * n)
+ * $$ Space Complexity: O(2 ^ n * n)
  */
 public class Solution1 {
+    private class Num {
+        int num;
+        int count;
+        Num(int num, int count) {
+            this.num = num;
+            this.count = count;
+        }
+    }
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        Arrays.sort(nums);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.compute(num, (k,v)->v==null?1:v+1);
+        }
+        Num[] ns = new Num[map.size()];
+        int i = 0;
+        for (Map.Entry<Integer, Integer> en : map.entrySet()) {
+            ns[i] = new Num(en.getKey(), en.getValue());
+            i++;
+        }
         List<List<Integer>> res = new ArrayList<>();
-        construct(nums, 0, new ArrayList<>(), res);
+        helper(ns, 0, res, new ArrayList<>());
         return res;
     }
 
-    private void construct(int[] nums, int i, List<Integer> cur, List<List<Integer>> res) {
+    private void helper(Num[] nums, int i, List<List<Integer>> res, List<Integer> cur) {
         if (i == nums.length) {
             res.add(new ArrayList<>(cur));
             return;
         }
 
-        int next = i + 1;
-        while (next < nums.length && nums[next] == nums[i]) {
-            next++;
+        helper(nums, i+1, res, cur);
+        for (int cnt = 0; cnt < nums[i].count; cnt++) {
+            cur.add(nums[i].num);
+            helper(nums, i+1, res, cur);
         }
-
-        construct(nums, next, cur, res);
-        for (int j = i; j < next; j++) {
-            cur.add(nums[j]);
-            construct(nums, next, cur, res);
-        }
-        for (int j = i; j < next; j++) {
+        for (int cnt = 0; cnt < nums[i].count; cnt++) {
             cur.remove(cur.size()-1);
         }
     }

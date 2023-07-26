@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(n * n!)
- * Space Complexity: O(n * n!)
- * Runtime: 1ms
- * Rank: 99.38%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n * n!)
+ * $$ Space Complexity: O(n * n!)
  */
 public class Solution1 {
     public List<List<Integer>> permuteUnique(int[] nums) {

@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(2 ^ n * n)
- * Space Complexity: O(2 ^ n * n)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(2 ^ n * n)
+ * $$ Space Complexity: O(2 ^ n * n)
  */
 public class Solution2 {
     public List<List<Integer>> subsets(int[] nums) {

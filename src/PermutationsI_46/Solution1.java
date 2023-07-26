@@ -1,10 +1,8 @@
 package PermutationsI_46;
 /**
- * Assume n is nums.length.
- * Time Complexity: O(n * n!)
- * Space Complexity: O(n * n!)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n * n!)
+ * $$ Space Complexity: O(n * n!)
  */
 
 import java.util.ArrayList;
