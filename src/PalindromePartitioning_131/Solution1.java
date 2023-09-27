@@ -1,15 +1,13 @@
-package PalindromePartitioning;
+package PalindromePartitioning_131;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Assume s.length() is n.
- * Time Complexity: O(2 ^ n)
- * Space Complexity: O(n)
- * Runtime: 4ms
- * Rank: 71.45%
+ * $$ Assume s.length() is n.
+ * $$ Time Complexity: O(n * 2 ^ n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {

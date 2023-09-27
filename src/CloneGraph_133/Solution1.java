@@ -3,10 +3,8 @@ package CloneGraph_133;
 import java.util.*;
 
 /**
- * Time Complexity: O(|E| + |V|)
- * Auxiliary Space Complexity: O(|V|)
- * Runtime: 26ms
- * Rank: 79.49%
+ * $$ Time Complexity: O(|E| + |V|)
+ * $$ Auxiliary Space Complexity: O(|V|)
  */
 public class Solution1 {
     public Node cloneGraph(Node node) {

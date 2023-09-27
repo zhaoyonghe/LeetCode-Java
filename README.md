@@ -32,7 +32,7 @@
 | 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower) | [Solution1](src/ChampagneTower_799/Solution1.java) <br> |
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution1](src/CheapestFlightsWithinKStops_787/Solution1.java) <br>[Solution2](src/CheapestFlightsWithinKStops_787/Solution2.java) <br> |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution1](src/ClimbingStairs_70/Solution1.java) <br> |
-| 133 | [Clone Graph](https://leetcode.com/problems/clone-graph) | [Solution1](src/CloneGraph_133/Solution1.java) <br> |
+| 133 | [Clone Graph](https://leetcode.com/problems/clone-graph) | [Solution1](src/CloneGraph_133/Solution1.java) <br>Time Complexity: O(|E| + |V|)<br>Auxiliary Space Complexity: O(|V|)<br> |
 | 272 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) | [Solution1](src/ClosestBinarySearchTreeValueII_272/Solution1.java) <br> |
 | 270 | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value) | [Solution1](src/ClosestBinarySearchTreeValue_270/Solution1.java) <br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
@@ -64,6 +64,7 @@
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/DecodeXORedArray_1720/Solution1.java) <br> |
 | 740 | [Delete and Earn](https://leetcode.com/problems/delete-and-earn) | [Solution1](src/DeleteAndEarn_740/Solution1.java) <br> |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst) | [Solution1](src/DeleteNodeInABST_450/Solution1.java) <br> |
+| 211 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [Solution1](src/DesignAddAndSearchWordsDataStructure_211/WordDictionary1.java) <br>Assume word.length() is n.<br>Constructor Time Complexity: O(1)<br>addWord() Time Complexity: O(n)<br>search() Time Complexity: O(n)<br> |
 | 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history) | [Solution1](src/DesignBrowserHistory_1472/BrowserHistory1.java) <br>Constructor Time Complexity: O(1)<br>visit() Time Complexity: O(1)<br>back() Time Complexity: O(1)<br>forward() Time Complexity: O(1)<br> |
 | 631 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | [Solution1](src/DesignExcelSumFormula_631/Excel1.java) <br> |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | [Solution1](src/DesignHitCounter_362/HitCounter1.java) <br> |
@@ -187,6 +188,7 @@
 | 1993 | [Operations on Tree](https://leetcode.com/problems/operations-on-tree) | [Solution1](src/OperationsOnTree_1993/LockingTree1.java) <br>Assume the node count of the tree is n.<br>Constructor Time Complexity: O(n)<br>lock() Time Complexity: O(1)<br>unlock() Time Complexity: O(1)<br>upgrade() Time Complexity: O(n)<br> |
 | 1010 | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60) | [Solution1](src/PairsOfSongsWithTotalDurationsDivisibleBy60_1010/Solution1.java) <br> |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br> |
+| 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | [Solution1](src/PalindromePartitioning_131/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n * 2 ^ n)<br>Space Complexity: O(n)<br> |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | [Solution1](src/PermutationInString_567/Solution1.java) <br>Assume s1.length() is n; s2.length() is m.<br>Time Complexity: O(n + m)<br>Space Complexity: O(1)<br> |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n * n!)<br>Space Complexity: O(n * n!)<br> |
@@ -272,6 +274,7 @@
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | [Solution1](src/UniqueBinarySearchTreesI_96/Solution1.java) <br> |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | [Solution1](src/ValidPalindromeII_680/Solution1.java) <br> |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [Solution1](src/ValidParentheses_20/Solution1.java) <br> |
+| 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string) | [Solution1](src/ValidParenthesisString_678/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br>[Solution2](src/ValidParenthesisString_678/Solution2.java) <br>Assume s.length() is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution1](src/ValidSudoku_36/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 408 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | [Solution1](src/ValidWordAbbreviation_408/Solution1.java) <br> |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution1](src/ValidateBinarySearchTree_98/Solution1.java) <br>Assume the number of nodes in root is n, root height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
