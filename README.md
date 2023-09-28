@@ -111,8 +111,9 @@
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution1](src/InvertBinaryTree_226/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | [Solution1](src/IsGraphBipartite_785/Solution1.java) <br> |
 | 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter) | [Solution1](src/IslandPerimeter_463/Solution1.java) <br> |
-| 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | [Solution1](src/JumpGameII_45/Solution1.java) <br> |
-| 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/JumpGame_55/Solution1.java) <br> |
+| 1306 | [Jump Game III](https://leetcode.com/problems/jump-game-iii) | [Solution1](src/JumpGameIII_1306/Solution1.java) <br>Assume arr.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii) | [Solution1](src/JumpGameII_45/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br>[Solution2](src/JumpGameII_45/Solution2.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
+| 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/JumpGame_55/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | [Solution1](src/KClosestPointsToOrigin_973/Solution1.java) <br>Assume n is points.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
 | 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) | [Solution1](src/KokoEatingBananas_875/Solution1.java) <br>Assume piles.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream) | [Solution1](src/KthLargestElementInAStream_703/KthLargest1.java) <br> |

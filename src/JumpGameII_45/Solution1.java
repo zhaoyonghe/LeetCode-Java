@@ -1,11 +1,9 @@
 package JumpGameII_45;
 
 /**
- * Assume nums.length is n.
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 99.64%
+ * $$ Assume nums.length is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     // Important constraints:
