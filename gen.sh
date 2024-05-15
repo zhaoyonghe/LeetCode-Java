@@ -7,9 +7,11 @@ cat <<EOF > README.md
 | --- | --- | --- |
 EOF
 
-array=()
+problemset=()
+solvedset=()
 while read -r line; do
-  array+=("$line")
+  problemset+=("$line")
+  solvedset+=("")
 done < <(jq -c '.[]' LeetCodeProblemSet_simplified.json)
 
 for dir in src/*_*; do
@@ -21,7 +23,11 @@ for dir in src/*_*; do
     solstr+="[Solution$i]($sol) <br>"
     solstr+=$(grep '\$\$' $sol | cut -d ' ' -f4- | tr --delete '\r' | awk '{print}' ORS='<br>')
   done
-  problem="${array[id-1]}"
+  problem="${problemset[id-1]}"
   link=$(jq --raw-output '"[\(.title)](\(.url))"' <<< "$problem")
-  echo "| $id | $link | $solstr |" >> README.md
+  solvedset[id]="| $id | $link | $solstr |"
+done
+
+for line in "${solvedset[@]}"; do
+  [[ -n "$line" ]] && echo "$line" >> README.md
 done
