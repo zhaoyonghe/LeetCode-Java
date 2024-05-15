@@ -1,23 +1,24 @@
 package PalindromeNumber_9;
 
 /**
- * Time Complexity: O(log10(x))
- * Space Complexity: O(log10(x))
- * Runtime: 6ms
- * Rank: 99.99%
+ * $$ Time Complexity: O(log(x))
+ * $$ Space Complexity: O(log(x))
  */
 public class Solution1 {
     public boolean isPalindrome(int x) {
-        if (x < 0) {
+        if (x < 0){
             return false;
         }
-        int a = x;
-        int b = 0;
-        while (a != 0) {
-            b *= 10;
-            b += (a % 10);
-            a /= 10;
+        return reverse(x) == x;
+    }
+
+    int reverse(int x) {
+        int res = 0;
+        while (x > 0) {
+            res *= 10;
+            res += x % 10;
+            x /= 10;
         }
-        return x == b;
+        return res;
     }
 }

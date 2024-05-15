@@ -1,10 +1,8 @@
 package ReverseInteger_7;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(log(x))
+ * $$ Space Complexity: O(log(x))
  */
 public class Solution1 {
     public int reverse(int x) {
