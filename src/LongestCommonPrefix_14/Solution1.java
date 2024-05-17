@@ -1,35 +1,21 @@
 package LongestCommonPrefix_14;
 
 /**
- * Time Complexity: O((the length of common prefix + 1) * strs.length)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume there are n characters in strs.
+ * $$ Time Complexity: O(n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 public class Solution1 {
     public String longestCommonPrefix(String[] strs) {
-        if (strs == null || strs.length == 0) {
-            return "";
-        }
         int j = 0;
-        while (true) {
-            if (j >= strs[0].length()) {
-                break;
-            }
-            char c = strs[0].charAt(j);
-            int i = 1;
-            for (; i < strs.length; i++) {
-                if (j < strs[i].length() && c == strs[i].charAt(j)) {
-                    continue;
+        all:
+        for (;;j++) {
+            for (String str : strs) {
+                if (j == str.length() || str.charAt(j) != strs[0].charAt(j)) {
+                    break all;
                 }
-                break;
             }
-            if (i != strs.length) {
-                // strs[...].charAt(j) are not all equal.
-                break;
-            }
-            j++;
         }
-        return strs[0].substring(0, j);
+        return j == 0 ? "" : strs[0].substring(0, j);
     }
 }
