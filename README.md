@@ -10,8 +10,8 @@
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | [Solution1](src/RegularExpressionMatching_10/Solution1.java) <br>Assume s.length() is slen and p.length() is plen.<br>Time Complexity: O(slen * plen)<br>Space Complexity: O(slen * plen)<br> |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | [Solution1](src/ContainerWithMostWater_11/Solution1.java) <br>Assume n is height.length.<br>Time Complexity: O(n)<br>Auxiliary Space Complexity: O(1)<br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br>Assume there are n characters in strs.<br>Time Complexity: O(n)<br>Auxiliary Space Complexity: O(1)<br> |
-| 15 | [3Sum](https://leetcode.com/problems/3sum) | [Solution1](src/ThreeSum_15/Solution1.java) <br> |
-| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution1](src/ThreeSumClosest_16/Solution1.java) <br> |
+| 15 | [3Sum](https://leetcode.com/problems/3sum) | [Solution1](src/ThreeSum_15/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n ^ 2)<br>Auxiliary Space Complexity: O(1)<br> |
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution1](src/ThreeSumClosest_16/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n ^ 2)<br>Auxiliary Space Complexity: O(1)<br> |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Solution1](src/LetterCombinationsOfAPhoneNumber_17/Solution1.java) <br>Assume n is digits.length().<br>Time Complexity: O(3 ^ n)<br>Space Complexity: O(1)<br> |
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | [Solution1](src/FourSum_18/Solution1.java) <br> |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [Solution1](src/RemoveNthNodeFromEndOfList_19/Solution1.java) <br>Assume n is the length of linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
