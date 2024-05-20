@@ -3,10 +3,8 @@ package ValidParentheses_20;
 import java.util.*;
 
 /**
- * Time Complexity: O(s.length())
- * Space Complexity: O(s.length())
- * Runtime: 1ms
- * Rank: 98.93%
+ * $$ Time Complexity: O(s.length())
+ * $$ Space Complexity: O(s.length())
  */
 public class Solution1 {
     public boolean isValid(String s) {

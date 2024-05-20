@@ -1,11 +1,9 @@
 package RotateImage_48;
 
 /**
- * Assume n is the length of matrix.
- * Time Complexity: O(n ^ 2)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is the length of matrix.
+ * $$ Time Complexity: O(n ^ 2)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 public class Solution1 {
     public void rotate(int[][] matrix) {

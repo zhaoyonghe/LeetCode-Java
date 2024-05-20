@@ -5,11 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Assume n is the number of nodes in tree root.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is the number of nodes in tree root.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {

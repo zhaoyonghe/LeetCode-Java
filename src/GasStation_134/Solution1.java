@@ -1,11 +1,9 @@
 package GasStation_134;
 
 /**
- * Assume n is gas.length.
- * Time Complexity: O(n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 3ms
- * Rank: 33.04%
+ * $$ Assume n is gas.length.
+ * $$ Time Complexity: O(n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution1 {
@@ -20,7 +18,7 @@ public class Solution1 {
                 i = j + 1;
                 continue;
             }
-            if (i + n - 1 == j) {
+            if (j - i == n - 1) {
                 return i;
             }
         }
