@@ -3,15 +3,11 @@ package ContiguousArray_525;
 import java.util.HashMap;
 import java.util.Map;
 /**
- * Assume n is nums.length.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 42ms
- * Rank: 29.22%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
-    // Important constraints:
-    // 1. 1 <= nums.length <= 10 ^ 5 (null-check is unnecessary)
     public int findMaxLength(int[] nums) {
         int res = 0;
         Map<Integer, Integer> map = new HashMap<>();

@@ -1,10 +1,8 @@
 package IslandPerimeter_463;
 
 /**
- * Time Complexity: O(m * n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 5ms
- * Rank: 99.50%
+ * $$ Time Complexity: O(m * n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution1 {

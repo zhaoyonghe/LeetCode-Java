@@ -160,6 +160,7 @@
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | [Solution1](src/EvaluateDivision_399/Solution1.java) <br> |
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits) | [Solution1](src/RemoveKDigits_402/Solution1.java) <br> |
 | 408 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation) | [Solution1](src/ValidWordAbbreviation_408/Solution1.java) <br> |
+| 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz) | [Solution1](src/FizzBuzz_412/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | [Solution1](src/PartitionEqualSubsetSum_416/Solution1.java) <br>Time Complexity: O(nums.length * sum(nums))<br>Space Complexity: O(sum(nums))<br> |
 | 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) | [Solution1](src/LongestRepeatingCharacterReplacement_424/Solution1.java) <br>Assume n is the length of s.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 426 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | [Solution1](src/ConvertBinarySearchTreeToSortedDoublyLinkedList_426/Solution1.java) <br> |
@@ -171,14 +172,14 @@
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst) | [Solution1](src/DeleteNodeInABST_450/Solution1.java) <br> |
 | 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency) | [Solution1](src/SortCharactersByFrequency_451/Solution1.java) <br>[Solution2](src/SortCharactersByFrequency_451/Solution2.java) <br> |
 | 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [Solution1](src/LFUCache_460/LFUCache1.java) <br> |
-| 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter) | [Solution1](src/IslandPerimeter_463/Solution1.java) <br> |
+| 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter) | [Solution1](src/IslandPerimeter_463/Solution1.java) <br>Time Complexity: O(m * n)<br>Auxiliary Space Complexity: O(1)<br> |
 | 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes) | [Solution1](src/OnesAndZeroes_474/Solution1.java) <br>Time Complexity: O(m * n * strs.length)<br>Space Complexity: O(m * n)<br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/PredictTheWinner_486/Solution3.java) <br> |
 | 490 | [The Maze](https://leetcode.com/problems/the-maze) | [Solution1](src/TheMaze_490/Solution1.java) <br> |
 | 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution1](src/NextGreaterElementI_496/Solution1.java) <br> |
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/NextGreaterElementII_503/Solution1.java) <br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
-| 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/ContiguousArray_525/Solution1.java) <br> |
+| 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/ContiguousArray_525/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/BeautifulArrangement_526/Solution1.java) <br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
