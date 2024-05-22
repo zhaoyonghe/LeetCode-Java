@@ -1,14 +1,12 @@
-package AverageOfLevelsInBinaryTree;
+package AverageOfLevelsInBinaryTree_637;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume the number of the nodes in root is n.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 11ms
- * Rank: 5.39%
+ * $$ Assume the number of the nodes in root is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {

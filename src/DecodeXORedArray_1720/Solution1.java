@@ -1,11 +1,9 @@
 package DecodeXORedArray_1720;
 
 /**
- * Assume encoded.length is n.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Assume encoded.length is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {

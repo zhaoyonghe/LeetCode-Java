@@ -36,7 +36,7 @@
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/NQueensII_52/Solution1.java) <br> |
-| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution1](src/MaximumSubarray_53/Solution1.java) <br> |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution1](src/MaximumSubarray_53/Solution1.java) <br>Time Complexity: O(nums.length)<br>Auxiliary Space Complexity: O(1)<br> |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution1](src/SpiralMatrix_54/Solution1.java) <br> |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/JumpGame_55/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
@@ -191,6 +191,7 @@
 | 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) | [Solution1](src/DesignInMemoryFileSystem_588/FileSystem1.java) <br> |
 | 621 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | [Solution1](src/TaskScheduler_621/Solution1.java) <br>Assume tasks.length is k.<br>Time Complexity: O(n + klogk)<br>Space Complexity: O(k)<br> |
 | 631 | [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula) | [Solution1](src/DesignExcelSumFormula_631/Excel1.java) <br> |
+| 637 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree) | [Solution1](src/AverageOfLevelsInBinaryTree_637/Solution1.java) <br>Assume the number of the nodes in root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree) | [Solution1](src/MaximumWidthOfBinaryTree_662/Solution1.java) <br> |
 | 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii) | [Solution1](src/BulbSwitcherII_672/Solution1.java) <br> |
 | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string) | [Solution1](src/ValidParenthesisString_678/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br>[Solution2](src/ValidParenthesisString_678/Solution2.java) <br>Assume s.length() is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
@@ -269,7 +270,7 @@
 | 1650 | [Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii) | [Solution1](src/LowestCommonAncestorOfABinaryTreeIII_1650/Solution1.java) <br> |
 | 1676 | [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv) | [Solution1](src/LowestCommonAncestorOfABinaryTreeIV_1676/Solution1.java) <br> |
 | 1710 | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck) | [Solution1](src/MaximumUnitsOnATruck_1710/Solution1.java) <br> |
-| 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/DecodeXORedArray_1720/Solution1.java) <br> |
+| 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/DecodeXORedArray_1720/Solution1.java) <br>Assume encoded.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph) | [Solution1](src/MinimumDegreeOfAConnectedTrioInAGraph_1761/Solution1.java) <br> |
 | 1762 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view) | [Solution1](src/BuildingsWithAnOceanView_1762/Solution1.java) <br>[Solution2](src/BuildingsWithAnOceanView_1762/Solution2.java) <br> |
 | 1787 | [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero) | [Solution1](src/MakeTheXOROfAllSegmentsEqualToZero_1787/Solution1.java) <br> |

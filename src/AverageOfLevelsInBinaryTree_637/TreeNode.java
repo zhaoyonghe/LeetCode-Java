@@ -1,4 +1,4 @@
-package AverageOfLevelsInBinaryTree;
+package AverageOfLevelsInBinaryTree_637;
 
 public class TreeNode {
     int val;
