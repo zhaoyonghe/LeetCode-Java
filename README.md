@@ -9,6 +9,7 @@
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [Solution1](src/PalindromeNumber_9/Solution1.java) <br>Time Complexity: O(log(x))<br>Space Complexity: O(log(x))<br> |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | [Solution1](src/RegularExpressionMatching_10/Solution1.java) <br>Assume s.length() is slen and p.length() is plen.<br>Time Complexity: O(slen * plen)<br>Space Complexity: O(slen * plen)<br> |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | [Solution1](src/ContainerWithMostWater_11/Solution1.java) <br>Assume n is height.length.<br>Time Complexity: O(n)<br>Auxiliary Space Complexity: O(1)<br> |
+| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | [Solution1](src/RomanToInteger_12/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [Solution1](src/LongestCommonPrefix_14/Solution1.java) <br>Assume there are n characters in strs.<br>Time Complexity: O(n)<br>Auxiliary Space Complexity: O(1)<br> |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | [Solution1](src/ThreeSum_15/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n ^ 2)<br>Auxiliary Space Complexity: O(1)<br> |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | [Solution1](src/ThreeSumClosest_16/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n ^ 2)<br>Auxiliary Space Complexity: O(1)<br> |
@@ -44,6 +45,7 @@
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification) | [Solution1](src/TextJustification_68/Solution1.java) <br> |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution1](src/ClimbingStairs_70/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br> |
+| 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution1](src/SetMatrixZeroes_73/Solution1.java) <br>Assume m is number of rows, n is number of columns.<br>Time Complexity: O(m * n)<br>Space Complexity: O(1)<br> |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | [Solution1](src/SearchA2DMatrixI_74/Solution1.java) <br>Assume matrix.length is m and matrix[0].length is n.<br>Time Complexity: O(logm + logn)<br>Space Complexity: O(1)<br> |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution1](src/MinimumWindowSubstring_76/Solution1.java) <br>Assume the length of s is m and t is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | [Solution1](src/Combinations_77/Solution1.java) <br> |
@@ -83,7 +85,7 @@
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii) | [Solution1](src/SingleNumberII_137/Solution1.java) <br> |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | [Solution1](src/CopyListWithRandomPointer_138/Solution1.java) <br>Assume the length of the linked list is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Solution1](src/LinkedListCycle_141/Solution1.java) <br>Assume n is the length of the linked list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
-| 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | [Solution1](src/ReorderList_143/Solution1.java) <br> |
+| 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | [Solution1](src/ReorderList_143/Solution1.java) <br>Assume n is the length of the list.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | [Solution1](src/BinaryTreePreorderTraversal_144/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br>[Solution2](src/BinaryTreePreorderTraversal_144/Solution2.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | [Solution1](src/LRUCache_146/LRUCache1.java) <br> |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | [Solution1](src/InsertionSortList_147/Solution1.java) <br> |

@@ -1,10 +1,8 @@
-package RomanToInteger;
+package RomanToInteger_12;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 65ms
- * Rank: 87.42%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public int romanToInt(String s) {

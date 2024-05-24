@@ -1,57 +1,65 @@
 package ReorderList_143;
 
+/**
+ * $$ Assume n is the length of the list.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(1)
+ */
+
 public class Solution1 {
     public void reorderList(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next == null || head.next.next == null) {
             return;
         }
-        // Split head into two linked lists.
-        ListNode dummy = new ListNode(0, head);
+        // Only modify list with more than three nodes.
+        ListNode[] splited = split(head);
+        ListNode reversed = reverse(splited[1]);
+        merge(splited[0], reversed);
+    }
+
+    private ListNode[] split(ListNode head) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
         ListNode fast = dummy, slow = dummy;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
-        ListNode a = dummy.next;
-        ListNode b = slow.next;
+        ListNode[] res = new ListNode[]{head, slow.next};
         slow.next = null;
-
-        // Reverse b.
-        b = reverse(b);
-
-        // Combine a and b.
-        // a == head
-        dummy.next = null;
-        slow = dummy;
-        boolean flag = true;
-        while (a != null || b != null) {
-            if (flag) {
-                slow.next = a;
-                a = a.next;
-            } else {
-                slow.next = b;
-                b = b.next;
-            }
-            slow = slow.next;
-            slow.next = null;
-            flag = !flag;
-        }
+        return res;
     }
 
     private ListNode reverse(ListNode head) {
-        if (head == null) {
-            return null;
+        if (head == null || head.next == null) {
+            return head;
         }
-        ListNode a = head, b = head.next;
-        ListNode newHead = null;
-        while (a != null) {
+        // List has at least two nodes.
+        ListNode a = head, b = head.next, newHead = null;
+        while (b != null) {
             a.next = newHead;
             newHead = a;
             a = b;
-            if (b != null) {
-                b = b.next;
-            }
+            b = b.next;
         }
-        return newHead;
+        a.next = newHead;
+        return a;
+    }
+
+    private ListNode merge(ListNode a, ListNode b) {
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        while (a != null && b != null) {
+            tail.next = a;
+            tail = tail.next;
+            a = a.next;
+            tail.next = b;
+            tail = tail.next;
+            b = b.next;
+        }
+        if (a != null) {
+            tail.next = a;
+        }
+        return dummy.next;
     }
 }
