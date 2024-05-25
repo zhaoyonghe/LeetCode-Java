@@ -113,6 +113,7 @@
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | [Solution1](src/ContainsDuplicateI_217/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution1](src/InvertBinaryTree_226/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [Solution1](src/KthSmallestElementInABST_230/Solution1.java) <br>Assume the number of nodes in root is n, root height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
+| 231 | [Power of Two](https://leetcode.com/problems/power-of-two) | [Solution1](src/PowerOfTwo_231/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution1](src/LowestCommonAncestorOfABinarySearchTree_235/Solution1.java) <br>Assume the height of root is h.<br>Time Complexity: O(h)<br>Space Complexity: O(h)<br> |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | [Solution1](src/LowestCommonAncestorOfABinaryTree_236/Solution1.java) <br>Assume the number of nodes in root is n, root height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | [Solution1](src/ProductOfArrayExceptSelf_238/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
@@ -145,12 +146,14 @@
 | 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/RemoveDuplicateLetters_316/Solution1.java) <br> |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher) | [Solution1](src/BulbSwitcher_319/Solution1.java) <br> |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution1](src/CoinChange_322/Solution1.java) <br>Time Complexity: O(amount * coins.length)<br>Space Complexity: O(amount)<br> |
+| 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | [Solution1](src/PowerOfThree_326/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [Solution1](src/CountOfRangeSum_327/Solution1.java) <br> |
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [Solution1](src/LongestIncreasingPathInAMatrix_329/Solution1.java) <br> |
 | 332 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | [Solution1](src/ReconstructItinerary_332/Solution1.java) <br> |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | [Solution1](src/IncreasingTripletSubsequence_334/Solution1.java) <br> |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) | [Solution1](src/NestedListWeightSum_339/Solution1.java) <br> |
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | [Solution1](src/FlattenNestedListIterator_341/NestedIterator1.java) <br>[Solution2](src/FlattenNestedListIterator_341/NestedIterator2.java) <br>[Solution3](src/FlattenNestedListIterator_341/NestedIterator3.java) <br> |
+| 342 | [Power of Four](https://leetcode.com/problems/power-of-four) | [Solution1](src/PowerOfFour_342/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) | [Solution1](src/TopKFrequentElements_347/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(nlogk)<br>Space Complexity: O(n)<br>[Solution2](src/TopKFrequentElements_347/Solution2.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 355 | [Design Twitter](https://leetcode.com/problems/design-twitter) | [Solution1](src/DesignTwitter_355/Twitter1.java) <br>Assume n is the number of users that a user follows.<br>Constructor Time Complexity: O(1)<br>postTweet() Time Complexity: O(1)<br>getNewsFeed() Time Complexity: O(n)<br>follow() Time Complexity: O(1)<br>unfollow() Time Complexity: O(1)<br> |
 | 358 | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart) | [Solution1](src/RearrangeStringKDistanceApart_358/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
@@ -216,6 +219,7 @@
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
 | 785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | [Solution1](src/IsGraphBipartite_785/Solution1.java) <br> |
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution1](src/CheapestFlightsWithinKStops_787/Solution1.java) <br>[Solution2](src/CheapestFlightsWithinKStops_787/Solution2.java) <br> |
+| 790 | [Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling) | [Solution1](src/DominoAndTrominoTiling_790/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower) | [Solution1](src/ChampagneTower_799/Solution1.java) <br> |
 | 809 | [Expressive Words](https://leetcode.com/problems/expressive-words) | [Solution1](src/ExpressiveWords_809/Solution1.java) <br> |
 | 811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | [Solution1](src/SubdomainVisitCount_811/Solution1.java) <br> |

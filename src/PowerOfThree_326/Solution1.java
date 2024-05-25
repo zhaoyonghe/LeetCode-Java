@@ -1,10 +1,8 @@
-package PowerOfThree;
+package PowerOfThree_326;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 14ms
- * Rank: 99.90%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public boolean isPowerOfThree(int n) {

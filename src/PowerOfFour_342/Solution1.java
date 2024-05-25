@@ -1,10 +1,8 @@
-package PowerOfFour;
+package PowerOfFour_342;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public boolean isPowerOfFour(int num) {
