@@ -1,10 +1,8 @@
-package IntegerToRoman;
+package IntegerToRoman_12;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 62ms
- * Rank: 87.61%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public String[][] table = {{"", "M", "MM", "MMM"},
