@@ -1,10 +1,8 @@
-package MajorityElement;
+package MajorityElement_169;
 
 /**
- * Time Complexity: O(nums.length)
- * Space Complexity: O(nums.length)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(nums.length)
+ * $$ Space Complexity: O(1)
  */
 public class Solution2 {
     public int majorityElement(int[] nums) {

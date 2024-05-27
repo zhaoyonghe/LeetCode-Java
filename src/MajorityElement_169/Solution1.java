@@ -1,13 +1,11 @@
-package MajorityElement;
+package MajorityElement_169;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Time Complexity: O(nums.length)
- * Space Complexity: O(nums.length)
- * Runtime: 14ms
- * Rank: 40.28%
+ * $$ Time Complexity: O(nums.length)
+ * $$ Space Complexity: O(nums.length)
  */
 public class Solution1 {
     public int majorityElement(int[] nums) {
