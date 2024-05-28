@@ -131,6 +131,7 @@
 | 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution1](src/EncodeAndDecodeStrings_271/Codec1.java) <br>Assume the count of characters in strs is n.<br>encode() Time Complexity: O(n)<br>decode() Time Complexity: O(n)<br> |
 | 272 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) | [Solution1](src/ClosestBinarySearchTreeValueII_272/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
+| 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | [Solution1](src/PerfectSquares_279/Solution1.java) <br>Time Complexity: O(n ^ 1.5)<br>Space Complexity: O(n)<br> |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates) | [Solution1](src/WallsAndGates_286/Solution1.java) <br>Assume rooms is an m * n matrix.<br>Time Complexity: O(mn)<br>Space Complexity: O(mn)<br> |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | [Solution1](src/FindTheDuplicateNumber_287/Solution1.java) <br> |
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life) | [Solution1](src/GameOfLife_289/Solution1.java) <br> |
@@ -254,7 +255,7 @@
 | 1032 | [Stream of Characters](https://leetcode.com/problems/stream-of-characters) | [Solution1](src/StreamOfCharacters_1032/StreamChecker1.java) <br> |
 | 1041 | [Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle) | [Solution1](src/RobotBoundedInCircle_1041/Solution1.java) <br>Time Complexity: O(instructions.length)<br>Space Complexity: O(1)<br> |
 | 1094 | [Car Pooling](https://leetcode.com/problems/car-pooling) | [Solution1](src/CarPooling_1094/Solution1.java) <br>Assume trips.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
-| 1129 | [Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors) | [Solution1](src/ShortestPathWithAlternatingColors_1129/Solution1.java) <br> |
+| 1129 | [Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors) | [Solution1](src/ShortestPathWithAlternatingColors_1129/Solution1.java) <br>Assume m is the number of edges.<br>Time Complexity: O(n + m)<br>Space Complexity: O(n + m)<br> |
 | 1140 | [Stone Game II](https://leetcode.com/problems/stone-game-ii) | [Solution1](src/StoneGameII_1140/Solution1.java) <br>[Solution2](src/StoneGameII_1140/Solution2.java) <br> |
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves) | [Solution1](src/MinimumKnightMoves_1197/Solution1.java) <br>[Solution2](src/MinimumKnightMoves_1197/Solution2.java) <br> |
 | 1235 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling) | [Solution1](src/MaximumProfitInJobScheduling_1235/Solution1.java) <br> |

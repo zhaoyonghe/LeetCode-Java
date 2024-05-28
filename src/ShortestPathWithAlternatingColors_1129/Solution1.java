@@ -1,80 +1,52 @@
 package ShortestPathWithAlternatingColors_1129;
 /**
- * Assume m is the number of edges.
- * Time Complexity: O(n + m)
- * Space Complexity: O(n + m)
- * Runtime: 5ms
- * Rank: 87.37%
+ * $$ Assume m is the number of edges.
+ * $$ Time Complexity: O(n + m)
+ * $$ Space Complexity: O(n + m)
  */
 import java.util.*;
 
 public class Solution1 {
-    public int[] shortestAlternatingPaths(int n, int[][] red, int[][] blue) {
-        Map<Integer,List<Integer>> rg = convert(red);
-        Map<Integer,List<Integer>> bg = convert(blue);
-        boolean[] rv = new boolean[n];
-        boolean[] bv = new boolean[n];
-        rv[0] = true;
-        bv[0] = true;
-        Deque<Integer> rq = new ArrayDeque<>();
-        Deque<Integer> bq = new ArrayDeque<>();
-        rq.offer(0);
-        bq.offer(0);
-        int[] res = new int[n];
-        Arrays.fill(res, -1);
+    public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
+        int[] distances = new int[n];
+        Arrays.fill(distances, -1);
+        boolean[][] visited = new boolean[n][2];
 
-        int step = 0;
-
-        while (!rq.isEmpty() || !bq.isEmpty()) {
-            visit(rq,bv,bg,step,res);
-            visit(bq,rv,rg,step,res);
-            Deque<Integer> tmp = rq;
-            rq = bq;
-            bq = tmp;
-            step++;
+        List<List<int[]>> g = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            g.add(new ArrayList<>());
         }
-        return res;
-    }
-
-    private void visit(Deque<Integer> q, boolean[] visited, Map<Integer,List<Integer>> g, int step, int[] res) {
-        if (q.isEmpty()) {
-            return;
+        for (int[] edge : redEdges) {
+            g.get(edge[0]).add(new int[]{edge[1], 0});
+        }
+        for (int[] edge : blueEdges) {
+            g.get(edge[0]).add(new int[]{edge[1], 1});
         }
 
-        int size = q.size();
-
-        for (int i = 0; i < size; i++) {
-            int cur = q.poll();
-            if (res[cur] == -1) {
-                res[cur] = step;
-            } else {
-                res[cur] = Math.min(res[cur], step);
-            }
-            List<Integer> nexts = g.get(cur);
-            if (nexts == null) {
-                continue;
-            }
-            for (int next: nexts) {
-                if (visited[next]) {
-                    continue;
+        // bfs
+        int distance = 0;
+        distances[0] = 0;
+        Deque<int[]> q = new ArrayDeque<>();
+        q.offer(new int[]{0, 0});
+        q.offer(new int[]{0, 1});
+        visited[0][0] = true;
+        visited[0][1] = true;
+        while (!q.isEmpty() && distance <= redEdges.length + blueEdges.length) {
+            distance++;
+            int sz = q.size();
+            for (int i = 0; i < sz; i++) {
+                int[] cur = q.poll();
+                for (int[] next : g.get(cur[0])) {
+                    if (visited[next[0]][next[1]] || cur[1] + next[1] != 1) {
+                        continue;
+                    }
+                    visited[next[0]][next[1]] = true;
+                    q.offer(next);
+                    distances[next[0]] = distances[next[0]] == -1 ? distance : distances[next[0]];
                 }
-                q.offer(next);
-                visited[next] = true;
             }
         }
-    }
 
-    private Map<Integer, List<Integer>> convert(int[][] edges) {
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        Arrays.stream(edges).forEach(edge->{
-            map.compute(edge[0], (k,v)->{
-                if (v == null) {
-                    v = new ArrayList<>();
-                }
-                v.add(edge[1]);
-                return v;
-            });
-        });
-        return map;
+        return distances;
     }
 }
