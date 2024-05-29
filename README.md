@@ -126,12 +126,14 @@
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | [Solution1](src/MeetingRoomsII_253/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller) | [Solution1](src/ThreeSumSmaller_259/Solution1.java) <br> |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [Solution1](src/SingleNumberIII_260/Solution1.java) <br> |
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number) | [Solution1](src/MissingNumber_268/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br>Assume n is the number of characters in words.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 270 | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value) | [Solution1](src/ClosestBinarySearchTreeValue_270/Solution1.java) <br> |
 | 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution1](src/EncodeAndDecodeStrings_271/Codec1.java) <br>Assume the count of characters in strs is n.<br>encode() Time Complexity: O(n)<br>decode() Time Complexity: O(n)<br> |
 | 272 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) | [Solution1](src/ClosestBinarySearchTreeValueII_272/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | [Solution1](src/PerfectSquares_279/Solution1.java) <br>Time Complexity: O(n ^ 1.5)<br>Space Complexity: O(n)<br> |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | [Solution1](src/MoveZeroes_283/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates) | [Solution1](src/WallsAndGates_286/Solution1.java) <br>Assume rooms is an m * n matrix.<br>Time Complexity: O(mn)<br>Space Complexity: O(mn)<br> |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | [Solution1](src/FindTheDuplicateNumber_287/Solution1.java) <br> |
 | 289 | [Game of Life](https://leetcode.com/problems/game-of-life) | [Solution1](src/GameOfLife_289/Solution1.java) <br> |
