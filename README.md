@@ -212,6 +212,7 @@
 | 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii) | [Solution1](src/BulbSwitcherII_672/Solution1.java) <br> |
 | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string) | [Solution1](src/ValidParenthesisString_678/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br>[Solution2](src/ValidParenthesisString_678/Solution2.java) <br>Assume s.length() is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | [Solution1](src/ValidPalindromeII_680/Solution1.java) <br> |
+| 682 | [Baseball Game](https://leetcode.com/problems/baseball-game) | [Solution1](src/BaseballGame_682/Solution1.java) <br>Assume n is ops.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 690 | [Employee Importance](https://leetcode.com/problems/employee-importance) | [Solution1](src/EmployeeImportance_690/Solution1.java) <br> |
 | 692 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | [Solution1](src/TopKFrequentWords_692/Solution1.java) <br> |
 | 694 | [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands) | [Solution1](src/NumberOfDistinctIslands_694/Solution1.java) <br> |
@@ -235,6 +236,7 @@
 | 811 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | [Solution1](src/SubdomainVisitCount_811/Solution1.java) <br> |
 | 815 | [Bus Routes](https://leetcode.com/problems/bus-routes) | [Solution1](src/BusRoutes_815/Solution1.java) <br> |
 | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum) | [Solution1](src/ConsecutiveNumbersSum_829/Solution1.java) <br> |
+| 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare) | [Solution1](src/BackspaceStringCompare_844/Solution1.java) <br>Time Complexity: O(s.length() + t.length())<br>Space Complexity: O(s.length() + t.length())<br> |
 | 847 | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | [Solution1](src/ShortestPathVisitingAllNodes_847/Solution1.java) <br> |
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet) | [Solution1](src/CarFleet_853/Solution1.java) <br>Assume n is position.length.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(h)<br> |
 | 863 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree) | [Solution1](src/AllNodesDistanceKInBinaryTree_863/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br>[Solution2](src/AllNodesDistanceKInBinaryTree_863/Solution2.java) <br>Assume the nodes count of root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |

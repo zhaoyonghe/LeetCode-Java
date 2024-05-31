@@ -1,11 +1,9 @@
-package BaseballGame;
+package BaseballGame_682;
 
 /**
- * Assume n is ops.length.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 7ms
- * Rank: 81.38%
+ * $$ Assume n is ops.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public int calPoints(String[] ops) {
@@ -30,7 +28,7 @@ public class Solution1 {
                     break;
                 default:
                     index += 1;
-                    valid[index] = Integer.valueOf(op);
+                    valid[index] = Integer.parseInt(op);
                     sum = sum + valid[index];
                     break;
             }
