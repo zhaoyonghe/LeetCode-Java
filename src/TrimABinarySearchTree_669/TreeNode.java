@@ -1,4 +1,4 @@
-package TrimABinarySearchTree;
+package TrimABinarySearchTree_669;
 
 public class TreeNode {
     int val;

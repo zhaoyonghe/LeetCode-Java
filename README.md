@@ -96,6 +96,7 @@
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solution1](src/IntersectionOfTwoLinkedLists_160/Solution1.java) <br>[Solution2](src/IntersectionOfTwoLinkedLists_160/Solution2.java) <br> |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | [Solution1](src/FindPeakElement_162/Solution1.java) <br> |
 | 164 | [Maximum Gap](https://leetcode.com/problems/maximum-gap) | [Solution1](src/MaximumGap_164/Solution1.java) <br> |
+| 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | [Solution1](src/TwoSumIIInputArrayIsSorted_167/Solution1.java) <br>Assume the length of numbers is n<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | [Solution1](src/MajorityElement_169/Solution1.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(nums.length)<br>[Solution2](src/MajorityElement_169/Solution2.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(1)<br> |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | [Solution1](src/BinarySearchTreeIterator_173/BSTIterator1.java) <br>Assume the nodes count of root is n, height is h.<br>next() Amortized Time Complexity: O(1)<br>hasNext() Amortized Time Complexity: O(1)<br>Space Complexity: O(h)<br> |
 | 174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game) | [Solution1](src/DungeonGame_174/Solution1.java) <br>[Solution2](src/DungeonGame_174/Solution2.java) <br> |
@@ -166,6 +167,7 @@
 | 358 | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart) | [Solution1](src/RearrangeStringKDistanceApart_358/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter) | [Solution1](src/DesignHitCounter_362/HitCounter1.java) <br> |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree) | [Solution1](src/FindLeavesOfBinaryTree_366/Solution1.java) <br> |
+| 367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | [Solution1](src/ValidPerfectSquare_367/Solution1.java) <br>Time Complexity: O(log(num))<br>Space Complexity: O(1)<br> |
 | 378 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [Solution1](src/KthSmallestElementInASorteMatrix_378/Solution1.java) <br> |
 | 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | [Solution1](src/InsertDeleteGetRandomO1_380/RandomizedSet1.java) <br> |
 | 394 | [Decode String](https://leetcode.com/problems/decode-string) | [Solution1](src/DecodeString_394/Solution1.java) <br> |
@@ -209,6 +211,7 @@
 | 637 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree) | [Solution1](src/AverageOfLevelsInBinaryTree_637/Solution1.java) <br>Assume the number of the nodes in root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 641 | [Design Circular Deque](https://leetcode.com/problems/design-circular-deque) | [Solution1](src/DesignCircularDeque_641/MyCircularDeque1.java) <br>insertFront() Time Complexity: O(1)<br>insertLast() Time Complexity: O(1)<br>deleteFront() Time Complexity: O(1)<br>deleteLast() Time Complexity: O(1)<br>getFront() Time Complexity: O(1)<br>getRear() Time Complexity: O(1)<br>isEmpty() Time Complexity: O(1)<br>isFull() Time Complexity: O(1)<br>Space Complexity: O(k)<br> |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree) | [Solution1](src/MaximumWidthOfBinaryTree_662/Solution1.java) <br> |
+| 669 | [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree) | [Solution1](src/TrimABinarySearchTree_669/Solution1.java) <br>Assume the number of nodes in tree root is n.<br>Time Complexity: O(n)<br> |
 | 672 | [Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii) | [Solution1](src/BulbSwitcherII_672/Solution1.java) <br> |
 | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string) | [Solution1](src/ValidParenthesisString_678/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br>[Solution2](src/ValidParenthesisString_678/Solution2.java) <br>Assume s.length() is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | [Solution1](src/ValidPalindromeII_680/Solution1.java) <br> |

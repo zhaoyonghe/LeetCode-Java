@@ -1,14 +1,12 @@
-package TwoSumII$InputArrayIsSorted;
+package TwoSumIIInputArrayIsSorted_167;
 
 /**
- * Assume the length of numbers is n
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 98.35%
+ * $$ Assume the length of numbers is n
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(1)
  */
 
-public class Solution2 {
+public class Solution1 {
     public int[] twoSum(int[] numbers, int target) {
         int i = 0;
         int j = numbers.length - 1;
