@@ -1,11 +1,9 @@
-package LongestValidParentheses;
+package LongestValidParentheses_32;
 
 /**
- * Assume n is s.length().
- * Time Complexity: O(n ^ 2)
- * Space Complexity: O(1)
- * Runtime: 402ms
- * Rank: 5.02%
+ * $$ Assume n is s.length().
+ * $$ Time Complexity: O(n ^ 2)
+ * $$ Space Complexity: O(1)
  */
 
 class Solution1 {
