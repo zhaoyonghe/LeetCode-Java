@@ -1,4 +1,4 @@
-package LongestUnivaluePath;
+package LongestUnivaluePath_687;
 
 public class TreeNode {
     int val;
