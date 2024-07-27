@@ -1,10 +1,8 @@
 package NimGame_292;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 
 class Solution1 {
