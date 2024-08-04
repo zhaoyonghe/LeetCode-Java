@@ -1,10 +1,8 @@
-package UniquePathsI;
+package UniquePathsI_62;
 
 /**
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n)
- * Runtime: 1ms
- * Rank: 95.58%
+ * $$ Time Complexity: O(m * n)
+ * $$ Space Complexity: O(m * n)
  */
 public class Solution1 {
     public int uniquePaths(int m, int n) {
