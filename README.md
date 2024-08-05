@@ -47,6 +47,7 @@
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution1](src/InsertInterval_57/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | [Solution1](src/UniquePathsI_62/Solution1.java) <br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | [Solution1](src/UniquePathsII_63/Solution1.java) <br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one) | [Solution1](src/PlusOne_66/Solution1.java) <br>Time Complexity: O(digits.length)<br>Space Complexity: O(digits.length)<br> |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification) | [Solution1](src/TextJustification_68/Solution1.java) <br> |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution1](src/ClimbingStairs_70/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br> |
@@ -135,12 +136,14 @@
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | [Solution1](src/MeetingRoomsII_253/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller) | [Solution1](src/ThreeSumSmaller_259/Solution1.java) <br> |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [Solution1](src/SingleNumberIII_260/Solution1.java) <br> |
+| 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree) | [Solution1](src/GraphValidTree_261/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | [Solution1](src/MissingNumber_268/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary) | [Solution1](src/AlienDictionary_269/Solution1.java) <br>Assume n is the number of characters in words.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 270 | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value) | [Solution1](src/ClosestBinarySearchTreeValue_270/Solution1.java) <br> |
 | 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings) | [Solution1](src/EncodeAndDecodeStrings_271/Codec1.java) <br>Assume the count of characters in strs is n.<br>encode() Time Complexity: O(n)<br>decode() Time Complexity: O(n)<br> |
 | 272 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii) | [Solution1](src/ClosestBinarySearchTreeValueII_272/Solution1.java) <br> |
 | 277 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity) | [Solution1](src/FindTheCelebrity_277/Solution1.java) <br> |
+| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | [Solution1](src/FirstBadVersion_278/Solution1.java) <br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares) | [Solution1](src/PerfectSquares_279/Solution1.java) <br>Time Complexity: O(n ^ 1.5)<br>Space Complexity: O(n)<br> |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | [Solution1](src/MoveZeroes_283/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates) | [Solution1](src/WallsAndGates_286/Solution1.java) <br>Assume rooms is an m * n matrix.<br>Time Complexity: O(mn)<br>Space Complexity: O(mn)<br> |
@@ -162,6 +165,7 @@
 | 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/RemoveDuplicateLetters_316/Solution1.java) <br> |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher) | [Solution1](src/BulbSwitcher_319/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution1](src/CoinChange_322/Solution1.java) <br>Time Complexity: O(amount * coins.length)<br>Space Complexity: O(amount)<br> |
+| 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [Solution1](src/NumberOfConnectedComponentsInAnUndirectedGraph_323/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | [Solution1](src/PowerOfThree_326/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 327 | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum) | [Solution1](src/CountOfRangeSum_327/Solution1.java) <br> |
 | 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [Solution1](src/LongestIncreasingPathInAMatrix_329/Solution1.java) <br> |

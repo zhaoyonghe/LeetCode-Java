@@ -38,6 +38,6 @@ public class S {
     }
 
     public static void main(String[] args) throws IOException {
-        createSkeleton("211. Design Add and Search Words Data Structure");
+        createSkeleton("323. Number of Connected Components in an Undirected Graph");
     }
 }

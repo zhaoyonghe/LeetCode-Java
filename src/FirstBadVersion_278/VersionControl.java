@@ -1,4 +1,4 @@
-package FirstBadVersion;
+package FirstBadVersion_278;
 
 public class VersionControl {
     public boolean isBadVersion(int n) {
