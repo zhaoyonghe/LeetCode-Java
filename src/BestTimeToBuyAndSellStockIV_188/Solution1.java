@@ -16,22 +16,22 @@ public class Solution1 {
         int res = 0;
 
         for (int tran = 0; tran < k; tran++) {
-            int init = 2*tran;
+            int init = 2 * tran;
             if (init >= n) {
                 return res;
             }
             if (init > 0) {
-                buy[init]=sell[init-1]-prices[init];
+                buy[init] = sell[init - 1] - prices[init];
             } else {
-                buy[init]=-prices[init];
+                buy[init] = -prices[init];
             }
-            for (int i = init+1; i < n; i++) {
-                buy[i] = Math.max(buy[i-1],sell[i-1]-prices[i]);
+            for (int i = init + 1; i < n; i++) {
+                buy[i] = Math.max(buy[i - 1], sell[i - 1] - prices[i]);
             }
-            for (int i = init+1; i < n; i++) {
-                sell[i] = Math.max(sell[i-1],buy[i-1]+prices[i]);
+            for (int i = init + 1; i < n; i++) {
+                sell[i] = Math.max(sell[i - 1], buy[i - 1] + prices[i]);
             }
-            res = Math.max(res,sell[n-1]);
+            res = Math.max(res, sell[n - 1]);
         }
 
         return res;

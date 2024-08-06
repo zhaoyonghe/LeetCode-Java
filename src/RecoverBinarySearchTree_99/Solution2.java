@@ -1,6 +1,7 @@
 package RecoverBinarySearchTree_99;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Assume the number of the nodes in root is n; root height is h.
@@ -21,7 +22,7 @@ public class Solution2 {
             if (cur != null) {
                 stack.push(cur);
                 cur = cur.left;
-            } else if (!stack.isEmpty()){
+            } else if (!stack.isEmpty()) {
                 cur = stack.pop();
                 if (prev.val > cur.val) {
                     if (first == null) {

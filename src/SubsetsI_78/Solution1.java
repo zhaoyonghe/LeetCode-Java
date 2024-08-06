@@ -21,9 +21,9 @@ public class Solution1 {
             return;
         }
 
-        helper(nums, i+1, res, cur);
+        helper(nums, i + 1, res, cur);
         cur.add(nums[i]);
-        helper(nums, i+1, res, cur);
-        cur.remove(cur.size()-1);
+        helper(nums, i + 1, res, cur);
+        cur.remove(cur.size() - 1);
     }
 }

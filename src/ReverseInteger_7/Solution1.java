@@ -31,6 +31,6 @@ public class Solution1 {
         if (res < 0) {
             return 0;
         }
-        return neg?-res:res;
+        return neg ? -res : res;
     }
 }

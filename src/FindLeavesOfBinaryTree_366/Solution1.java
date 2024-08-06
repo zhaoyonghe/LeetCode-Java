@@ -1,6 +1,8 @@
 package FindLeavesOfBinaryTree_366;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Assume the number of nodes in tree root is n.
  * Time Complexity: O(n)

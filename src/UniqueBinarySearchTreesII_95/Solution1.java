@@ -23,10 +23,10 @@ class Solution1 {
         }
 
         for (int mid = s; mid <= e; mid++) {
-            List<TreeNode> lefts = helper(s,mid-1);
-            List<TreeNode> rights = helper(mid+1,e);
-            for (TreeNode left: lefts) {
-                for (TreeNode right: rights) {
+            List<TreeNode> lefts = helper(s, mid - 1);
+            List<TreeNode> rights = helper(mid + 1, e);
+            for (TreeNode left : lefts) {
+                for (TreeNode right : rights) {
                     res.add(new TreeNode(mid, left, right));
                 }
             }

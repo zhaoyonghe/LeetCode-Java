@@ -9,7 +9,7 @@ package SymmetricTree_101;
  */
 public class Solution2 {
     public boolean isSymmetric(TreeNode root) {
-        return root == null ? true : isSymmetric(root.left, root.right);
+        return root == null || isSymmetric(root.left, root.right);
     }
 
     public boolean isSymmetric(TreeNode t1, TreeNode t2) {

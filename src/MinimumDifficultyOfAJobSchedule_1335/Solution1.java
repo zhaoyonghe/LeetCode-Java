@@ -1,4 +1,5 @@
 package MinimumDifficultyOfAJobSchedule_1335;
+
 /**
  * Assume n is jobDifficulty.length.
  * Time Complexity: O(n * d)
@@ -7,6 +8,8 @@ package MinimumDifficultyOfAJobSchedule_1335;
  * Rank: 26.47%
  */
 public class Solution1 {
+    private Integer[][] dp;
+
     // Important constraints:
     // 1. 1 <= jobDifficulty.length <= 300
     //    0 <= jobDifficulty[i] <= 1000
@@ -16,8 +19,6 @@ public class Solution1 {
         int res = helper(jobDifficulty, 0, d);
         return res == Integer.MAX_VALUE ? -1 : res;
     }
-
-    private Integer[][] dp;
 
     private int helper(int[] jobDifficulty, int s, int dl) {
         int n = jobDifficulty.length;

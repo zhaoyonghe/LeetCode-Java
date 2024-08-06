@@ -1,6 +1,8 @@
 package InsertInterval_57;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * $$ Assume intervals.length is n.
  * $$ Time Complexity: O(n)
@@ -45,7 +47,7 @@ public class Solution1 {
             st.push(cur);
         }
 
-        int[][] res=new int[st.size()][2];
+        int[][] res = new int[st.size()][2];
         i = st.size() - 1;
         while (!st.isEmpty()) {
             res[i] = st.pop();
@@ -62,6 +64,6 @@ public class Solution1 {
 
     private int[] merge(int[] a, int[] b) {
         // a, b overlap are guaranteed.
-        return new int[]{Math.min(a[0], b[0]),Math.max(a[1],b[1])};
+        return new int[]{Math.min(a[0], b[0]), Math.max(a[1], b[1])};
     }
 }

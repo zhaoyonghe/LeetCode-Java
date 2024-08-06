@@ -1,4 +1,5 @@
 package RobotBoundedInCircle_1041;
+
 /**
  * $$ Time Complexity: O(instructions.length)
  * $$ Space Complexity: O(1)
@@ -9,10 +10,10 @@ public class Solution1 {
         int[] pos = new int[2];
         int dirsIndex = 0;
         int[][] dirs = new int[][]{
-                {0,1},{1,0},{0,-1},{-1,0}
+                {0, 1}, {1, 0}, {0, -1}, {-1, 0}
         };
-        for (char c: instructions.toCharArray()) {
-            switch(c) {
+        for (char c : instructions.toCharArray()) {
+            switch (c) {
                 case 'G':
                     pos[0] += dirs[dirsIndex][0];
                     pos[1] += dirs[dirsIndex][1];
@@ -25,6 +26,6 @@ public class Solution1 {
                     break;
             }
         }
-        return dirsIndex != 0 || (pos[0]==0&&pos[1]==0);
+        return dirsIndex != 0 || (pos[0] == 0 && pos[1] == 0);
     }
 }

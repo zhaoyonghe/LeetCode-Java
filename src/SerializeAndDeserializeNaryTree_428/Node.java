@@ -1,6 +1,6 @@
 package SerializeAndDeserializeNaryTree_428;
 
-import java.util.*;
+import java.util.List;
 
 class Node {
     public int val;

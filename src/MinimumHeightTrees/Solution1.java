@@ -1,9 +1,6 @@
 package MinimumHeightTrees;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Best Time Complexity: O(|E|)
@@ -15,9 +12,7 @@ import java.util.Set;
 public class Solution1 {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         List<int[]> graph = new ArrayList<>();
-        for (int[] edge : edges) {
-            graph.add(edge);
-        }
+        Collections.addAll(graph, edges);
 
         int[] degrees = new int[n];
         for (int[] edge : graph) {

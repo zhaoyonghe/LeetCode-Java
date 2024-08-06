@@ -1,6 +1,7 @@
 package LongestConsecutiveSequence_128;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * $$ Assume n is nums.length.
@@ -13,11 +14,11 @@ public class Solution1 {
             return 0;
         }
         Map<Integer, Boolean> map = new HashMap<>();
-        for (int n: nums) {
+        for (int n : nums) {
             map.put(n, false);
         }
         int res = 1;
-        for (int n: nums) {
+        for (int n : nums) {
             if (map.get(n)) {
                 // expanded
                 continue;

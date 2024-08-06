@@ -11,14 +11,6 @@ import java.util.*;
  */
 
 public class Solution1 {
-    private class Info {
-        TreeNode node;
-        int col;
-        Info(TreeNode node, int col) {
-            this.node = node;
-            this.col = col;
-        }
-    }
     public List<List<Integer>> verticalOrder(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();
@@ -27,7 +19,7 @@ public class Solution1 {
         Deque<Info> q = new ArrayDeque<>();
         q.offer(new Info(root, 0));
         int mi = 0;
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             Info info = q.poll();
             TreeNode node = info.node;
             int col = info.col;
@@ -37,10 +29,10 @@ public class Solution1 {
             }
             map.get(col).add(node.val);
             if (node.left != null) {
-                q.offer(new Info(node.left, col-1));
+                q.offer(new Info(node.left, col - 1));
             }
             if (node.right != null) {
-                q.offer(new Info(node.right, col+1));
+                q.offer(new Info(node.right, col + 1));
             }
         }
         List<List<Integer>> res = new ArrayList<>();
@@ -48,5 +40,15 @@ public class Solution1 {
             res.add(map.get(mi++));
         }
         return res;
+    }
+
+    private class Info {
+        TreeNode node;
+        int col;
+
+        Info(TreeNode node, int col) {
+            this.node = node;
+            this.col = col;
+        }
     }
 }

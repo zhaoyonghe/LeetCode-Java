@@ -1,6 +1,7 @@
 package ZigZagConversion_6;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * $$ Time Complexity: O(s.length())
@@ -31,8 +32,8 @@ public class Solution1 {
         }
 
         StringBuilder sb = new StringBuilder();
-        for (List<Character> list: m) {
-            for (char c: list) {
+        for (List<Character> list : m) {
+            for (char c : list) {
                 sb.append(c);
             }
         }

@@ -9,14 +9,14 @@ package FindUniqueBinaryString_1980;
 public class Solution1 {
     public String findDifferentBinaryString(String[] nums) {
         int n = nums[0].length();
-        boolean[] set = new boolean[n+1];
-        for (String num: nums) {
+        boolean[] set = new boolean[n + 1];
+        for (String num : nums) {
             int a = str2Num(num);
             if (a <= n) {
                 set[a] = true;
             }
         }
-        for (int i = 0; i <= n ; i++) {
+        for (int i = 0; i <= n; i++) {
             if (set[i]) {
                 continue;
             }
@@ -28,7 +28,7 @@ public class Solution1 {
     private String num2Str(int num, int n) {
         char[] str = new char[n];
         for (int i = 0; i < n; i++) {
-            str[n-i-1] = (((1 << i) | num) == num) ? '1' : '0';
+            str[n - i - 1] = (((1 << i) | num) == num) ? '1' : '0';
         }
         return new String(str);
     }

@@ -1,6 +1,7 @@
 package ContainsDuplicateI_217;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * $$ Assume nums.length is n.

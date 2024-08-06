@@ -1,6 +1,7 @@
 package WordPatternII_291;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * $$ Assume pattern.length() is m and str.length() is n.
@@ -29,18 +30,18 @@ public class Solution1 {
             if (!s.startsWith(map[c])) {
                 return false;
             }
-            return helper(pattern.substring(1), s.substring(map[c].length()), map ,set);
+            return helper(pattern.substring(1), s.substring(map[c].length()), map, set);
         }
 
         // Try matching.
         for (int i = 0; i < s.length(); i++) {
-            String matched = s.substring(0, i+1);
+            String matched = s.substring(0, i + 1);
             if (set.contains(matched)) {
                 continue;
             }
             map[c] = matched;
             set.add(matched);
-            if (helper(pattern.substring(1), s.substring(map[c].length()), map ,set)) {
+            if (helper(pattern.substring(1), s.substring(map[c].length()), map, set)) {
                 return true;
             }
             map[c] = null;

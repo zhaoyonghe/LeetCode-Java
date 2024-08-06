@@ -7,11 +7,13 @@ package NumberOfIslandsII_305;
  * Rank: 86.82%
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Solution1 {
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
-        int all = m*n;
+        int all = m * n;
         int[] roots = new int[all];
         Arrays.fill(roots, -2);
         int[] ranks = new int[all];
@@ -19,11 +21,11 @@ public class Solution1 {
 
         // down, up, right, left.
         int[][] directions = new int[][]{
-                {1,0},{-1,0},{0,1},{0,-1}
+                {1, 0}, {-1, 0}, {0, 1}, {0, -1}
         };
         int count = 0;
 
-        for (int[] pos: positions) {
+        for (int[] pos : positions) {
             int i = pos[0] * n + pos[1];
             if (roots[i] != -2) {
                 res.add(count);
@@ -32,7 +34,7 @@ public class Solution1 {
             // Mark (pos[0], pos[1]) as land.
             roots[i] = -1;
             count++;
-            for (int[] dir: directions) {
+            for (int[] dir : directions) {
                 if (!valid(pos, dir, m, n)) {
                     continue;
                 }

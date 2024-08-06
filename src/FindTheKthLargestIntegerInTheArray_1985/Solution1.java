@@ -1,35 +1,36 @@
 package FindTheKthLargestIntegerInTheArray_1985;
 
-import java.util.*;
+import java.util.Random;
+
 /**
  * $$ Assume nums.length is n, max(nums[i].length) is m.
  * $$ Time Complexity: O(nm)
  * $$ Space Complexity: O(logn)
  */
 public class Solution1 {
+    private final Random rand = new Random();
+
     public String kthLargestNumber(String[] nums, int k) {
-        return nums[select(nums,0,nums.length-1, nums.length-k+1)];
+        return nums[select(nums, 0, nums.length - 1, nums.length - k + 1)];
     }
 
-    private Random rand =new Random();
-
     private int select(String[] nums, int s, int e, int k) {
-        if (s==e) {
+        if (s == e) {
             return s;
         }
 
-        swap(nums, e, rand.nextInt(e-s+1)+s);
+        swap(nums, e, rand.nextInt(e - s + 1) + s);
 
         int i = s;
         int low = s;
-        int high = e-1;
+        int high = e - 1;
         while (i <= high) {
             int comp = compare(nums[i], nums[e]);
             if (comp < 0) {
                 swap(nums, low, i);
                 low++;
                 i = Math.max(i, low);
-            } else if (comp >0) {
+            } else if (comp > 0) {
                 swap(nums, i, high);
                 high--;
             } else {
@@ -38,13 +39,13 @@ public class Solution1 {
         }
         // nums[i] is the first nums that >= nums[e]
         swap(nums, i, e);
-        if (k <= low-s) {
+        if (k <= low - s) {
             // what we want is in the first half: before low
-            return select(nums, s,low-1, k);
+            return select(nums, s, low - 1, k);
         }
-        if (high-s+1<k) {
+        if (high - s + 1 < k) {
             // what we want is in the third half: after high
-            return select(nums, high+1, e, k-(high-s+1));
+            return select(nums, high + 1, e, k - (high - s + 1));
         }
         return i;
 

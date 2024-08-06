@@ -1,6 +1,8 @@
 package CombinationSum_39;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * $$ Assume candidates.length is n, target is t.
  * $$ Time Complexity: O(n ^ t)
@@ -23,7 +25,7 @@ public class Solution1 {
                         for (int k = 0; k < i; k++) {
                             next.add(candidate);
                         }
-                        tmp.get(j+i*candidate).add(next);
+                        tmp.get(j + i * candidate).add(next);
                     }
                 }
             }
@@ -38,7 +40,7 @@ public class Solution1 {
                 for (int j = 0; j < i; j++) {
                     multi.add(candidate);
                 }
-                record.get(i*candidate).add(multi);
+                record.get(i * candidate).add(multi);
             }
         }
 

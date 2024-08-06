@@ -11,11 +11,11 @@ public class Solution1 {
     public int divide(int dividend, int divisor) {
         long res;
         if (dividend >= 0 && divisor >= 0) {
-            res = posDivide((long) dividend, (long) divisor);
+            res = posDivide(dividend, divisor);
         } else if (dividend >= 0 && divisor < 0) {
-            res = -posDivide((long) dividend, -(long) divisor);
+            res = -posDivide(dividend, -(long) divisor);
         } else if (dividend < 0 && divisor >= 0) {
-            res = -posDivide(-(long) dividend, (long) divisor);
+            res = -posDivide(-(long) dividend, divisor);
         } else {
             // dividend < 0 && divisor < 0
             res = posDivide(-(long) dividend, -(long) divisor);

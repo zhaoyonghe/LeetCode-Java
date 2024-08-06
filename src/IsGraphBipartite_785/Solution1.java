@@ -2,6 +2,7 @@ package IsGraphBipartite_785;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+
 /**
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(n ^ 2)

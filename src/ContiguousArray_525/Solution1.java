@@ -2,6 +2,7 @@ package ContiguousArray_525;
 
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * $$ Assume n is nums.length.
  * $$ Time Complexity: O(n)

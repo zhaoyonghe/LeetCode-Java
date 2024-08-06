@@ -3,6 +3,7 @@ package TheMaze_490;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
+
 /**
  * Time Complexity: O(m * n)
  * Space Complexity: O(m * n)
@@ -10,6 +11,10 @@ import java.util.Deque;
  * Rank: 50.25%
  */
 public class Solution1 {
+    int[][] dirs = new int[][]{
+            {0, 1}, {0, -1}, {1, 0}, {-1, 0}
+    };
+
     // Important constraints:
     // 1. m == maze.length, n == maze[i].length, 1 <= m, n <= 100
     // 2. maze[i][j] is 0 or 1.
@@ -40,10 +45,6 @@ public class Solution1 {
         }
         return false;
     }
-
-    int[][] dirs = new int[][]{
-            {0, 1}, {0, -1}, {1, 0}, {-1, 0}
-    };
 
     private int[] find(int[][] maze, int[] cur, int i) {
         int[] next = Arrays.copyOf(cur, 2);

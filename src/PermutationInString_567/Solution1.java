@@ -14,12 +14,12 @@ public class Solution1 {
         }
         int start = 0;
         int end = start + s1.length() - 1;
-        for (int  i = 0; i < end && i < s2.length(); i++) {
+        for (int i = 0; i < end && i < s2.length(); i++) {
             map[s2.charAt(i)]--;
         }
-        for (;end < s2.length(); start++, end++) {
+        for (; end < s2.length(); start++, end++) {
             if (start > 0) {
-                map[s2.charAt(start-1)]++;
+                map[s2.charAt(start - 1)]++;
             }
             map[s2.charAt(end)]--;
             if (allzero(map)) {

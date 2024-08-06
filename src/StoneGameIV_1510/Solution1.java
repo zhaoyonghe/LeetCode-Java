@@ -8,17 +8,17 @@ package StoneGameIV_1510;
  */
 public class Solution1 {
     public boolean winnerSquareGame(int n) {
-        boolean[] dp = new boolean[n+1];
+        boolean[] dp = new boolean[n + 1];
         dp[0] = false;
         dp[1] = true;
         for (int i = 2; i <= n; i++) {
             int root = 1;
-            while(true) {
+            while (true) {
                 int square = root * root;
                 if (square > i) {
                     break;
                 }
-                if (!dp[i-square]) {
+                if (!dp[i - square]) {
                     dp[i] = true;
                     break;
                 }

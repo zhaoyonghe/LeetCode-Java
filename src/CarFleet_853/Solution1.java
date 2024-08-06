@@ -1,6 +1,7 @@
 package CarFleet_853;
 
-import java.util.*;
+import java.util.Arrays;
+
 /**
  * $$ Assume n is position.length.
  * $$ Time Complexity: O(nlogn)
@@ -13,11 +14,11 @@ public class Solution1 {
         for (int i = 0; i < n; i++) {
             ps[i] = new int[]{position[i], speed[i]};
         }
-        Arrays.sort(ps, (a,b)->Integer.compare(b[0], a[0]));
+        Arrays.sort(ps, (a, b) -> Integer.compare(b[0], a[0]));
         int fleet = 1;
-        double prevFleetTimeToTarget = (double)(target - ps[0][0])/(double)(ps[0][1]);
+        double prevFleetTimeToTarget = (double) (target - ps[0][0]) / (double) (ps[0][1]);
         for (int i = 1; i < n; i++) {
-            double thisCarTimeToTarget = (double)(target - ps[i][0])/(double)(ps[i][1]);
+            double thisCarTimeToTarget = (double) (target - ps[i][0]) / (double) (ps[i][1]);
             if (prevFleetTimeToTarget >= thisCarTimeToTarget) {
                 continue;
             }

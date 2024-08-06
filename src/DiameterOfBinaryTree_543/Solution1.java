@@ -6,12 +6,12 @@ package DiameterOfBinaryTree_543;
  * $$ Space Complexity: O(h)
  */
 public class Solution1 {
+    private int res = 0;
+
     public int diameterOfBinaryTree(TreeNode root) {
         depth(root);
         return res;
     }
-
-    private int res = 0;
 
     private int depth(TreeNode node) {
         if (node == null) {

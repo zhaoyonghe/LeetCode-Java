@@ -1,6 +1,9 @@
 package CombinationSumII_40;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * $$ Assume candidates.length is n, target is t.
@@ -8,23 +11,15 @@ import java.util.*;
  * $$ Space Complexity: O(n ^ t)
  */
 public class Solution1 {
-    class Num {
-        int num;
-        int count;
-        Num(int num, int count) {
-            this.num = num;
-            this.count = count;
-        }
-    }
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int num: candidates) {
-            map.compute(num, (k,v)->v==null?1:v+1);
+        for (int num : candidates) {
+            map.compute(num, (k, v) -> v == null ? 1 : v + 1);
         }
         Num[] nums = new Num[map.size()];
         int i = 0;
-        for (Map.Entry<Integer,Integer> en: map.entrySet()) {
-            nums[i] = new Num(en.getKey(),en.getValue());
+        for (Map.Entry<Integer, Integer> en : map.entrySet()) {
+            nums[i] = new Num(en.getKey(), en.getValue());
             i++;
         }
 
@@ -43,14 +38,24 @@ public class Solution1 {
             return;
         }
 
-        helper(res, nums, i+1, target, cur);
+        helper(res, nums, i + 1, target, cur);
         int count = 1;
         for (; count <= nums[i].count && count * nums[i].num <= target; count++) {
             cur.add(nums[i].num);
-            helper(res, nums, i+1, target-count * nums[i].num, cur);
+            helper(res, nums, i + 1, target - count * nums[i].num, cur);
         }
-        for (int cnt = 0; cnt < count-1; cnt++) {
-            cur.remove(cur.size()-1);
+        for (int cnt = 0; cnt < count - 1; cnt++) {
+            cur.remove(cur.size() - 1);
+        }
+    }
+
+    class Num {
+        int num;
+        int count;
+
+        Num(int num, int count) {
+            this.num = num;
+            this.count = count;
         }
     }
 }

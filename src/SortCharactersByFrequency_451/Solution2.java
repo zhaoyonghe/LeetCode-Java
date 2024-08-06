@@ -1,6 +1,7 @@
 package SortCharactersByFrequency_451;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -17,15 +18,15 @@ public class Solution2 {
     public String frequencySort(String s) {
         int[][] freq = new int[128][2];
         char[] cs = s.toCharArray();
-        for (char c: cs) {
-            freq[(int)(c)][0] = (int)(c);
-            freq[(int)(c)][1]++;
+        for (char c : cs) {
+            freq[c][0] = c;
+            freq[c][1]++;
         }
-        List<int[]> li = Arrays.stream(freq).sorted((a, b)->Integer.compare(b[1], a[1])).collect(Collectors.toList());
+        List<int[]> li = Arrays.stream(freq).sorted((a, b) -> Integer.compare(b[1], a[1])).collect(Collectors.toList());
         StringBuilder sb = new StringBuilder();
-        for (int[] en: li) {
+        for (int[] en : li) {
             for (int i = 0; i < en[1]; i++) {
-                sb.append((char)(en[0]));
+                sb.append((char) (en[0]));
             }
         }
         return sb.toString();

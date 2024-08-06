@@ -22,7 +22,7 @@ public class Solution1 {
             l2 = l2.next;
             cur = cur.next;
         }
-        cur.next = l1 == null? l2 : l1;
+        cur.next = l1 == null ? l2 : l1;
         return dummy.next;
     }
 }

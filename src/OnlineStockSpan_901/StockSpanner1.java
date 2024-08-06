@@ -1,6 +1,8 @@
 package OnlineStockSpan_901;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * $$ Constructor Time Complexity: O(1)
  * $$ next() Amortized Time Complexity: O(1)
@@ -9,6 +11,7 @@ class StockSpanner1 {
 
     Deque<int[]> st = new ArrayDeque<>();
     int day = 0;
+
     public StockSpanner1() {
 
     }

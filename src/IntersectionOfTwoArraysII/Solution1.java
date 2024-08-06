@@ -10,6 +10,16 @@ import java.util.Arrays;
  * Rank: 87.01%
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Solution1 s = new Solution1();
+        s.intersect(new int[]{2, 2}, new int[]{1, 2, 2, 1});
+    }
+    // Follow up:
+    // What if the given array is already sorted? How would you optimize your algorithm?
+    // What if nums1's size is small compared to nums2's size? Which algorithm is better?
+    // What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+
     public int[] intersect(int[] nums1, int[] nums2) {
         int[] small = null;
         int[] big = null;
@@ -53,16 +63,6 @@ public class Solution1 {
             }
         }
         return Arrays.copyOf(result, index);
-    }
-    // Follow up:
-    // What if the given array is already sorted? How would you optimize your algorithm?
-    // What if nums1's size is small compared to nums2's size? Which algorithm is better?
-    // What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        Solution1 s = new Solution1();
-        s.intersect(new int[]{2, 2}, new int[]{1, 2, 2, 1});
     }
 
 }

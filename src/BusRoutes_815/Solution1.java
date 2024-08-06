@@ -19,8 +19,8 @@ public class Solution1 {
 
         for (int i = 0; i < routes.length; i++) {
             Set<Integer> set = new HashSet<>();
-            for (int stop: routes[i]) {
-                s2rt.computeIfAbsent(stop, k->new ArrayList<>());
+            for (int stop : routes[i]) {
+                s2rt.computeIfAbsent(stop, k -> new ArrayList<>());
                 s2rt.get(stop).add(i);
                 set.add(stop);
             }
@@ -40,12 +40,12 @@ public class Solution1 {
             for (int i = 0; i < sz; i++) {
                 int cur = q.poll();
                 List<Integer> nextRoutes = s2rt.get(cur);
-                for (int rt: nextRoutes) {
+                for (int rt : nextRoutes) {
                     if (taken[rt]) {
                         continue;
                     }
                     taken[rt] = true;
-                    for (int next: g.get(rt)) {
+                    for (int next : g.get(rt)) {
                         if (visited.contains(next)) {
                             continue;
                         }

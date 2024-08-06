@@ -1,6 +1,7 @@
 package ValidParentheses_20;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Time Complexity: O(s.length())
@@ -9,7 +10,7 @@ import java.util.*;
 public class Solution1 {
     public boolean isValid(String s) {
         Deque<Character> stack = new ArrayDeque<>();
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
                 continue;
@@ -19,7 +20,7 @@ public class Solution1 {
             }
             if ((c == ')' && stack.peek() == '(') ||
                     (c == ']' && stack.peek() == '[') ||
-                    (c == '}' && stack.peek() == '{')){
+                    (c == '}' && stack.peek() == '{')) {
                 stack.pop();
                 continue;
             }

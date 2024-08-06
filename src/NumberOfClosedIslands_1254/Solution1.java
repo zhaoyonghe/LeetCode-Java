@@ -31,10 +31,10 @@ public class Solution1 {
             return true;
         }
         grid[i][j] = 1;
-        boolean d = dfs(grid,i+1,j);
-        boolean u = dfs(grid,i-1,j);
-        boolean r = dfs(grid,i,j+1);
-        boolean l = dfs(grid,i,j-1);
-        return d&&u&&r&&l;
+        boolean d = dfs(grid, i + 1, j);
+        boolean u = dfs(grid, i - 1, j);
+        boolean r = dfs(grid, i, j + 1);
+        boolean l = dfs(grid, i, j - 1);
+        return d && u && r && l;
     }
 }

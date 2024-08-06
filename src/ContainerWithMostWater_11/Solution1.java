@@ -1,7 +1,5 @@
 package ContainerWithMostWater_11;
 
-import java.lang.Math;
-
 /**
  * $$ Assume n is height.length.
  * $$ Time Complexity: O(n)

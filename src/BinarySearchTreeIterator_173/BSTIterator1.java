@@ -11,7 +11,7 @@ import java.util.Deque;
  */
 
 class BSTIterator1 {
-    private Deque<TreeNode> st = new ArrayDeque<>();
+    private final Deque<TreeNode> st = new ArrayDeque<>();
 
     public BSTIterator1(TreeNode root) {
         TreeNode cur = root;

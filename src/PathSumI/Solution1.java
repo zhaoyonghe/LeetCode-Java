@@ -17,11 +17,7 @@ public class Solution1 {
 
     public boolean hasPathSum(TreeNode root, int sum, int cur) {
         if (root.left == null && root.right == null) {
-            if (cur + root.val == sum) {
-                return true;
-            } else {
-                return false;
-            }
+            return cur + root.val == sum;
         }
 
         if (root.left != null) {
@@ -31,9 +27,7 @@ public class Solution1 {
         }
 
         if (root.right != null) {
-            if (hasPathSum(root.right, sum, cur + root.val)) {
-                return true;
-            }
+            return hasPathSum(root.right, sum, cur + root.val);
         }
 
         return false;

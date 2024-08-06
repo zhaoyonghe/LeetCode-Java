@@ -1,6 +1,7 @@
 package MinimumRemoveToMakeValidParentheses_1249;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Assume n is prices.length.

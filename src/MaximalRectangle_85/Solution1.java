@@ -22,13 +22,13 @@ public class Solution1 {
         int max = 0;
         for (int i = 0; i < line.length; i++) {
             int a = i, b = i;
-            while (a > 0 && line[a-1]>=line[i]){
+            while (a > 0 && line[a - 1] >= line[i]) {
                 a--;
             }
-            while (b < line.length - 1 && line[b+1]>=line[i]) {
+            while (b < line.length - 1 && line[b + 1] >= line[i]) {
                 b++;
             }
-            max = Math.max(max, line[i]*(b-a+1));
+            max = Math.max(max, line[i] * (b - a + 1));
         }
         return max;
     }

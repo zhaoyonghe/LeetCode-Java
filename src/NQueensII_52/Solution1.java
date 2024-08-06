@@ -24,12 +24,12 @@ public class Solution1 {
             // Check queens before.
             for (int rowBefore = 0; rowBefore < row; rowBefore++) {
                 int colBefore = cur[rowBefore];
-                if (col == colBefore || Math.abs(row-rowBefore) == Math.abs(col-colBefore)) {
+                if (col == colBefore || Math.abs(row - rowBefore) == Math.abs(col - colBefore)) {
                     continue test;
                 }
             }
             cur[row] = col;
-            solve(row+1, cur, res);
+            solve(row + 1, cur, res);
         }
     }
 }

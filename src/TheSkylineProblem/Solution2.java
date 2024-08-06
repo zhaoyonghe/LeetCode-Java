@@ -1,10 +1,6 @@
 package TheSkylineProblem;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Assume n is the number of buildings.
@@ -15,36 +11,6 @@ import java.util.TreeMap;
  */
 
 class Solution2 {
-    public class Point implements Comparable<Point> {
-        public int x;
-        public int height;
-        public char type;
-
-        Point(int x, int height, char type) {
-            this.x = x;
-            this.height = height;
-            this.type = type;
-        }
-
-        public int compareTo(Point point) {
-            if (this.x == point.x) {
-                if (this.type == 's' && point.type == 's') {
-                    return point.height - this.height;
-                } else if (this.type == 'e' && point.type == 'e') {
-                    return this.height - point.height;
-                } else {
-                    return point.type - this.type;
-                }
-            } else {
-                return this.x - point.x;
-            }
-        }
-
-        public String toString() {
-            return "BuildingPoint [x=" + x + ", height=" + height + ", type=" + type + "]";
-        }
-    }
-
     public List<List<Integer>> getSkyline(int[][] buildings) {
         List<List<Integer>> list = new ArrayList<>();
 
@@ -111,5 +77,35 @@ class Solution2 {
         }
 
         return list;
+    }
+
+    public class Point implements Comparable<Point> {
+        public int x;
+        public int height;
+        public char type;
+
+        Point(int x, int height, char type) {
+            this.x = x;
+            this.height = height;
+            this.type = type;
+        }
+
+        public int compareTo(Point point) {
+            if (this.x == point.x) {
+                if (this.type == 's' && point.type == 's') {
+                    return point.height - this.height;
+                } else if (this.type == 'e' && point.type == 'e') {
+                    return this.height - point.height;
+                } else {
+                    return point.type - this.type;
+                }
+            } else {
+                return this.x - point.x;
+            }
+        }
+
+        public String toString() {
+            return "BuildingPoint [x=" + x + ", height=" + height + ", type=" + type + "]";
+        }
     }
 }

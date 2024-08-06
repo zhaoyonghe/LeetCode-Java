@@ -8,6 +8,10 @@ package GameOfLife_289;
  */
 
 public class Solution1 {
+    private final int[][] dirs = new int[][]{
+            {1, 1}, {1, 0}, {1, -1}, {0, 1}, {0, -1}, {-1, 1}, {-1, 0}, {-1, -1},
+    };
+
     // Important constraints:
     // 1. m == board.length
     //    n == board[i].length
@@ -32,10 +36,6 @@ public class Solution1 {
             }
         }
     }
-
-    private int[][] dirs = new int[][]{
-            {1, 1}, {1, 0}, {1, -1}, {0, 1}, {0, -1}, {-1, 1}, {-1, 0}, {-1, -1},
-    };
 
     private int liveAroundCount(int[][] board, int i, int j) {
         int count = 0;

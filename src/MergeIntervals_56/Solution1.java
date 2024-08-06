@@ -1,6 +1,8 @@
 package MergeIntervals_56;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * $$ Assume intervals.length is n.
@@ -14,13 +16,13 @@ public class Solution1 {
         if (intervals.length < 2) {
             return intervals;
         }
-        Arrays.sort(intervals, (int[] a, int[] b) -> Integer.compare(a[0],b[0]));
+        Arrays.sort(intervals, (int[] a, int[] b) -> Integer.compare(a[0], b[0]));
         List<int[]> res = new ArrayList<>();
         int[] cur = intervals[0];
         for (int i = 1; i < intervals.length; i++) {
             int[] interval = intervals[i];
             if (interval[0] <= cur[1]) {
-                cur[1] = Math.max(cur[1],interval[1]);
+                cur[1] = Math.max(cur[1], interval[1]);
                 continue;
             }
             res.add(cur);

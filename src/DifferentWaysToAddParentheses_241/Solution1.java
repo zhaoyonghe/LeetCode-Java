@@ -12,8 +12,8 @@ import java.util.List;
 public class Solution1 {
     public List<Integer> diffWaysToCompute(String expression) {
         int opsCnt = countOperators(expression);
-        ArrayList<Integer>[][] memo = new ArrayList[opsCnt+1][opsCnt+1];
-        int[] nums = new int[opsCnt+1];
+        ArrayList<Integer>[][] memo = new ArrayList[opsCnt + 1][opsCnt + 1];
+        int[] nums = new int[opsCnt + 1];
         char[] ops = new char[opsCnt];
         parseExp(expression, nums, ops);
         return getResults(nums, ops, 0, opsCnt, memo);
@@ -42,7 +42,7 @@ public class Solution1 {
                 j++;
                 continue;
             }
-            nums[j] = nums[j] * 10 + (int)(c-'0');
+            nums[j] = nums[j] * 10 + (c - '0');
         }
     }
 
@@ -67,7 +67,7 @@ public class Solution1 {
         }
         for (int i = start; i < end; i++) {
             List<Integer> left = getResults(nums, ops, start, i, memo);
-            List<Integer> right = getResults(nums, ops, i+1, end, memo);
+            List<Integer> right = getResults(nums, ops, i + 1, end, memo);
             for (int a : left) {
                 for (int b : right) {
                     res.add(calculate(a, b, ops[i]));

@@ -1,6 +1,8 @@
 package BuildingsWithAnOceanView_1762;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
 
 /**
  * Assume n is heights.length.

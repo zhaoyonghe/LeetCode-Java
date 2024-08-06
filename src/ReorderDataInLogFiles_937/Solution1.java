@@ -17,9 +17,9 @@ public class Solution1 {
     // 2. logs[i] is guaranteed to have an identifier and at least one word after the identifier.
     // (a.split(" ", 2) always splits logs into 2 parts)
     public String[] reorderLogFiles(String[] logs) {
-        Arrays.sort(logs, (a, b)->{
-            boolean aDig = Character.isDigit(a.charAt(a.length()-1));
-            boolean bDig = Character.isDigit(b.charAt(b.length()-1));
+        Arrays.sort(logs, (a, b) -> {
+            boolean aDig = Character.isDigit(a.charAt(a.length() - 1));
+            boolean bDig = Character.isDigit(b.charAt(b.length() - 1));
             if (aDig && bDig) {
                 return 0;
             }

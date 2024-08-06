@@ -1,6 +1,7 @@
 package MinCostToConnectAllPoints_1584;
 
-import java.util.*;
+import java.util.Arrays;
+
 /**
  * $$ Assume points.length is n.
  * $$ Time Complexity: O(n^2logn)
@@ -9,16 +10,16 @@ import java.util.*;
 public class Solution1 {
     public int minCostConnectPoints(int[][] points) {
         int n = points.length;
-        int[][] edges = new int[(n*n-n)/2][3];
+        int[][] edges = new int[(n * n - n) / 2][3];
         int k = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 int[] p1 = points[i];
                 int[] p2 = points[j];
-                edges[k++] = new int[]{i, j, Math.abs(p1[0]-p2[0])+Math.abs(p1[1]-p2[1])};
+                edges[k++] = new int[]{i, j, Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1])};
             }
         }
-        Arrays.sort(edges, (a,b)->Integer.compare(a[2], b[2]));
+        Arrays.sort(edges, (a, b) -> Integer.compare(a[2], b[2]));
 
         int[] uf = new int[n];
         int[] ranks = new int[n];
@@ -29,7 +30,7 @@ public class Solution1 {
             if (unionIfNot(uf, ranks, edge[0], edge[1])) {
                 res += edge[2];
                 count++;
-                if (count == n-1) {
+                if (count == n - 1) {
                     break;
                 }
             }

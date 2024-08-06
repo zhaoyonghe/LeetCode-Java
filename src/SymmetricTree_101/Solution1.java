@@ -11,6 +11,16 @@ import java.util.List;
  * Rank: 83.52%
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        List<Integer> list = new ArrayList<>();
+        list.add(0);
+        list.add(0);
+        list.add(0);
+        list.add(0);
+        System.out.println(list);
+    }
+
     // Level order traversal this tree, and check if each level is palindromic.
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {
@@ -46,16 +56,6 @@ public class Solution1 {
             addList(list, root.left, level + 1);
             addList(list, root.right, level + 1);
         }
-    }
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.add(0);
-        list.add(0);
-        list.add(0);
-        System.out.println(list);
     }
 
 }

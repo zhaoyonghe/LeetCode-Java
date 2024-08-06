@@ -1,6 +1,9 @@
 package NextGreaterElementI_496;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Time Complexity: O(nums2.length)

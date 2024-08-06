@@ -1,6 +1,7 @@
 package AlienDictionary_269;
 
 import java.util.*;
+
 /**
  * $$ Assume n is the number of characters in words.
  * $$ Time Complexity: O(n)
@@ -18,15 +19,15 @@ public class Solution1 {
             }
             for (int i = 1; i < words.length; i++) {
                 // edge cases.
-                if (words[i -1].equals(words[i])) {
+                if (words[i - 1].equals(words[i])) {
                     continue;
                 }
-                if (words[i-1].startsWith(words[i])) {
+                if (words[i - 1].startsWith(words[i])) {
                     return "";
                 }
 
-                for (int j = 0; j < Math.min(words[i-1].length(), words[i].length()); j++) {
-                    char c1 = words[i-1].charAt(j);
+                for (int j = 0; j < Math.min(words[i - 1].length(), words[i].length()); j++) {
+                    char c1 = words[i - 1].charAt(j);
                     char c2 = words[i].charAt(j);
                     if (c1 == c2) {
                         continue;
@@ -52,7 +53,7 @@ public class Solution1 {
             Deque<Character> q = new ArrayDeque<>();
             for (int i = 0; i < 128; i++) {
                 if (indegree[i] == 0) {
-                    q.offer((char)i);
+                    q.offer((char) i);
                 }
             }
 

@@ -1,6 +1,9 @@
 package BinaryTreePostorderTraversal;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
 
 /**
  * Assume n is the number of nodes in the tree root.

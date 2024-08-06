@@ -11,7 +11,7 @@ import java.util.List;
 class Solution1 {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
-        helper(new char[n*2], 0, n, n, res);
+        helper(new char[n * 2], 0, n, n, res);
         return res;
     }
 
@@ -26,8 +26,8 @@ class Solution1 {
             return;
         }
         cur[i] = '(';
-        helper(cur, i+1, left-1, right, res);
+        helper(cur, i + 1, left - 1, right, res);
         cur[i] = ')';
-        helper(cur, i+1, left, right-1, res);
+        helper(cur, i + 1, left, right - 1, res);
     }
 }

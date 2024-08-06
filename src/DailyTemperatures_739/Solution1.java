@@ -1,6 +1,7 @@
 package DailyTemperatures_739;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume the length of temperatures is n.

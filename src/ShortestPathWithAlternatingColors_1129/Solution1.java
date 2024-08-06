@@ -4,6 +4,7 @@ package ShortestPathWithAlternatingColors_1129;
  * $$ Time Complexity: O(n + m)
  * $$ Space Complexity: O(n + m)
  */
+
 import java.util.*;
 
 public class Solution1 {

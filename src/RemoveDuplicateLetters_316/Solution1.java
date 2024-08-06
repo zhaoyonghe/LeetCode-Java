@@ -1,6 +1,8 @@
 package RemoveDuplicateLetters_316;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
 
 /**
  * Assume n is the length of num.
@@ -14,13 +16,13 @@ public class Solution1 {
     public String removeDuplicateLetters(String s) {
         int[] last = new int[128];
         for (int i = 0; i < s.length(); i++) {
-            last[(int) s.charAt(i)] = i;
+            last[s.charAt(i)] = i;
         }
 
         boolean[] map = new boolean[128];
         Deque<Integer> stack = new ArrayDeque<>();
         for (int i = 0; i < s.length(); i++) {
-            int c = (int) s.charAt(i);
+            int c = s.charAt(i);
             if (map[c]) {
                 continue;
             }

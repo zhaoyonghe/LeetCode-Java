@@ -1,4 +1,5 @@
 package NextPermutation_31;
+
 /**
  * Assume n is nums.length.
  * Time Complexity: O(n)
@@ -12,7 +13,7 @@ public class Solution1 {
         int n = nums.length;
         int i = n - 1;
         for (; i > 0; i--) {
-            if (nums[i-1]<nums[i]) {
+            if (nums[i - 1] < nums[i]) {
                 break;
             }
         }
@@ -21,9 +22,9 @@ public class Solution1 {
             return;
         }
         for (int j = n - 1; j >= i; j--) {
-            if (nums[i-1]<nums[j]) {
-                swap(nums, i-1, j);
-                reverse(nums, i,n-1);
+            if (nums[i - 1] < nums[j]) {
+                swap(nums, i - 1, j);
+                reverse(nums, i, n - 1);
                 return;
             }
         }

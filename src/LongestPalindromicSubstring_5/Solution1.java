@@ -18,23 +18,23 @@ public class Solution1 {
         for (int i = 0; i < n; i++) {
             dp[i][i] = true;
         }
-        for (int i = 0; i < n-1; i++) {
-            dp[i][i+1] = cs[i] == cs[i+1];
-            if (dp[i][i+1]) {
+        for (int i = 0; i < n - 1; i++) {
+            dp[i][i + 1] = cs[i] == cs[i + 1];
+            if (dp[i][i + 1]) {
                 resi = i;
-                resj = i+1;
+                resj = i + 1;
             }
         }
         for (int len = 3; len <= n; len++) {
             for (int i = 0; i + len - 1 < n; i++) {
                 int j = i + len - 1;
-                dp[i][j] = cs[i] == cs[j] && dp[i+1][j-1];
+                dp[i][j] = cs[i] == cs[j] && dp[i + 1][j - 1];
                 if (dp[i][j]) {
                     resi = i;
                     resj = j;
                 }
             }
         }
-        return s.substring(resi,resj+1);
+        return s.substring(resi, resj + 1);
     }
 }

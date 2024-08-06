@@ -10,9 +10,13 @@ package DesignCircularQueue_622;
  * $$ Space Complexity: O(k)
  */
 public class MyCircularQueue1 {
-    private int[] arr;
+    private final int[] arr;
     private int start = 0;
     private int end = 0;
+
+    public MyCircularQueue1(int k) {
+        arr = new int[k + 1];
+    }
 
     private int next(int i) {
         return (i + arr.length + 1) % arr.length;
@@ -20,10 +24,6 @@ public class MyCircularQueue1 {
 
     private int prev(int i) {
         return (i + arr.length - 1) % arr.length;
-    }
-
-    public MyCircularQueue1(int k) {
-        arr = new int[k+1];
     }
 
     public boolean enQueue(int value) {

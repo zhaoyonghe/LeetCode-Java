@@ -26,14 +26,14 @@ public class Solution2 {
             return;
         }
 
-        helper(res, candidates,i+1,target,cur);
+        helper(res, candidates, i + 1, target, cur);
         int count = 1;
         for (; count * candidates[i] <= target; count++) {
             cur.add(candidates[i]);
-            helper(res, candidates,i+1,target-count * candidates[i],cur);
+            helper(res, candidates, i + 1, target - count * candidates[i], cur);
         }
-        for (int cnt = 0; cnt < count-1; cnt++) {
-            cur.remove(cur.size()-1);
+        for (int cnt = 0; cnt < count - 1; cnt++) {
+            cur.remove(cur.size() - 1);
         }
     }
 }

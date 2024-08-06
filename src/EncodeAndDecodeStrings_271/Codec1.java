@@ -1,6 +1,7 @@
 package EncodeAndDecodeStrings_271;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * $$ Assume the count of characters in strs is n.
@@ -11,7 +12,7 @@ public class Codec1 {
     // Encodes a list of strings to a single string.
     public String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
-        for (String str: strs) {
+        for (String str : strs) {
             sb.append(str.length()).append(",").append(str);
         }
         return sb.toString();

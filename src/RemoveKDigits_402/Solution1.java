@@ -1,6 +1,8 @@
 package RemoveKDigits_402;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
 
 /**
  * Assume n is the length of num.

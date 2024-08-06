@@ -25,22 +25,22 @@ public class Solution1 {
 
     private int getRep(String s) {
         int res = 0;
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (!Character.isDigit(c)) {
                 break;
             }
             res *= 10;
-            res += c-'0';
+            res += c - '0';
         }
         return res;
     }
 
     private void addRepToMap(String s, int rep, Map<String, Integer> map) {
-        for (int i = s.length()-1; i >= 0; i--) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             if (s.charAt(i) != '.' && s.charAt(i) != ' ') {
                 continue;
             }
-            map.compute(s.substring(i+1), (k,v)->(v==null?rep:v+rep));
+            map.compute(s.substring(i + 1), (k, v) -> (v == null ? rep : v + rep));
             if (s.charAt(i) == ' ') {
                 return;
             }

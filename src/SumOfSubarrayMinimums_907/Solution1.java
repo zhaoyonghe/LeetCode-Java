@@ -1,6 +1,9 @@
 package SumOfSubarrayMinimums_907;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+
 /**
  * Time Complexity: O(arr.length)
  * Space Complexity: O(arr.length)
@@ -15,16 +18,16 @@ public class Solution1 {
         for (int i = 0; i < arr.length; i++) {
             while (!st.isEmpty() && arr[st.peek()] >= arr[i]) {
                 int last = st.pop();
-                sum += (long)arr[last] * (long)(1 + count[last]) * (long)(i - last);
-                count[i]+=count[last]+1;
+                sum += (long) arr[last] * (long) (1 + count[last]) * (long) (i - last);
+                count[i] += count[last] + 1;
             }
             st.push(i);
         }
         System.out.println(Arrays.toString(count));
         while (!st.isEmpty()) {
             int last = st.pop();
-            sum += (long)arr[last] * (long)(1 + count[last]) * (long)(arr.length - last);
+            sum += (long) arr[last] * (long) (1 + count[last]) * (long) (arr.length - last);
         }
-        return (int)(sum % 1000000007);
+        return (int) (sum % 1000000007);
     }
 }

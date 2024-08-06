@@ -1,6 +1,9 @@
 package FlattenNestedListIterator_341;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Assume the nested depth is n.
@@ -12,9 +15,10 @@ import java.util.*;
  * Rank: 47.35%
  */
 public class NestedIterator2 implements Iterator<Integer> {
-    private Deque<List<NestedInteger>> listSt = new ArrayDeque<>();
-    private Deque<Integer> intSt = new ArrayDeque<>();
     Integer next = null;
+    private final Deque<List<NestedInteger>> listSt = new ArrayDeque<>();
+    private final Deque<Integer> intSt = new ArrayDeque<>();
+
     public NestedIterator2(List<NestedInteger> nestedList) {
         listSt.push(nestedList);
         intSt.add(0);

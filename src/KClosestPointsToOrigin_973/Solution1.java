@@ -36,7 +36,6 @@ public class Solution1 {
             return;
         }
         // i - s + 1 == k
-        return;
     }
 
     private int dis(int[] point) {

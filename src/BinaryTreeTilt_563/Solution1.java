@@ -8,6 +8,7 @@ package BinaryTreeTilt_563;
 
 public class Solution1 {
     private int tiltSum = 0;
+
     public int findTilt(TreeNode root) {
         helper(root);
         return this.tiltSum;

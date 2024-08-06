@@ -1,6 +1,7 @@
 package NextGreaterElementII_503;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Time Complexity: O(nums.length)

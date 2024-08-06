@@ -1,6 +1,7 @@
 package EvaluateReversePolishNotation_150;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume tokens.length is n.
@@ -11,7 +12,7 @@ import java.util.*;
 public class Solution1 {
     public int evalRPN(String[] tokens) {
         Deque<Integer> st = new ArrayDeque<>();
-        for (String token: tokens) {
+        for (String token : tokens) {
             if (token.length() == 1 && !Character.isDigit(token.charAt(0))) {
                 int b = st.pop();
                 int a = st.pop();

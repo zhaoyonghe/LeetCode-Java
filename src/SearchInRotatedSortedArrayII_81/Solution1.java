@@ -11,7 +11,7 @@ public class Solution1 {
         int s = 0;
         int e = nums.length - 1;
         while (s <= e) {
-            int mid = (s+e)/2;
+            int mid = (s + e) / 2;
             if (target == nums[s]) {
                 return true;
             }
@@ -20,21 +20,21 @@ public class Solution1 {
             }
             if (nums[s] < nums[mid]) {
                 if (nums[mid] < target) {
-                    s = mid+1;
+                    s = mid + 1;
                 } else if (nums[s] < target) {
-                    e = mid-1;
+                    e = mid - 1;
                 } else {
                     // target < nums[s]
-                    s = mid+1;
+                    s = mid + 1;
                 }
-            } else if (nums[s] > nums[mid]){
+            } else if (nums[s] > nums[mid]) {
                 if (target < nums[mid]) {
-                    e = mid-1;
+                    e = mid - 1;
                 } else if (target < nums[s]) {
-                    s = mid+1;
+                    s = mid + 1;
                 } else {
                     // nums[s] < target
-                    e = mid-1;
+                    e = mid - 1;
                 }
             } else {
                 s++;

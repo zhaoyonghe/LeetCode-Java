@@ -14,15 +14,8 @@ import java.util.ListIterator;
  */
 public class StreamChecker1 {
 
-    private class Node {
-        // All letters are lowercase.
-        Node[] next = new Node[26];
-        boolean end;
-    }
-
     Node root = new Node();
     List<Integer> stream = new ArrayList<>();
-
     public StreamChecker1(String[] words) {
         for (String s : words) {
             char[] cs = s.toCharArray();
@@ -57,5 +50,11 @@ public class StreamChecker1 {
             }
         }
         return false;
+    }
+
+    private class Node {
+        // All letters are lowercase.
+        Node[] next = new Node[26];
+        boolean end;
     }
 }

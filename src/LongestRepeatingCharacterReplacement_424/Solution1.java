@@ -1,7 +1,5 @@
 package LongestRepeatingCharacterReplacement_424;
 
-import java.util.*;
-
 /**
  * $$ Assume n is the length of s.
  * $$ Time Complexity: O(n)
@@ -16,11 +14,11 @@ public class Solution1 {
         int start = 0;
         for (int end = 0; end < cs.length; end++) {
             map[cs[end]]++;
-            while (!ok(map, end-start+1,k)) {
+            while (!ok(map, end - start + 1, k)) {
                 map[cs[start]]--;
                 start++;
             }
-            res = Math.max(res, end-start+1);
+            res = Math.max(res, end - start + 1);
         }
         return res;
     }

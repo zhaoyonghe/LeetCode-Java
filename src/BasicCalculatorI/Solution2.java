@@ -13,6 +13,13 @@ public class Solution2 {
     public Stack<String> numStack = new Stack<>();
     public Stack<String> opStack = new Stack<>();
 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Solution2 s = new Solution2();
+        System.out.println(s.calculate("(7 + 6)-(9 - 0 + (6))+(4)"));
+
+    }
+
     public String getNextElement(String s, int i) {
         if (Character.isDigit(s.charAt(i))) {
             StringBuffer sb = new StringBuffer();
@@ -32,11 +39,7 @@ public class Solution2 {
     }
 
     public boolean isNum(String s) {
-        if (Character.isDigit(s.charAt(0))) {
-            return true;
-        } else {
-            return false;
-        }
+        return Character.isDigit(s.charAt(0));
     }
 
     public void putLeftParentheses(Stack<String> numStack) {
@@ -93,13 +96,6 @@ public class Solution2 {
             }
         }
         return Integer.valueOf(numStack.peek());
-    }
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        Solution2 s = new Solution2();
-        System.out.println(s.calculate("(7 + 6)-(9 - 0 + (6))+(4)"));
-
     }
 
 }

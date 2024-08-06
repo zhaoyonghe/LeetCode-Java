@@ -16,14 +16,14 @@ public class Solution1 {
             g.add(new ArrayList<>());
         }
         for (int[] time : times) {
-            g.get(time[0]-1).add(new int[]{time[1]-1, time[2]});
+            g.get(time[0] - 1).add(new int[]{time[1] - 1, time[2]});
         }
 
         boolean[] settled = new boolean[n];
         int[] dist = new int[n];
         int res = 0;
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->Integer.compare(a[0],b[0]));
-        pq.offer(new int[]{0, k-1});
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
+        pq.offer(new int[]{0, k - 1});
         while (!pq.isEmpty()) {
             int[] now = pq.poll();
             int path = now[0];
@@ -39,9 +39,9 @@ public class Solution1 {
                 if (settled[next]) {
                     continue;
                 }
-                if (dist[next] == 0 || path+w < dist[next]) {
-                    dist[next] = path+w;
-                    pq.offer(new int[]{path+w, next});
+                if (dist[next] == 0 || path + w < dist[next]) {
+                    dist[next] = path + w;
+                    pq.offer(new int[]{path + w, next});
                 }
             }
         }

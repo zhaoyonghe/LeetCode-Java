@@ -13,16 +13,16 @@ public class Solution1 {
                 if (grid[i][j] == 0) {
                     continue;
                 }
-                if (i == 0 || grid[i-1][j] == 0) {
+                if (i == 0 || grid[i - 1][j] == 0) {
                     res++;
                 }
-                if (i == grid.length - 1 || grid[i+1][j] == 0) {
+                if (i == grid.length - 1 || grid[i + 1][j] == 0) {
                     res++;
                 }
-                if (j == 0 || grid[i][j-1] == 0) {
+                if (j == 0 || grid[i][j - 1] == 0) {
                     res++;
                 }
-                if (j == grid[0].length - 1 || grid[i][j+1] == 0) {
+                if (j == grid[0].length - 1 || grid[i][j + 1] == 0) {
                     res++;
                 }
             }

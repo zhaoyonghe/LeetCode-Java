@@ -10,7 +10,7 @@ public class Solution1 {
     public double myPow(double x, int n) {
         double res = 1;
         double factor = x;
-        long nn = (long)n;
+        long nn = n;
         if (nn < 0) {
             nn = -nn;
         }

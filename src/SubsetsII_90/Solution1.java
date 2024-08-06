@@ -1,6 +1,9 @@
 package SubsetsII_90;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * $$ Assume n is nums.length.
@@ -8,18 +11,10 @@ import java.util.*;
  * $$ Space Complexity: O(2 ^ n * n)
  */
 public class Solution1 {
-    private class Num {
-        int num;
-        int count;
-        Num(int num, int count) {
-            this.num = num;
-            this.count = count;
-        }
-    }
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
-            map.compute(num, (k,v)->v==null?1:v+1);
+            map.compute(num, (k, v) -> v == null ? 1 : v + 1);
         }
         Num[] ns = new Num[map.size()];
         int i = 0;
@@ -38,13 +33,23 @@ public class Solution1 {
             return;
         }
 
-        helper(nums, i+1, res, cur);
+        helper(nums, i + 1, res, cur);
         for (int cnt = 0; cnt < nums[i].count; cnt++) {
             cur.add(nums[i].num);
-            helper(nums, i+1, res, cur);
+            helper(nums, i + 1, res, cur);
         }
         for (int cnt = 0; cnt < nums[i].count; cnt++) {
-            cur.remove(cur.size()-1);
+            cur.remove(cur.size() - 1);
+        }
+    }
+
+    private class Num {
+        int num;
+        int count;
+
+        Num(int num, int count) {
+            this.num = num;
+            this.count = count;
         }
     }
 }

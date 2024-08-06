@@ -1,6 +1,8 @@
 package SerializeAndDeserializeBinaryTree_297;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 
 /**
  * $$ Assume the number of nodes is n.
@@ -23,7 +25,7 @@ public class Solution2 {
             sb.append("#,");
             return;
         }
-        sb.append(String.valueOf(node.val)).append(",");
+        sb.append(node.val).append(",");
         sHelper(node.left, sb);
         sHelper(node.right, sb);
     }

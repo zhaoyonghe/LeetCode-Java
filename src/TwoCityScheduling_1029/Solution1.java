@@ -1,4 +1,5 @@
 package TwoCityScheduling_1029;
+
 /**
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(n ^ 2)
@@ -23,7 +24,7 @@ public class Solution1 {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 // preson i + j - 1 goes to A, preson i + j - 1 goes to B.
-                dp[i][j] = Math.min(dp[i-1][j]+costs[i+j-1][0],dp[i][j-1]+costs[i+j-1][1]);
+                dp[i][j] = Math.min(dp[i - 1][j] + costs[i + j - 1][0], dp[i][j - 1] + costs[i + j - 1][1]);
             }
         }
         return dp[n][n];

@@ -1,6 +1,8 @@
 package ShortestPathInAGridWithObstaclesElimination_1293;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * Time Complexity: O(m * n * k)
  * Space Complexity: O(m * n * k)
@@ -9,16 +11,17 @@ import java.util.*;
  */
 public class Solution1 {
     // up, left, right, down
-    private int[][] dirs = new int[][]{
-            {-1,0},{0,-1},{0,1},{1,0}
+    private final int[][] dirs = new int[][]{
+            {-1, 0}, {0, -1}, {0, 1}, {1, 0}
     };
     private boolean[][][] visited;
+
     public int shortestPath(int[][] grid, int k) {
         int m = grid.length, n = grid[0].length;
         if (m == 1 && n == 1) {
             return 0;
         }
-        visited = new boolean[m][n][k+1];
+        visited = new boolean[m][n][k + 1];
         visited[0][0][k] = true;
         Deque<int[]> q = new ArrayDeque<>();
         // grid[0][0] == 0
@@ -33,7 +36,7 @@ public class Solution1 {
                         // Do not go back.
                         continue;
                     }
-                    int[] next = new int[] {cur[0]+dirs[j][0],cur[1]+dirs[j][1],cur[2],j};
+                    int[] next = new int[]{cur[0] + dirs[j][0], cur[1] + dirs[j][1], cur[2], j};
                     if (next[0] < 0 || next[0] >= m || next[1] < 0 || next[1] >= n) {
                         continue;
                     }

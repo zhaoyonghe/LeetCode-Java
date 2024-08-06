@@ -9,6 +9,16 @@ package StringToInteger;
 public class Solution1 {
     static int[] pow = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        System.out.println("+0  8776".split("\\s+")[0]);
+        System.out.println("  +0  8776".split("\\s+")[1]);
+        System.out.println("  +0  8776".split("\\s+")[2]);
+        System.out.println('0');
+        // System.out.println(Character.isDigit("-".charAt(0)));
+
+    }
+
     public String findUseful(String str) {
         String[] result = str.split("\\s+");
         return result[0].length() == 0 ? result[1] : result[0];
@@ -34,7 +44,7 @@ public class Solution1 {
         str = findUseful(str);
         int len = str.length();
         if (len > 1) {
-            if (str.charAt(0) == "0".charAt(0) && !Character.isDigit(str.charAt(1))) {
+            if (str.charAt(0) == '0' && !Character.isDigit(str.charAt(1))) {
                 return 0;
             }
         }
@@ -45,7 +55,7 @@ public class Solution1 {
         int signType = 1;
         for (int i = 0; i < len; i++) {
             if (Character.isDigit(str.charAt(i))) {
-                if (str.charAt(i) == "0".charAt(0) && haveNonZeroDigit == false) {
+                if (str.charAt(i) == '0' && !haveNonZeroDigit) {
                     continue;
                 }
                 sb.append(str.charAt(i));
@@ -56,9 +66,9 @@ public class Solution1 {
                 if (haveDigit || haveSign) {
                     break;
                 }
-                if (str.charAt(i) == "+".charAt(0) || str.charAt(i) == "-".charAt(0)) {
+                if (str.charAt(i) == '+' || str.charAt(i) == '-') {
                     haveSign = true;
-                    if (str.charAt(i) == "-".charAt(0)) {
+                    if (str.charAt(i) == '-') {
                         signType = -1;
                     }
                 } else {
@@ -87,16 +97,6 @@ public class Solution1 {
             result += (pure.charAt(i) - 48) * pow[len - 1 - i];
         }
         return signType * result;
-    }
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        System.out.println("+0  8776".split("\\s+")[0]);
-        System.out.println("  +0  8776".split("\\s+")[1]);
-        System.out.println("  +0  8776".split("\\s+")[2]);
-        System.out.println("0".charAt(0) * 1);
-        // System.out.println(Character.isDigit("-".charAt(0)));
-
     }
 
 }

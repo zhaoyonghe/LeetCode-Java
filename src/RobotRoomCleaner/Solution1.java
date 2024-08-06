@@ -11,8 +11,8 @@ import java.util.HashSet;
  * Rank: 93.44%
  */
 public class Solution1 {
-    private int[][] dir = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-    private HashMap<Integer, HashSet<Integer>> visited = new HashMap<>();
+    private final int[][] dir = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    private final HashMap<Integer, HashSet<Integer>> visited = new HashMap<>();
 
     private void dfs(int x, int y, int d, Robot robot) {
         visited.putIfAbsent(x, new HashSet<Integer>());

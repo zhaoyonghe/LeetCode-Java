@@ -1,6 +1,8 @@
 package TextJustification_68;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Assume n is the length of words.
@@ -22,7 +24,7 @@ public class Solution1 {
         int lineWords = 1;
         for (int i = 1; i < words.length; i++) {
             if (lineChars + words[i].length() + lineWords > maxWidth) {
-                res.add(fullJustify(words, lineStart, i-1, maxWidth-lineChars));
+                res.add(fullJustify(words, lineStart, i - 1, maxWidth - lineChars));
                 lineStart = i;
                 lineChars = words[i].length();
                 lineWords = 1;
@@ -32,7 +34,7 @@ public class Solution1 {
             lineWords++;
         }
 
-        res.add(leftJustify(words, lineStart, words.length-1, maxWidth-lineChars-lineWords+1));
+        res.add(leftJustify(words, lineStart, words.length - 1, maxWidth - lineChars - lineWords + 1));
 
         return res;
     }
@@ -58,7 +60,7 @@ public class Solution1 {
         int n = end - start;
         int threshold = spaces - (spaces / n) * n;
         for (int i = start + 1; i <= end; i++) {
-            sb.append(spacesChars((spaces / n)+(i-start<=threshold?1:0)));
+            sb.append(spacesChars((spaces / n) + (i - start <= threshold ? 1 : 0)));
             sb.append(words[i]);
         }
         return sb.toString();

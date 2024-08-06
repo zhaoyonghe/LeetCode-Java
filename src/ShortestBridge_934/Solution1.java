@@ -5,12 +5,14 @@ package ShortestBridge_934;
  * Runtime: 7ms
  * Rank: 63.03%
  */
-import java.util.*;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution1 {
 
-    static private int[][] directions = {
-            {1,0},{-1,0},{0,1},{0,-1}
+    static private final int[][] directions = {
+            {1, 0}, {-1, 0}, {0, 1}, {0, -1}
     };
 
     public int shortestBridge(int[][] grid) {
@@ -22,7 +24,7 @@ public class Solution1 {
             int sz = q.size();
             for (int i = 0; i < sz; i++) {
                 int[] cur = q.poll();
-                for (int[] dir: directions) {
+                for (int[] dir : directions) {
                     int r = cur[0] + dir[0];
                     int c = cur[1] + dir[1];
                     if (!inBound(grid, r, c) || grid[r][c] == 2 || grid[r][c] == 3) {
@@ -64,9 +66,9 @@ public class Solution1 {
         }
         grid[i][j] = 2;
         q.offer(new int[]{i, j});
-        dfs(grid,i-1,j,q);
-        dfs(grid,i+1,j,q);
-        dfs(grid,i,j-1,q);
-        dfs(grid,i,j+1,q);
+        dfs(grid, i - 1, j, q);
+        dfs(grid, i + 1, j, q);
+        dfs(grid, i, j - 1, q);
+        dfs(grid, i, j + 1, q);
     }
 }

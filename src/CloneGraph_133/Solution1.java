@@ -21,7 +21,7 @@ public class Solution1 {
             for (int i = 0; i < sz; i++) {
                 Node cur = q.poll();
                 Node curClone = map.get(cur);
-                for (Node next: cur.neighbors) {
+                for (Node next : cur.neighbors) {
                     if (!map.containsKey(next)) {
                         // next is not visited.
                         Node nextClone = new Node(next.val, new ArrayList<>());

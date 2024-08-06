@@ -1,4 +1,5 @@
 package ConstructQuadTree_427;
+
 /**
  * Time Complexity: O(n ^ 2)
  * Auxiliary Space Complexity: O(n ^ 2)

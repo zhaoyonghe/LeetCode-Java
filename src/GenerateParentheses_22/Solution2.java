@@ -11,7 +11,7 @@ import java.util.List;
 class Solution2 {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
-        generate(new char[2*n], 0, n, n, res);
+        generate(new char[2 * n], 0, n, n, res);
         return res;
     }
 
@@ -24,16 +24,15 @@ class Solution2 {
         if (le < ri) {
             if (le > 0) {
                 cur[i] = '(';
-                generate(cur, i+1, le-1, ri, res);
+                generate(cur, i + 1, le - 1, ri, res);
             }
             cur[i] = ')';
-            generate(cur, i+1, le, ri-1, res);
+            generate(cur, i + 1, le, ri - 1, res);
             return;
         }
         // le == ri
         // have to put (
         cur[i] = '(';
-        generate(cur, i+1, le-1, ri, res);
-        return;
+        generate(cur, i + 1, le - 1, ri, res);
     }
 }

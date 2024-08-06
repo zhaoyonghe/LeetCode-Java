@@ -1,6 +1,7 @@
 package RandomPickWithWeight_528;
 
 import java.util.Random;
+
 /**
  * Constructor Time Complexity: O(n)
  * pickIndex() Time Complexity: O(logn)
@@ -11,10 +12,10 @@ import java.util.Random;
 public class Solution1 {
     // Important constraints:
     // 1. 1 <= w.length <= 10 ^ 4, 1 <= w[i] <= 10 ^ 5. (Never overflow.)
-    private int n;
-    private int sum;
-    private int[] pre;
-    private Random rand = new Random();
+    private final int n;
+    private final int sum;
+    private final int[] pre;
+    private final Random rand = new Random();
 
     public Solution1(int[] w) {
         n = w.length;

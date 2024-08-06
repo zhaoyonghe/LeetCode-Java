@@ -1,6 +1,7 @@
 package DesignTwitter_355;
 
 import java.util.*;
+
 /**
  * $$ Assume n is the number of users that a user follows.
  * $$ Constructor Time Complexity: O(1)
@@ -10,8 +11,8 @@ import java.util.*;
  * $$ unfollow() Time Complexity: O(1)
  */
 class Twitter1 {
-    private Map<Integer, Set<Integer>> follows = new HashMap<>();
-    private Map<Integer, List<int[]>> tweets = new HashMap<>();
+    private final Map<Integer, Set<Integer>> follows = new HashMap<>();
+    private final Map<Integer, List<int[]>> tweets = new HashMap<>();
     private int time = 0;
 
     public Twitter1() {
@@ -29,8 +30,8 @@ class Twitter1 {
         followings.add(userId);
         List<Integer> res = new ArrayList<>();
         // [time, tweetId, userId, index]
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->Integer.compare(b[0], a[0]));
-        for (int following: followings) {
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
+        for (int following : followings) {
             if (!tweets.containsKey(following)) {
                 continue;
             }
@@ -51,8 +52,8 @@ class Twitter1 {
             if (cur[3] == 0) {
                 continue;
             }
-            int[] next = tweets.get(cur[2]).get(cur[3]-1);
-            pq.offer(new int[]{next[1], next[0], cur[2], cur[3]-1});
+            int[] next = tweets.get(cur[2]).get(cur[3] - 1);
+            pq.offer(new int[]{next[1], next[0], cur[2], cur[3] - 1});
         }
         return res;
     }

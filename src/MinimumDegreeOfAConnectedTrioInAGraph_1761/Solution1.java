@@ -1,6 +1,10 @@
 package MinimumDegreeOfAConnectedTrioInAGraph_1761;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * Time Complexity: O(edges.length * n)
  * Space Complexity: O(edges.length)
@@ -13,7 +17,7 @@ public class Solution1 {
         for (int i = 0; i < n; i++) {
             g.add(new HashSet<>());
         }
-        for (int[] edge: edges) {
+        for (int[] edge : edges) {
             int a = --edge[0], b = --edge[1];
             g.get(a).add(b);
             g.get(b).add(a);
@@ -21,7 +25,7 @@ public class Solution1 {
 
         int res = Integer.MAX_VALUE;
 
-        for (int[] edge: edges) {
+        for (int[] edge : edges) {
             // ui != vi, so we can safely find trio based on (ui, vi).
             int a = edge[0], b = edge[1];
             Set<Integer> aEdge = g.get(a);
@@ -32,7 +36,7 @@ public class Solution1 {
                 aEdge = bEdge;
                 bEdge = tmp;
             }
-            for (int c: aEdge) {
+            for (int c : aEdge) {
                 if (!bEdge.contains(c)) {
                     continue;
                 }

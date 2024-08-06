@@ -62,17 +62,7 @@ public class Solution1 {
 
     class Trie {
 
-        private class Node {
-            public char c;
-            public boolean isExist = false;
-            public Node[] nodes = new Node[26];
-
-            public Node(char c) {
-                this.c = c;
-            }
-        }
-
-        private Node root = new Node('a');
+        private final Node root = new Node('a');
 
         /**
          * Initialize your data structure here.
@@ -125,6 +115,16 @@ public class Solution1 {
                 curNode = curNode.nodes[prefix.charAt(i) - 'a'];
             }
             return curNode != null;
+        }
+
+        private class Node {
+            public char c;
+            public boolean isExist = false;
+            public Node[] nodes = new Node[26];
+
+            public Node(char c) {
+                this.c = c;
+            }
         }
     }
 

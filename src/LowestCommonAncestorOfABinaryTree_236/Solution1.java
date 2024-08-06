@@ -7,12 +7,12 @@ package LowestCommonAncestorOfABinaryTree_236;
  */
 
 public class Solution1 {
+    private TreeNode res = null;
+
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         helper(root, p, q);
         return res;
     }
-
-    private TreeNode res = null;
 
     private boolean helper(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {

@@ -1,6 +1,7 @@
 package SlidingWindowMaximum_239;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume nums.length is n.
@@ -9,11 +10,11 @@ import java.util.*;
  */
 public class Solution1 {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        int[] res = new int[nums.length-k+1];
+        int[] res = new int[nums.length - k + 1];
         // element: [index, value]
         Deque<int[]> mq = new ArrayDeque<>();
         for (int i = 0; i < k - 1; i++) {
-            offerMonotonicQueue(mq, new int[]{i,nums[i]});
+            offerMonotonicQueue(mq, new int[]{i, nums[i]});
         }
 
         for (int i = 0; i + k <= nums.length; i++) {
@@ -25,7 +26,7 @@ public class Solution1 {
                 mq.pollFirst();
             }
 
-            offerMonotonicQueue(mq, new int[]{i+k-1, nums[i+k-1]});
+            offerMonotonicQueue(mq, new int[]{i + k - 1, nums[i + k - 1]});
             // q is not empty here
             res[i] = mq.peekFirst()[1];
         }

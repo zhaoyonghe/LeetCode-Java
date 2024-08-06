@@ -12,6 +12,12 @@ import java.util.Stack;
  */
 public class Solution1 {
 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Solution1 s = new Solution1();
+        System.out.println(s.calculate("(7)-(0)+(4)"));
+    }
+
     /**
      * This function is designed mainly for the numbers that have more than one digit.
      * It can combine the continue digit-characters in the string to one number.
@@ -39,11 +45,7 @@ public class Solution1 {
      * @return Does this string indicate a number?
      */
     public boolean isNum(String s) {
-        if (s.length() > 1 || Character.isDigit(s.charAt(0))) {
-            return true;
-        } else {
-            return false;
-        }
+        return s.length() > 1 || Character.isDigit(s.charAt(0));
     }
 
     public int calculate(String s) {
@@ -125,12 +127,6 @@ public class Solution1 {
             }
         }
         return Integer.valueOf(numStack.peek());
-    }
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        Solution1 s = new Solution1();
-        System.out.println(s.calculate("(7)-(0)+(4)"));
     }
 
 }

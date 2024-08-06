@@ -1,6 +1,8 @@
 package MinimumNumberOfTapsToOpenToWaterAGarden_1326;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Time Complexity: O(n * log(n))
@@ -14,7 +16,7 @@ public class Solution1 {
         int[] prev = null;
         List<int[]> list = new ArrayList<>();
         for (int i = 0; i < ranges.length; i++) {
-            int[] cur = new int[]{Math.max(0,i-ranges[i]),Math.min(n,i+ranges[i])};
+            int[] cur = new int[]{Math.max(0, i - ranges[i]), Math.min(n, i + ranges[i])};
             if (cur[0] == 0 && (prev == null || prev[1] < cur[1])) {
                 prev = cur;
                 continue;
@@ -27,9 +29,9 @@ public class Solution1 {
             return -1;
         }
         int res = 1;
-        Collections.sort(list, (a,b)->Integer.compare(a[0],b[0]));
+        Collections.sort(list, (a, b) -> Integer.compare(a[0], b[0]));
         int[] cand = prev;
-        for (int[] cur: list) {
+        for (int[] cur : list) {
             if (prev[1] < cur[0]) {
                 // cand is critical.
                 if (cur[0] <= cand[1]) {

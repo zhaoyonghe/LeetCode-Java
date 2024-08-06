@@ -1,7 +1,5 @@
 package KthLargestElementInAnArray_215;
 
-import java.util.Random;
-
 /**
  * $$ Assume n is nums.length.
  * $$ Time Complexity: O(n)
@@ -27,7 +25,7 @@ class Solution1 {
         // se: nums[start~i] g: nums[i+1~end]
         // does nums[i] rank at k-th in nums[start~end]?
         if (i - start + 1 < k) {
-            return select(nums, i+1, end, k - (i - start + 1));
+            return select(nums, i + 1, end, k - (i - start + 1));
         } else if (i - start + 1 > k) {
             return select(nums, start, i - 1, k);
         } else {

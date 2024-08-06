@@ -12,18 +12,6 @@ import java.util.List;
  */
 
 public class Solution1 {
-    private class Pair {
-        public int num;
-        public int count;
-        public int index;
-
-        Pair(int num, int count, int index) {
-            this.num = num;
-            this.count = count;
-            this.index = index;
-        }
-    }
-
     public List<Integer> countSmaller(int[] nums) {
         int n = nums.length;
         Pair[] pairs = new Pair[n];
@@ -71,6 +59,18 @@ public class Solution1 {
         }
         for (k = 0; k < buffer.length; k++) {
             pairs[start + k] = buffer[k];
+        }
+    }
+
+    private class Pair {
+        public int num;
+        public int count;
+        public int index;
+
+        Pair(int num, int count, int index) {
+            this.num = num;
+            this.count = count;
+            this.index = index;
         }
     }
 }

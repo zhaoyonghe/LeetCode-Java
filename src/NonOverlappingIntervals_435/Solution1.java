@@ -1,6 +1,7 @@
 package NonOverlappingIntervals_435;
 
-import java.util.*;
+import java.util.Arrays;
+
 /**
  * $$ Assume intervals.length is n.
  * $$ Time Complexity: O(nlogn)
@@ -9,7 +10,7 @@ import java.util.*;
 public class Solution1 {
     public int eraseOverlapIntervals(int[][] intervals) {
         // sort
-        Arrays.sort(intervals, (a, b)->Integer.compare(a[1],b[1]));
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[1], b[1]));
 
         int count = 0;
         // iterate through intervals

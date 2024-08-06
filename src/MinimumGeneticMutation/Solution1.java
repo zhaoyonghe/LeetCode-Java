@@ -1,9 +1,6 @@
 package MinimumGeneticMutation;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Time Complexity: O(1)
@@ -25,9 +22,7 @@ public class Solution1 {
         Deque<String> q = new ArrayDeque<>();
         char[] a = new char[]{'A', 'T', 'C', 'G'};
 
-        for (String s : bank) {
-            valid.add(s);
-        }
+        Collections.addAll(valid, bank);
 
         if (!valid.contains(end)) {
             return -1;

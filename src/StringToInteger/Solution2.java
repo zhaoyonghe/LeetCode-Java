@@ -8,6 +8,11 @@ package StringToInteger;
  */
 public class Solution2 {
 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        System.out.println("2147483647".compareTo("7"));
+    }
+
     public int myAtoi(String str) {
         if (str.length() == 0) {
             return 0;
@@ -64,11 +69,6 @@ public class Solution2 {
         }
         return signType * result;
 
-    }
-
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        System.out.println("2147483647".compareTo("7"));
     }
 
 }

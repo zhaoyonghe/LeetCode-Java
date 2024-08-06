@@ -9,6 +9,6 @@ public class Solution1 {
     // Important constraints:
     // 1. n >= 0.
     public int bulbSwitch(int n) {
-        return (int)(Math.sqrt((double)(n)));
+        return (int) (Math.sqrt(n));
     }
 }

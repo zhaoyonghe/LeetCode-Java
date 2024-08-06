@@ -1,6 +1,5 @@
 package SurroundedRegions_130;
 
-import java.util.*;
 /**
  * $$ Assume the board size is m * n.
  * $$ Time Complexity: O(m * n)
@@ -10,11 +9,11 @@ public class Solution1 {
     public void solve(char[][] board) {
         for (int i = 0; i < board.length; i++) {
             if (board[i][0] == 'O') flip(board, i, 0);
-            if (board[i][board[0].length-1] == 'O') flip(board, i, board[0].length-1);
+            if (board[i][board[0].length - 1] == 'O') flip(board, i, board[0].length - 1);
         }
         for (int j = 0; j < board[0].length; j++) {
             if (board[0][j] == 'O') flip(board, 0, j);
-            if (board[board.length-1][j] == 'O') flip(board, board.length-1, j);
+            if (board[board.length - 1][j] == 'O') flip(board, board.length - 1, j);
         }
         setAll(board, 'O', 'X');
         setAll(board, 'p', 'O');
@@ -36,9 +35,9 @@ public class Solution1 {
             return;
         }
         b[i][j] = 'p';
-        flip(b, i-1, j);
-        flip(b, i+1, j);
-        flip(b, i, j-1);
-        flip(b, i, j+1);
+        flip(b, i - 1, j);
+        flip(b, i + 1, j);
+        flip(b, i, j - 1);
+        flip(b, i, j + 1);
     }
 }

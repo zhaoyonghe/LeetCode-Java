@@ -1,6 +1,7 @@
 package DesignAddAndSearchWordsDataStructure_211;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume word.length() is n.
@@ -9,12 +10,7 @@ import java.util.*;
  * $$ search() Time Complexity: O(n)
  */
 class WordDictionary1 {
-    class Node {
-        Node[] next = new Node[26];
-        boolean isWord;
-    }
-
-    private Node root = new Node();
+    private final Node root = new Node();
 
     public WordDictionary1() {
 
@@ -23,8 +19,8 @@ class WordDictionary1 {
     public void addWord(String word) {
         Node cur = root;
         for (char c : word.toCharArray()) {
-            if (cur.next[c-'a']==null) {
-                cur.next[c-'a'] = new Node();
+            if (cur.next[c - 'a'] == null) {
+                cur.next[c - 'a'] = new Node();
             }
             cur = cur.next[c - 'a'];
         }
@@ -50,10 +46,10 @@ class WordDictionary1 {
                     continue;
                 }
                 // c != '.'
-                if (cur.next[c-'a'] == null) {
+                if (cur.next[c - 'a'] == null) {
                     continue;
                 }
-                q.offer(cur.next[c-'a']);
+                q.offer(cur.next[c - 'a']);
             }
         }
         if (q.isEmpty()) {
@@ -65,5 +61,10 @@ class WordDictionary1 {
             }
         }
         return false;
+    }
+
+    class Node {
+        Node[] next = new Node[26];
+        boolean isWord;
     }
 }

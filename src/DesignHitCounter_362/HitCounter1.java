@@ -15,7 +15,7 @@ import java.util.List;
 public class HitCounter1 {
     // Important constraints:
     // 1. All the calls are being made to the system in chronological order.
-    private List<int[]> li = new ArrayList<>();
+    private final List<int[]> li = new ArrayList<>();
 
     public HitCounter1() {
 

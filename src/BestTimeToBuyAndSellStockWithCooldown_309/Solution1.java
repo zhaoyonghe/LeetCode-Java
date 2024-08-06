@@ -25,16 +25,16 @@ class Solution1 {
 
         for (int j = 0; j < k; j++) {
             for (int i = 2; i < n; i++) {
-                hold[i] = Math.max(hold[i-1], unhold[i-2]-prices[i]);
+                hold[i] = Math.max(hold[i - 1], unhold[i - 2] - prices[i]);
             }
             for (int i = 1; i < n; i++) {
-                unhold[i] = Math.max(unhold[i-1], hold[i-1]+prices[i]);
+                unhold[i] = Math.max(unhold[i - 1], hold[i - 1] + prices[i]);
             }
-            if (res == unhold[n-1]) {
+            if (res == unhold[n - 1]) {
                 return res;
             }
             // res < unhold[n-1]
-            res = unhold[n-1];
+            res = unhold[n - 1];
         }
 
         return res;

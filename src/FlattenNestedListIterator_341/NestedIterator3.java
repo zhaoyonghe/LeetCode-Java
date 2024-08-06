@@ -15,7 +15,8 @@ import java.util.List;
  * Rank: 47.35%
  */
 public class NestedIterator3 implements Iterator<Integer> {
-    private Deque<NestedInteger> st = new ArrayDeque<>();
+    private final Deque<NestedInteger> st = new ArrayDeque<>();
+
     public NestedIterator3(List<NestedInteger> nestedList) {
         pushAll(nestedList);
         unfoldTop();

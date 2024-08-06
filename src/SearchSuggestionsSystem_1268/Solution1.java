@@ -1,6 +1,8 @@
 package SearchSuggestionsSystem_1268;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Assume all characters in products is m and searchWord length is n.
@@ -9,11 +11,6 @@ import java.util.*;
  */
 
 public class Solution1 {
-    class Node {
-        Node[] next = new Node[26];
-        List<Integer> suggests = new ArrayList<>();
-    }
-
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         Node root = new Node();
         Node cur = root;
@@ -22,12 +19,12 @@ public class Solution1 {
             String s = products[i];
             cur = root;
             for (char c : s.toCharArray()) {
-                if (cur.next[c-'a'] == null) {
-                    cur.next[c-'a'] = new Node();
+                if (cur.next[c - 'a'] == null) {
+                    cur.next[c - 'a'] = new Node();
                 }
-                cur = cur.next[c-'a'];
+                cur = cur.next[c - 'a'];
                 cur.suggests.add(i);
-                Collections.sort(cur.suggests, (a, b)->products[a].compareTo(products[b]));
+                Collections.sort(cur.suggests, (a, b) -> products[a].compareTo(products[b]));
                 if (cur.suggests.size() == 4) {
                     cur.suggests.remove(3);
                 }
@@ -38,12 +35,12 @@ public class Solution1 {
 
         cur = root;
         for (char c : searchWord.toCharArray()) {
-            if (cur.next[c-'a'] == null) {
+            if (cur.next[c - 'a'] == null) {
 
                 break;
             }
-            cur = cur.next[c-'a'];
-            res.add(cur.suggests.stream().map(a->products[a]).toList());
+            cur = cur.next[c - 'a'];
+            res.add(cur.suggests.stream().map(a -> products[a]).toList());
         }
 
         while (res.size() < searchWord.length()) {
@@ -51,5 +48,10 @@ public class Solution1 {
         }
 
         return res;
+    }
+
+    class Node {
+        Node[] next = new Node[26];
+        List<Integer> suggests = new ArrayList<>();
     }
 }

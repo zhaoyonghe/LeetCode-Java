@@ -1,6 +1,7 @@
 package TrappingRainWater_42;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Assume n is the length of height.
@@ -22,7 +23,7 @@ public class Solution2 {
                     break;
                 }
                 int left = stack.peek();
-                res += (Math.min(height[left], height[i])-height[bottom])*(i-left-1);
+                res += (Math.min(height[left], height[i]) - height[bottom]) * (i - left - 1);
             }
             stack.push(i);
         }

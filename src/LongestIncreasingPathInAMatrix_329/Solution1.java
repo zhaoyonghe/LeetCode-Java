@@ -1,6 +1,8 @@
 package LongestIncreasingPathInAMatrix_329;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * Time Complexity: O(m * n)
  * Space Complexity: O(m * n)
@@ -14,7 +16,7 @@ public class Solution1 {
         int n = matrix[0].length;
         Integer[][] dp = new Integer[m][n];
         // up, down, left, right
-        int[][] dirs = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
+        int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
         int res = 1;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -22,7 +24,7 @@ public class Solution1 {
                     continue;
                 }
                 Deque<int[]> st = new ArrayDeque<>();
-                st.push(new int[]{i,j,0});
+                st.push(new int[]{i, j, 0});
                 while (!st.isEmpty()) {
                     int[] cur = st.peek();
                     int cx = cur[0], cy = cur[1];
@@ -30,7 +32,7 @@ public class Solution1 {
                     int nx = cx + dir[0];
                     int ny = cy + dir[1];
                     dp[cx][cy] = dp[cx][cy] == null ? 1 : dp[cx][cy];
-                    if (out(nx,ny,m,n) || matrix[nx][ny] <= matrix[cx][cy]){
+                    if (out(nx, ny, m, n) || matrix[nx][ny] <= matrix[cx][cy]) {
                         cur[2]++;
                         if (cur[2] == 4) {
                             st.pop();

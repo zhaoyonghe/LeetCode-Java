@@ -1,6 +1,8 @@
 package MeetingRoomsII_253;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
 /**
  * $$ Assume intervals.length is n.
  * $$ Time Complexity: O(nlogn)
@@ -8,9 +10,9 @@ import java.util.*;
  */
 public class Solution1 {
     public int minMeetingRooms(int[][] intervals) {
-        Arrays.sort(intervals, (a,b)->Integer.compare(a[0],b[0]));
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
-        PriorityQueue<Integer> pq= new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.offer(intervals[0][1]);
         for (int i = 1; i < intervals.length; i++) {
             int earliestEnd = pq.poll();

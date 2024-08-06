@@ -31,7 +31,7 @@ public class Solution1 {
             int num = 0;
             while (j < al && Character.isDigit(ac[j])) {
                 num *= 10;
-                num += (int)ac[j] - (int)'0';
+                num += (int) ac[j] - (int) '0';
                 j++;
             }
             i += num;

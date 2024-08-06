@@ -1,6 +1,7 @@
 package SpiralMatrix_54;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Assume m is matrix.length and n is matrix[0].length.
@@ -16,8 +17,9 @@ public class Solution1 {
         int n = matrix[0].length;
         return xn >= 0 && xn < m && yn >= 0 && yn < n && matrix[xn][yn] != 101;
     }
+
     public List<Integer> spiralOrder(int[][] matrix) {
-        int[][] dirs = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
+        int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int i = 0;
         int x = 0;
         int y = 0;

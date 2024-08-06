@@ -28,22 +28,22 @@ public class Solution1 {
             }
             use(nums[j], set);
             swap(nums, i, j);
-            construct(nums, i+1, res);
+            construct(nums, i + 1, res);
             swap(nums, i, j);
         }
     }
 
     private void use(int val, boolean[] set) {
-        set[val+10]=true;
+        set[val + 10] = true;
     }
 
     private boolean isUsed(int val, boolean[] set) {
-        return set[val+10];
+        return set[val + 10];
     }
 
     private List<Integer> a2l(int[] nums) {
         List<Integer> res = new ArrayList<>();
-        for (int n: nums) {
+        for (int n : nums) {
             res.add(n);
         }
         return res;

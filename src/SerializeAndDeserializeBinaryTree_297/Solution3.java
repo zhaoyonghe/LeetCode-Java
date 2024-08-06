@@ -1,7 +1,6 @@
 package SerializeAndDeserializeBinaryTree_297;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Deque;
 
 /**
@@ -13,7 +12,7 @@ import java.util.Deque;
  */
 
 public class Solution3 {
-    private TreeNode nullNode = new TreeNode(0);
+    private final TreeNode nullNode = new TreeNode(0);
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
@@ -29,7 +28,7 @@ public class Solution3 {
                 sb.append("n;");
                 continue;
             }
-            sb.append(Integer.toString(node.val)).append(";");
+            sb.append(node.val).append(";");
             q.offer(node.left == null ? this.nullNode : node.left);
             q.offer(node.right == null ? this.nullNode : node.right);
         }
@@ -54,13 +53,13 @@ public class Solution3 {
                 node.left = new TreeNode(Integer.parseInt(fields[i]));
                 q.offer(node.left);
             }
-            if (fields[i+1].equals("n")) {
+            if (fields[i + 1].equals("n")) {
                 node.right = null;
             } else {
-                node.right = new TreeNode(Integer.parseInt(fields[i+1]));
+                node.right = new TreeNode(Integer.parseInt(fields[i + 1]));
                 q.offer(node.right);
             }
-            i+=2;
+            i += 2;
         }
         return root;
     }

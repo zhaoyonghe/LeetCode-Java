@@ -22,7 +22,7 @@ public class Solution2 {
         b = (s.charAt(1) == '0' ? 0 : a) + (isabGE10orLE26(s.charAt(0), s.charAt(1)) ? 1 : 0);
 
         for (int i = 2; i < s.length(); i++) {
-            int tmp = (s.charAt(i) == '0' ? 0 : b) + (isabGE10orLE26(s.charAt(i-1),s.charAt(i)) ? a : 0);
+            int tmp = (s.charAt(i) == '0' ? 0 : b) + (isabGE10orLE26(s.charAt(i - 1), s.charAt(i)) ? a : 0);
             a = b;
             b = tmp;
         }

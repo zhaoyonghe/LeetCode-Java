@@ -1,6 +1,7 @@
 package ConstructBinaryTreeFromPreorderAndInorderTraversal_105;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * $$ Assume n is the number of nodes in root.

@@ -15,7 +15,7 @@ public class Solution1 {
         int right = nums.length - 1;
         int i = 0;
         while (i <= right) {
-            switch(nums[i]) {
+            switch (nums[i]) {
                 case 0:
                     swap(nums, left, i);
                     left++;

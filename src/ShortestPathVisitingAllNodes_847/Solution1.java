@@ -30,7 +30,7 @@ public class Solution1 {
                 int[] cur = q.poll();
                 int curState = cur[0];
                 int curID = cur[1];
-                for (int next: graph[curID]) {
+                for (int next : graph[curID]) {
                     // graph[i] does not contain i, so do not need to check self-edge:
                     // if (next == curID) {
                     //     continue;

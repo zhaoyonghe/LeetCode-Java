@@ -13,6 +13,11 @@ public class Solution1 {
     public Stack<String> numStack = new Stack<>();
     public Stack<String> opStack = new Stack<>();
 
+    public static void main(String[] args) {
+        Solution1 s = new Solution1();
+        s.calculate("3/2");
+    }
+
     public String getNextElement(String s, int i) {
         if (Character.isDigit(s.charAt(i))) {
             StringBuffer sb = new StringBuffer();
@@ -32,11 +37,7 @@ public class Solution1 {
     }
 
     public boolean isNum(String s) {
-        if (Character.isDigit(s.charAt(0))) {
-            return true;
-        } else {
-            return false;
-        }
+        return Character.isDigit(s.charAt(0));
     }
 
     public boolean isSafeOpPush(String op) {
@@ -46,11 +47,7 @@ public class Solution1 {
             if (op.equals("+") || op.equals("-")) {
                 return false;
             } else {
-                if (opStack.peek().equals("+") || opStack.peek().equals("-")) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return opStack.peek().equals("+") || opStack.peek().equals("-");
             }
         }
     }
@@ -100,10 +97,5 @@ public class Solution1 {
         while (!opStack.empty()) {
             calculate();
         }
-    }
-
-    public static void main(String[] args) {
-        Solution1 s = new Solution1();
-        s.calculate("3/2");
     }
 }

@@ -26,7 +26,7 @@ public class Solution1 {
             } else {
                 map[cs[end]] = true;
             }
-            res = Math.max(res, end-start+1);
+            res = Math.max(res, end - start + 1);
         }
         return res;
     }

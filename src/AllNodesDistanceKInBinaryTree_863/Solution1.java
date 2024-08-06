@@ -35,7 +35,7 @@ public class Solution1 {
         }
         if (left > 0) {
             collect(root.right, left - 1, res);
-            return left-1;
+            return left - 1;
         }
         int right = find(root.right, target, res, k);
         if (right == 0) {
@@ -44,7 +44,7 @@ public class Solution1 {
         }
         if (right > 0) {
             collect(root.left, right - 1, res);
-            return right-1;
+            return right - 1;
         }
         return -1;
     }
@@ -58,6 +58,6 @@ public class Solution1 {
             return;
         }
         collect(node.left, dis - 1, res);
-        collect(node.right, dis-1, res);
+        collect(node.right, dis - 1, res);
     }
 }

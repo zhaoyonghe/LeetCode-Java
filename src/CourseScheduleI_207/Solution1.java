@@ -1,6 +1,9 @@
 package CourseScheduleI_207;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
 
 /**
  * $$ Assume numCourses is V, len(prerequisites) is E.
@@ -16,11 +19,11 @@ public class Solution1 {
         for (int i = 0; i < numCourses; i++) {
             g.add(new ArrayList<>());
         }
-        for (int[] e: prerequisites) {
+        for (int[] e : prerequisites) {
             g.get(e[1]).add(e[0]);
         }
         int[] indegree = new int[numCourses];
-        for (int[] e: prerequisites) {
+        for (int[] e : prerequisites) {
             indegree[e[0]]++;
         }
 

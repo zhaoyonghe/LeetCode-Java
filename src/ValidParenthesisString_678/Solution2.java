@@ -19,11 +19,11 @@ public class Solution2 {
                 if (hi < 0) {
                     return false;
                 }
-                lo = Math.max(0, lo-1);
+                lo = Math.max(0, lo - 1);
             } else {
                 // c == '*'
                 hi++;
-                lo = Math.max(0, lo-1);
+                lo = Math.max(0, lo - 1);
             }
         }
         return lo == 0;

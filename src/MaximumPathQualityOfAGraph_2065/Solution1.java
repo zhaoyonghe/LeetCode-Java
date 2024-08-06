@@ -1,6 +1,10 @@
 package MaximumPathQualityOfAGraph_2065;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * Assume n is values.length.
  * Assume e is edges.length.
@@ -33,7 +37,7 @@ public class Solution1 {
         int[] maxValCnts = null;
         history[now]++;
         if (g.containsKey(now)) {
-            for (int[] nextEn: g.get(now)) {
+            for (int[] nextEn : g.get(now)) {
                 int next = nextEn[0];
                 int t = nextEn[1];
                 // 10 <= time_j, maxTime <= 100. so recursion will be no more than 10 levels.

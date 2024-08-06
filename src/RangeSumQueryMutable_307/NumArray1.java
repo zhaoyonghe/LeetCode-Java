@@ -12,15 +12,13 @@ package RangeSumQueryMutable_307;
 public class NumArray1 {
     private final int[] bitree;
     private final int[] nums;
-    private int n;
+    private final int n;
 
     public NumArray1(int[] nums) {
         n = nums.length;
         this.bitree = new int[n + 1];
         this.nums = new int[n + 1];
-        for (int i = 0; i < n; i++) {
-            this.nums[i + 1] = nums[i];
-        }
+        System.arraycopy(nums, 0, this.nums, 1, n);
         for (int i = 1; i <= n; i++) {
             int x = i;
             while (x <= n) {

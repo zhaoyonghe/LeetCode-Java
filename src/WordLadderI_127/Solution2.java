@@ -1,5 +1,9 @@
 package WordLadderI_127;
-import java.util.*;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * Assume wordList.size() is n and length of words in wordList is len.
  * Time Complexity: O(n * 26 ^ len)
@@ -24,11 +28,11 @@ public class Solution2 {
 
         Set<String> all = new HashSet<>();
 
-        while(!a.isEmpty() && !b.isEmpty()) {
+        while (!a.isEmpty() && !b.isEmpty()) {
             step++;
 
             Set<String> next = new HashSet<>();
-            for (String cur: a) {
+            for (String cur : a) {
                 for (int i = 0; i < cur.length(); i++) {
                     char[] arr = cur.toCharArray();
                     for (char c = 'a'; c <= 'z'; c++) {
@@ -38,7 +42,7 @@ public class Solution2 {
                             continue;
                         }
                         if (b.contains(nextStr)) {
-                            return step+1;
+                            return step + 1;
                         }
                         if (all.contains(nextStr)) {
                             continue;

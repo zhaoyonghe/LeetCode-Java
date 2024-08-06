@@ -25,12 +25,12 @@ public class Solution1 {
         int num = 0;
         int k = i;
         while (k < s.length()) {
-            num = num *10+(s.charAt(k)-'0');
+            num = num * 10 + (s.charAt(k) - '0');
             if (num >= 256) {
                 return;
             }
-            cur[count] = s.substring(i,k+1);
-            construct(s, k+1, cur, count+1, res);
+            cur[count] = s.substring(i, k + 1);
+            construct(s, k + 1, cur, count + 1, res);
             if (num == 0) {
                 return;
             }

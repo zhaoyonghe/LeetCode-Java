@@ -14,7 +14,7 @@ public class Solution1 {
         int left = 0;
         // Need how many ).
         int right = 0;
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == '(') {
                 // Need one more ) to match this (.
                 right++;

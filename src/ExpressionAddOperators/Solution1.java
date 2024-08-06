@@ -19,7 +19,7 @@ class Solution1 {
         long n = 0;
         for (int i = 0; i < nums.length; i++) {
             n *= 10;
-            n += (long) (nums[i] - '0');
+            n += nums[i] - '0';
             s[i] = nums[i];
             helper(nums, i + 1, s, i + 1, true, n, n, target, res);
             if (nums[0] == '0') {
@@ -42,7 +42,7 @@ class Solution1 {
         len++;
         for (int j = i; j < nums.length; j++) {
             n *= 10;
-            n += (long) (nums[j] - '0');
+            n += nums[j] - '0';
             s[len] = nums[j];
             len++;
             s[opIndex] = '+';

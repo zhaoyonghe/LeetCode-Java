@@ -33,9 +33,7 @@ public class Solution1 {
                 capacity *= 2;
                 aux = new int[capacity];
                 int[] temp = new int[capacity];
-                for (int i = 0; i <= end; i++) {
-                    temp[i] = stack[i];
-                }
+                if (end + 1 >= 0) System.arraycopy(stack, 0, temp, 0, end + 1);
                 stack = temp;
                 stack[end] = x;
                 end += 1;

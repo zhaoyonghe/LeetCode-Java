@@ -24,7 +24,7 @@ public class Solution1 {
             if (Character.isDigit(ss[i])) {
                 // build the num
                 while (i < ss.length && Character.isDigit(ss[i])) {
-                    num = num * 10 + (int) (ss[i] - '0');
+                    num = num * 10 + (ss[i] - '0');
                     i += 1;
                 }
             } else if (ss[i] == '(') {

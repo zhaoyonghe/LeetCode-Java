@@ -1,4 +1,5 @@
 package StringCompression_443;
+
 /**
  * Time Complexity: O(chars.length)
  * Auxiliary Space Complexity: O(1)
@@ -19,7 +20,7 @@ public class Solution1 {
                 continue;
             }
 
-            j = put(chars, j, cnt, chars[k-1]);
+            j = put(chars, j, cnt, chars[k - 1]);
 
             cur = c;
             cnt = 1;
@@ -30,17 +31,17 @@ public class Solution1 {
         return j;
     }
 
-    private int put(char[] chars, int j, int cnt,char c) {
+    private int put(char[] chars, int j, int cnt, char c) {
         chars[j] = c;
         j++;
         int i = j;
         if (cnt > 1) {
             while (cnt > 0) {
-                chars[j] = (char)((int)('0')+(cnt%10));
-                cnt/=10;
+                chars[j] = (char) ((int) ('0') + (cnt % 10));
+                cnt /= 10;
                 j++;
             }
-            reverse(chars, i, j-1);
+            reverse(chars, i, j - 1);
         }
         return j;
     }

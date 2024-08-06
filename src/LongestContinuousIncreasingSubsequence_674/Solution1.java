@@ -10,7 +10,7 @@ public class Solution1 {
         int i = 0;
         for (int j = 1; j < nums.length; j++) {
             if (nums[j - 1] < nums[j]) {
-                res = Math.max(res, j-i+1);
+                res = Math.max(res, j - i + 1);
                 continue;
             }
             i = j;

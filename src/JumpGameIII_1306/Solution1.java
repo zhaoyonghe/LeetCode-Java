@@ -1,6 +1,7 @@
 package JumpGameIII_1306;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume arr.length is n.

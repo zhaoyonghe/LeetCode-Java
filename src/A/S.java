@@ -14,7 +14,7 @@ public class S {
     private static void createSkeleton(String problemTitle, String problemID) throws IOException {
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
-        String[] ss = problemTitle.split("[\s\\-]");
+        String[] ss = problemTitle.split("[ \\-]");
         for (String sub : ss) {
             if (sub.length() == 0) {
                 continue;
@@ -24,14 +24,14 @@ public class S {
             sb.append(chars);
             sb2.append(chars).append(" ");
         }
-        System.out.println(sb.toString());
-        System.out.println(sb2.toString());
+        System.out.println(sb);
+        System.out.println(sb2);
 
         String pkgName = sb.append("_").append(problemID).toString();
-        File d = new File("src/"+pkgName);
+        File d = new File("src/" + pkgName);
         d.mkdir();
-        FileWriter myWriter = new FileWriter("src/"+pkgName+"/Solution1.java");
-        myWriter.write("package "+pkgName+";\n\n");
+        FileWriter myWriter = new FileWriter("src/" + pkgName + "/Solution1.java");
+        myWriter.write("package " + pkgName + ";\n\n");
         myWriter.write("import java.util.*;\n\n");
         myWriter.write("public class Solution1 {\n// Important constraints:\n}");
         myWriter.close();

@@ -9,7 +9,7 @@ public class Solution1 {
     public String longestCommonPrefix(String[] strs) {
         int j = 0;
         all:
-        for (;;j++) {
+        for (; ; j++) {
             for (String str : strs) {
                 if (j == str.length() || str.charAt(j) != strs[0].charAt(j)) {
                     break all;

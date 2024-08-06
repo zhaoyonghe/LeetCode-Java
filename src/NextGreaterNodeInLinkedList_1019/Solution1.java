@@ -1,6 +1,9 @@
 package NextGreaterNodeInLinkedList_1019;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
 
 /**
  * Assume the length of the linked list is n.

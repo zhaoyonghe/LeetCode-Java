@@ -54,7 +54,7 @@ class Solution1 {
             }
             a++;
             // Skip the duplicate.
-            while (a < n - 3 && nums[a- 1] == nums[a]) {
+            while (a < n - 3 && nums[a - 1] == nums[a]) {
                 a++;
             }
         }

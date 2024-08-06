@@ -1,4 +1,5 @@
 package StoneGame_877;
+
 /**
  * Time Complexity: O(n ^ 2)
  * Space Complexity: O(n ^ 2)
@@ -16,9 +17,9 @@ public class Solution1 {
         for (int len = 1; len < n; len++) {
             for (int s = 0; s + len < n; s++) {
                 int e = s + len;
-                dp[s][e] = Math.max(piles[s]-dp[s+1][e],piles[e]-dp[s][e-1]);
+                dp[s][e] = Math.max(piles[s] - dp[s + 1][e], piles[e] - dp[s][e - 1]);
             }
         }
-        return dp[0][n-1] > 0;
+        return dp[0][n - 1] > 0;
     }
 }

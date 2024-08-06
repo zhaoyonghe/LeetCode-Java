@@ -34,10 +34,10 @@ public class Solution1 {
             return;
         }
         visited[x][y] = true;
-        dfs(grid, x+1, y, visited, hasBeenVisited+1);
-        dfs(grid, x-1, y, visited, hasBeenVisited+1);
-        dfs(grid, x, y+1, visited, hasBeenVisited+1);
-        dfs(grid, x, y-1, visited, hasBeenVisited+1);
+        dfs(grid, x + 1, y, visited, hasBeenVisited + 1);
+        dfs(grid, x - 1, y, visited, hasBeenVisited + 1);
+        dfs(grid, x, y + 1, visited, hasBeenVisited + 1);
+        dfs(grid, x, y - 1, visited, hasBeenVisited + 1);
         visited[x][y] = false;
     }
 
@@ -45,7 +45,7 @@ public class Solution1 {
         for (int i = 0; i < this.m; i++) {
             for (int j = 0; j < this.n; j++) {
                 if (grid[i][j] == num) {
-                    return new int[]{i,j};
+                    return new int[]{i, j};
                 }
             }
         }

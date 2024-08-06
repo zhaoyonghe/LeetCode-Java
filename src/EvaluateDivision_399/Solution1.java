@@ -1,6 +1,7 @@
 package EvaluateDivision_399;
 
 import java.util.*;
+
 /**
  * Time Complexity: O(m * n)
  * Space Complexity: O(max(m, n))
@@ -47,7 +48,7 @@ public class Solution1 {
         if (cur.equals(target)) {
             return 1.0;
         }
-        for (Map.Entry<String, Double> en: g.get(cur).entrySet()) {
+        for (Map.Entry<String, Double> en : g.get(cur).entrySet()) {
             Double prev = dfs(en.getKey(), target, visited, g);
             if (prev == null) {
                 continue;

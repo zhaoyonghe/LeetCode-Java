@@ -1,6 +1,8 @@
 package SerializeAndDeserializeBinaryTree_297;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 
 /**
  * $$ Assume the number of nodes is n.
@@ -16,10 +18,10 @@ public class Solution1 {
         if (root == null) {
             return "#";
         }
-        StringBuilder sb = new StringBuilder();
-        return sb.append(String.valueOf(root.val))
-                .append(",").append(serialize(root.left))
-                .append(",").append(serialize(root.right)).toString();
+        String sb = root.val +
+                "," + serialize(root.left) +
+                "," + serialize(root.right);
+        return sb;
     }
 
     // Decodes your encoded data to tree.

@@ -17,7 +17,7 @@ public class Solution2 {
             if (index >= 0) {
                 continue;
             }
-            index  = -(index + 1);
+            index = -(index + 1);
             if (index == list.size()) {
                 list.add(num);
             } else {

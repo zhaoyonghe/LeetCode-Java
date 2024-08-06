@@ -1,6 +1,6 @@
 package ValidSudoku_36;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * $$ Time Complexity: O(1)

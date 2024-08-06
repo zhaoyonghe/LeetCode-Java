@@ -15,9 +15,9 @@ public class Solution1 {
         int s = 0;
         int e = nums.length - 1;
         while (s <= e) {
-            int m = (s+e)/2;
+            int m = (s + e) / 2;
             if (nums[m] < nums[0]) {
-                if (nums[m-1]<nums[m]) {
+                if (nums[m - 1] < nums[m]) {
                     e = m - 1;
                     continue;
                 }

@@ -1,6 +1,5 @@
 package StepByStepDirectionsFromABinaryTreeNodeToAnother_2096;
 
-import java.util.*;
 /**
  * Assume the number of nodes in the tree is n.
  * Assume the height of the tree is h.
@@ -10,20 +9,20 @@ import java.util.*;
  * Rank: 92.17%
  */
 public class Solution1 {
-public String getDirections(TreeNode root, int startValue, int destValue) {
-    String ss = get(root, startValue).reverse().toString();
-    String cs = get(root, destValue).reverse().toString();
-    // Find ss, cs common prefix.
-    int i = 0;
-    while (i < Math.min(ss.length(), cs.length()) && ss.charAt(i) == cs.charAt(i)) {
-        i++;
+    public String getDirections(TreeNode root, int startValue, int destValue) {
+        String ss = get(root, startValue).reverse().toString();
+        String cs = get(root, destValue).reverse().toString();
+        // Find ss, cs common prefix.
+        int i = 0;
+        while (i < Math.min(ss.length(), cs.length()) && ss.charAt(i) == cs.charAt(i)) {
+            i++;
+        }
+        StringBuilder res = new StringBuilder();
+        for (int j = 0; j < ss.length() - i; j++) {
+            res.append('U');
+        }
+        return res.append(cs.substring(i)).toString();
     }
-    StringBuilder res = new StringBuilder();
-    for (int j = 0; j < ss.length() - i; j++) {
-        res.append('U');
-    }
-    return res.append(cs.substring(i)).toString();
-}
 
     private StringBuilder get(TreeNode node, int val) {
         if (node == null) {

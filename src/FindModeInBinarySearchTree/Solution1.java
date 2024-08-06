@@ -14,6 +14,11 @@ import java.util.List;
 
 public class Solution1 {
 
+    public int max = 1;
+    public int count = 1;
+    public long prev = Long.MIN_VALUE;
+    public List<Integer> list = new ArrayList<>();
+
     public int[] findMode(TreeNode root) {
         helper(root);
         int[] res = new int[list.size()];
@@ -24,11 +29,6 @@ public class Solution1 {
         }
         return res;
     }
-
-    public int max = 1;
-    public int count = 1;
-    public long prev = Long.MIN_VALUE;
-    public List<Integer> list = new ArrayList<>();
 
     public void helper(TreeNode root) {
         if (root == null) {
@@ -48,7 +48,7 @@ public class Solution1 {
             }
         } else {
             count = 1;
-            prev = (long) root.val;
+            prev = root.val;
             if (count == max) {
                 list.add(root.val);
             }

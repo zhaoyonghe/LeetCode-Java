@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 /**
  * Assume the number of the nodes in root is n.
  * Time Complexity: O(n * log(n))
@@ -29,7 +30,7 @@ public class Solution1 {
             int col = en.getKey();
             List<int[]> li = en.getValue();
             res.set(col - min, li.stream().sorted((a, b) -> {
-                if (Integer.compare(a[0], b[0]) != 0) {
+                if (a[0] != b[0]) {
                     return Integer.compare(a[0], b[0]);
                 }
                 return Integer.compare(a[1], b[1]);

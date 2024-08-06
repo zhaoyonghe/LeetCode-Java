@@ -6,7 +6,6 @@ package PermutationsI_46;
  */
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class Solution1 {
@@ -24,14 +23,14 @@ public class Solution1 {
 
         for (int j = i; j < nums.length; j++) {
             swap(nums, i, j);
-            construct(nums, i+1, res);
+            construct(nums, i + 1, res);
             swap(nums, i, j);
         }
     }
 
     private List<Integer> a2l(int[] nums) {
         List<Integer> res = new ArrayList<>();
-        for (int n: nums) {
+        for (int n : nums) {
             res.add(n);
         }
         return res;

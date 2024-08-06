@@ -12,26 +12,11 @@ import java.util.HashMap;
  * Rank: 78.84%
  */
 public class LRUCache1 {
-    class Node {
-        public int key;
-        public int value;
-        public Node prev;
-        public Node next;
-
-        public Node(int key, int value) {
-            this.key = key;
-            this.value = value;
-            this.prev = null;
-            this.next = null;
-        }
-    }
-
-    private HashMap<Integer, Node> map = new HashMap<>();
+    private final HashMap<Integer, Node> map = new HashMap<>();
     private int size = 0;
     private int capacity = 0;
-    private Node head = new Node(0, 0);
-    private Node tail = new Node(0, 0);
-
+    private final Node head = new Node(0, 0);
+    private final Node tail = new Node(0, 0);
     public LRUCache1(int capacity) {
         this.capacity = capacity;
         head.next = tail;
@@ -88,6 +73,20 @@ public class LRUCache1 {
                 addTail(node);
                 map.put(key, node);
             }
+        }
+    }
+
+    class Node {
+        public int key;
+        public int value;
+        public Node prev;
+        public Node next;
+
+        public Node(int key, int value) {
+            this.key = key;
+            this.value = value;
+            this.prev = null;
+            this.next = null;
         }
     }
 

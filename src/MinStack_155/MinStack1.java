@@ -1,5 +1,8 @@
 package MinStack_155;
-import java.util.*;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * $$ push() Time Complexity: O(1)
  * $$ pop() Time Complexity: O(1)
@@ -22,7 +25,7 @@ public class MinStack1 {
     }
 
     public void pop() {
-        if ((int)st.peek() == (int)minst.peek()) {
+        if (st.peek() == minst.peek()) {
             minst.pop();
         }
         st.pop();

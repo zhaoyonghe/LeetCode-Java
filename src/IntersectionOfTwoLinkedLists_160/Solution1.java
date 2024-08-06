@@ -1,6 +1,7 @@
 package IntersectionOfTwoLinkedLists_160;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Assume m, n are the length of listA and listB.

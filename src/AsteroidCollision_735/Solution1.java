@@ -1,6 +1,7 @@
 package AsteroidCollision_735;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * $$ Assume n is asteroids.length.

@@ -1,6 +1,8 @@
 package NumberOfConnectedComponentsInAnUndirectedGraph_323;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * $$ Time Complexity: O(n)
  * $$ Space Complexity: O(n)
@@ -20,7 +22,7 @@ public class Solution1 {
         int count = 0;
 
         for (int i = 0; i < n; i++) {
-            if (visited[i]){
+            if (visited[i]) {
                 continue;
             }
             dfs(g, i, visited);

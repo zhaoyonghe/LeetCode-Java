@@ -9,6 +9,10 @@ import java.util.HashMap;
  * Rank: 86.28%
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        System.out.println(Integer.MIN_VALUE - 2147483646);
+    }
+
     // assume n is nums.length
     // k cannot be 0, but can be positive integers
     // t can be 0 and positive integers
@@ -60,10 +64,6 @@ public class Solution1 {
             }
             return false;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Integer.MIN_VALUE - 2147483646);
     }
 
 

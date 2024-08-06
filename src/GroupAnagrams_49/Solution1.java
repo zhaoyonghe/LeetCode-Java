@@ -1,6 +1,9 @@
 package GroupAnagrams_49;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * $$ Assume the count of characters in strs is n.
@@ -21,14 +24,14 @@ public class Solution1 {
     private String signature(String s) {
         int[] map = new int[26];
         for (char c : s.toCharArray()) {
-            map[c-'a']++;
+            map[c - 'a']++;
         }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 26; i++) {
             if (map[i] == 0) {
                 continue;
             }
-            sb.append((char)i).append(Integer.toString(map[i]));
+            sb.append((char) i).append(map[i]);
         }
         return sb.toString();
     }

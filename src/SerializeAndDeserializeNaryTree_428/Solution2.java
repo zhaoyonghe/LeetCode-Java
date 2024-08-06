@@ -1,6 +1,9 @@
 package SerializeAndDeserializeNaryTree_428;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Deque;
 
 /**
  * Assume the number of nodes is n.
@@ -25,7 +28,7 @@ public class Solution2 {
             sb.append("#,");
             return;
         }
-        sb.append(node.val).append(",").append(String.valueOf(node.children.size())).append(",");
+        sb.append(node.val).append(",").append(node.children.size()).append(",");
         for (Node c : node.children) {
             sHelper(c, sb);
         }

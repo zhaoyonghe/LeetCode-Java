@@ -29,7 +29,7 @@ public class Solution1 {
             if (midSquare > x) {
                 high = mid - 1;
             } else if (midSquare < x) {
-                long midSquarePlusOne = midSquare + 2 * mid + 1;
+                long midSquarePlusOne = midSquare + 2L * mid + 1;
                 if (midSquarePlusOne > x) {
                     return mid;
                 } else if (midSquarePlusOne < x) {

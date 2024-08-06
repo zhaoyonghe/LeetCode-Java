@@ -27,11 +27,8 @@ public class Solution1 {
             return true;
         }
         grid2[i][j] = 0;
-        boolean cur = false;
-        if (grid1[i][j] == 1) {
-            // grid2[i][j] overlaps with a block in grid1.
-            cur = true;
-        }
+        boolean cur = grid1[i][j] == 1;
+        // grid2[i][j] overlaps with a block in grid1.
         boolean a = dfs(grid1, grid2, i + 1, j);
         boolean b = dfs(grid1, grid2, i - 1, j);
         boolean c = dfs(grid1, grid2, i, j + 1);

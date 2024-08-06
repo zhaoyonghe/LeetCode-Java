@@ -18,7 +18,7 @@ public class Solution1 {
         int s = 0;
         int e = matrix.length;
         while (s <= e) {
-            int m = (s+e)/2;
+            int m = (s + e) / 2;
             if (matrix[m][0] < target) {
                 if (m + 1 < matrix.length && matrix[m + 1][0] <= target) {
                     s = m + 1;
@@ -38,7 +38,7 @@ public class Solution1 {
         int s = 0;
         int e = arr.length - 1;
         while (s <= e) {
-            int m = (s+e)/2;
+            int m = (s + e) / 2;
             if (arr[m] < target) {
                 s = m + 1;
             } else if (arr[m] > target) {

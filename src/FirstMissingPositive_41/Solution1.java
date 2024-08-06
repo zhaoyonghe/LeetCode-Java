@@ -18,19 +18,19 @@ public class Solution1 {
                 continue;
             }
             // Do not swap the num in correct place out.
-            if (nums[i] == nums[nums[i]-1]) {
+            if (nums[i] == nums[nums[i] - 1]) {
                 i++;
                 continue;
             }
-            swap(nums, i, nums[i]-1);
+            swap(nums, i, nums[i] - 1);
         }
         i = 0;
-        for (;i<n;i++) {
-            if (i+1!=nums[i]) {
-                return i+1;
+        for (; i < n; i++) {
+            if (i + 1 != nums[i]) {
+                return i + 1;
             }
         }
-        return n+1; // Also i+1.
+        return n + 1; // Also i+1.
     }
 
     private void swap(int[] nums, int i, int j) {

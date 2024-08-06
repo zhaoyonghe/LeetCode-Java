@@ -14,7 +14,7 @@ public class Solution1 {
         if (k == 1) {
             double[] res = new double[n];
             for (int i = 0; i < n; i++) {
-                res[i] = (double) nums[i];
+                res[i] = nums[i];
             }
             return res;
         }

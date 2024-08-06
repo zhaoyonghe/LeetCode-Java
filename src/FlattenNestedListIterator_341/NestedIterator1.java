@@ -1,6 +1,9 @@
 package FlattenNestedListIterator_341;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * Assume the integer count in the list is n.
  * Constructor Time Complexity: O(n)
@@ -11,15 +14,16 @@ import java.util.*;
  * Rank: 85.53%
  */
 public class NestedIterator1 implements Iterator<Integer> {
-    private List<Integer> list = new ArrayList<>();
-    private Iterator<Integer> it;
+    private final List<Integer> list = new ArrayList<>();
+    private final Iterator<Integer> it;
+
     public NestedIterator1(List<NestedInteger> nestedList) {
         collect(nestedList);
         it = list.iterator();
     }
 
     private void collect(List<NestedInteger> nestedList) {
-        for (NestedInteger ni: nestedList) {
+        for (NestedInteger ni : nestedList) {
             if (ni.isInteger()) {
                 list.add(ni.getInteger());
                 continue;

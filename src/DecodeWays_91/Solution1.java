@@ -22,9 +22,9 @@ public class Solution1 {
         dp[1] = (s.charAt(1) == '0' ? 0 : dp[0]) + (isabGE10orLE26(s.charAt(0), s.charAt(1)) ? 1 : 0);
 
         for (int i = 2; i < len; i++) {
-            dp[i] = (s.charAt(i) == '0' ? 0 : dp[i-1]) + (isabGE10orLE26(s.charAt(i-1),s.charAt(i)) ? dp[i-2] : 0);
+            dp[i] = (s.charAt(i) == '0' ? 0 : dp[i - 1]) + (isabGE10orLE26(s.charAt(i - 1), s.charAt(i)) ? dp[i - 2] : 0);
         }
-        return dp[len-1];
+        return dp[len - 1];
     }
 
     // Check whether or not ab is 10 <= ab <= 26?

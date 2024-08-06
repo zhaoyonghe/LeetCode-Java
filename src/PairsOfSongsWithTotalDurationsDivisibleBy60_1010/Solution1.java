@@ -11,7 +11,7 @@ public class Solution1 {
     public int numPairsDivisibleBy60(int[] time) {
         int[] map = new int[60];
         int res = 0;
-        for (int t: time) {
+        for (int t : time) {
             int r = t % 60;
             res += map[(60 - r) % 60];
             map[r]++;

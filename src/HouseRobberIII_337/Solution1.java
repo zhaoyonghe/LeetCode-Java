@@ -1,7 +1,5 @@
 package HouseRobberIII_337;
 
-import java.util.HashMap;
-
 /**
  * $$ Assume n is the number of nodes in root.
  * $$ Time Complexity: O(n)

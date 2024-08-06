@@ -32,6 +32,5 @@ public class Solution1 {
         }
         temp.right = ri;
 
-        return;
     }
 }

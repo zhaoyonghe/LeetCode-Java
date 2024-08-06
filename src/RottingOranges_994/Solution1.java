@@ -1,15 +1,18 @@
 package RottingOranges_994;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * $$ Assume the grid size is m * n.
  * $$ Time Complexity: O(m * n)
  * $$ Space Complexity: O(m * n)
  */
 public class Solution1 {
-    private int[][] dirs = new int[][]{
-            {1,0},{-1,0},{0,1},{0,-1}
+    private final int[][] dirs = new int[][]{
+            {1, 0}, {-1, 0}, {0, 1}, {0, -1}
     };
+
     public int orangesRotting(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;

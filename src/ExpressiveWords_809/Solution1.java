@@ -19,7 +19,7 @@ public class Solution1 {
         feature(s, sChars, sCnts);
 
         int res = 0;
-        for (String word: words) {
+        for (String word : words) {
             List<Character> wordChars = new ArrayList<>();
             List<Integer> wordCnts = new ArrayList<>();
             feature(word, wordChars, wordCnts);

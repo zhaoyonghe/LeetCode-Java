@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
 public class Solution1 {
     class Solution {
         public ListNode mergeKLists(ListNode[] lists) {
-            PriorityQueue<ListNode> pq = new PriorityQueue<>((a,b)->Integer.compare(a.val, b.val));
+            PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> Integer.compare(a.val, b.val));
             for (ListNode list : lists) {
                 if (list == null) {
                     continue;

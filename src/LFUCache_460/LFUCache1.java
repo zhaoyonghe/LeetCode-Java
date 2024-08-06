@@ -8,30 +8,14 @@ package LFUCache_460;
  * Runtime: 48ms
  * Rank: 92.62%
  */
-import java.util.*;
+
+import java.util.HashMap;
 
 public class LFUCache1 {
-    private class Node {
-        int key;
-        int value;
-        int freq;
-        Node prev;
-        Node next;
-        public Node() {
-
-        }
-        public Node(int key, int value, int freq) {
-            this.key = key;
-            this.value = value;
-            this.freq = freq;
-        }
-    }
-
     private int minFreq;
-    private HashMap<Integer, Node> track = new HashMap<>();
-    private HashMap<Integer, Node> freq = new HashMap<>();
-    private int capacity;
-
+    private final HashMap<Integer, Node> track = new HashMap<>();
+    private final HashMap<Integer, Node> freq = new HashMap<>();
+    private final int capacity;
     public LFUCache1(int capacity) {
         this.capacity = capacity;
     }
@@ -96,7 +80,6 @@ public class LFUCache1 {
         return head;
     }
 
-
     public void put(int key, int value) {
         if (capacity == 0) {
             return;
@@ -116,5 +99,23 @@ public class LFUCache1 {
         track.put(key, node);
         offer(getFreqList(1), node);
         minFreq = 1;
+    }
+
+    private class Node {
+        int key;
+        int value;
+        int freq;
+        Node prev;
+        Node next;
+
+        public Node() {
+
+        }
+
+        public Node(int key, int value, int freq) {
+            this.key = key;
+            this.value = value;
+            this.freq = freq;
+        }
     }
 }

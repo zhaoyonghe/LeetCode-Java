@@ -1,6 +1,8 @@
 package OperationsOnTree_1993;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * $$ Assume the node count of the tree is n.
  * $$ Constructor Time Complexity: O(n)
@@ -9,9 +11,9 @@ import java.util.*;
  * $$ upgrade() Time Complexity: O(n)
  */
 class LockingTree1 {
-    private List<List<Integer>> ancestors = new ArrayList<>();
-    private List<List<Integer>> descendants = new ArrayList<>();
-    private int[] lockedBy;
+    private final List<List<Integer>> ancestors = new ArrayList<>();
+    private final List<List<Integer>> descendants = new ArrayList<>();
+    private final int[] lockedBy;
 
     public LockingTree1(int[] parent) {
         this.lockedBy = new int[parent.length];
@@ -71,6 +73,7 @@ class LockingTree1 {
         this.lockedBy[num] = user;
         return true;
     }
+
     private boolean haveLockedAncestor(int num) {
         for (int anc : this.ancestors.get(num)) {
             if (this.lockedBy[anc] > 0) {
@@ -79,6 +82,7 @@ class LockingTree1 {
         }
         return false;
     }
+
     private boolean haveLockedDescendant(int num) {
         for (int des : this.descendants.get(num)) {
             if (this.lockedBy[des] > 0) {

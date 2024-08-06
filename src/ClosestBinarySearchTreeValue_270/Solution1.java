@@ -14,14 +14,14 @@ public class Solution1 {
         if (root == null) {
             return -1;
         }
-        double val = (double)root.val;
+        double val = root.val;
         int other = 0;
         if (target > val) {
             other = closestValue(root.right, target);
         } else {
             other = closestValue(root.left, target);
         }
-        if (other == -1 || Math.abs(target - val) < Math.abs(target - (double)other)) {
+        if (other == -1 || Math.abs(target - val) < Math.abs(target - (double) other)) {
             return root.val;
         }
         return other;

@@ -1,6 +1,9 @@
 package TimeBasedKeyValueStore_981;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 /**
  * Constructor Time Complexity: O(1)
  * get() Time Complexity: O(logn)
@@ -11,7 +14,8 @@ import java.util.*;
  */
 class TimeMap1 {
 
-    private Map<String, TreeMap<Integer, String>> m = new HashMap<>();
+    private final Map<String, TreeMap<Integer, String>> m = new HashMap<>();
+
     public TimeMap1() {
 
     }

@@ -1,6 +1,7 @@
 package SubarraySumEqualsK_560;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Assume nums.length is n.
@@ -15,10 +16,10 @@ public class Solution1 {
         map.put(0, 1);
         int res = 0;
         int presum = 0;
-        for (int n: nums) {
+        for (int n : nums) {
             presum += n;
-            res += map.getOrDefault(presum-k,0);
-            map.compute(presum, (key,value)->value==null?1:value+1);
+            res += map.getOrDefault(presum - k, 0);
+            map.compute(presum, (key, value) -> value == null ? 1 : value + 1);
         }
         return res;
     }

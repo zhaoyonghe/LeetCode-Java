@@ -26,10 +26,10 @@ public class Solution1 {
         }
         int count = 1;
         grid[i][j] = 0;
-        count += dfs(grid, i+1,j);
-        count += dfs(grid, i-1,j);
-        count += dfs(grid, i,j+1);
-        count += dfs(grid, i,j-1);
+        count += dfs(grid, i + 1, j);
+        count += dfs(grid, i - 1, j);
+        count += dfs(grid, i, j + 1);
+        count += dfs(grid, i, j - 1);
         return count;
     }
 }

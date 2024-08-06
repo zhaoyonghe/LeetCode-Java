@@ -31,7 +31,7 @@ public class Solution1 {
             String ss = s.substring(0, i + 1);
             if (isPalindrome(ss)) {
                 cur.offerLast(ss);
-                partition(s.substring(i + 1, s.length()), cur, list);
+                partition(s.substring(i + 1), cur, list);
                 cur.pollLast();
             }
         }

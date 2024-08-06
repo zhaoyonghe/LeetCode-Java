@@ -1,6 +1,10 @@
 package ClosestBinarySearchTreeValueII_272;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
+
 /**
  * Assume h is the height of root.
  * Time Complexity: O(k + h)
@@ -15,10 +19,10 @@ public class Solution1 {
         TreeNode cur = root;
         // set largestSmaller
         while (cur != null) {
-            if ((double)cur.val < target) {
+            if ((double) cur.val < target) {
                 largestSmaller = cur;
                 cur = cur.right;
-            } else if ((double)cur.val > target) {
+            } else if ((double) cur.val > target) {
                 cur = cur.left;
             } else {
                 largestSmaller = cur;
@@ -28,9 +32,9 @@ public class Solution1 {
         cur = root;
         // set smallestLarger
         while (cur != null) {
-            if ((double)cur.val < target) {
+            if ((double) cur.val < target) {
                 cur = cur.right;
-            } else if ((double)cur.val > target) {
+            } else if ((double) cur.val > target) {
                 smallestLarger = cur;
                 cur = cur.left;
             } else {
@@ -49,8 +53,8 @@ public class Solution1 {
         }
         while (k > 0) {
             // 1 <= k <= n, so small and large cannot be all null.
-            double smallDiff = small == null ? Double.MAX_VALUE: target - (double)small.val;
-            double largeDiff = large == null ? Double.MAX_VALUE : (double)large.val - target;
+            double smallDiff = small == null ? Double.MAX_VALUE : target - (double) small.val;
+            double largeDiff = large == null ? Double.MAX_VALUE : (double) large.val - target;
             if (largeDiff < smallDiff) {
                 res.add(large.val);
                 large = next(ascTraverseSt);

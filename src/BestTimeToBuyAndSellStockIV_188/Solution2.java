@@ -23,13 +23,13 @@ public class Solution2 {
 
         for (int j = 0; j < k; j++) {
             for (int i = 1; i < n; i++) {
-                hold[i] = Math.max(hold[i-1], unhold[i-1]-prices[i]);
+                hold[i] = Math.max(hold[i - 1], unhold[i - 1] - prices[i]);
             }
             for (int i = 1; i < n; i++) {
-                unhold[i] = Math.max(unhold[i-1], hold[i-1]+prices[i]);
+                unhold[i] = Math.max(unhold[i - 1], hold[i - 1] + prices[i]);
             }
         }
 
-        return unhold[n-1];
+        return unhold[n - 1];
     }
 }

@@ -34,7 +34,7 @@ public class Solution1 {
                 }
             }
             if (!attacked) {
-                helper(posByRank, iRank+1, n, res);
+                helper(posByRank, iRank + 1, n, res);
             }
         }
     }
