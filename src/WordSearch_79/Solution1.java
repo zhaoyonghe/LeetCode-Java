@@ -1,13 +1,11 @@
-package WordSearchI;
+package WordSearch_79;
 
 /**
- * Assume board.length is m, board[0].length is n and word.length is len.
- * Time Complexity: O(m * n * len)
- * Space Complexity: O(m * n)
- * Runtime: 10ms
- * Rank: 86.65%
+ * $$ Assume board.length is m, board[0].length is n.
+ * $$ Time Complexity: O(m^2 * n^2)
+ * $$ Space Complexity: O(m * n)
  */
-public class Solution2 {
+public class Solution1 {
     public boolean exist(char[][] board, String word) {
         int m = board.length;
         int n = board[0].length;
