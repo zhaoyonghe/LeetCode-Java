@@ -5,11 +5,9 @@ import java.util.Deque;
 import java.util.Iterator;
 
 /**
- * Assume n is path.length().
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 4ms
- * Rank: 91.47%
+ * $$ Assume n is path.length().
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     // Important constraints:

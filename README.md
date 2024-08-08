@@ -50,7 +50,7 @@
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | [Solution1](src/PlusOne_66/Solution1.java) <br>Time Complexity: O(digits.length)<br>Space Complexity: O(digits.length)<br> |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification) | [Solution1](src/TextJustification_68/Solution1.java) <br> |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | [Solution1](src/ClimbingStairs_70/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
-| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br> |
+| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | [Solution1](src/SimplifyPath_71/Solution1.java) <br>Assume n is path.length().<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [Solution1](src/SetMatrixZeroes_73/Solution1.java) <br>Assume m is number of rows, n is number of columns.<br>Time Complexity: O(m * n)<br>Space Complexity: O(1)<br> |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | [Solution1](src/SearchA2DMatrixI_74/Solution1.java) <br>Assume matrix.length is m and matrix[0].length is n.<br>Time Complexity: O(logm + logn)<br>Space Complexity: O(1)<br> |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [Solution1](src/MinimumWindowSubstring_76/Solution1.java) <br>Assume the length of s is m and t is n.<br>Time Complexity: O(m + n)<br>Space Complexity: O(1)<br> |
@@ -114,6 +114,7 @@
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | [Solution1](src/HouseRobber_198/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Solution1](src/BinaryTreeRightSideView_199/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [Solution1](src/NumberOfIslands_200/Solution1.java) <br>Assume grid is m by n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br>[Solution2](src/NumberOfIslands_200/Solution2.java) <br>Assume grid is m by n.<br>Time Complexity: O(m * n)<br>Space Complexity: O(m * n)<br> |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | [Solution1](src/HappyNumber_202/Solution1.java) <br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br>[Solution2](src/HappyNumber_202/Solution2.java) <br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [Solution1](src/ReverseLinkedList_206/Solution1.java) <br>Time Complexity: O(the length of the list)<br>Space Complexity: O(1)<br> |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [Solution1](src/CourseScheduleI_207/Solution1.java) <br>Assume numCourses is V, len(prerequisites) is E.<br>Time Complexity: O(E + V)<br>Space Complexity: O(E + V)<br> |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | [Solution1](src/ImplementTrie_208/Trie1.java) <br>Assume the length of the input word is n.<br>insert Time Complexity: O(n)<br>search Time Complexity: O(n)<br>startsWith Time Complexity: O(n)<br> |
@@ -216,6 +217,7 @@
 | 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/BeautifulArrangement_526/Solution1.java) <br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/RandomPickWithWeight_528/Solution1.java) <br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/Minesweeper_529/Solution1.java) <br> |
+| 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst) | [Solution1](src/MinimumAbsoluteDifferenceInBST_530/Solution1.java) <br>Assume the number of the nodes in root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree) | [Solution1](src/DiameterOfBinaryTree_543/Solution1.java) <br>Assume the number of nodes in root is n; the height of root is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 545 | [Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree) | [Solution1](src/BoundaryOfBinaryTree_545/Solution1.java) <br> |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Solution1](src/SubarraySumEqualsK_560/Solution1.java) <br> |

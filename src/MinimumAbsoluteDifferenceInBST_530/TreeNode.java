@@ -1,4 +1,4 @@
-package MinimumAbsoluteDifferenceInBST;
+package MinimumAbsoluteDifferenceInBST_530;
 
 public class TreeNode {
     int val;

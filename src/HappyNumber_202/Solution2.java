@@ -1,11 +1,8 @@
-package HappyNumber;
+package HappyNumber_202;
 
 /**
- * Assume m is the length of the chain until the cycle appears.
- * Time Complexity: O(m * logn)
- * Space Complexity: O(1)
- * Runtime: 3ms
- * Rank: 76.09%
+ * $$ Time Complexity: O(logn)
+ * $$ Space Complexity: O(1)
  */
 public class Solution2 {
     public boolean isHappy(int n) {
