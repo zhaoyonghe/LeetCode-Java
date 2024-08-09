@@ -1,4 +1,4 @@
-package PathSumII;
+package PathSum_112;
 
 public class TreeNode {
     int val;

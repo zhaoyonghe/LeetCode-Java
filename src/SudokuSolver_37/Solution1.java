@@ -1,10 +1,8 @@
 package SudokuSolver_37;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 2ms
- * Rank: 99.55%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public void solveSudoku(char[][] board) {

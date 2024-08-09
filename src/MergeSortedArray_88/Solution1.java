@@ -1,10 +1,8 @@
 package MergeSortedArray_88;
 
 /**
- * Time Complexity: O(m + n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(m + n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 public class Solution1 {
     // Important constraints:
