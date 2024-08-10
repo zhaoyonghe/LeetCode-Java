@@ -1,18 +1,16 @@
-package BasicCalculatorI;
+package BasicCalculatorI_224;
 
 import java.util.LinkedList;
 
 /**
- * Assume n is s.length().
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 22ms
- * Rank: 77.31%
+ * $$ Assume n is s.length().
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
-class Solution3 {
+class Solution2 {
     public int calculate(String s) {
 
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return 0;
         }
 
