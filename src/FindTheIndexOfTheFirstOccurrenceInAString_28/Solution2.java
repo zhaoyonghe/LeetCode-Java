@@ -1,13 +1,13 @@
-package ImplementstrStr;
-/**
- * Assume the length of haystack is n, the length of needle is m.
- * Worse Time Complexity: O(3n)
- * Space Complexity: O(m)
- * Runtime: 13ms
- * Rank: 16.69%
- */
+package FindTheIndexOfTheFirstOccurrenceInAString_28;
+
 
 import java.util.HashMap;
+
+/**
+ * $$ Assume the length of haystack is n, the length of needle is m.
+ * $$ Time Complexity: O(3n)
+ * $$ Space Complexity: O(m)
+ */
 
 public class Solution2 {
     public int strStr(String haystack, String needle) {

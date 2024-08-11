@@ -1,15 +1,13 @@
-package StringToInteger;
+package StringToInteger_8;
 
 /**
- * Assume n is str.length().
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- * Runtime: 4ms
- * Rank: 97.16%
+ * $$ Assume n is str.length().
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(1)
  */
-class Solution3 {
+class Solution1 {
     public int myAtoi(String str) {
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             return 0;
         }
 

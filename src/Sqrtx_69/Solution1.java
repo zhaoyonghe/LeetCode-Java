@@ -1,10 +1,8 @@
-package Sqrtx;
+package Sqrtx_69;
 
 /**
- * Time Complexity: O(logx)
- * Space Complexity: O(1)
- * Runtime: 26ms
- * Rank: 83.84%
+ * $$ Time Complexity: O(logx)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public int mySqrt(int x) {
