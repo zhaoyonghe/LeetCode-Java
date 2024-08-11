@@ -1,14 +1,11 @@
-package BinaryTreePaths;
+package BinaryTreePaths_257;
 
 import java.util.*;
 
 /**
- * Assume the number of nodes in tree root is n.
- * Assume the height of the tree is h.
- * Time Complexity: O(n * h)
- * Space Complexity: O(h)
- * Runtime: 2ms
- * Rank: 84.76%
+ * $$ Assume the number of nodes in tree root is n.
+ * $$ Time Complexity: O(n ^ 2)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {

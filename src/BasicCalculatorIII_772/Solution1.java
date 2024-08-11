@@ -1,19 +1,21 @@
-package BasicCalculatorII_227;
+package BasicCalculatorIII_772;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * $$ Assume n is s.length().
+ * $$ Assume s.length() is n.
  * $$ Time Complexity: O(n)
  * $$ Space Complexity: O(n)
  */
-
-class Solution2 {
+public class Solution1 {
     public int calculate(String s) {
         Deque<Character> opst = new ArrayDeque<>();
         Deque<Integer> intst = new ArrayDeque<>();
         s = s.replace(" ", "");
+
+        Deque<Character> tmpOpst = new ArrayDeque<>();
+        Deque<Integer> tmpIntst = new ArrayDeque<>();
 
         int i = 0;
         while (i < s.length()) {
@@ -26,8 +28,25 @@ class Solution2 {
                     int a = intst.pop();
                     intst.push(cal(a, b, opst.pop()));
                 }
+            } else if (s.charAt(i) == ')') {
+                tmpIntst.push(intst.pop());
+                while (opst.peek() != '(') {
+                    tmpIntst.push(intst.pop());
+                    tmpOpst.push(opst.pop());
+                }
+                opst.pop(); // pop out the (
+                while (!tmpOpst.isEmpty()) {
+                    tmpIntst.push(cal(tmpIntst.pop(), tmpIntst.pop(), tmpOpst.pop()));
+                }
+                intst.push(tmpIntst.pop());
+                while (!opst.isEmpty() && (opst.peek() == '*' || opst.peek() == '/')) {
+                    int b = intst.pop();
+                    int a = intst.pop();
+                    intst.push(cal(a, b, opst.pop()));
+                }
+                i++;
             } else {
-                // s.charAt(i) is an op
+                // s.charAt(i) is an op or (
                 opst.push(s.charAt(i));
                 i++;
             }
@@ -59,5 +78,4 @@ class Solution2 {
         }
         return ret;
     }
-
 }

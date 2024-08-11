@@ -126,7 +126,8 @@
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii) | [Solution1](src/WordSearchII_212/Solution1.java) <br>Assume board.length is m, board[0].length is n, amount of chars in words is k.<br>Time Complexity: O(m^2 * n^2 + k)<br>Space Complexity: O(m * n + k)<br> |
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii) | [Solution1](src/HouseRobberII_213/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | [Solution1](src/KthLargestElementInAnArray_215/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(logn)<br> |
-| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | [Solution1](src/ContainsDuplicateI_217/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | [Solution1](src/ContainsDuplicate_217/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | [Solution1](src/ContainsDuplicateII_219/Solution1.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(nums.length)<br> |
 | 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator) | [Solution1](src/BasicCalculatorI_224/Solution1.java) <br>Assume n is s.length().<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br>[Solution2](src/BasicCalculatorI_224/Solution2.java) <br>Assume n is s.length().<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | [Solution1](src/InvertBinaryTree_226/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 227 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii) | [Solution1](src/BasicCalculatorII_227/Solution1.java) <br>Assume n is s.length().<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br>[Solution2](src/BasicCalculatorII_227/Solution2.java) <br>Assume n is s.length().<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -143,6 +144,7 @@
 | 245 | [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii) | [Solution1](src/ShortestWordDistanceIII_245/Solution1.java) <br> |
 | 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms) | [Solution1](src/MeetingRooms_252/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Auxiliary Space Complexity: O(n)<br> |
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | [Solution1](src/MeetingRoomsII_253/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
+| 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | [Solution1](src/BinaryTreePaths_257/Solution1.java) <br>Assume the number of nodes in tree root is n.<br>Time Complexity: O(n ^ 2)<br>Space Complexity: O(n)<br> |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller) | [Solution1](src/ThreeSumSmaller_259/Solution1.java) <br> |
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii) | [Solution1](src/SingleNumberIII_260/Solution1.java) <br> |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree) | [Solution1](src/GraphValidTree_261/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -257,6 +259,7 @@
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | [Solution1](src/NetworkDelayTime_743/Solution1.java) <br>Assume times.length is E, n is V.<br>Time Complexity: O(V + ElogE)<br>Space Complexity: O(V + E)<br> |
 | 759 | [Employee Free Time](https://leetcode.com/problems/employee-free-time) | [Solution1](src/EmployeeFreeTime_759/Solution1.java) <br> |
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string) | [Solution1](src/ReorganizeString_767/Solution1.java) <br> |
+| 772 | [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii) | [Solution1](src/BasicCalculatorIII_772/Solution1.java) <br>Assume s.length() is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 780 | [Reaching Points](https://leetcode.com/problems/reaching-points) | [Solution1](src/ReachingPoints_780/Solution1.java) <br> |
 | 785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | [Solution1](src/IsGraphBipartite_785/Solution1.java) <br> |
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops) | [Solution1](src/CheapestFlightsWithinKStops_787/Solution1.java) <br>[Solution2](src/CheapestFlightsWithinKStops_787/Solution2.java) <br> |

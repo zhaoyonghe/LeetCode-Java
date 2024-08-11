@@ -1,4 +1,4 @@
-package BinaryTreePaths;
+package BinaryTreePaths_257;
 
 public class TreeNode {
     int val;
