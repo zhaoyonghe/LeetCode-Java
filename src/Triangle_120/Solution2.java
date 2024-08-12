@@ -1,14 +1,12 @@
-package Triangle;
+package Triangle_120;
 
 import java.util.List;
 
 /**
- * Time Complexity: O(n ^ 2)
- * Space Complexity: O(n)
- * Runtime: 2ms
- * Rank: 97.06%
+ * $$ Time Complexity: O(n ^ 2)
+ * $$ Space Complexity: O(n)
  */
-public class Solution4 {
+public class Solution2 {
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
 

@@ -1,11 +1,9 @@
-package VerbalArithmeticPuzzle;
+package VerbalArithmeticPuzzle_1307;
 
 /**
- * Assume the number of different characters is n.
- * Time Complexity: O(n!)
- * Space Complexity: O(n)
- * Runtime: 590ms
- * Rank: 57.67%
+ * $$ Assume the number of different characters is n.
+ * $$ Time Complexity: O(n!)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {
@@ -33,9 +31,15 @@ public class Solution1 {
         }
 
         for (String word : words) {
-            cannotZero[map[word.charAt(0) - 'A']] = true;
+            if (word.length() > 1) {
+                cannotZero[map[word.charAt(0) - 'A']] = true;
+            }
+
         }
-        cannotZero[map[result.charAt(0) - 'A']] = true;
+        if (result.length() > 1) {
+            cannotZero[map[result.charAt(0) - 'A']] = true;
+        }
+
 
         for (String word : words) {
             int w = 1;

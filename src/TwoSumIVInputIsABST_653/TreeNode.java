@@ -1,4 +1,4 @@
-package TwoSumIV$InputIsABST;
+package TwoSumIVInputIsABST_653;
 
 public class TreeNode {
     int val;

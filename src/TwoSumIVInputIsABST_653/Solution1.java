@@ -1,13 +1,11 @@
-package TwoSumIV$InputIsABST;
+package TwoSumIVInputIsABST_653;
 
 import java.util.HashSet;
 
 /**
- * Assume the number of the nodes in root is n.
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- * Runtime: 3ms
- * Rank: 94.44%
+ * $$ Assume the number of the nodes in root is n.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 
 public class Solution1 {
