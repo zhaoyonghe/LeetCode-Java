@@ -1,4 +1,4 @@
-package PopulatingNextRightPointersInEachNodeI;
+package PopulatingNextRightPointersInEachNodeI_116;
 
 public class Node {
     public int val;
