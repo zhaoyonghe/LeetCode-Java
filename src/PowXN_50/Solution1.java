@@ -1,10 +1,8 @@
-package PowXN;
+package PowXN_50;
 
 /**
- * Time Complexity: O(logn)
- * Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(logn)
+ * $$ Space Complexity: O(1)
  */
 public class Solution1 {
     public double myPow(double x, int n) {

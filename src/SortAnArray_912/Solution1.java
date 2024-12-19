@@ -1,11 +1,9 @@
-package SortAnArray;
+package SortAnArray_912;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(nlogn)
- * Space Complexity: O(logn)
- * Runtime: 10ms
- * Rank: 85.87%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(nlogn)
+ * $$ Space Complexity: O(logn)
  */
 
 import java.util.ArrayList;

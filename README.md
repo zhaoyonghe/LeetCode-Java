@@ -40,6 +40,7 @@
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | [Solution1](src/PermutationsII_47/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n * n!)<br>Space Complexity: O(n * n!)<br> |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | [Solution1](src/RotateImage_48/Solution1.java) <br>Assume n is the length of matrix.<br>Time Complexity: O(n ^ 2)<br>Auxiliary Space Complexity: O(1)<br> |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | [Solution1](src/GroupAnagrams_49/Solution1.java) <br>Assume the count of characters in strs is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | [Solution1](src/PowXN_50/Solution1.java) <br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/NQueensI_51/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/NQueensII_52/Solution1.java) <br> |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution1](src/MaximumSubarray_53/Solution1.java) <br>Time Complexity: O(nums.length)<br>Auxiliary Space Complexity: O(1)<br> |
@@ -283,6 +284,7 @@
 | 877 | [Stone Game](https://leetcode.com/problems/stone-game) | [Solution1](src/StoneGame_877/Solution1.java) <br>[Solution2](src/StoneGame_877/Solution2.java) <br> |
 | 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span) | [Solution1](src/OnlineStockSpan_901/StockSpanner1.java) <br>Constructor Time Complexity: O(1)<br>next() Amortized Time Complexity: O(1)<br> |
 | 907 | [Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums) | [Solution1](src/SumOfSubarrayMinimums_907/Solution1.java) <br> |
+| 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | [Solution1](src/SortAnArray_912/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(logn)<br> |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) | [Solution1](src/MinimumAddToMakeParenthesesValid_921/Solution1.java) <br> |
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing) | [Solution1](src/FlipStringToMonotoneIncreasing_926/Solution1.java) <br> |
 | 934 | [Shortest Bridge](https://leetcode.com/problems/shortest-bridge) | [Solution1](src/ShortestBridge_934/Solution1.java) <br> |
