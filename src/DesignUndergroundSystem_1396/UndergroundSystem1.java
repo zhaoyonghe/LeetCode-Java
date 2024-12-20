@@ -1,26 +1,25 @@
 package DesignUndergroundSystem_1396;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 
 /**
- * Constructor Time Complexity: O(1)
- * checkIn() Time Complexity: O(1)
- * checkOut() Time Complexity: O(1)
- * getAverageTime() Time Complexity: O(1)
- * Runtime: 139ms
- * Rank: 81.07%
+ * $$ Constructor Time Complexity: O(1)
+ * $$ checkIn() Time Complexity: O(1)
+ * $$ checkOut() Time Complexity: O(1)
+ * $$ getAverageTime() Time Complexity: O(1)
  */
 public class UndergroundSystem1 {
-    // Important constraints:
-    // 1. You may assume all calls to the checkIn and checkOut methods are consistent.
-    //    If a customer checks in at time t1 then checks out at time t2, then t1 < t2.
-    //    All events happen in chronological order.
-    //    There will be at least one customer that has traveled from startStation to endStation before getAverageTime is called.
-    //    (inputs and calls all valid and well-formed)
-    HashMap<Pair<String, String>, Pair<Integer, Integer>> averageInfo;
-    HashMap<Integer, Pair<String, Integer>> checkedIn;
+    class Record {
+        String location;
+        int time;
+        Record(String location, int time) {
+            this.location = location;
+            this.time = time;
+        }
+    }
+
+    HashMap<String, int[]> averageInfo;
+    HashMap<Integer, Record> checkedIn;
 
     public UndergroundSystem1() {
         averageInfo = new HashMap<>();
@@ -28,24 +27,27 @@ public class UndergroundSystem1 {
     }
 
     public void checkIn(int id, String stationName, int t) {
-        checkedIn.put(id, new Pair<>(stationName, t));
+        checkedIn.put(id, new Record(stationName, t));
     }
 
     public void checkOut(int id, String endStation, int endTime) {
-        Pair<String, Integer> startInfo = checkedIn.get(id);
+        Record startInfo = checkedIn.get(id);
         checkedIn.remove(id);
 
-        String startStation = startInfo.getKey();
-        int startTime = startInfo.getValue();
+        String startStation = startInfo.location;
+        int startTime = startInfo.time;
 
-        Pair<String, String> trip = new Pair<>(startStation, endStation);
-
-        averageInfo.compute(trip, (t, info) -> info == null ? new Pair<>(endTime - startTime, 1) : new Pair<>(info.getKey() + endTime - startTime, info.getValue() + 1));
+        String trip = String.format("%s-%s", startStation, endStation);
+        if (!averageInfo.containsKey(trip)) {
+            averageInfo.put(trip, new int[]{0,0});
+        }
+        int[] tripData = averageInfo.get(trip);
+        tripData[0] += endTime - startTime;
+        tripData[1]++;
     }
 
     public double getAverageTime(String startStation, String endStation) {
-        // assumed that it contains something
-        Pair<Integer, Integer> tripdata = averageInfo.get(new Pair<>(startStation, endStation));
-        return (((double) tripdata.getKey()) / tripdata.getValue());
+        int[] tripData = averageInfo.get(String.format("%s-%s", startStation, endStation));
+        return (((double) tripData[0]) / tripData[1]);
     }
 }

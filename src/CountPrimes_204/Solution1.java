@@ -1,10 +1,8 @@
-package CountPrimes;
+package CountPrimes_204;
 
 /**
- * Time Complexity: O((n * n ^ 1 / 2) / logn) nearly O(n)
- * Space Complexity: O(n)
- * Runtime: 14ms
- * Rank: 95.56%
+ * $$ Time Complexity: O((n * n ^ 1 / 2) / logn) nearly O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public int countPrimes(int n) {
