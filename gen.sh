@@ -14,7 +14,7 @@ while read -r line; do
   solvedset+=("")
 done < <(jq -c '.[]' LeetCodeProblemSet_simplified.json)
 
-for dir in src/*_*; do
+for dir in src/[A-Z]/*_*; do
   id=$(echo $dir | cut -d '_' -f2)
   solstr=""
   i=0
