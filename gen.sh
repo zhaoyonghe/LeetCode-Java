@@ -2,10 +2,6 @@
 set -eu
 
 rm README.md || true
-cat <<EOF > README.md
-| ID | Name | Solutions |
-| --- | --- | --- |
-EOF
 
 problemset=()
 solvedset=()
@@ -27,6 +23,17 @@ for dir in src/[A-Z]/*_*; do
   link=$(jq --raw-output '"[\(.title)](\(.url))"' <<< "$problem")
   solvedset[id]="| $id | $link | $solstr |"
 done
+
+count=0
+for line in "${solvedset[@]}"; do
+  [[ -n "$line" ]] && ((count++)) || true
+done
+
+cat <<EOF > README.md
+## ${count} problems with solutions
+| ID | Name | Solutions |
+| --- | --- | --- |
+EOF
 
 for line in "${solvedset[@]}"; do
   [[ -n "$line" ]] && echo "$line" >> README.md
