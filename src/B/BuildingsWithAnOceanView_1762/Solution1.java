@@ -5,27 +5,22 @@ import java.util.Deque;
 import java.util.Iterator;
 
 /**
- * Assume n is heights.length.
- * Time Complexity: O(n)
- * Space Complexity: O(n)
- * Runtime: 20ms
- * Rank: 36.04%
+ * $$ Assume n is heights.length.
+ * $$ Time Complexity: O(n)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
     public int[] findBuildings(int[] heights) {
         Deque<Integer> st = new ArrayDeque<>();
-        for (int i = 0; i < heights.length; i++) {
-            while (!st.isEmpty() && heights[st.peek()] <= heights[i]) {
-                st.pop();
+        for (int i = heights.length - 1; i >= 0; i--) {
+            if (st.isEmpty() || heights[st.peek()] < heights[i]) {
+                st.push(i);
             }
-            st.push(i);
         }
         int[] res = new int[st.size()];
-        Iterator<Integer> it = st.descendingIterator();
         int i = 0;
-        while (it.hasNext()) {
-            res[i] = it.next();
-            i++;
+        while (!st.isEmpty()) {
+            res[i++] = st.pop();
         }
         return res;
     }

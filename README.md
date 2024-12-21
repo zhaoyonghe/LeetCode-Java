@@ -230,7 +230,7 @@
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/N/NextGreaterElementII_503/Solution1.java) <br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/C/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
 | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/C/ContiguousArray_525/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
-| 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/B/BeautifulArrangement_526/Solution1.java) <br> |
+| 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/B/BeautifulArrangement_526/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) | [Solution1](src/R/RandomPickWithWeight_528/Solution1.java) <br> |
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper) | [Solution1](src/M/Minesweeper_529/Solution1.java) <br> |
 | 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst) | [Solution1](src/M/MinimumAbsoluteDifferenceInBST_530/Solution1.java) <br>Assume the number of the nodes in root is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -337,7 +337,7 @@
 | 1710 | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck) | [Solution1](src/M/MaximumUnitsOnATruck_1710/Solution1.java) <br> |
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | [Solution1](src/D/DecodeXORedArray_1720/Solution1.java) <br>Assume encoded.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 1761 | [Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph) | [Solution1](src/M/MinimumDegreeOfAConnectedTrioInAGraph_1761/Solution1.java) <br> |
-| 1762 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view) | [Solution1](src/B/BuildingsWithAnOceanView_1762/Solution1.java) <br>[Solution2](src/B/BuildingsWithAnOceanView_1762/Solution2.java) <br> |
+| 1762 | [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view) | [Solution1](src/B/BuildingsWithAnOceanView_1762/Solution1.java) <br>Assume n is heights.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 1787 | [Make the XOR of All Segments Equal to Zero](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero) | [Solution1](src/M/MakeTheXOROfAllSegmentsEqualToZero_1787/Solution1.java) <br> |
 | 1851 | [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query) | [Solution1](src/M/MinimumIntervalToIncludeEachQuery_1851/Solution1.java) <br>Assume n is the length of intervals; q is the length of queries.<br>Time Complexity: O(nlogn + qlogq)<br>Space Complexity: O(n + q)<br> |
 | 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible) | [Solution1](src/N/NumberOfWaysToRearrangeSticksWithKSticksVisible_1866/Solution1.java) <br>Time Complexity: O(n * k)<br>Space Complexity: O(n * k)<br> |
