@@ -226,8 +226,8 @@
 | 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes) | [Solution1](src/O/OnesAndZeroes_474/Solution1.java) <br>Time Complexity: O(m * n * strs.length)<br>Space Complexity: O(m * n)<br> |
 | 486 | [Predict the Winner](https://leetcode.com/problems/predict-the-winner) | [Solution1](src/P/PredictTheWinner_486/Solution1.java) <br>[Solution2](src/P/PredictTheWinner_486/Solution2.java) <br>[Solution3](src/P/PredictTheWinner_486/Solution3.java) <br> |
 | 490 | [The Maze](https://leetcode.com/problems/the-maze) | [Solution1](src/T/TheMaze_490/Solution1.java) <br> |
-| 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution1](src/N/NextGreaterElementI_496/Solution1.java) <br> |
-| 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/N/NextGreaterElementII_503/Solution1.java) <br> |
+| 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i) | [Solution1](src/N/NextGreaterElementI_496/Solution1.java) <br>Time Complexity: O(nums2.length)<br>Space Complexity: O(nums2.length)<br> |
+| 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii) | [Solution1](src/N/NextGreaterElementII_503/Solution1.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(nums.length)<br> |
 | 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii) | [Solution1](src/C/CoinChangeII_518/Solution1.java) <br>Time Complexity: O(coins.length * amount)<br>Space Complexity: O(amount)<br> |
 | 525 | [Contiguous Array](https://leetcode.com/problems/contiguous-array) | [Solution1](src/C/ContiguousArray_525/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 526 | [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement) | [Solution1](src/B/BeautifulArrangement_526/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |

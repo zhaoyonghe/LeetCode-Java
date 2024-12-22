@@ -4,31 +4,30 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Time Complexity: O(nums.length)
- * Space Complexity: O(nums.length)
- * Runtime: 5ms
- * Rank: 96.68%
+ * $$ Time Complexity: O(nums.length)
+ * $$ Space Complexity: O(nums.length)
  */
 
 public class Solution1 {
     public int[] nextGreaterElements(int[] nums) {
-        Deque<Integer> stack = new ArrayDeque<>();
         int[] res = new int[nums.length];
-        for (int i = nums.length - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && stack.peek() <= nums[i]) {
-                stack.pop();
+        Arrays.fill(res, -1);
+
+        Deque<Integer> st = new ArrayDeque<>();
+        for (int i = 0; i < nums.length; i++) {
+            while (!st.isEmpty() && nums[st.peek()] < nums[i]) {
+                int index = st.pop();
+                res[index] = nums[i];
             }
-            res[i] = stack.isEmpty() ? -1 : stack.peek();
-            stack.push(nums[i]);
+            st.push(i);
         }
-        for (int i = nums.length - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && stack.peek() <= nums[i]) {
-                stack.pop();
+
+        // circular
+        for (int i = 0; i < nums.length; i++) {
+            while (!st.isEmpty() && nums[st.peek()] < nums[i]) {
+                int index = st.pop();
+                res[index] = nums[i];
             }
-            if (!stack.isEmpty()) {
-                res[i] = stack.peek();
-            }
-            stack.push(nums[i]);
         }
         return res;
     }

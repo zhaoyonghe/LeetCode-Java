@@ -6,29 +6,28 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Time Complexity: O(nums2.length)
- * Space Complexity: O(nums2.length)
- * Runtime: 3ms
- * Rank: 83.63%
+ * $$ Time Complexity: O(nums2.length)
+ * $$ Space Complexity: O(nums2.length)
  */
 public class Solution1 {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        int[] res = new int[nums1.length];
+        Arrays.fill(res, -1);
         Map<Integer, Integer> m = new HashMap<>();
         for (int i = 0; i < nums1.length; i++) {
             m.put(nums1[i], i);
         }
-        Deque<Integer> stack = new ArrayDeque<>();
-        int[] res = new int[nums1.length];
-        for (int i = nums2.length - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && stack.peek() < nums2[i]) {
-                stack.pop();
-            }
-            if (m.containsKey(nums2[i])) {
-                res[m.get(nums2[i])] = stack.isEmpty() ? -1 : stack.peek();
-            }
-            stack.push(nums2[i]);
-        }
 
+        Deque<Integer> st = new ArrayDeque<>();
+        for (int i = 0; i < nums2.length; i++) {
+            while (!st.isEmpty() && st.peek() < nums2[i]) {
+                int num = st.pop();
+                if (m.containsKey(num)) {
+                    res[m.get(num)] = nums2[i];
+                }
+            }
+            st.push(nums2[i]);
+        }
         return res;
     }
 }
