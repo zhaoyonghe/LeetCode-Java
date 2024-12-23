@@ -1,4 +1,4 @@
-## 349 problems with solutions
+## 350 problems with solutions
 | ID | Name | Solutions |
 | --- | --- | --- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | [Solution1](src/T/TwoSum_1/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -27,7 +27,7 @@
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | [Solution1](src/R/RemoveDuplicatesFromSortedArray_26/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | [Solution1](src/F/FindTheIndexOfTheFirstOccurrenceInAString_28/Solution1.java) <br>Assume the length of haystack is n, the length of needle is m.<br>Time Complexity: O(m * n)<br>Space Complexity: O(1)<br>[Solution2](src/F/FindTheIndexOfTheFirstOccurrenceInAString_28/Solution2.java) <br>Assume the length of haystack is n, the length of needle is m.<br>Time Complexity: O(3n)<br>Space Complexity: O(m)<br> |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [Solution1](src/D/DivideTwoIntegers_29/Solution1.java) <br> |
-| 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | [Solution1](src/N/NextPermutation_31/Solution1.java) <br> |
+| 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | [Solution1](src/N/NextPermutation_31/Solution1.java) <br>Assume n is nums.length.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | [Solution1](src/L/LongestValidParentheses_32/Solution1.java) <br>Assume n is s.length().<br>Time Complexity: O(n ^ 2)<br>Space Complexity: O(1)<br>[Solution2](src/L/LongestValidParentheses_32/Solution2.java) <br>Assume n is s.length().<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [Solution1](src/S/SearchInRotatedSortedArray_33/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [Solution1](src/V/ValidSudoku_36/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
@@ -116,6 +116,7 @@
 | 164 | [Maximum Gap](https://leetcode.com/problems/maximum-gap) | [Solution1](src/M/MaximumGap_164/Solution1.java) <br> |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | [Solution1](src/T/TwoSumIIInputArrayIsSorted_167/Solution1.java) <br>Assume the length of numbers is n<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | [Solution1](src/M/MajorityElement_169/Solution1.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(nums.length)<br>[Solution2](src/M/MajorityElement_169/Solution2.java) <br>Time Complexity: O(nums.length)<br>Space Complexity: O(1)<br> |
+| 172 | [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | [Solution1](src/F/FactorialTrailingZeroes_172/Solution1.java) <br>Time Complexity: O(logn)<br>Space Complexity: O(1)<br> |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | [Solution1](src/B/BinarySearchTreeIterator_173/BSTIterator1.java) <br>Assume the nodes count of root is n, height is h.<br>next() Amortized Time Complexity: O(1)<br>hasNext() Amortized Time Complexity: O(1)<br>Space Complexity: O(h)<br> |
 | 174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game) | [Solution1](src/D/DungeonGame_174/Solution1.java) <br>[Solution2](src/D/DungeonGame_174/Solution2.java) <br> |
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv) | [Solution1](src/B/BestTimeToBuyAndSellStockIV_188/Solution1.java) <br>[Solution2](src/B/BestTimeToBuyAndSellStockIV_188/Solution2.java) <br> |
