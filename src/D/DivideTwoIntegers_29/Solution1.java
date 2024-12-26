@@ -1,10 +1,8 @@
 package D.DivideTwoIntegers_29;
 
 /**
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 100.00%
+ * $$ Time Complexity: O(1)
+ * $$ Space Complexity: O(1)
  */
 
 public class Solution1 {
@@ -34,7 +32,6 @@ public class Solution1 {
                     a -= (b << i);
                     // must add (long) here, otherwise 1 << i will be negative.
                     res += ((long) 1 << i);
-                    // System.out.printf("res: %d\n", res);
                     break;
                 }
             }

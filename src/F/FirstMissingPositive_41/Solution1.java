@@ -1,11 +1,9 @@
 package F.FirstMissingPositive_41;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 2ms
- * Rank: 98.85%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution1 {
