@@ -4,46 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Assume m is matrix.length and n is matrix[0].length.
- * Time Complexity: O(mn)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume m is matrix.length and n is matrix[0].length.
+ * $$ Time Complexity: O(mn)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution1 {
-    boolean cango(int[][] matrix, int xn, int yn) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        return xn >= 0 && xn < m && yn >= 0 && yn < n && matrix[xn][yn] != 101;
-    }
-
     public List<Integer> spiralOrder(int[][] matrix) {
-        int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        int i = 0;
-        int x = 0;
-        int y = 0;
+        int[][] dirs = new int[][]{
+                {0,1},{1,0},{0,-1},{-1,0}
+        };
+
+        int i = 0, j = 0;
+        int dir = 0;
+        int count = 0;
+        int m = matrix.length, n = matrix[0].length;
         List<Integer> res = new ArrayList<>();
-        while (true) {
-            res.add(matrix[x][y]);
-            matrix[x][y] = 101;
-            int[] dir = dirs[i];
-            // Can we go straight?
-            int xn = x + dir[0];
-            int yn = y + dir[1];
-            if (!cango(matrix, xn, yn)) {
-                // We cannot go straight. Change the direction.
-                i = (i + 1) % 4;
-                dir = dirs[i];
-                xn = x + dir[0];
-                yn = y + dir[1];
-                if (!cango(matrix, xn, yn)) {
-                    break;
-                }
+        while (count < m * n) {
+            count++;
+            res.add(matrix[i][j]);
+            matrix[i][j] = 101;
+            int nexti = i + dirs[dir][0], nextj = j + dirs[dir][1];
+            if (nexti < 0 || m <= nexti || nextj < 0 || n <= nextj || matrix[nexti][nextj] == 101) {
+                dir = (dir + 1) % 4;
             }
-            // Go.
-            x = xn;
-            y = yn;
+            i += dirs[dir][0];
+            j += dirs[dir][1];
         }
         return res;
     }

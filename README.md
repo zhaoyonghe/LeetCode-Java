@@ -45,7 +45,7 @@
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens) | [Solution1](src/N/NQueensI_51/Solution1.java) <br>Time Complexity: O(n!)<br>Space Complexity: O(n)<br> |
 | 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii) | [Solution1](src/N/NQueensII_52/Solution1.java) <br> |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Solution1](src/M/MaximumSubarray_53/Solution1.java) <br>Time Complexity: O(nums.length)<br>Auxiliary Space Complexity: O(1)<br> |
-| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution1](src/S/SpiralMatrix_54/Solution1.java) <br> |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | [Solution1](src/S/SpiralMatrix_54/Solution1.java) <br>Assume m is matrix.length and n is matrix[0].length.<br>Time Complexity: O(mn)<br>Auxiliary Space Complexity: O(1)<br> |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | [Solution1](src/J/JumpGame_55/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(1)<br> |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | [Solution1](src/M/MergeIntervals_56/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(nlogn)<br>Space Complexity: O(n)<br> |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | [Solution1](src/I/InsertInterval_57/Solution1.java) <br>Assume intervals.length is n.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
@@ -75,7 +75,7 @@
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | [Solution1](src/V/ValidateBinarySearchTree_98/Solution1.java) <br>Assume the number of nodes in root is n, root height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) | [Solution1](src/R/RecoverBinarySearchTree_99/Solution1.java) <br>[Solution2](src/R/RecoverBinarySearchTree_99/Solution2.java) <br> |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | [Solution1](src/S/SameTree_100/Solution1.java) <br>Assume n is the number of nodes in tree p and q; h is the max height of tree p and q.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
-| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | [Solution1](src/S/SymmetricTree_101/Solution1.java) <br>[Solution2](src/S/SymmetricTree_101/Solution2.java) <br> |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | [Solution1](src/S/SymmetricTree_101/Solution1.java) <br>Assume n is the number of nodes in the tree root.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | [Solution1](src/B/BinaryTreeLevelOrderTraversal_102/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | [Solution1](src/B/BinaryTreeZigzagLevelOrderTraversal_103/Solution1.java) <br>Assume n is the number of nodes in tree root.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Solution1](src/M/MaximumDepthOfBinaryTree_104/Solution1.java) <br>Assume the nodes count of root is n, height is h.<br>Time Complexity: O(n)<br>Space Complexity: O(h)<br> |
@@ -183,7 +183,7 @@
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | [Solution1](src/B/BurstBalloons_312/Solution1.java) <br>Assume nums.length is n.<br>Time Complexity: O(n ^ 3)<br>Space Complexity: O(n ^ 2)<br> |
 | 314 | [Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal) | [Solution1](src/B/BinaryTreeVerticalOrderTraversal_314/Solution1.java) <br> |
 | 315 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | [Solution1](src/C/CountOfSmallerNumbersAfterSelf_315/Solution1.java) <br> |
-| 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/R/RemoveDuplicateLetters_316/Solution1.java) <br> |
+| 316 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters) | [Solution1](src/R/RemoveDuplicateLetters_316/Solution1.java) <br>Assume n is the length of s.<br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher) | [Solution1](src/B/BulbSwitcher_319/Solution1.java) <br>Time Complexity: O(1)<br>Space Complexity: O(1)<br> |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change) | [Solution1](src/C/CoinChange_322/Solution1.java) <br>Time Complexity: O(amount * coins.length)<br>Space Complexity: O(amount)<br> |
 | 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [Solution1](src/N/NumberOfConnectedComponentsInAnUndirectedGraph_323/Solution1.java) <br>Time Complexity: O(n)<br>Space Complexity: O(n)<br> |
