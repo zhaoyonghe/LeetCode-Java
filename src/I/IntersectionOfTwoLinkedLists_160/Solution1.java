@@ -4,11 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Assume m, n are the length of listA and listB.
- * Time Complexity: O(m + n)
- * Space Complexity: O(m)
- * Runtime: 16ms
- * Rank: 8.70%
+ * $$ Assume m, n are the length of listA and listB.
+ * $$ Time Complexity: O(m + n)
+ * $$ Space Complexity: O(m + n)
  */
 
 public class Solution1 {

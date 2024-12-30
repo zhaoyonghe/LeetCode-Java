@@ -1,10 +1,8 @@
 package C.CountOfRangeSum_327;
 
 /**
- * Time Complexity: O(nlogn)
- * Space Complexity: O(n)
- * Runtime: 7ms
- * Rank: 99.59%
+ * $$ Time Complexity: O(nlogn)
+ * $$ Space Complexity: O(n)
  */
 
 class Solution1 {
@@ -28,7 +26,6 @@ class Solution1 {
         int mid = (start + end) / 2;
         mergeSort(a, start, mid, lower, upper);
         mergeSort(a, mid + 1, end, lower, upper);
-        //System.out.printf("start:%d end:%d mid:%d \n", start, end, mid);
 
         int l = mid + 1;
         int r = mid + 1;
@@ -39,7 +36,6 @@ class Solution1 {
             while (r <= end && (a[r] - a[k]) <= (long) upper) {
                 r++;
             }
-            //System.out.printf("l:%d r:%d \n", l, r);
             res += (r - l);
         }
 
@@ -77,9 +73,5 @@ class Solution1 {
             i++;
             j++;
         }
-        //for (int jj = start; jj <= end; jj++) {
-        //    System.out.printf("%d ", a[jj]);
-        //}
-        //System.out.print("\n");
     }
 }

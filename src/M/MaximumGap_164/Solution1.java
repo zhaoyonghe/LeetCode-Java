@@ -3,14 +3,11 @@ package M.MaximumGap_164;
 import java.util.Arrays;
 
 /**
- * Time Complexity: O(nums.length)
- * Auxiliary Space Complexity: O(nums.length)
- * Runtime: 47ms
- * Rank: 40.90%
+ * $$ Time Complexity: O(nums.length)
+ * $$ Space Complexity: O(nums.length)
  */
 public class Solution1 {
-    // Important constraints:
-    // 0 <= nums[i] <= 10^9 (the time complexity should be linear)
+    // radix sort
     public int maximumGap(int[] nums) {
         int[] pos = new int[16];
         int[] buffer = new int[nums.length];

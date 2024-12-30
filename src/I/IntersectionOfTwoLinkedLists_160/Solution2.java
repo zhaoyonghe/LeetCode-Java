@@ -1,34 +1,29 @@
 package I.IntersectionOfTwoLinkedLists_160;
 
 /**
- * Assume m, n are the length of listA and listB.
- * Time Complexity: O(m + n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 98.85%
+ * $$ Assume m, n are the length of listA and listB.
+ * $$ Time Complexity: O(m + n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution2 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        ListNode a = headA;
-        ListNode b = headB;
-        int count = 0;
+        ListNode a = headA, b = headB;
+        int changes = 0;
         while (a != b) {
             a = a.next;
             b = b.next;
-            if (a == null) {
-                if (count >= 2) {
+            if (a == null || b == null) {
+                changes++;
+                if (changes > 2) {
                     return null;
                 }
-                a = headB;
-                count++;
-            }
-            if (b == null) {
-                if (count >= 2) {
-                    return null;
+                if (a == null) {
+                    a = headB;
                 }
-                b = headA;
-                count++;
+                if (b == null) {
+                    b = headA;
+                }
             }
         }
         return a;
