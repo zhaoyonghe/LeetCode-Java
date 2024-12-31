@@ -6,18 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Assume n is wordsDict.length; m is the max value among wordsDict[i].length.
- * Constructor Time Complexity: O(n)
- * shortest Time Complexity: O(n)
- * Space Complexity: O(m * n)
- * Runtime: 23ms
- * Rank: 98.84%
+ * $$ Assume n is wordsDict.length.
+ * $$ Constructor Time Complexity: O(n)
+ * $$ shortest() Time Complexity: O(n)
  */
 
 
 class WordDistance1 {
-    // Important constraints:
-    // 1. word1 and word2 are in wordsDict (always have answer).
 
     Map<String, List<Integer>> m = new HashMap<>();
 

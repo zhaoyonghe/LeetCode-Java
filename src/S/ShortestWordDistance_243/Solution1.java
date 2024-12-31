@@ -1,16 +1,12 @@
 package S.ShortestWordDistance_243;
 
 /**
- * Assume n is wordsDict.length; m is the max value among wordsDict[i].length.
- * Time Complexity: O(m * n)
- * Auxiliary Space Complexity: O(1)
- * Runtime: 1ms
- * Rank: 99.87%
+ * $$ Assume n is wordsDict.length; m is the max value among wordsDict[i].length.
+ * $$ Time Complexity: O(m * n)
+ * $$ Auxiliary Space Complexity: O(1)
  */
 
 public class Solution1 {
-    // Important constraints:
-    // 1. word1 and word2 are in wordsDict (always have answer).
     public int shortestDistance(String[] wordsDict, String word1, String word2) {
         int a = -1;
         int b = -1;
