@@ -3,15 +3,11 @@ package R.RandomPickWithWeight_528;
 import java.util.Random;
 
 /**
- * Constructor Time Complexity: O(n)
- * pickIndex() Time Complexity: O(logn)
- * Space Complexity: O(n)
- * Runtime: 21ms
- * Rank: 96.22%
+ * $$ Constructor Time Complexity: O(n)
+ * $$ pickIndex() Time Complexity: O(logn)
+ * $$ Space Complexity: O(n)
  */
 public class Solution1 {
-    // Important constraints:
-    // 1. 1 <= w.length <= 10 ^ 4, 1 <= w[i] <= 10 ^ 5. (Never overflow.)
     private final int n;
     private final int sum;
     private final int[] pre;

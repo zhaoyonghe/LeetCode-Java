@@ -1,11 +1,9 @@
 package P.PredictTheWinner_486;
 
 /**
- * Assume n is nums.length.
- * Time Complexity: O(n^2)
- * Space Complexity: O(n^2)
- * Runtime: 0ms
- * Rank: 100.00%
+ * $$ Assume n is nums.length.
+ * $$ Time Complexity: O(n^2)
+ * $$ Space Complexity: O(n^2)
  */
 
 public class Solution3 {
